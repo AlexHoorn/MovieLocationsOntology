@@ -1,7 +1,7 @@
 import streamlit as st
 import streamlit.components.v1 as components
 
-st.title("Songify")
+st.title("More Music Like This")
 st.text("Or whatever name we choose")
 
 st.header("Choose your song preferences")
