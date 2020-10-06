@@ -6,25 +6,31 @@ st.text("Or whatever name we choose")
 
 st.header("Choose your song preferences")
 
+searchMode = st.radio("Search Mode", options=["Similar", "Precise"])
+
 # Temporary options
 # These will later be replaced by the real list of artist, real list of songs, etc.
 tempOptions = ["Example 1", "Example 2", "Example 3"]
 
 
-# Inputs, named by input, input_type and category
+# Inputs, named by input and category
 # Some inuts we will use for sure, like artist and genre, so I put them here already
+if searchMode == "Precise":
+    inputArtist = st.multiselect("Select your artist(s)", tempOptions)
+    inputGenre = st.multiselect("Select your genres(s)", tempOptions)
+    inputDuration = st.slider("Select your song duration",
+                              value=[2, 20], max_value=90)
+    inputYear = st.slider("Select the period of the song", value=[
+        1990, 2020], min_value=1920, max_value=2020)
 
-# TODO streamlit multiselect will get slow when more than 100 options present
-st.multiselect("Select your artist(s)", tempOptions)
-st.multiselect("Select your genres(s)", tempOptions)
-st.slider("Select your song duration", value=[2, 20], max_value=90)
-st.slider("Select the period of the song", value=[
-          1990, 2020], min_value=1920, max_value=2020)
+if searchMode == "Similar":
+    multiInput = st.multiselect(
+        "Select your albums, songs and artists", tempOptions)
 
 
 # Sidebar
 st.sidebar.header("Settings")
-st.sidebar.checkbox("Enable developer mode")
+devModeEnabled = st.sidebar.checkbox("Enable developer mode")
 
 
 st.header("Your recommendation")
