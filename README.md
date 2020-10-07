@@ -1,3 +1,3 @@
 # group51-kdd
 
-Spotify tracks dataset source: https://www.kaggle.com/yamaerenay/spotify-dataset-19212020-160k-tracks
+IMDB dataset source: https://www.imdb.com/interfaces/
