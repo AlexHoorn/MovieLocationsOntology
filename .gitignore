@@ -1,0 +1,4 @@
+.ipynb_checkpoints
+.mypy_cache
+.vscode
+raw_data/*.tsv
