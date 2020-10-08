@@ -13,9 +13,10 @@ from tqdm import tqdm
 # WORK IN PROGRESS
 
 # PLEASE ENTER THE NR. OF THE PART YOU WILL FETCH HERE
-# ALEX: 1, RAMON: 2, DAVEY:3, SETH:4
+# SETH: 1, RAMON: 2, ALEX: 3, DAVEY: 4
 ############################################################################
-yourPartNr = 1
+yourPartNr = input(
+    "Please enter the number of your part. See the top of the code of the page ")
 ############################################################################
 
 
@@ -55,7 +56,7 @@ def TryGeocode(df, attempts=5, sleep=20):
 
         # If succesfull we can start with a clean slate and forget previous http errors.
         numHTTPErrors = 0
-    except Exception as ex:
+    except Exception:
         # Terminate after 5 consecutive failed attempts
         if numHTTPErrors == attempts:
             print("5 failed attempts. Program will save the current progress and terminate. Try to rerun the script later. It will continue with the current progress.")
@@ -65,8 +66,6 @@ def TryGeocode(df, attempts=5, sleep=20):
         else:
             print(
                 "GEOCODING RETURNS EXCEPTION. WILL SLEEP FOR {} SECONDS AND RETRY.".format(sleep))
-            # This error is so long, you don't wanna see it
-            # print(ex)
             SleepAndRetry(sleep, df)
 
 
@@ -91,6 +90,16 @@ geocode = RateLimiter(geolocator.geocode, min_delay_seconds=1.05)
 
 # Allow for seeing pandas progress
 tqdm.pandas()
+
+# Doublecheck that everybody scans the right part
+if int(yourPartNr) == 1:
+    v = input("Please press any button to confirm that you're Seth")
+if int(yourPartNr) == 2:
+    v = input("Please press any button to confirm that you're Ramon")
+if int(yourPartNr) == 3:
+    v = input("Please press any button to confirm that you're Alex")
+if int(yourPartNr) == 4:
+    v = input("Please press any button to confirm that you're Davey")
 
 
 # Initial start statement
