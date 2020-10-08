@@ -1,4 +1,6 @@
-We have around 75000 locations for 30000 movies after removing studios.
+8/10: I have checked a lot of services and they all have their drawbacks in price, availability, etc. So we will do the proposed split of the raw_location_data in four parts where all four of us run the nominatim_fetcher included in this folder.
+
+7/10: We have around 75000 locations for 30000 movies after removing studios.
 
 GeoCoding might be an issue. Open API's such as Nominatim work very well but discourage bulk and prefer max. 1 request per second.
 
