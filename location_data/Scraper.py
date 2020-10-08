@@ -4,11 +4,12 @@ import csv
 import time
 
 
-
 currentGENRE = ""
+
 
 def GetSaveName(count):
     return currentGENRE+"MovieLocations" + str(count) + "-" + str(count+500) + ".csv"
+
 
 previousSaveName = ""
 
@@ -52,7 +53,8 @@ def Scrape50Shows(count):
                 newSoup = bs(newPage.text, 'html.parser')
                 locationHolder = newSoup.find(id="filming_locations")
                 if locationHolder is not None:
-                    elements = locationHolder.find_all(class_="soda sodavote odd")
+                    elements = locationHolder.find_all(
+                        class_="soda sodavote odd")
 
                     for element in elements:
                         location = element.find("a")
@@ -66,7 +68,9 @@ def Scrape50Shows(count):
         print("Sleep to avoid server connection refused")
         time.sleep(10)
 
-#If an error is returned, wait 30 seconds and try again. Keep trying.
+# If an error is returned, wait 30 seconds and try again. Keep trying.
+
+
 def ContinuousTryExtractPage():
     try:
         Scrape50Shows(count)
@@ -77,12 +81,14 @@ def ContinuousTryExtractPage():
         ContinuousTryExtractPage()
 
 
-genres = ["Family", "Fantasy", "History", "Horror", "Music", "Musical", "Mystery", "Sci-Fi", "Sport", "Superhero", "Thriller", "War", "Western"]
+genres = ["Family", "Fantasy", "History", "Horror", "Music", "Musical",
+          "Mystery", "Sci-Fi", "Sport", "Superhero", "Thriller", "War", "Western"]
 for genre in genres:
     currentGENRE = genre
-    startUrlPart1 = "https://www.imdb.com/search/title/?genres="+ genre.lower() +"&view=simple&start="
+    startUrlPart1 = "https://www.imdb.com/search/title/?genres=" + genre.lower() + \
+        "&view=simple&start="
     startUrlPart2 = "&explore=title_type,genres&ref_=adv_nxt"
 
-    #Scrape the range amount of movies. There are 50 movies per page.
+    # Scrape the range amount of movies. There are 50 movies per page.
     for count in range(0, 1000, 50):
         ContinuousTryExtractPage()
