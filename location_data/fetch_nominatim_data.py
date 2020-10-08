@@ -6,11 +6,7 @@ import random
 import string
 import time
 import sys
-import itertools
-import sys
 from tqdm import tqdm
-
-# WORK IN PROGRESS
 
 # PLEASE ENTER THE NR. OF THE PART YOU WILL FETCH HERE
 # SETH: 1, RAMON: 2, ALEX: 3, DAVEY: 4
@@ -34,12 +30,10 @@ readDir = os.getcwd()+"/location_data/raw_data/raw_data_part_" + \
 writeDir = os.getcwd()+"/location_data/raw_data_geocoded/geocoded_data_part_" + \
     str(yourPartNr) + "/"
 
-# Spinner indicating file processing
-spinner = itertools.cycle(['-', '/', '|', '\\'])
-
-
 # Some helper functions
 ############################################################################
+
+
 def GetRandomString(length):
     letters = string.ascii_lowercase
     result_str = ''.join(random.choice(letters) for i in range(length))
@@ -86,7 +80,8 @@ def SleepAndRetry(sleep, df):
 # Set up the geocoder and rate limiter
 userName = GetRandomString(8)+str(yourPartNr)
 geolocator = Nominatim(user_agent=userName)
-geocode = RateLimiter(geolocator.geocode, min_delay_seconds=1.05)
+geocode = RateLimiter(geolocator.geocode,
+                      min_delay_seconds=1.05, swallow_exceptions=True)
 
 # Allow for seeing pandas progress
 tqdm.pandas()
