@@ -1,8 +1,8 @@
-<h5>Current instructions</h5>
+<h2>Current instructions</h2>
 
 9/10: All you need to do is run the fetch_nominatim_data.py install the dependencies and enter your number. You can stop the program, when you start it again it will take off at the file where it stopped.
 
-<h5>Old notes</h5>
+<h2>Old notes</h2>
 
 8/10: I have checked a lot of services and they all have their drawbacks in price, availability, etc. So we will do the proposed split of the raw_location_data in four parts where all four of us run the nominatim_fetcher included in this folder.
 
