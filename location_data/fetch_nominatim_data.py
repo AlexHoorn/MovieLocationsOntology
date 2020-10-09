@@ -8,7 +8,7 @@ import time
 import sys
 from tqdm import tqdm
 
-# PLEASE ENTER THE NR. OF THE PART YOU WILL FETCH HERE
+# I assigned a number to everybody
 # SETH: 1, RAMON: 2, ALEX: 3, DAVEY: 4
 ############################################################################
 yourPartNr = input(
