@@ -44,10 +44,10 @@ def findScene(movie):
         PREFIX ex: <http://example.com/projectkand/>
         select ?scene ?lon ?lat where { 
         ?movie a ex:Movie.
-        ?movie ex:HasPrimaryTitle ?title.
-        ?movie ex:HasScene ?scene.
-        ?scene ex:HasLongitude ?lon;
-            ex:HasLatitude ?lat    
+        ?movie ex:hasPrimaryTitle ?title.
+        ?movie ex:hasScene ?scene.
+        ?scene ex:hasLongitude ?lon;
+            ex:hasLatitude ?lat    
         FILTER(?title = '%s'@en) 
     } limit 100 
     """ % (movie))  ## paste the movie far into the string with %
@@ -60,14 +60,12 @@ def findScene(movie):
         latList.append(result['lat']['value'])
     i = 0
     while i < len(lonList): 
-        tempList = [lonList[i], latList[i]]
+        tempList = [latList[i], lonList[i]]
         lonLatList.append(tempList)
         i += 1
     sparql = SPARQLWrapper("http://dbpedia.org/sparql") ##Creates a map with scenes as key and coordinates as value
     mappingCoordinates = dict(zip(sceneList, lonLatList)) ## With lon as value[0] and lat as value[1]
     return sceneList, mappingCoordinates ##    
-
-#sceneList = ['bridgeScene', 'weddingScene', 'barScene']
 
 def findMovie():
     sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/projectTest")    
@@ -75,7 +73,7 @@ def findMovie():
         PREFIX ex: <http://example.com/projectkand/>
         select ?title where { 
             ?movie a ex:Movie;
-                ex:HasPrimaryTitle ?title  
+                ex:hasPrimaryTitle ?title  
     } limit 100 
     """ )
     sparql.setReturnFormat(JSON)
@@ -109,8 +107,6 @@ if searchMode == 'Movies':
             folium.Marker(coordinates, popup='test', tooltip='test').add_to(m2)
             if st.button('test!'):
                 folium_static(m2)
-
-
 
 ## searchMode actor and location don't use our own ontology yet and are kinda oudated.
 
