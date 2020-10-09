@@ -1,0 +1,986 @@
+,Code,Show Name,Location,Scene,geocodedLocation,latitude,longitude
+0,/title/tt11419114/,Resident Evil 3,"Chicago Illinois, USA",,"Chicago, Cook County, Illinois, United States of America",41.8755616,-87.6244212
+1,/title/tt0484562/,The Dark Is Rising,"MediaPro Studios, Bucharest, Romania",,,,
+2,/title/tt0484562/,The Dark Is Rising,"Saschiz, Romania",,"Saschiz, Mureș, 547510, România",46.1941249,24.961897
+3,/title/tt0090274/,Volunteers,"Mae Hong Son, Thailand",(location)                        ,"จังหวัดแม่ฮ่องสอน, ประเทศไทย",19.3927456,98.2031112
+4,/title/tt0090274/,Volunteers,"Yale University, New Haven, Connecticut, USA",(location)                        ,"Yale University Art Gallery, 1111, Chapel Street, Downtown, New Haven, New Haven County, Connecticut, 06515, United States of America",41.3084354,-72.93087953034963
+5,/title/tt0058092/,Father Goose,"Ocho Rios, St. Ann, Jamaica",,"Ocho Rios, Saint Ann, Middlesex County, JM19, Jamaika",18.4081045,-77.1011092
+6,/title/tt0058092/,Father Goose,"Republic Studios - 4024 Radford Avenue, North Hollywood, Los Angeles, California, USA",(studio)                        ,,,
+7,/title/tt0058092/,Father Goose,"Universal Studios - 100 Universal City Plaza, Universal City, California, USA",(studio)                        ,,,
+8,/title/tt7539608/,Trolls: The Beat Goes On!,"Glendale, California, USA",(DreamWorks Animation)                        ,"Glendale, Los Angeles County, California, United States of America",34.1469416,-118.2478471
+9,/title/tt1127715/,Sin nombre,"Torreón, Coahuíla, Mexico",,"Torreón, Coahuila de Zaragoza, 27289, México",25.542698,-103.410512
+10,/title/tt0929629/,Stargate: Continuum,"Applied Physics Laboratory Ice Station, Arctic",(as the Arctic Ice Cap)                        ,,,
+11,/title/tt0087365/,"Greystoke: The Legend of Tarzan, Lord of the Apes","Blenheim Palace, Woodstock, Oxfordshire, England, UK",(Greystoke Mansion)                        ,"Blenheim Palace, Grand Bridge, Blenheim, West Oxfordshire, Oxfordshire, South East, England, OX20 1PX, United Kingdom",51.841967249999996,-1.3625986224673587
+12,/title/tt0087365/,"Greystoke: The Legend of Tarzan, Lord of the Apes","Albert Memorial, Kensington Gardens, Kensington, London, England, UK",(ape escaping)                        ,"The Albert Memorial, South Carriage Drive, Knightsbridge, City of Westminster, London, Greater London, England, SW7 5ET, United Kingdom",51.5023975,-0.1776843914853914
+13,/title/tt0087365/,"Greystoke: The Legend of Tarzan, Lord of the Apes","Bimbia, Southwest Province, Cameroon",(Africa)                        ,"Bimbia Slave Trade Site, Dikolo, Limbé III, Communauté urbaine de Limbé, Fako, Sud-Ouest, Cameroon;Cameroun",3.9638128,9.2574476
+14,/title/tt0087365/,"Greystoke: The Legend of Tarzan, Lord of the Apes","Floors Castle, Kelso, Scottish Borders, Scotland, UK",(greystoke mansion exteriors)                        ,"Floors Castle, Farm Lodge, Kelso, Scottish Borders, Scotland, TD5 7SF, United Kingdom",55.604972700000005,-2.4598260671243946
+15,/title/tt0087365/,"Greystoke: The Legend of Tarzan, Lord of the Apes","Hatfield House, Hatfield, Hertfordshire, England, UK",(Greystoke Mansion)                        ,"Hatfield House, The Stable Yard, Hatfield, Welwyn Hatfield, Hertfordshire, East of England, England, AL9 5NF, United Kingdom",51.7605139,-0.20879851305478084
+16,/title/tt0087365/,"Greystoke: The Legend of Tarzan, Lord of the Apes","Elstree Studios, Borehamwood, Hertfordshire, England, UK",(studio)                        ,"Elstree Studios, Shenley Road, Elstree and Borehamwood, Hertsmere, Hertfordshire, East of England, England, WD6 1JG, United Kingdom",51.657052050000004,-0.2675206399488197
+17,/title/tt0320808/,"The Adventures of Jimmy Neutron, Boy Genius","Dallas, Texas, USA",,"Dallas, Dallas County, Texas, United States of America",32.7762719,-96.7968559
+18,/title/tt0053935/,Ice Cold in Alex,Libya,,ليبيا,26.8234472,18.1236723
+19,/title/tt0053935/,Ice Cold in Alex,"Associated British Elstree Studios, Shenley Road, Borehamwood, Hertfordshire, England, UK",(studio) (studio: made at)                        ,,,
+20,/title/tt0111902/,The Buccaneers,"Burghley House, Stamford, Lincolnshire, England, UK","(Allfriars, home of the Brightlingseas)                        ","Burghley House, Barnack Road, Barnack, South Kesteven, City of Peterborough, East Midlands, England, PE9 3JY, United Kingdom",52.6425003,-0.45230320487022024
+21,/title/tt0111902/,The Buccaneers,"Dunluce Castle, Bushmills, County Antrim, Northern Ireland, UK",(Trevenick ruins)                        ,,,
+22,/title/tt0111902/,The Buccaneers,"66 Ocean Avenue, Newport, Rhode Island, USA",(white Victorian house: scenes with girls on lawn)                        ,"66, Ocean Avenue, Ward 3, Newport, Newport County, Rhode Island, 02840, United States of America",41.45890758685487,-71.31575318059241
+23,/title/tt0111902/,The Buccaneers,"Chateau-sur-Mer - 474 Bellevue Avenue, Newport, Rhode Island, USA",(dinner scene with Mr. Closson/scenes under a beech tree)                        ,,,
+24,/title/tt0111902/,The Buccaneers,"Marble House - 596 Bellevue Avenue, Newport, Rhode Island, USA",(Mrs. Parmore's staircase and ballroom)                        ,"Marble House, 596, Bellevue Avenue, Salve Regina University, Ward 3, Newport, Newport County, Rhode Island, 02840, United States of America",41.46205275,-71.30574418046584
+25,/title/tt0111902/,The Buccaneers,"Bellevue Avenue, Newport, Rhode Island, USA",(streets in New York City and Saratoga New York)                        ,"Bellevue Avenue, Ward 2, Newport, Newport County, Rhode Island, 02840, United States of America",41.479063,-71.308509
+26,/title/tt0111902/,The Buccaneers,"Grimsthorpe Castle, Grimsthorpe, Lincolnshire, England, UK",,"Grimsthorpe Castle, North Avenue, Edenham CP, South Kesteven, Lincolnshire, East Midlands, England, PE10 0LZ, United Kingdom",52.79234995,-0.4523327930714376
+27,/title/tt0111902/,The Buccaneers,"Stamford, Lincolnshire, England, UK",,"Stamford, Lincolnshire, East Midlands, England, PE9 2AJ, United Kingdom",52.6520552,-0.4804363
+28,/title/tt0111902/,The Buccaneers,"Lincolnshire, England, UK",,"Lincolnshire, Stixwould and Woodhall, East Lindsey, Lincolnshire, East Midlands, England, United Kingdom",53.1823034,-0.2031208542548153
+29,/title/tt0258038/,Pootie Tang,"Route 440, Jersey City, New Jersey, USA",,"Jersey City, Hudson County, New Jersey, United States of America",40.7281575,-74.0776417
+30,/title/tt0258038/,Pootie Tang,"New York City, New York, USA",,"New York, United States of America",40.7127281,-74.0060152
+31,/title/tt0258038/,Pootie Tang,"RKO Bushwick Theatre, Brooklyn, New York City, New York, USA",,,,
+32,/title/tt8737608/,Rams,"Mount Barker, Western Australia, Australia",,"Mount Barker, Shire Of Plantagenet, Western Australia, 6324, Australia",-34.6220807,117.6641727
+33,/title/tt8737608/,Rams,"Albany, Western Australia, Australia",(location)                        ,"Albany, City Of Albany, Western Australia, 6330, Australia",-35.0247822,117.883608
+34,/title/tt5238626/,NieR: Automata,"Tokyo, Japan",(street scenes)                        ,"東京都, 日本 (Japan)",35.6828387,139.7594549
+35,/title/tt0043476/,Double Dynamite,"RKO Studios - 780 N. Gower Street, Hollywood, Los Angeles, California, USA",(studio)                        ,,,
+36,/title/tt0108758/,Earth 2,"Abiquiu, New Mexico, USA",,"Abiquiu, Rio Arriba County, New Mexico, United States of America",36.2070977,-106.3186283
+37,/title/tt0108758/,Earth 2,"Santa Clara Canyon, Santa Clara Pueblo, Santa Clara, New Mexico, USA",,,,
+38,/title/tt0108758/,Earth 2,"Cochiti Pueblo, New Mexico, USA",,"Cochiti Pueblo, Cochiti, Sandoval County, New Mexico, 87072, United States of America",35.6075311,-106.3472486
+39,/title/tt0108758/,Earth 2,"Jemez Springs, New Mexico, USA",,"Jemez Springs, Sandoval County, New Mexico, 87924, United States of America",35.76851,-106.6921555
+40,/title/tt0108758/,Earth 2,"Plaza Blanca, Abiquiu, New Mexico, USA",,"Plaza Blanca, Abiquiu, Rio Arriba County, New Mexico, United States of America",36.232413,-106.3032286
+41,/title/tt0108758/,Earth 2,"Tesuque Pueblo, New Mexico, USA",,"Tesuque Pueblo, Santa Fe County, New Mexico, United States of America",35.8026951,-105.9759012
+42,/title/tt0108758/,Earth 2,"Zia Pueblo, New Mexico, USA",,"Zia Pueblo, Sandoval County, New Mexico, United States of America",35.523806,-106.72352625685669
+43,/title/tt0184858/,Reindeer Games,"Prince George, British Columbia, Canada",,"Prince George, Regional District of Fraser-Fort George, British Columbia, Canada",53.9128645,-122.7453699
+44,/title/tt0184858/,Reindeer Games,"Vancouver, British Columbia, Canada",,"Vancouver, Metro Vancouver Regional District, British Columbia, Canada",49.2608724,-123.1139529
+45,/title/tt0117420/,The Quest,"Bangkok, Thailand",,"กรุงเทพมหานคร, เขตพระนคร, กรุงเทพมหานคร, 10200, ประเทศไทย",13.7542529,100.493087
+46,/title/tt0117420/,The Quest,"Phuket, Thailand",,"จังหวัดภูเก็ต, ประเทศไทย",7.9366015,98.3529292
+47,/title/tt0119484/,Kull the Conqueror,"Bratislava, Slovakia",,"Bratislava, Bratislavský kraj, Slovensko",48.1516988,17.1093063
+48,/title/tt0119484/,Kull the Conqueror,"Dévin Castle, Bratislava, Slovakia",,"Hrad Devín, Hradná, Devín, okres Bratislava IV, Bratislava, Bratislavský kraj, 841 10, Slovensko",48.17310845,16.980367591484594
+49,/title/tt0119484/,Kull the Conqueror,"Kornati National Park, Croatia",(sea sequences)                        ,"Kornati, Šibensko-kninska županija, Hrvatska",43.805438,15.322074515121667
+50,/title/tt7025976/,L'Empereur de Paris,"Base 217, Brétigny-sur-Orge, Essonne, France",,,,
+51,/title/tt7025976/,L'Empereur de Paris,"Château de Fontainebleau, Fontainebleau, Seine-et-Marne, France",,"Château de Fontainebleau, Rue Richelieu, Fontainebleau, Seine-et-Marne, Île-de-France, France métropolitaine, 77300, France",48.4023346,2.7005387366907625
+52,/title/tt0087451/,The Ice Pirates,"Vernon, California, USA",(Bethlehem Steel Co. plant)                        ,"Vernon, Los Angeles County, California, 90058, United States of America",34.007135,-118.22525
+53,/title/tt0087451/,The Ice Pirates,"Van Nuys, Los Angeles, California, USA",(Anheuser-Busch brewery)                        ,"Van Nuys, Los Angeles, Los Angeles County, California, 91401-2649, United States of America",34.1866193,-118.4486669
+54,/title/tt0047706/,The Adventures of Robin Hood,"Alnwick Castle, Alnwick, Northumberland, England, UK",,"Alnwick Castle, Bailiffgate, Alnwick, Northumberland, North East England, England, NE66 1NQ, United Kingdom",55.41546099999999,-1.7065170268123597
+55,/title/tt0047706/,The Adventures of Robin Hood,"Nettlefold Studios, Walton-on-Thames, Surrey, England, UK",(studio)                        ,,,
+56,/title/tt0089421/,King Solomon's Mines,"Harare, Zimbabwe",,"Harare, Harare Province, 04-263, Zimbabwe",-17.831773,31.045686
+57,/title/tt0119807/,Nothing to Lose,"Lancaster, California, USA",,"Lancaster, Los Angeles County, California, United States of America",34.6981064,-118.1366153
+58,/title/tt0119807/,Nothing to Lose,"Los Angeles, California, USA",,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+59,/title/tt0119807/,Nothing to Lose,"Club Ed Film Set - 150th Street E, Lancaster, California, USA",,,,
+60,/title/tt0119807/,Nothing to Lose,"Monrovia, California, USA",,"Monrovia, Los Angeles County, California, United States of America",34.1483499,-118.0014517
+61,/title/tt0116552/,Homeward Bound II: Lost in San Francisco,"Wisconsin Street and 20th Street, San Francisco, California, USA",(Viewpoint over San Fransisco)                        ,"20, Wisconsin Street, Potrero Hill, San Francisco, San Francisco City and County, California, 94107, United States of America",37.76662621361554,-122.39991236889593
+62,/title/tt0116552/,Homeward Bound II: Lost in San Francisco,"Vancouver, British Columbia, Canada",,"Vancouver, Metro Vancouver Regional District, British Columbia, Canada",49.2608724,-123.1139529
+63,/title/tt0116552/,Homeward Bound II: Lost in San Francisco,"Green Street and Taylor Street, San Francisco, California, USA",(walking up a hill with a view of Alcatraz Island)                        ,,,
+64,/title/tt0116552/,Homeward Bound II: Lost in San Francisco,"San Francisco International Airport, San Francisco, California, USA",(establishing shot of SFO)                        ,"San Francisco International Airport, 780, South Airport Boulevard, San Mateo County, California, 94128, United States of America",37.622451999999996,-122.38407160781362
+65,/title/tt0116552/,Homeward Bound II: Lost in San Francisco,"Grouse Inn - 1633 Capilano Road, North Vancouver, British Columbia, Canada",(hotel where the family stays; room 106)                        ,,,
+66,/title/tt0116552/,Homeward Bound II: Lost in San Francisco,"Coit Tower, San Francisco, California, USA",(artist paints a portrait of the pets; Delilah and Chance kiss)                        ,"Coit Tower, Telegraph Hill Boulevard, Telegraph Hill, San Francisco, San Francisco City and County, California, 94113, United States of America",37.80237905,-122.40583435461313
+67,/title/tt0116552/,Homeward Bound II: Lost in San Francisco,"1177 Keefer Street, Vancouver, British Columbia, Canada",(Tucker's house)                        ,"Keefer Street, Chinatown, Strathcona, Vancouver, Metro Vancouver Regional District, British Columbia, V6A 1X3, Canada",49.2795071,-123.1009992
+68,/title/tt0116552/,Homeward Bound II: Lost in San Francisco,"Burrard Dry Dock, North Vancouver, British Columbia, Canada",(Riley's hideout at the abandoned shipyard) (now demolished)                        ,,,
+69,/title/tt0116552/,Homeward Bound II: Lost in San Francisco,"Strathcona, Vancouver, British Columbia, Canada",(most of the film was shot here)                        ,"Strathcona, Vancouver, Metro Vancouver Regional District, British Columbia, Canada",49.2776935,-123.08853925078753
+70,/title/tt0116552/,Homeward Bound II: Lost in San Francisco,"E Pender Street, Vancouver, British Columbia, Canada","(Delilah chases Chance) (coordinates: 49°16'49.4""N, 123°04'42.9""W)                        ","East Pender Street, Grandview-Woodland, Vancouver, Metro Vancouver Regional District, British Columbia, V5L 1T7, Canada",49.2802803,-123.0653521
+71,/title/tt0116552/,Homeward Bound II: Lost in San Francisco,"524 Glen Drive, Vancouver, British Columbia, Canada",(Delilah catches up with Chance)                        ,"Glen Drive, Kensington-Cedar Cottage, Kensignton-Cedar Cottage, Vancouver, Metro Vancouver Regional District, British Columbia, V5V 4S9, Canada",49.2477164,-123.0819104
+72,/title/tt0116552/,Homeward Bound II: Lost in San Francisco,"10th Avenue, Vancouver, British Columbia, Canada",(Chance and Delilah walking in a neighborhood) (in between Columbia Street and Manitoba Street)                        ,"10th Avenue, Burnaby, Metro Vancouver Regional District, British Columbia, V3N 2V3, Canada",49.1991373,-122.9641916
+73,/title/tt0116552/,Homeward Bound II: Lost in San Francisco,"CA-131 and San Rafael Avenue, Tiburon, California, USA",(flyover shot of the family's car)                        ,,,
+74,/title/tt0116552/,Homeward Bound II: Lost in San Francisco,"Alamo Square, Hayes Valley, San Francisco, California, USA",(Chance at night)                        ,,,
+75,/title/tt0380389/,Goal!,"St James' Park, Strawberry Place, Newcastle upon Tyne, Tyne & Wear, England, UK",(Newcastle's home ground)                        ,"NINE, Strawberry Place, Grainger Town, Newcastle upon Tyne, Tyne and Wear, North East England, England, NE1 4ST, United Kingdom",54.9747426,-1.6208229
+76,/title/tt0380389/,Goal!,"Brentford F.C, Griffin Park, Brentford, Middlesex, England, UK",(Newcastle reserves v Man Utd and Middlesborough)                        ,,,
+77,/title/tt0380389/,Goal!,"Pinewood Studios, Iver Heath, Buckinghamshire, England, UK",,"Pinewood Studios, Pinewood Green, Iver, Iver Heath, Buckinghamshire, South East, England, SL0 0QJ, United Kingdom",51.54831515,-0.5346765566753087
+78,/title/tt0380389/,Goal!,"Reading Blue Coat School, Holme Park, Sonning on Thames, Berkshire, England, UK",(Newcastle United training centre)                        ,,,
+79,/title/tt9775360/,Batman vs Teenage Mutant Ninja Turtles,"New York City, New York, USA",(Gotham City)                        ,"New York, United States of America",40.7127281,-74.0060152
+80,/title/tt0090927/,The Delta Force,"Haifa, Israel",(beach landing)                        ,"חיפה, נפת חיפה, מחוז חיפה, ישראל",32.8191218,34.9983856
+81,/title/tt0090927/,The Delta Force,"Petah-Tikvah, Israel",(Damascus Road Scenes)                        ,"פתח תקווה/טיומקין, פתח-תקווה, רמת אפרים, נתניה, נפת השרון, מחוז המרכז, no, ישראל",32.321309,34.859504
+82,/title/tt0090927/,The Delta Force,"Ellinikon Airport, Athens, Greece",(Athens Airport Scenes)                        ,,,
+83,/title/tt0090927/,The Delta Force,"Washington, District of Columbia, USA",(Pentagon Exteriors)                        ,"Washington, District of Columbia, 20230, United States of America",38.8949924,-77.0365581
+84,/title/tt0096610/,Hey Dude,"Tanque Verde Guest Ranch, Tucson, Arizona, USA",,,,
+85,/title/tt0096610/,Hey Dude,"Arizona, USA",,"Arizona, United States of America",34.395342,-111.7632755
+86,/title/tt0096610/,Hey Dude,USA,,United States,39.7837304,-100.4458825
+87,/title/tt0087225/,Star Wars: Ewok Adventures - Caravan of Courage,"Marin County, California, USA",,"Marin County, California, United States of America",38.0409144,-122.6199638
+88,/title/tt0056264/,Mutiny on the Bounty,"Bora Bora, Leeward Islands, French Polynesia",,"Bora Bora, Bora-Bora, Îles Sous-le-Vent, Polynésie Française, 98730, France",-16.50440635,-151.73666961103527
+89,/title/tt0056264/,Mutiny on the Bounty,"Maatvai Bay, Tahiti, French Polynesia",(arrival of the Bounty)                        ,,,
+90,/title/tt0056264/,Mutiny on the Bounty,French Polynesia,,"Polynésie Française, France",-16.03442485,-146.0490931059517
+91,/title/tt0056264/,Mutiny on the Bounty,"Leeward Islands, French Polynesia",,"Îles Sous-le-Vent, Polynésie Française, France",-16.63083485,-151.50391586630633
+92,/title/tt0056264/,Mutiny on the Bounty,"Moorea, French Polynesia",,"Mo’orea, Moorea-Maiao, Îles du Vent, Polynésie Française, 98728, France",-17.533306000000003,-149.83860061183017
+93,/title/tt0056264/,Mutiny on the Bounty,"Temae, Moorea, French Polynesia",,"Temae, Moorea-Maiao, Îles du Vent, Polynésie Française, 98728, France",-17.4932275,-149.773768
+94,/title/tt0056264/,Mutiny on the Bounty,"O'ahu, Hawaii, USA",,"Oʻahu, Mililani, Honolulu County, Hawaii, United States of America",21.48349555,-158.03640389298
+95,/title/tt0056264/,Mutiny on the Bounty,Pacific Ocean,,"Pacific Ocean, Gulf View Executive Homes, Talomo, Davao City, Davao Region, 8024, Philippines",7.0427772,125.5367255
+96,/title/tt0167743/,The Wild Thornberrys,"Los Angeles, California, USA",,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+97,/title/tt0087910/,The Philadelphia Experiment,"Charleston, South Carolina, USA",,"Charleston, Charleston County, South Carolina, United States of America",32.7876012,-79.9402728
+98,/title/tt0087910/,The Philadelphia Experiment,"Salt Lake City, Utah, USA",,"Salt Lake City, Salt Lake County, Utah, United States of America",40.7596198,-111.8867975
+99,/title/tt0087910/,The Philadelphia Experiment,"Santa Paula, California, USA",,"Santa Paula, Ventura County, California, United States of America",34.3541659,-119.0592705
+100,/title/tt0087910/,The Philadelphia Experiment,"Denver, Colorado, USA",,"Denver, Denver County, Colorado, United States of America",39.7392364,-104.9848623
+101,/title/tt0087910/,The Philadelphia Experiment,"GMT Studios - 5701-5751 Buckingham Parkway, Culver City, California, USA",(studio)                        ,,,
+102,/title/tt12497042/,Resident Evil Village,"Chicago Illinois, USA",,"Chicago, Cook County, Illinois, United States of America",41.8755616,-87.6244212
+103,/title/tt7338690/,The Scorpion King: Book of Souls,"Cape Town, South Africa",(location)                        ,"Cape Town, City of Cape Town, Western Cape, 8001, South Africa",-33.928992,18.417396
+104,/title/tt0077945/,La montagna del dio cannibale,"Royal Botanical Gardens, Peradeniya, Kandy District, Central Province, Sri Lanka",,"Royal Botanical Gardens, Peradeniya, Kandy, මහනුවර දිස්ත්‍රික්කය, මධ්‍යම පළාත, Sri Lanka",7.27073405,80.59630904897438
+105,/title/tt0077945/,La montagna del dio cannibale,Sri Lanka,,ශ්‍රී ලංකාව இலங்கை,7.5554942,80.7137847
+106,/title/tt0077945/,La montagna del dio cannibale,Malaysia,,Malaysia,4.5693754,102.2656823
+107,/title/tt0077945/,La montagna del dio cannibale,"S.A.F.A. Palatino Studios, Rome, Lazio, Italy",(interiors)                        ,,,
+108,Code,Show Name,Location,Scene,"Location, Tucker County, West Virginia, United States of America",39.2138905,-79.6371124
+109,/title/tt1210106/,St Trinian's 2: The Legend of Fritton's Gold,"Knebworth House, Stevenage, Hertfordshire, England, UK",(St Trinian's school)                        ,"Knebworth, Station Approach, Knebworth, Hertfordshire, East of England, England, SG3 6AT, United Kingdom",51.8670421,-0.187051
+110,/title/tt1210106/,St Trinian's 2: The Legend of Fritton's Gold,"St Alban, Wood Street, London, England, UK",(Exterior shots of Church)                        ,,,
+111,/title/tt1210106/,St Trinian's 2: The Legend of Fritton's Gold,"Wood Street, London, England, UK",,"Wood Street, Upper Walthamstow Road, Upper Walthamstow, London Borough of Waltham Forest, London, Greater London, England, E17, United Kingdom",51.587041,-0.0016791
+112,/title/tt1210106/,St Trinian's 2: The Legend of Fritton's Gold,"England, UK",,"England, United Kingdom",52.7954791,-0.5402402866174321
+113,/title/tt2088003/,Big Game,"Garmisch-Partenkirchen, Bavaria, Germany",,"Garmisch-Partenkirchen, Landkreis Garmisch-Partenkirchen, Bayern, Deutschland",47.5044169,11.0944493
+114,/title/tt2088003/,Big Game,"Bavaria, Germany",,"Bayern, Deutschland",48.9467562,11.4038717
+115,/title/tt2088003/,Big Game,"Seurasaari, 00250 Helsinki, Finland",,"Seurasaari, Helsinki, Helsingin seutukunta, Uusimaa, Manner-Suomi, Suomi",60.18117545,24.88402801529233
+116,/title/tt4720702/,Bushwick,"Brooklyn, New York City, New York, USA",(on location)                        ,"Brooklyn, Kings County, New York, United States of America",40.6501038,-73.9495823
+117,/title/tt4720702/,Bushwick,"Grover Cleveland Playground, Stanhope St & Grandview Ave, Queens, New York City, New York, USA",(Gun battle)                        ,,,
+118,/title/tt1400526/,Lost Boys: The Thirst,South Africa,,South Africa,-28.8166236,24.991639
+119,/title/tt0127357/,Who Am I?,"Rotterdam, Zuid-Holland, Netherlands",,"Rotterdam, 1207, Weena, CS-Kwartier, Centrum, Rotterdam, Zuid-Holland, Nederland, 3013AL, Nederland",51.9228934,4.4631786
+120,/title/tt0127357/,Who Am I?,"Amer Power Station, Geertruidenberg, Noord-Brabant, Netherlands",,,,
+121,/title/tt0127357/,Who Am I?,"Pahang, Malaysia",(Opening forest scenes)                        ,"Pahang, Malaysia",3.6278466,102.5870951
+122,/title/tt0127357/,Who Am I?,"Dordrecht, Zuid-Holland, Netherlands",,"Dordrecht, Zuid-Holland, Nederland",51.7689546,4.686789054617023
+123,/title/tt0119227/,Snow White: A Tale of Terror,"Kost Castle, Libosovice, Czech Republic",(the Hoffman castle)                        ,"Kost, 27931, Podkost, Libošovice, okres Jičín, Královéhradecký kraj, Severovýchod, 50744, Česká republika",50.4902644,15.1350561
+124,/title/tt0119227/,Snow White: A Tale of Terror,"Jevany, Czech Republic",,"Jevany, okres Praha-východ, Středočeský kraj, Střední Čechy, 28166, Česká republika",49.9702457,14.8097767
+125,/title/tt0119227/,Snow White: A Tale of Terror,"Dobrichovice Castle, Dobrichovice, Czech Republic",,,,
+126,/title/tt0119227/,Snow White: A Tale of Terror,"Pernstejn Castle, Nedvedice pod Perstejnem, Czech Republic",,,,
+127,/title/tt0119227/,Snow White: A Tale of Terror,"Stromovka, Prague, Czech Republic",,"Královská obora, Bubeneč, Praha, okres Hlavní město Praha, Hlavní město Praha, Praha, Česká republika",50.10673905,14.41113590144635
+128,/title/tt3521854/,Power Rangers Dino Charge,"Auckland War Memorial Museum, Domain Drive, The Domain, Parnell, Auckland, New Zealand",(Amber Beach Dinosaur Museum)                        ,,,
+129,/title/tt8031130/,Shadow Wolves,"California, USA",,"California, United States of America",36.7014631,-118.7559974
+130,/title/tt0081874/,The Hitchhiker's Guide to the Galaxy,"St Austell, Cornwall, England, UK",(Clay Pits for planet Magrathea)                        ,"St. Austell, London Apprentice, Cornwall, South West England, England, United Kingdom",50.338466,-4.7882104
+131,/title/tt0081874/,The Hitchhiker's Guide to the Galaxy,"Badgemore Park Golf Club, Henley-on-Thames, Oxfordshire, England, UK",(Computer room)                        ,,,
+132,/title/tt0081874/,The Hitchhiker's Guide to the Galaxy,"Edmonds Farm, Balcombe, West Sussex, England, UK",(Arthur's house)                        ,"Edmonds Farm, Balcombe, Mid Sussex, West Sussex, South East, England, United Kingdom",51.05752595,-0.11118834713298831
+133,/title/tt0081874/,The Hitchhiker's Guide to the Galaxy,"Par-Fowey tunnel, Cornwall, England, UK",(Magrathean underground)                        ,,,
+134,/title/tt0082474/,The Great Muppet Caper,"Elstree Studios, Borehamwood, Hertfordshire, England, UK",(studio)                        ,"Elstree Studios, Shenley Road, Elstree and Borehamwood, Hertsmere, Hertfordshire, East of England, England, WD6 1JG, United Kingdom",51.657052050000004,-0.2675206399488197
+135,/title/tt0082474/,The Great Muppet Caper,"134 Westbourne Terrace, Paddington, London, England, UK",(The Happiness Hotel)                        ,"Bishopsbourne, 134-136, Westbourne Terrace, Westbourne Green, Bayswater, City of Westminster, London, Greater London, England, W2 6ET, United Kingdom",51.51723725,-0.18234835660061705
+136,/title/tt0082474/,The Great Muppet Caper,"St Mary's Church, Church End, Haddenham, Buckinghamshire, England, UK",(The Muppets land in England)                        ,"Church End, Haddenham, Buckinghamshire, South East, England, HP17 8AE, United Kingdom",51.7662495,-0.926708
+137,/title/tt0082474/,The Great Muppet Caper,"Stage 3, Elstree Studios, Borehamwood, Hertfordshire, England, UK","(""Hey, a Movie!"") (demolished in 1989)                        ",,,
+138,/title/tt0082474/,The Great Muppet Caper,"Stage 1, Elstree Studios, Borehamwood, Hertfordshire, England, UK","(""Piggy's Fantasy"") (demolished in 1989)                        ","Elstree Studios, Shenley Road, Elstree and Borehamwood, Hertsmere, Hertfordshire, East of England, England, WD6 1JG, United Kingdom",51.657052050000004,-0.2675206399488197
+139,/title/tt0367093/,Starship Troopers 2: Hero of the Federation,"Santa Clarita, California, USA",,"Santa Clarita, Los Angeles County, California, United States of America",34.3916641,-118.542586
+140,/title/tt6105880/,JoJo no kimyô na bôken: Daiyamondo wa kudakenai - dai-isshô,"Sitges, Barcelona, Catalonia, Spain",,"Sitges, Avinguda de les Flors, Sitges, Garraf, Catalunya, 08870, España",41.2392039,1.8097337
+141,/title/tt0066701/,The Persuaders!,"15 Queen Anne's Gate, London, England, UK",(Lord Brett Sinclair's London residence)                        ,"15, Queen Anne's Gate, Westminster, Victoria, City of Westminster, London, Greater London, England, SW1, United Kingdom",51.500399650000006,-0.13305561549748512
+142,/title/tt0066701/,The Persuaders!,"Málaga, Málaga, Andalucía, Spain",,"Málaga, Málaga-Costa del Sol, Málaga, Andalucía, España",36.7213028,-4.4216366
+143,/title/tt0066701/,The Persuaders!,"Antibes, Alpes-Maritimes, France",,"Antibes, Grasse, Alpes-Maritimes, Provence-Alpes-Côte d'Azur, France métropolitaine, France",43.5836,7.10905
+144,/title/tt0066701/,The Persuaders!,"Pinewood Studios, Iver Heath, Buckinghamshire, England, UK",,"Pinewood Studios, Pinewood Green, Iver, Iver Heath, Buckinghamshire, South East, England, SL0 0QJ, United Kingdom",51.54831515,-0.5346765566753087
+145,/title/tt0066701/,The Persuaders!,"Brighton, East Sussex, England, UK",,"Brighton Electrical Assemblies, Seaford, Lewes, East Sussex, South East, England, United Kingdom",50.78357855,0.12148666117747367
+146,/title/tt0066701/,The Persuaders!,"Geneva, Canton de Genève, Switzerland",,"Genève, Switzerland",46.2017559,6.1466014
+147,/title/tt0066701/,The Persuaders!,"London, England, UK",,"London, Greater London, England, United Kingdom",51.5073219,-0.1276474
+148,/title/tt0066701/,The Persuaders!,"Nice, Alpes-Maritimes, France",,"Nice, Alpes-Maritimes, Provence-Alpes-Côte d'Azur, France métropolitaine, France",43.7009358,7.2683912
+149,/title/tt0066701/,The Persuaders!,"Roma, Lazio, Italy",,"Roma Capitale, Lazio, Italia",41.85223935,12.631036615953583
+150,/title/tt0076584/,Quel maledetto treno blindato,"Barbarano Romano, Viterbo, Lazio, Italy",,"Barbarano Romano, Viterbo, Lazio, Italia",42.2498341,12.0673735
+151,/title/tt0076584/,Quel maledetto treno blindato,"Cinecittà Studios, Cinecittà, Rome, Lazio, Italy",(studio) (studio: filmed on location at Cinecettà)                        ,,,
+152,/title/tt0076584/,Quel maledetto treno blindato,"Odescalchi Castle, Bracciano, Rome, Lazio, Italy",,"Castello Orsini-Odescalchi, Piazza Giuseppe Mazzini, Bracciano Due, Bracciano, Roma Capitale, 00062, Italia",42.10435245,12.177525405719047
+153,/title/tt0076584/,Quel maledetto treno blindato,"Vides Cinematografica, Rome, Lazio, Italy",(studio) (studio: filmed on location at Vides film Studios)                        ,,,
+154,/title/tt0000417/,Een avontuur bij de maan,"Méliès Studios, Montreuil, Seine-Saint-Denis, France",(studio) (filmed in studio)                        ,,,
+155,/title/tt1864750/,El tiempo entre costuras,"Tangier, Morocco",,"Tanger ⵟⴰⵏⵊⴰ طنجة, pachalik de Tanger طنجة, Préfecture de Tanger-Assilah عمالة طنجة-أصيلة, Tanger-Tétouan-Al Hoceima ⵟⴰⵏⵊ-ⵟⵉⵜⴰⵡⵉⵏ-ⵍⵃⵓⵙⵉⵎⴰ طنجة تطوان الحسيمة, 90013, Maroc",35.777103,-5.803792
+156,/title/tt1864750/,El tiempo entre costuras,"Madrid, Spain",,"Madrid, Área metropolitana de Madrid y Corredor del Henares, Comunidad de Madrid, 28001, España",40.4167047,-3.7035825
+157,/title/tt1864750/,El tiempo entre costuras,"San Lorenzo de El Escorial, Madrid, Spain",,"San Lorenzo de El Escorial, Cuenca del Guadarrama, Comunidad de Madrid, 28200, España",40.5926673,-4.1471642
+158,/title/tt1864750/,El tiempo entre costuras,"Estación de Algodor, Aranjuez, Madrid, Spain",(Train station)                        ,,,
+159,/title/tt0093543/,Mio min Mio,"Crimea, Ukraine",,"Кримській півострів, Амурское сельское поселение, Красногвардейский район, Автономна Республіка Крим, Україна",45.28350435,34.20081877526554
+160,/title/tt0093543/,Mio min Mio,"Stockholm, Stockholms län, Sweden",,"Stockholm, Stockholms kommun, Stockholms län, Svealand, 111 29, Sverige",59.3251172,18.0710935
+161,/title/tt0093543/,Mio min Mio,Ukraine,,Україна,49.4871968,31.2718321
+162,/title/tt1784141/,Öyle Bir Geçer Zaman ki,"Istanbul, Turkey",(location)                        ,"İstanbul, Beyazıt Meydanı, Beyazıt Mahallesi, Fatih, İstanbul, Marmara Bölgesi, 34126, Türkiye",41.0096215,28.9651867
+163,/title/tt0054296/,Seven Ways from Sundown,"Red Rock Canyon, Nevada, USA",(desert scenes)                        ,"Red Rock Canyon, Nye County, Nevada, United States of America",38.330498,-116.366859
+164,/title/tt0054296/,Seven Ways from Sundown,"Universal Studios - 100 Universal City Plaza, Universal City, California, USA",(studio)                        ,,,
+165,/title/tt0322389/,George of the Jungle 2,"Gold Coast Airport, Coolangatta, Queensland, Australia",(Las Vegas Airport scenes)                        ,,,
+166,/title/tt0322389/,George of the Jungle 2,"Queensland, Australia",,"Queensland, Australia",-22.1646782,144.5844903
+167,/title/tt0322389/,George of the Jungle 2,"Tallebudgera Valley, Queensland, Australia",,"Tallebudgera Valley, Gold Coast City, Queensland, 4233, Australia",-28.176418,153.3680026
+168,/title/tt5834426/,Moonfall,"MONTRÉAL, Québec, Canada",(stages)                        ,"Montréal, Agglomération de Montréal, Montréal (06), Québec, Canada",45.4972159,-73.6103642
+169,/title/tt0131704/,The Adventures of Rocky & Bullwinkle,"Chapman University - One University Drive, Orange, California, USA",,,,
+170,/title/tt0131704/,The Adventures of Rocky & Bullwinkle,"Placer County Courthouse - 101 Maple Street, Auburn, California, USA",(Ohio courthouse)                        ,,,
+171,/title/tt0131704/,The Adventures of Rocky & Bullwinkle,"Woodland, California, USA",,"Woodland, Yolo County, California, 95695, United States of America",38.6786109,-121.7733285
+172,/title/tt0131704/,The Adventures of Rocky & Bullwinkle,"Clarksburg, California, USA",,"Clarksburg, Yolo County, California, 95612, United States of America",38.4204651,-121.5271772
+173,/title/tt0131704/,The Adventures of Rocky & Bullwinkle,"New York, USA",,"New York, United States of America",40.7127281,-74.0060152
+174,/title/tt0131704/,The Adventures of Rocky & Bullwinkle,"Plymouth, California, USA",,"Plymouth, Amador, California, United States of America",38.4818531,-120.844659
+175,/title/tt0131704/,The Adventures of Rocky & Bullwinkle,"Santa Monica, California, USA",,"Santa Monica, Los Angeles County, California, United States of America",34.0250724,-118.4965129
+176,/title/tt0131704/,The Adventures of Rocky & Bullwinkle,"Washington, District of Columbia, USA",,"Washington, District of Columbia, 20230, United States of America",38.8949924,-77.0365581
+177,/title/tt0131704/,The Adventures of Rocky & Bullwinkle,"400 N. McClurg Ct, Chicago, Illinois, USA",(Car goes airborn across chicago river)                        ,"Lizzie McNeill‘s Irish Pub, 400, North McClurg Court, Near North Side, Chicago, Cook County, Illinois, 60601, United States of America",41.8890487,-87.6183126
+178,/title/tt0131704/,The Adventures of Rocky & Bullwinkle,"Apple Valley, California, USA",(The area where Boris & Natash are walking to the helicopter)                        ,"Apple Valley, San Bernardino County, California, United States of America",34.5008311,-117.1858759
+179,/title/tt0453494/,Hoot,"Fort Lauderdale, Florida, USA",,"Fort Lauderdale, Broward County, Florida, United States of America",26.1223084,-80.1433786
+180,/title/tt0453494/,Hoot,"Boca Grande, Florida, USA",,"Boca Grande, Lee County, Florida, 33921, United States of America",26.7489586,-82.262039
+181,/title/tt0453494/,Hoot,"Gasparilla Island, Florida, USA",,"Gasparilla Island, Lee County, Florida, 33921, United States of America",26.772291,-82.2662057
+182,/title/tt0097289/,Erik the Viking,Malta,,Malta,35.8885993,14.4476911
+183,/title/tt0097289/,Erik the Viking,"Tromsø, Norway",,"Tromsø, Troms og Finnmark, Norge",69.649208,18.9543434
+184,/title/tt6795336/,Days Gone,"New York City, New York, USA",,"New York, United States of America",40.7127281,-74.0060152
+185,/title/tt0240510/,The Four Feathers,"Blenheim Palace, Woodstock, Oxfordshire, England, UK",,"Blenheim Palace, Grand Bridge, Blenheim, West Oxfordshire, Oxfordshire, South East, England, OX20 1PX, United Kingdom",51.841967249999996,-1.3625986224673587
+186,/title/tt0240510/,The Four Feathers,"Shepperton Studios, Shepperton, Surrey, England, UK",(studio)                        ,,,
+187,/title/tt0240510/,The Four Feathers,"Greenwich, London, England, UK",,"Greenwich, Greater London, England, SE10 9HF, United Kingdom",51.4820845,-0.0045417
+188,/title/tt0240510/,The Four Feathers,"London, England, UK",,"London, Greater London, England, United Kingdom",51.5073219,-0.1276474
+189,/title/tt0240510/,The Four Feathers,"The Reform Club, Pall Mall, St. James's, London, England, UK",,"The Reform Club, 104, Pall Mall, St. James's, Covent Garden, City of Westminster, London, Greater London, England, SW1Y 5EW, United Kingdom",51.5065212,-0.1334356
+190,/title/tt0240510/,The Four Feathers,"Wyeford Farm Cottage, Ramsdell Tadley RG26 5QL UK",(location)                        ,,,
+191,/title/tt0075984/,Emanuelle e gli ultimi cannibali,"Fogliano, Latina, Lazio, Italy","(credited as Tapurucuara, Amazonas, Brazil)                        ","Fogliano, Strada Ada Wilbraham Caetani, Argilla, Latina, Italia",41.4072565,12.9171932
+192,/title/tt0075984/,Emanuelle e gli ultimi cannibali,"New York City, New York, USA",,"New York, United States of America",40.7127281,-74.0060152
+193,/title/tt0075984/,Emanuelle e gli ultimi cannibali,"Riviera Cafe - 225 W 4th Street, New York City, New York, USA",(Emanuelle and Professor Lester have dinner)                        ,,,
+194,/title/tt0075984/,Emanuelle e gli ultimi cannibali,"Rockefeller Plaza, Manhattan, New York City, New York, USA",(Emanuelle and Professor Lester have a walk)                        ,"Rockefeller Plaza, Midtown, Manhattan Community Board 5, Manhattan, New York County, New York, United States of America",40.7587571,-73.9786497893641
+195,/title/tt0075984/,Emanuelle e gli ultimi cannibali,"Cascata della Mola, Parco della Mola, Oriolo Romano, Lazio, Italy",,,,
+196,/title/tt0762125/,Planet 51,"Kingman, Arizona, USA",,"Kingman, Mohave County, Arizona, United States of America",35.189443,-114.0530065
+197,/title/tt0065134/,Two Mules for Sister Sara,"Jantetelco, Morelos, Mexico",,"Jantetelco, Morelos, México",18.67010935,-98.75668894204853
+198,/title/tt0065134/,Two Mules for Sister Sara,"Sierra Madre Occidental, Mexico",,"Sierra Madre Occidental, Guadalupe y Calvo, Chihuahua, México",25.948,-107.0339
+199,/title/tt0065134/,Two Mules for Sister Sara,"Tlayacapan, Morelos, Mexico",,"Tlayacapan, Morelos, México",18.9435437,-98.97125982688908
+200,/title/tt0065134/,Two Mules for Sister Sara,"Sierra Madre Occidental, Sonora, Mexico",,"Sierra Madre Occidental, Heroica Nogales, Municipio de Nogales, Sonora, 84030, México",31.3248176,-110.9190577
+201,/title/tt0065134/,Two Mules for Sister Sara,"Casa de Janos, Chihuahua, Mexico",,"Casa de Janos, Janos, Chihuahua, México",30.718207,-108.4223327
+202,/title/tt0065134/,Two Mules for Sister Sara,"Universal Studios - 100 Universal City Plaza, Universal City, California, USA",(studio)                        ,,,
+203,/title/tt0065134/,Two Mules for Sister Sara,USA,,United States,39.7837304,-100.4458825
+204,/title/tt0090683/,Babes in Toyland,"Bavaria Studios, Bavariafilmplatz 7, Geiselgasteig, Grünwald, Bavaria, Germany",,"Bavaria Studios, 7, Bavariafilmplatz, Geiselgasteig, Grünwald, Landkreis München, Bayern, 82031, Deutschland",48.0643519,11.5547475
+205,/title/tt4771896/,Tarde para la ira,"Martín Muñoz de las Posadas, Segovia, Castilla y León, Spain",,"Martín Muñoz de las Posadas, Segovia, Castilla y León, España",40.9943499,-4.5976807
+206,/title/tt4771896/,Tarde para la ira,"Móstoles, Madrid, Spain",,"Móstoles, Área metropolitana de Madrid y Corredor del Henares, Comunidad de Madrid, España",40.3238525,-3.8649214
+207,/title/tt4771896/,Tarde para la ira,"Barrio de Usera, Madrid, Spain",,,,
+208,/title/tt0231402/,Crocodile Dundee in Los Angeles,"Los Angeles, California, USA",,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+209,/title/tt0231402/,Crocodile Dundee in Los Angeles,"Melbourne, Victoria, Australia",,"Melbourne, City of Melbourne, Victoria, 3000, Australia",-37.8142176,144.9631608
+210,/title/tt0231402/,Crocodile Dundee in Los Angeles,"Queensland, Australia",,"Queensland, Australia",-22.1646782,144.5844903
+211,/title/tt0116322/,Flipper,"Stuart Cove's, New Providence Island, Bahamas",(fishing village)                        ,"Stuart Cove's, Southwest Road, New Providence, Bahamas",25.0011632,-77.5242797
+212,/title/tt0069729/,The Arena,"Rome, Lazio, Italy",,"Roma Capitale, Lazio, Italia",41.85223935,12.631036615953583
+213,/title/tt0338077/,Grind,"Los Angeles, California, USA",,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+214,/title/tt3319730/,The Mercy,"Teignmouth, Devon, England, UK",,"Teignmouth, Teignbridge, Devon, South West England, England, TQ14 8AJ, United Kingdom",50.5462805,-3.4958207
+215,/title/tt3319730/,The Mercy,Malta,,Malta,35.8885993,14.4476911
+216,/title/tt3319730/,The Mercy,"West London Film Studios, London, England, UK",(studio)                        ,,,
+217,/title/tt3319730/,The Mercy,"Bewl Water, Tunbridge Wells, Kent, England, UK",(Features as the Teignmouth inlet where Donald Crowhurst sails locally alone and with his family.)                        ,"The Waterfront at Bewl Water, Bewlbridge Lane, Lamberhurst, Tunbridge Wells, East Sussex, South East, England, TN3 8JH, United Kingdom",51.078846850000005,0.39092159999999765
+218,/title/tt1456941/,"Tomorrow, When the War Began","Blue Mountains, New South Wales, Australia",,"Blue Mountains City Council, New South Wales, Australia",-33.63511425,150.43750366422518
+219,/title/tt1456941/,"Tomorrow, When the War Began","Raymond Terrace, New South Wales, Australia",(Wirrawee)                        ,"Raymond Terrace, Newcastle-Maitland, Port Stephens Council, New South Wales, 2324, Australia",-32.7610569,151.7462299
+220,/title/tt1456941/,"Tomorrow, When the War Began","Fox Studios, Moore Park, Sydney, New South Wales, Australia",(studio)                        ,"Fox Studios Australia, Moore Park, Sydney, Council of the City of Sydney, New South Wales, 2021, Australia",-33.890960899999996,151.22750517838074
+221,/title/tt1456941/,"Tomorrow, When the War Began","Luskintyre Bridge, Luskintyre, New South Wales, Australia",(Wirrawee Bridge)                        ,"Luskintyre Bridge, Luskintyre Road, Lochinvar, Newcastle-Maitland, Maitland City Council, New South Wales, 2321, Australia",-32.6855929,151.4302386
+222,/title/tt1456941/,"Tomorrow, When the War Began","Dungog, New South Wales, Australia",,"Dungog, Dungog Shire Council, New South Wales, 2420, Australia",-32.4050241,151.7550117
+223,/title/tt1456941/,"Tomorrow, When the War Began","Sydney, New South Wales, Australia",,"Sydney, New South Wales, Australia",-33.8548157,151.2164539
+224,/title/tt0339072/,Gladiatress,"Butser Ancient Farm, Chalton, Hampshire, England, UK",,"Butser Ancient Farm, Chalton Lane, Clanfield, East Hampshire, Hampshire, South East, England, PO8 0QD, United Kingdom",50.94295695,-0.9771452607206612
+225,/title/tt0339072/,Gladiatress,"Bourne Woods, Farnham, Surrey, England, UK",,,,
+226,/title/tt0339072/,Gladiatress,"Frensham Ponds, Farnham, Surrey, England, UK",,,,
+227,/title/tt0339072/,Gladiatress,"Waverly Borough, Surrey, England, UK",,,,
+228,Code,Show Name,Location,Scene,"Location, Tucker County, West Virginia, United States of America",39.2138905,-79.6371124
+229,/title/tt1869716/,The East,"Shreveport, Louisiana, USA",,"Shreveport, Caddo Parish, Louisiana, United States of America",32.5221828,-93.7651944
+230,/title/tt2017561/,Xi you: Xiang mo pian,"Heng Dian, China",,"横店, 金东区, 金华市, 浙江省, China 中国",29.0483593,119.7382631
+231,/title/tt0119053/,Almost Heroes,"Humboldt Lagoons State Park - 15330 Highway 101, Trinidad, California, USA",,,,
+232,/title/tt0119053/,Almost Heroes,"Humboldt County, California, USA",,"Humboldt County, California, United States of America",40.5997415,-123.8997734
+233,/title/tt0119053/,Almost Heroes,"Redding, California, USA",(Indian village built along Sacramento River)                        ,"Redding, Shasta County, California, United States of America",40.5863563,-122.3916754
+234,/title/tt0119053/,Almost Heroes,"Black's Beach, La Jolla, San Diego, California, USA",,"Black's Beach, Ho Chi Minh Trail, La Jolla Farms, Torrey Pines, San Diego, San Diego County, California, 92093, United States of America",32.888223,-117.2531425
+235,/title/tt0402057/,Beowulf & Grendel,Iceland,,Ísland,64.9841821,-18.1059013
+236,/title/tt4719586/,Mar de plástico,"Almería, Andalucía, Spain",,"Almería, Andalucía, España",36.8414197,-2.4628135
+237,/title/tt0081112/,Mangiati vivi!,"Times Square, Manhattan, New York City, New York, USA",(opening credits sequence)                        ,"Times Square, West 45th Street, Times Square, Manhattan Community Board 5, Times Square, New York County, New York, 10036, United States of America",40.757280550000004,-73.98585503545917
+238,/title/tt0081112/,Mangiati vivi!,"New York City, New York, USA",(opening scenes)                        ,"New York, United States of America",40.7127281,-74.0060152
+239,/title/tt0081112/,Mangiati vivi!,Sri Lanka,(the jungle)                        ,ශ්‍රී ලංකාව இலங்கை,7.5554942,80.7137847
+240,/title/tt0087127/,Deathstalker,Argentina,,Argentina,-34.9964963,-64.9672817
+241,/title/tt6958212/,Sweet Country,"Lake Gairdner, South Australia, Australia",,"Lake Gairdner, Pastoral Unincorporated Area, South Australia, Australia",-31.701646750000002,136.01510673557163
+242,/title/tt6958212/,Sweet Country,"South Australia, Australia",,"South Australia, Australia",-30.5343665,135.6301212
+243,/title/tt6958212/,Sweet Country,"Northern Territory, Australia",,"Northern Territory, Australia",-19.8516101,133.2303375
+244,/title/tt6958212/,Sweet Country,"Eyre Peninsula, South Australia, Australia",(environs)                        ,"Eyre Peninsula, Kielpa, The District Council of Cleve, South Australia, 5642, Australia",-33.54541,136.07401633962448
+245,/title/tt6958212/,Sweet Country,"Far Northern South Australia, South Australia, Australia",,,,
+246,/title/tt6958212/,Sweet Country,"Alice Springs, Northern Territory, Australia",,"Alice Springs, Town of Alice Springs, Northern Territory, 0870, Australia",-23.6983884,133.8812885
+247,/title/tt6958212/,Sweet Country,"MacDonnell Ranges, Northern Territory, Australia",,"MacDonnell Ranges, Northern Territory, Australia",-23.9602583,132.7757512
+248,/title/tt6958212/,Sweet Country,"Trephina Gorge, Northern Territory, Australia",,"Trephina Gorge Road, Central Desert Region, Northern Territory, Australia",-23.544606,134.3788179
+249,/title/tt6958212/,Sweet Country,"Ooraminna Station Homestead - Maryvale Road, Hale, Northern Territory, Australia",(western town: Henry)                        ,,,
+250,/title/tt6958212/,Sweet Country,"Ooraminna Station - Maryvale Road, Hale, Northern Territory, Australia",(western town: Henry)                        ,,,
+251,/title/tt6958212/,Sweet Country,"Ooraminna Station, Northern Territory, Australia",(Ooraminna Station Filmset)                        ,"Mount Ooraminna, Alice Springs, Northern Territory, Australia",-24.08919,134.00665
+252,/title/tt0101084/,Doug,"New York City, New York, USA",,"New York, United States of America",40.7127281,-74.0060152
+253,/title/tt0089110/,Star Wars: Ewok Adventures - The Battle for Endor,"Marin County, California, USA",(Same as the first Ewok movie)                        ,"Marin County, California, United States of America",38.0409144,-122.6199638
+254,/title/tt0076716/,Sinbad en het oog van de tijger,"Petra, Jordan",(Melanthius' castle)                        ,"البتراء (Petra), ""Royal tombs"" footpath, أم صيحون, معان, 71811, Jordan / الأُرْدُن",30.3273975,35.4464006
+255,/title/tt0076716/,Sinbad en het oog van de tijger,Jordan,,الأردن,31.1667049,36.941628
+256,/title/tt0076716/,Sinbad en het oog van de tijger,"Lee International Studios, Shepperton, Surrey, England, UK",(studio) (studio: made at)                        ,,,
+257,/title/tt0076716/,Sinbad en het oog van de tijger,"Almería, Andalucía, Spain",(Zenobia's palace)                        ,"Almería, Andalucía, España",36.8414197,-2.4628135
+258,/title/tt0076716/,Sinbad en het oog van de tijger,"Pyrenees Mountains, Spain",(second unit)                        ,,,
+259,/title/tt0076716/,Sinbad en het oog van de tijger,"Manzanares el Real, Madrid, Spain",(as Hyperborea)                        ,"Manzanares el Real, Cuenca Alta del Manzanares, Comunidad de Madrid, 28410, España",40.7267632,-3.864981
+260,/title/tt0095800/,L'ours,"Dolomites, Italy",,"Dolomiti, Agordo, Belluno, Veneto, Italia",46.29459455,12.051191718698618
+261,/title/tt1781896/,The Scorpion King 3: Battle for Redemption,Thailand,,ประเทศไทย,14.8971921,100.83273
+262,/title/tt2739708/,Assassin's Creed IV: Black Flag,"Carribean Club, Key Largo, Florida, USA",,,,
+263,/title/tt0109402/,The Chase,"Hardy Toll Road, Houston, Texas, USA",,"Hardy Toll Road, Houston, Harris County, Texas, 77022, United States of America",29.818858,-95.355059
+264,/title/tt0109402/,The Chase,"Houston Police Headquarters - 61 Reisner Street, Houston, Texas, USA",,,,
+265,/title/tt0109402/,The Chase,"Kemah, Texas, USA",(scene at convenience store)                        ,"Kemah, Galveston County, Texas, United States of America",29.5427297,-95.0204837
+266,/title/tt0109402/,The Chase,"Sam Houston Tollway, Houston, Texas, USA",,"West Sam Houston Tollway North, Memorial Bend, Spring Branch West, Houston, Harris County, Texas, 77079, United States of America",29.7672267,-95.5616276
+267,/title/tt0109402/,The Chase,"Irvine, California, USA",,"Irvine, Orange County, California, United States of America",33.6856969,-117.8259819
+268,/title/tt0023238/,The Most Dangerous Game,"San Pedro Harbor, Long Beach, California, USA",,,,
+269,/title/tt0023238/,The Most Dangerous Game,"Los Angeles Harbor, San Pedro, Los Angeles, California, USA",,"Los Angeles Harbor, Miner Street, San Pedro, Los Angeles, Los Angeles County, California, 90731, United States of America",33.7097418,-118.2675707
+270,/title/tt0023238/,The Most Dangerous Game,"San Pedro, Los Angeles, California, USA",,"San Pedro, Los Angeles, Los Angeles County, California, 90731, United States of America",33.7358518,-118.2922934
+271,/title/tt0023238/,The Most Dangerous Game,"California, USA",,"California, United States of America",36.7014631,-118.7559974
+272,/title/tt0023238/,The Most Dangerous Game,"Los Angeles, California, USA",,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+273,/title/tt0023238/,The Most Dangerous Game,"Rancho Palos Verdes, California, USA",,"Rancho Palos Verdes, Los Angeles County, California, 90274, United States of America",33.7483311,-118.3707683
+274,/title/tt0023238/,The Most Dangerous Game,"San Pedro Bay, California, USA",,"San Pedro Bay, Pier J Way, Long Beach, Los Angeles County, California, 90802, United States of America",33.733352,-118.2009017
+275,/title/tt0023238/,The Most Dangerous Game,"Marineland of the Pacific - 6610 Palos Verdes Drive South, Rancho Palos Verdes, California, USA",,,,
+276,/title/tt0115378/,Superman,"Warner Brothers Burbank Studios - 4000 Warner Boulevard, Burbank, California, USA",,,,
+277,/title/tt0092615/,The Barbarians,"Campo Imperatore, L'Aquila, Abruzzo, Italy",,"Campo Imperatore, L'Aquila, Abruzzo, Italia",42.4430453,13.5587238
+278,/title/tt4120762/,Easy Does It,"Mississippi, USA",,"Mississippi, United States of America",32.9715645,-89.7348497
+279,/title/tt4120762/,Easy Does It,"Texas, USA",,"Texas, United States of America",31.8160381,-99.5120986
+280,/title/tt4120762/,Easy Does It,"Fort Davis, Texas, USA",,"Fort Davis, Jeff Davis County, Texas, United States of America",30.5891919,-103.8947154
+281,/title/tt6298780/,Sharknado 5: Global Swarming,"Sofia, Bulgaria",(location)                        ,"София, Столична, София-град, България",42.6978634,23.3221789
+282,/title/tt6298780/,Sharknado 5: Global Swarming,"Tokyo, Japan",(location)                        ,"東京都, 日本 (Japan)",35.6828387,139.7594549
+283,/title/tt6298780/,Sharknado 5: Global Swarming,Australia,,Australia,-24.7761086,134.755
+284,/title/tt6298780/,Sharknado 5: Global Swarming,"Los Angeles, California, USA",(studio)                        ,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+285,/title/tt6298780/,Sharknado 5: Global Swarming,"London, England, UK",,"London, Greater London, England, United Kingdom",51.5073219,-0.1276474
+286,/title/tt6298780/,Sharknado 5: Global Swarming,UK,,United Kingdom,54.7023545,-3.2765753
+287,/title/tt0073636/,Rooster Cogburn,"Rogue River, Oregon, USA",,"Rogue River, Jackson County, Oregon, 97537, United States of America",42.4334755,-123.1687874
+288,/title/tt0073636/,Rooster Cogburn,"Smith Rock State Park, Oregon, USA",,"Smith Rock State Park, 9241, Northeast Crooked River Drive, Deschutes County, Oregon, 97760, United States of America",44.3667321,-121.1416894279391
+289,/title/tt0073636/,Rooster Cogburn,"Six Points Texas, Backlot, Universal Studios - 100 Universal City Plaza, Universal City, California, USA",,,,
+290,/title/tt1866570/,Labyrinth,"Carcassonne, Aude, France",,"Carcassonne, Aude, Occitanie, France métropolitaine, 11000, France",43.2130358,2.3491069
+291,/title/tt1866570/,Labyrinth,"Cape Town Film Studios, Cape Town, Western Cape, South Africa",,"Cape Town Film Studios, Film City Boulevard, Houghton, Cape Town Ward 16, Eersterivier, City of Cape Town, Western Cape, 7784, South Africa",-34.0315617,18.719156772105897
+292,/title/tt1866570/,Labyrinth,South Africa,,South Africa,-28.8166236,24.991639
+293,/title/tt0102034/,Highlander II: The Quickening,"Dique de Ull&uacutem, San Juan, Argentina","(Opening, when the actor is running besides water)                        ",,,
+294,/title/tt5970844/,Thugs of Hindostan,Malta,,Malta,35.8885993,14.4476911
+295,/title/tt0312109/,Codename: Kids Next Door,"Burbank, California, USA",(studio) (Cartoon Network Studios)                        ,"Burbank, Los Angeles County, California, United States of America",34.1816482,-118.3258554
+296,/title/tt0312109/,Codename: Kids Next Door,"New York City, New York, USA",,"New York, United States of America",40.7127281,-74.0060152
+297,/title/tt1562871/,Ra.One,"Film City, Goregaon, Mumbai, Maharashtra, India",,"Dadasaheb Phalke Chitranagari, Goregaon Mulund Link Road, T Ward, Zone 6, Mumbai, Mumbai Suburban, Maharashtra, 400082, India",19.1587785,72.89173887052404
+298,/title/tt1562871/,Ra.One,"Filmistan Studios, Mumbai, Maharashtra, India",(studio)                        ,"Filmistan Studio, P/S Ward, Zone 4, Mumbai, Mumbai Suburban, Maharashtra, 400062, India",19.1653211,72.84477306829942
+299,/title/tt1562871/,Ra.One,"Mehboob Studios, Mumbai, Maharashtra, India",(studio)                        ,"Mehboob Studio, Mount Carmel Road, Mount Mary, Bandra West, Zone 3, Mumbai, Mumbai Suburban, Maharashtra, 400050, India",19.0524573,72.8247562
+300,/title/tt1562871/,Ra.One,"Chhatrapati Shivaji Terminus, Mumbai, Maharashtra, India",(train sequence)                        ,"Chhatrapati Shivaji Maharaj Terminus - CSMT, CSMT, Bori Bunder, A Ward, Zone 1, Mumbai, Mumbai City, Maharashtra, 40001, India",18.9398641,72.8354116
+301,/title/tt1595842/,Fred: The Movie,"10048 Nita Ave Chatsworth, California, USA",(Fred Figglehorn's house.)                        ,"10048, Nita Avenue, Chatsworth, Los Angeles, Los Angeles County, California, 91311, United States of America",34.25245579923994,-118.61358310124707
+302,/title/tt0462396/,The Last Legion,"Cerveny Castle, Pezinok, Slovakia",,"Červený kameň, Hlavná, Píla, Bratislavský kraj, 90089, Slovensko",48.39157005,17.335191431829102
+303,/title/tt0462396/,The Last Legion,Slovakia,,Slovensko,48.7411522,19.4528646
+304,/title/tt9362722/,Spider-Man: Into the Spider-Verse 2,"New York City, New York, USA",(location)                        ,"New York, United States of America",40.7127281,-74.0060152
+305,/title/tt9362722/,Spider-Man: Into the Spider-Verse 2,"Los Angeles, California, USA",(beach scenes)                        ,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+306,/title/tt0419326/,Foster's Home for Imaginary Friends,"New York City, New York, USA",(studio) (Cartoon Network Studios)                        ,"New York, United States of America",40.7127281,-74.0060152
+307,/title/tt0120512/,Wild America,"Fort Smith, Arkansas, USA",,"Fort Smith, Sebastian County, Arkansas, United States of America",35.3872218,-94.4248983
+308,/title/tt0120512/,Wild America,"Drumheller, Alberta, Canada",,"Drumheller, Town of Drumheller, Alberta, T0J 0Y0, Canada",51.4662795,-112.7046642
+309,/title/tt0120512/,Wild America,"Monument Valley, Utah, USA",,"Monument, Disera Boulevard, Magna, Salt Lake County, Utah, 84044, United States of America",40.7143227,-112.1045506
+310,/title/tt0120512/,Wild America,"Savannah, Georgia, USA",,"Savannah, Chatham County, Georgia, United States of America",32.0809263,-81.0911768
+311,/title/tt0120512/,Wild America,"Tybee Island, Georgia, USA",,"Tybee Island, Chatham County, Georgia, 31328, United States of America",31.9987321,-80.8469427
+312,/title/tt0120512/,Wild America,"Calgary, Alberta, Canada",,"Calgary, Strathmore (town), Alberta, Canada",51.0534234,-114.0625892
+313,/title/tt0076210/,The Island of Dr. Moreau,"St. Croix, U.S. Virgin Islands",,"Saint Croix, Saint Croix District, United States Virgin Islands, United States of America",17.7289564,-64.75901597858353
+314,/title/tt0120389/,Turbo: A Power Rangers Movie,"Hawaii, USA",,"Hawaii, United States of America",19.58726775,-155.42688965312746
+315,/title/tt0120389/,Turbo: A Power Rangers Movie,"Iao Valley, Maui, Hawaii, USA",,"ʻĪao Valley State Monument, Wailuku, Maui County, Hawaii, United States of America",20.88058625,-156.54712161968934
+316,/title/tt0120389/,Turbo: A Power Rangers Movie,"The Pilgrim, South Bay, Los Angeles, California, USA",,,,
+317,/title/tt0120389/,Turbo: A Power Rangers Movie,"Brandeis-Bardin Institute - 1101 Pepper Tree Lane, Simi Valley, California, USA","(Command Center, exteriors)                        ",,,
+318,/title/tt0120389/,Turbo: A Power Rangers Movie,"Valencia Studios - 26030 Avenue Hall, Valencia, California, USA",(studio) (studio: stage 3)                        ,,,
+319,/title/tt0120389/,Turbo: A Power Rangers Movie,"Woodland Hills, Los Angeles, California, USA",(studio)                        ,"Woodland Hills, Los Angeles, Los Angeles County, California, 91364, United States of America",34.1684364,-118.6058382
+320,/title/tt0059260/,Help!,"Liverpool, Merseyside, England, UK",,,,
+321,/title/tt0059260/,Help!,"Obertauern, Salzburg, Austria",,"Obertauern, Bezirk St. Johann im Pongau, Salzburg, 5562, Österreich",47.2494362,13.5569603
+322,/title/tt0059260/,Help!,"Strand-on-the-Green, Chiswick, London, England, UK",,"Strand on the Green, London Borough of Hounslow, London, Greater London, England, W4 3NN, United Kingdom",51.4877647,-0.2867744
+323,/title/tt0059260/,Help!,"Asprey's Jewellers, New Bond Street, Mayfair, London, England, UK",,,,
+324,/title/tt0059260/,Help!,"Dolphin Restaurant, Blandford Street, Marylebone, London, England, UK",(Rajahama Restaurant)                        ,,,
+325,/title/tt0059260/,Help!,"South Western Road, St Margarets, Twickenham, Middlesex, England, UK",(villain in postbox scene)                        ,,,
+326,/title/tt0059260/,Help!,"Winchester Road, Twickenham, Middlesex, England, UK",(weighing scales scene)                        ,,,
+327,/title/tt0760329/,The Water Horse,"Ardkinglas House, Cairndow, Argyll and Bute, Scotland, UK",,"Ardkinglas House, A815, Cairndow, Argyll and Bute, Scotland, PA26 8BQ, United Kingdom",56.25081285,-4.947039659089048
+328,/title/tt0760329/,The Water Horse,"Scotland, UK",,"Scotland, United Kingdom",56.7861112,-4.1140518
+329,/title/tt0760329/,The Water Horse,"Lake Wakatipu, Queenstown, Otago, New Zealand",,"Lake Wakatipu, Queenstown-Lakes District, Otago, New Zealand",-45.08880415,168.52111077909876
+330,/title/tt0760329/,The Water Horse,"Camperdown Studios, Camperdown Road, Miramar, Wellington, New Zealand",(studio)                        ,,,
+331,/title/tt0053085/,The Mummy,"Bray Studios, Down Place, Oakley Green, Berkshire, England, UK",(studio) (studio: produced at)                        ,,,
+332,Code,Show Name,Location,Scene,"Location, Tucker County, West Virginia, United States of America",39.2138905,-79.6371124
+333,/title/tt0050079/,Zorro,"Old Tucson - 201 S. Kinney Road, Tucson, Arizona, USA",,"Old Tucson, 201, Kinney Road, Tucson Estates, Pima County, Arizona, 85735, United States of America",32.2186224,-111.1300273
+334,/title/tt0050079/,Zorro,"Iverson Ranch - 1 Iverson Lane, Chatsworth, Los Angeles, California, USA",,,,
+335,/title/tt0050079/,Zorro,"Bell Ranch, Santa Susana, California, USA",,,,
+336,/title/tt0050079/,Zorro,"Vasquez Rocks Natural Area Park - 10700 W. Escondido Canyon Rd., Agua Dulce, California, USA",,,,
+337,/title/tt2092452/,Pirates of the Caribbean: Tales of the Code: Wedlocked,"Walt Disney Studios, 500 South Buena Vista Street, Burbank, California, USA",,,,
+338,/title/tt1153546/,BloodRayne: The Third Reich,"Zagreb, Croatia",,"Zagreb, Grad Zagreb, Hrvatska",45.813177,15.977048
+339,/title/tt1921149/,Trash,"Rio de Janeiro, Rio de Janeiro, Brazil",,"Rio de Janeiro, Região Geográfica Imediata do Rio de Janeiro, Região Metropolitana do Rio de Janeiro, Região Geográfica Intermediária do Rio de Janeiro, Rio de Janeiro, Região Sudeste, Brasil",-22.9110137,-43.2093727
+340,/title/tt1921149/,Trash,Brazil,,Brasil,-10.3333333,-53.2
+341,/title/tt0901487/,Joheunnom nabbeunnom isanghannom,South Korea,,대한민국,36.638392,127.6961188
+342,/title/tt0076993/,Centennial,"Bracken County, Kentucky, USA","(exterior shots representing St. Louis, MO)                        ","Bracken County, Kentucky, United States of America",38.686946,-84.0751461
+343,/title/tt0076993/,Centennial,"Central City, Colorado, USA",,"Central City, Gilpin County, Colorado, 80427, United States of America",39.8019322,-105.5141639
+344,/title/tt0076993/,Centennial,"Roscoe Village, Ohio, USA",,"Roscoe, Coshocton, Coshocton County, Ohio, 43812, United States of America",40.2772928,-81.8792989
+345,/title/tt0076993/,Centennial,"Alamo Village - Highway 674, Brackettville, Texas, USA",,,,
+346,/title/tt0076993/,Centennial,"Denver, Colorado, USA",,"Denver, Denver County, Colorado, United States of America",39.7392364,-104.9848623
+347,/title/tt0076993/,Centennial,"Orchard, Colorado, USA",,"Orchard, Morgan County, Colorado, 80649, United States of America",40.3310931,-104.1182837
+348,/title/tt0076993/,Centennial,"Port Washington, Ohio, USA",,"Port Washington, Tuscarawas County, Ohio, United States of America",40.328124,-81.5206731
+349,/title/tt0059557/,Derek Flint 1e Klas-6eDan,"Malibu Creek State Park - 1925 Las Virgenes Road, Calabasas, California, USA",(Galaxy Island roaming park)                        ,,,
+350,/title/tt0059557/,Derek Flint 1e Klas-6eDan,"Washington Dulles International Airport - 45020 Aviation Drive, Sterling, Virginia, USA",,,,
+351,/title/tt0059557/,Derek Flint 1e Klas-6eDan,"20th Century Fox Studios - 10201 Pico Blvd., Century City, Los Angeles, California, USA",(studio)                        ,,,
+352,/title/tt0825283/,Maximum Ride,"Phoenix, Arizona, USA",,"Phoenix, Maricopa County, Arizona, United States of America",33.4484367,-112.0741417
+353,/title/tt0825283/,Maximum Ride,"Nebraska, USA",,"Nebraska, United States of America",41.7370229,-99.5873816
+354,/title/tt0825283/,Maximum Ride,"Paris, France",,"Paris, Île-de-France, France métropolitaine, France",48.8566969,2.3514616
+355,/title/tt0261492/,Sheena,"Orlando, Florida, USA",,"Orlando, Orange County, Florida, United States of America",28.5421109,-81.3790304
+356,/title/tt0100813/,Treasure Island,Jamaica,,"Jamaica, Spanish Town, Saint Catherine, Middlesex County, Jamaika",18.1152958,-77.1598454610168
+357,/title/tt0100813/,Treasure Island,"Cornwall, England, UK",,"Cornwall, Broadoak, Cornwall, South West England, England, United Kingdom",50.443348900000004,-4.62465658489158
+358,/title/tt0085088/,Scarecrow and Mrs. King,"Washington, District of Columbia, USA",,"Washington, District of Columbia, 20230, United States of America",38.8949924,-77.0365581
+359,/title/tt0085088/,Scarecrow and Mrs. King,"Stage 20, Warner Brothers Burbank Studios - 4000 Warner Boulevard, Burbank, California, USA",,,,
+360,/title/tt0098193/,The Return of Swamp Thing,"Savannah, Georgia, USA",,"Savannah, Chatham County, Georgia, United States of America",32.0809263,-81.0911768
+361,/title/tt0078564/,B.J. and the Bear,"RMS Queen Mary - 1126 Queens Highway, Long Beach, California, USA",,,,
+362,/title/tt0078564/,B.J. and the Bear,"Walt Disney's Golden Oak Ranch - 19802 Placerita Canyon Road, Newhall, California, USA",,,,
+363,/title/tt0090009/,She,"Rome, Lazio, Italy",,"Roma Capitale, Lazio, Italia",41.85223935,12.631036615953583
+364,/title/tt5628418/,Askeladden - I Dovregubbens hall,"Gaustatoppen, Rjukan, Tinn, Norway",,,,
+365,/title/tt5628418/,Askeladden - I Dovregubbens hall,"Rjukan, Telemark, Norway",,"Rjukan, Tinn, Vestfold og Telemark, 3660, Norge",59.8786889,8.5941727
+366,/title/tt0075232/,The Slipper and the Rose: The Story of Cinderella,"Southwark Cathedral, Southwark, London, England, UK",,"Southwark Cathedral, Montague Close, Borough, Southwark, London Borough of Southwark, London, Greater London, England, SE1 9BB, United Kingdom",51.5061099,-0.08968911671052067
+367,/title/tt0075232/,The Slipper and the Rose: The Story of Cinderella,"Broughton Castle, Banbury, Oxfordshire, England, UK",,,,
+368,/title/tt0075232/,The Slipper and the Rose: The Story of Cinderella,"Salzburg, Salzburg, Austria",,"Salzburg, 5020, Österreich",47.7981346,13.0464806
+369,/title/tt1242422/,Celda 211,"Zamora, Castilla y León, Spain",,"Zamora, Castilla y León, España",41.6857693,-5.942315018340977
+370,/title/tt7167630/,Batman: Gotham by Gaslight,"London, England, UK",(street scenes)                        ,"London, Greater London, England, United Kingdom",51.5073219,-0.1276474
+371,/title/tt2494376/,Justice League Dark,"Chicago Illinois, USA",(on location)                        ,"Chicago, Cook County, Illinois, United States of America",41.8755616,-87.6244212
+372,/title/tt0116151/,Dunston Checks In,"The Dorchester, London, England, UK",(Interior)                        ,"The Dorchester, 53, Park Lane, Mayfair, City of Westminster, London, Greater London, England, W1K 1QA, United Kingdom",51.5072956,-0.15236344724427384
+373,/title/tt0071569/,The Golden Voyage of Sinbad,"Torrent de Pareis, Mallorca, Balearic Islands, Spain",(Lemuria beach landing)                        ,,,
+374,/title/tt0071569/,The Golden Voyage of Sinbad,"Madrid, Spain",,"Madrid, Área metropolitana de Madrid y Corredor del Henares, Comunidad de Madrid, 28001, España",40.4167047,-3.7035825
+375,/title/tt0071569/,The Golden Voyage of Sinbad,"Royal Palace of La Almudaina, Palma de Mallorca, Mallorca, Spain",,"Palau de l'Almudaina, Carrer del Conquistador, el Call, Canamunt, Palma, Illes Balears, 07001, España",39.56797155,2.6471684458378633
+376,/title/tt0071569/,The Golden Voyage of Sinbad,"Castillo de Manzanares El Real, Madrid, Spain",(Castle)                        ,"El Castillo, Manzanares el Real, Cuenca Alta del Manzanares, Comunidad de Madrid, 28410, España",40.7527705,-3.8784362
+377,/title/tt0061255/,Gentle Ben,"Palm Beach Gardens, Florida, USA",,"Palm Beach Gardens, Palm Beach County, Florida, United States of America",26.8418256,-80.13590694666684
+378,/title/tt0061255/,Gentle Ben,"Fairchild Tropical Garden - 10901 Old Cutler Road, Miami, Florida, USA",,,,
+379,/title/tt0061255/,Gentle Ben,"Everglades National Park, Florida, USA",,"Everglades National Park, Florida, 34138, United States of America",25.3870275,-80.88026316596292
+380,/title/tt1286130/,The Plan,"Vancouver, British Columbia, Canada",,"Vancouver, Metro Vancouver Regional District, British Columbia, Canada",49.2608724,-123.1139529
+381,/title/tt0353324/,The Crow: Wicked Prayer,"Salt Lake City, Utah, USA",,"Salt Lake City, Salt Lake County, Utah, United States of America",40.7596198,-111.8867975
+382,/title/tt2262308/,Halo 4: Forward Unto Dawn,"Simon Fraser University, Burnaby, British Columbia, Canada",,"Simon Fraser University, University Crescent, Burnaby, Metro Vancouver Regional District, British Columbia, V5A 0A1, Canada",49.276709600000004,-122.91780296438841
+383,/title/tt2262308/,Halo 4: Forward Unto Dawn,"British Columbia Institute of Technology, Burnaby, British Columbia, Canada",(Shower & Cafeteria Scenes)                        ,"British Columbia Institute Of Technology, 3700, Willingdon Avenue, Garden Village, Burnaby, Metro Vancouver Regional District, British Columbia, V5G 4J3, Canada",49.2483594,-123.00117088683209
+384,/title/tt1704503/,Power Rangers Samurai,"Auckland, New Zealand",,"Auckland, 1010, New Zealand",-36.852095,174.7631803
+385,/title/tt3340446/,Storm Boy,"Lake Alexandrina, South Australia, Australia",(environs)                        ,"Lake Alexandrina, South Australia, 5256, Australia",-35.45804295,139.1748895373574
+386,/title/tt3340446/,Storm Boy,"Coorong National Park, South Australia, Australia",,"Coorong National Park, Coorong, Coorong District Council, South Australia, 5264, Australia",-35.9934463,139.50833083852524
+387,/title/tt3340446/,Storm Boy,"The Coorong, South Australia, Australia",,"Coorong District Council, South Australia, Australia",-35.7186825,139.76149032652
+388,/title/tt3340446/,Storm Boy,"The Strand, Port Elliot, South Australia, Australia",,"The Strand, Port Elliot, Alexandrina Council, South Australia, 5212, Australia",-35.5335228,138.6817694
+389,/title/tt3340446/,Storm Boy,"Lake Albert, South Australia, Australia",(environs)                        ,"Lake Albert, South Australia, 5259, Australia",-35.62348225,139.30445674323326
+390,/title/tt3340446/,Storm Boy,"City of Onkaparinga, South Australia, Australia",,"City of Onkaparinga, South Australia, Australia",-35.1868469,138.5825146980056
+391,/title/tt3340446/,Storm Boy,"Coast, South Australia, Australia",,"Copper Coast Council, South Australia, Australia",-33.9403987,137.73171829846203
+392,/title/tt3340446/,Storm Boy,"Southern Ocean, South Australia, Australia",,"Southern Ocean, Jetty Road, Vivonne Bay, Kangaroo Island Council, South Australia, 5223, Australia",-35.9967513,137.1890523
+393,/title/tt3340446/,Storm Boy,"Younghusband Peninsula, South Australia, Australia",,,,
+394,/title/tt3340446/,Storm Boy,"Port Elliot, South Australia, Australia",,"Port Elliot, Alexandrina Council, South Australia, 5212, Australia",-35.5309995,138.6806344
+395,/title/tt3340446/,Storm Boy,"Coorong Lake, Younghusband Peninsula, South Australia, Australia",,,,
+396,/title/tt3340446/,Storm Boy,"St Vincent Gulf, South Australia, Australia",(environs)                        ,,,
+397,/title/tt3340446/,Storm Boy,"Alexandrina District, South Australia, Australia",,"Alexandrina Road, Mount Barker, Mount Barker District Council, South Australia, 5251, Australia",-35.0758408,138.8729915
+398,/title/tt3340446/,Storm Boy,"Hindmarsh Island, South Australia, Australia",,"Hindmarsh Island, Alexandrina Council, South Australia, Australia",-35.5223365,138.86235127529625
+399,/title/tt3340446/,Storm Boy,"Adelaide, South Australia, Australia",,"Adelaide, Adelaide City Council, South Australia, Australia",-34.9281805,138.5999312
+400,/title/tt0058816/,I Spy,"Desilu Studios - 9336 W. Washington Blvd., Culver City, California, USA",(studio)                        ,,,
+401,/title/tt0058816/,I Spy,"Paramount Studios - 5555 Melrose Avenue, Hollywood, Los Angeles, California, USA",(1968)                        ,,,
+402,/title/tt0058816/,I Spy,"Acapulco, Guerrero, Mexico",,"Acapulco, Acapulco de Juárez, Guerrero, 39300, México",16.8680495,-99.8940182
+403,/title/tt0058816/,I Spy,"London, England, UK",,"London, Greater London, England, United Kingdom",51.5073219,-0.1276474
+404,/title/tt0058816/,I Spy,"Mexico City, Distrito Federal, Mexico",,"México, Calle Benito Juárez, Unidad Habitacional Integración Latinoamericana, Naucalpan, 04350, México",19.337797000000002,-99.17851255290537
+405,/title/tt0058816/,I Spy,"Rome, Lazio, Italy",,"Roma Capitale, Lazio, Italia",41.85223935,12.631036615953583
+406,/title/tt0058816/,I Spy,"Los Angeles, California, USA",,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+407,/title/tt0058816/,I Spy,"Tokyo, Japan",,"東京都, 日本 (Japan)",35.6828387,139.7594549
+408,/title/tt0059710/,She,"Negev Desert, Israel",,"Ramat Negev Desert Agro-Research Center, כביש מנדטורי, מועצה אזורית רמת נגב, no, ישראל",30.9823078,34.710035007790054
+409,/title/tt0059710/,She,"Associated British Elstree Studios, Shenley Road, Borehamwood, Hertfordshire, England, UK",(studio) (studio Interiors) (uncredited)                        ,,,
+410,Code,Show Name,Location,Scene,"Location, Tucker County, West Virginia, United States of America",39.2138905,-79.6371124
+411,/title/tt0043067/,Treasure Island,"Carrick Roads, Cornwall, England, UK",,"Carrick Roads, Castle Drive, Falmouth, Cornwall, South West England, England, TR11 4NG, United Kingdom",50.1720505,-5.03379813325925
+412,/title/tt0043067/,Treasure Island,"Devon, England, UK",(sea cliffs)                        ,"Devon, Tedburn St. Mary, Teignbridge, Devon, South West England, England, United Kingdom",50.724165,-3.660795843955193
+413,/title/tt0043067/,Treasure Island,"Falmouth, Cornwall, England, UK",(wharf scene)                        ,"Falmouth, Cornwall, South West England, England, TR11 3AT, United Kingdom",50.1552197,-5.0688262
+414,/title/tt0043067/,Treasure Island,"Black Park, Iver Heath, Buckinghamshire, England, UK",,"Black Park, Wexham, Iver Heath, Buckinghamshire, South East, England, United Kingdom",51.542492100000004,-0.5441123704462851
+415,/title/tt0043067/,Treasure Island,"Denham Studios, Denham, Buckinghamshire, England, UK",(studio)                        ,,,
+416,/title/tt0120595/,Babe: Pig in the City,"Fox Studios, Moore Park, Sydney, New South Wales, Australia",(studio) (Flealands Hotel and neighbourhood - Metro Theatre)                        ,"Fox Studios Australia, Moore Park, Sydney, Council of the City of Sydney, New South Wales, 2021, Australia",-33.890960899999996,151.22750517838074
+417,/title/tt0120595/,Babe: Pig in the City,"Kingsford Smith International Airport, Sydney, New South Wales, Australia",,"Sydney Airport, Sir Reginald Ansett Drive, Mascot, Sydney, Bayside Council, New South Wales, 2020, Australia",-33.9498935,151.18196819346016
+418,/title/tt0120595/,Babe: Pig in the City,"Robertson, New South Wales, Australia",,"Robertson, Wingecarribee Shire Council, New South Wales, 2577, Australia",-34.59,150.5927778
+419,/title/tt0110157/,Iron Will,"Brookston, Minnesota, USA",,"Brookston, Saint Louis County, Minnesota, United States of America",46.8677233,-92.6038061
+420,/title/tt0110157/,Iron Will,"Cloquet, Minnesota, USA",,"Cloquet, Carlton County, Minnesota, United States of America",46.7216102,-92.4593566
+421,/title/tt0110157/,Iron Will,"Lutsen Mountain Ski Area - 3719 W. Highway 61, Lutsen, Minnesota, USA",,,,
+422,/title/tt0110157/,Iron Will,"Montana, USA",,"Montana, United States of America",47.3752671,-109.6387579
+423,/title/tt0110157/,Iron Will,"Bingham, Maine, USA",,"Bingham, Somerset County, Maine, 04920, United States of America",45.058972,-69.88266
+424,/title/tt0110157/,Iron Will,"Superior, Wisconsin, USA",,"City of Superior, Bayfield, Wisconsin, United States of America",46.7207737,-92.1040796
+425,/title/tt0085204/,BMX Bandits,"Manly, Sydney, New South Wales, Australia",,"Manly, Northern Beaches, Northern Beaches Council, New South Wales, 2095, Australia",-33.8038504,151.2908235
+426,/title/tt0085204/,BMX Bandits,"Northern Beaches, Sydney, New South Wales, Australia",,"Northern Beaches, Sydney, Northern Beaches Council, New South Wales, Australia",-33.69790935,151.24363351300022
+427,/title/tt0085204/,BMX Bandits,"Sydney, New South Wales, Australia",,"Sydney, New South Wales, Australia",-33.8548157,151.2164539
+428,/title/tt0070337/,Lost Horizon,"Mount Hood, Oregon, USA",(Stood in for the Himalayas)                        ,"Mount Hood, Hood River County, Oregon, United States of America",45.3735129,-121.695878
+429,/title/tt0070337/,Lost Horizon,"Lake Chelan, Washington, USA",,"Lake Chelan, Chelan County, Washington, United States of America",48.07858615,-120.4757138372714
+430,/title/tt0070337/,Lost Horizon,"Cascade Mountains, Washington, USA",(Stood in for the Himalayas)                        ,,,
+431,/title/tt0070337/,Lost Horizon,"Bronson Canyon, Griffith Park - 4730 Crystal Springs Drive, Los Angeles, California, USA",,,,
+432,/title/tt0070337/,Lost Horizon,"Columbia/Warner Bros. Ranch - 411 North Hollywood Way, Burbank, California, USA",,,,
+433,/title/tt1424310/,Sap ji sang ciu,Vanuatu,,Vanuatu,-16.5255069,168.1069154
+434,/title/tt1424310/,Sap ji sang ciu,"Hong Kong, China",,"香港島 Hong Kong Island, 香港 Hong Kong, China 中国",22.2793278,114.1628131
+435,/title/tt1424310/,Sap ji sang ciu,"Beijing, China",,"北京市, 东城区, 北京市, 100010, China 中国",39.906217,116.3912757
+436,/title/tt1424310/,Sap ji sang ciu,"Paris, France",,"Paris, Île-de-France, France métropolitaine, France",48.8566969,2.3514616
+437,/title/tt0110687/,North,"Bridgewater Commons Mall - Route 22 & I-287, Bridgewater, New Jersey, USA",,,,
+438,/title/tt0110687/,North,"Alaska, USA",,"Alaska, United States of America",64.4459613,-149.680909
+439,/title/tt0110687/,North,"Caldwell, New Jersey, USA",,"Caldwell, Essex County, New Jersey, 07007, United States of America",40.8398218,-74.2765366
+440,/title/tt0110687/,North,"Mount Rushmore National Memorial - Highway 244, Keystone, South Dakota, USA",,,,
+441,/title/tt0110687/,North,"West Caldwell, New Jersey, USA",(Baseball field)                        ,"West Caldwell, Essex County, New Jersey, 07006, United States of America",40.8409329,-74.3018154
+442,/title/tt0110687/,North,"Culver Studios - 9336 W. Washington Blvd., Culver City, California, USA",(studio)                        ,,,
+443,/title/tt0454656/,The Wiggles,"Sydney, New South Wales, Australia",,"Sydney, New South Wales, Australia",-33.8548157,151.2164539
+444,/title/tt0452681/,The Santa Clause 3: The Escape Clause,"Downey Studios - 12214 Lakewood Boulevard, Downey, California, USA",(studio)                        ,,,
+445,/title/tt4456850/,Adventures in Babysitting,"Vancouver, British Columbia, Canada",,"Vancouver, Metro Vancouver Regional District, British Columbia, Canada",49.2608724,-123.1139529
+446,/title/tt0089652/,My Science Project,"Congress Street, Tucson, Arizona, USA",,"Congress Street, South Avenida del Convento, Menlo Park, Tucson, Pima County, Arizona, 85701, United States of America",32.2198358,-110.9852009
+447,/title/tt0089652/,My Science Project,"228 E 6th Street, Tucson, Arizona, USA",(exteriors of Harlan's True Value and Charlie's Auto Service)                        ,"228, East 6th Street, Warehouse District, Pascua Yaqui Indian Village, Tucson, Pima County, Arizona, 85705, United States of America",32.227623022005304,-110.96773319934555
+448,/title/tt0089652/,My Science Project,"Van Nuys High School - 6535 Cedros Avenue, Van Nuys, Los Angeles, California, USA",,"Van Nuys High School, 6535, Cedros Avenue, Van Nuys, Los Angeles, Los Angeles County, California, 91411, United States of America",34.1891575,-118.45526308656366
+449,/title/tt0165832/,Interstate 60: Episodes of the Road,"Phoenix, Arizona, USA",,"Phoenix, Maricopa County, Arizona, United States of America",33.4484367,-112.0741417
+450,/title/tt0165832/,Interstate 60: Episodes of the Road,"Toronto, Ontario, Canada",,"Toronto, Peel, Golden Horseshoe, Ontario, Canada",43.6534817,-79.3839347
+451,/title/tt0281373/,Snow Dogs,"Canmore, Alberta, Canada",,"Canmore, Town of Canmore, Alberta, T1W 2H4, Canada",51.0866897,-115.3481135
+452,/title/tt0281373/,Snow Dogs,"Vancouver International Airport, Sea Island, Richmond, British Columbia, Canada",,"Vancouver International Airport, Grant McConachie Way, Sea Island, Richmond, Metro Vancouver Regional District, British Columbia, V7B 1W0, Canada",49.1925306,-123.1791754
+453,/title/tt0281373/,Snow Dogs,"Miami, Florida, USA",,"Miami, Miami-Dade County, Florida, United States of America",25.7742658,-80.1936589
+454,/title/tt0079268/,Hanover Street,"Bovingdon Airfield, Bovingdon, Hertfordshire, UK",(Night time airfield scenes)                        ,"Bovingdon Airfield (disused), Lysander Close, Bovingdon, Hertfordshire, East of England, England, HP3 0RY, United Kingdom",51.7285504,-0.5420498
+455,/title/tt0079268/,Hanover Street,"East Somerset Railway, Shepton Mallet, Somerset, England, UK",(outdoor filming)                        ,"East Somerset Railway, Frog Lane, Shepton Mallet, Mendip, Somerset, South West England, England, BA4 4PP, United Kingdom",51.1797779,-2.5226471
+456,/title/tt0079268/,Hanover Street,"RAF Little Rissington, Gloucestershire, England, UK",(B-25 aerial sequence)                        ,"RAF Little Rissington, Sparrows Way, Victory Fields, Upper Rissington, Cotswold, Gloucestershire, South West England, England, GL54 2QP, United Kingdom",51.8666626,-1.69678
+457,/title/tt0079268/,Hanover Street,"Woodstock, Oxfordshire, England, UK",,"Woodstock, Oxfordshire, South East, England, OX20 1TH, United Kingdom",51.8474887,-1.3545343
+458,/title/tt0113538/,A Kid in King Arthur's Court,"England, UK",,"England, United Kingdom",52.7954791,-0.5402402866174321
+459,/title/tt0113538/,A Kid in King Arthur's Court,UK,,United Kingdom,54.7023545,-3.2765753
+460,/title/tt1507563/,Dark Tide,"Cape Town, Western Cape, South Africa",,"Cape Town, City of Cape Town, Western Cape, 8001, South Africa",-33.928992,18.417396
+461,/title/tt1507563/,Dark Tide,"Paddock Tank, Pinewood Studios, Iver Heath, Buckinghamshire, England, UK",(studio) (underwater scenes)                        ,,,
+462,/title/tt0252444/,Rabbit-Proof Fence,"Adelaide, South Australia, Australia",,"Adelaide, Adelaide City Council, South Australia, Australia",-34.9281805,138.5999312
+463,/title/tt0252444/,Rabbit-Proof Fence,"Perth, Western Australia, Australia",,"Perth, City of Perth, Western Australia, 6000, Australia",-31.9527121,115.8604796
+464,/title/tt0252444/,Rabbit-Proof Fence,"The Pilbara, Western Australia, Australia",,"Shire Of East Pilbara, Western Australia, Australia",-21.6116528,124.061412725
+465,/title/tt0252444/,Rabbit-Proof Fence,"Flinders Ranges, South Australia, Australia",,"Flinders Ranges, Pastoral Unincorporated Area, South Australia, Australia",-31.497,138.545
+466,/title/tt0252444/,Rabbit-Proof Fence,"Lake Torrens, South Australia, Australia",,"Lake Torrens, Warrakimbo Road, Emeroo, Port Augusta City Council, South Australia, 5713, Australia",-31.05015075,137.86401216442306
+467,/title/tt0252444/,Rabbit-Proof Fence,"New South Wales, Australia",(location: Sydney)                        ,"New South Wales, Australia",-31.8759835,147.2869493
+468,/title/tt0252444/,Rabbit-Proof Fence,"Parachilna, South Australia, Australia",,"Parachilna, Pastoral Unincorporated Area, South Australia, 5730, Australia",-31.1320475,138.3961801
+469,/title/tt0252444/,Rabbit-Proof Fence,"Northern Flinders Ranges, Flinders Ranges, South Australia, Australia",,"Northern Boundary Track, Emeroo, The Flinders Ranges Council, South Australia, 5713, Australia",-32.2992154,137.9573689
+470,/title/tt0252444/,Rabbit-Proof Fence,"Mid Northern South Australia, South Australia, Australia",,,,
+471,/title/tt0252444/,Rabbit-Proof Fence,"Pilbara Desert, Western Australia, Australia",,,,
+472,/title/tt0252444/,Rabbit-Proof Fence,"Leigh Creek, South Australia, Australia",(environs: Jigalong Depot)                        ,"Leigh Creek, Pastoral Unincorporated Area, South Australia, Australia",-29.9430041,138.2732432
+473,/title/tt0252444/,Rabbit-Proof Fence,"Lake Torrens National Park, South Australia, Australia",,"Lake Torrens National Park, Warrakimbo Road, Emeroo, Port Augusta City Council, South Australia, 5713, Australia",-31.05015075,137.86401216442306
+474,/title/tt0252444/,Rabbit-Proof Fence,"Upper Flinders Ranges, Flinders Ranges, South Australia, Australia",,"Upper Eastern Track, Quorn, The Flinders Ranges Council, South Australia, 5433, Australia",-32.3134022,137.9875132
+475,/title/tt0252444/,Rabbit-Proof Fence,"Belair National Park, Belair, South Australia, Australia",,"Belair National Park, Belair, Adelaide, City of Mitcham, South Australia, 5052, Australia",-35.0075677,138.66469102861424
+476,/title/tt0252444/,Rabbit-Proof Fence,"Adelaide Hills, South Australia, Australia",(location: Belair National Park)                        ,"Adelaide Hills Council, South Australia, Australia",-34.901351649999995,138.8293202817461
+477,/title/tt0252444/,Rabbit-Proof Fence,"Callington, South Australia, Australia",,"Callington, Mount Barker District Council, South Australia, 5254, Australia",-35.1165844,139.0406678
+478,/title/tt0252444/,Rabbit-Proof Fence,"St Mark's College - 46 Pennington Terrace, North Adelaide, Adelaide, South Australia, Australia",,"St Marks College, 46, Pennington Terrace, North Adelaide, Adelaide, Adelaide City Council, South Australia, 5006, Australia",-34.9126394,138.59719700572225
+479,/title/tt0060980/,Derek Flint 1e klas - 6e dan,"New Mexico, USA",,"New Mexico, United States of America",34.5708167,-105.993007
+480,/title/tt0233044/,Dinotopia,"Wales, UK",,"Cymru / Wales, United Kingdom",52.2928116,-3.73893
+481,/title/tt0233044/,Dinotopia,"Los Angeles, California, USA",,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+482,/title/tt0233044/,Dinotopia,"Christ Church, Spitalfields, London, England, UK",,"Janets Uk, 86-90, Paul Street, Shoreditch, London Borough of Hackney, London, Greater London, England, EC2A 4NE, United Kingdom",51.5256005,-0.0836652
+483,/title/tt0233044/,Dinotopia,Egypt,,مصر,26.2540493,29.2675469
+484,/title/tt0233044/,Dinotopia,Thailand,,ประเทศไทย,14.8971921,100.83273
+485,/title/tt0060862/,De 4 Geweldenaars,"Mecca, California, USA",,"Mecca, Riverside County, California, United States of America",33.5511969,-116.06970822122544
+486,/title/tt0060862/,De 4 Geweldenaars,"Valley of Fire State Park - Route 169, Overton, Nevada, USA",,,,
+487,/title/tt0060862/,De 4 Geweldenaars,"Vermilion Cliffs, Vermilion Cliffs National Monument, Arizona, USA",,,,
+488,/title/tt0060862/,De 4 Geweldenaars,"Columbia/Warner Bros. Ranch - 411 North Hollywood Way, Burbank, California, USA",(opening town scenes)                        ,,,
+489,/title/tt0060862/,De 4 Geweldenaars,"Indio, California, USA",,"Indio, Riverside County, California, United States of America",33.7192808,-116.2188054
+490,/title/tt0060862/,De 4 Geweldenaars,"Durango, Mexico",(Mexico)                        ,"Durango, México",24.833333,-104.833333
+491,/title/tt0060862/,De 4 Geweldenaars,"Eagletail Mountains, Arizona, USA",,"Eagletail Mountains Wilderness, Arizona, United States of America",33.4015177,-113.36898554266111
+492,/title/tt10551118/,Zombie Tidal Wave,Thailand,,ประเทศไทย,14.8971921,100.83273
+493,/title/tt4217392/,Gong fu yu jia,"Skaftafell, Iceland",,"Skaftafell, Sveitarfélagið Hornafjörður, Austurland, Ísland",64.0164548,-16.966458
+494,/title/tt4217392/,Gong fu yu jia,"Beijing, China",,"北京市, 东城区, 北京市, 100010, China 中国",39.906217,116.3912757
+495,/title/tt4217392/,Gong fu yu jia,"Jodhpur, Rajasthan, India",(Umaid Bhawan Palace)                        ,"Jodhpur, Jodhpur Tehsil, Jodhpur District, Rajasthan, India",26.2967719,73.0351433
+496,/title/tt1258157/,Scooby-Doo! The Mystery Begins,"Templeton Secondary School, Vancouver, British Columbia, Canada",(Coolsville High)                        ,"Templeton Secondary School, 727, Templeton Drive, Grandview-Woodland, Vancouver, Metro Vancouver Regional District, British Columbia, V5L 4N8, Canada",49.278221450000004,-123.06124945393216
+497,/title/tt1258157/,Scooby-Doo! The Mystery Begins,"Vancouver, British Columbia, Canada",,"Vancouver, Metro Vancouver Regional District, British Columbia, Canada",49.2608724,-123.1139529
+498,/title/tt0099399/,Delta Force 2: The Colombian Connection,"Bee Cliff, Elizabethton, Tennessee, USA",,,,
+499,/title/tt0099399/,Delta Force 2: The Colombian Connection,"Elizabethton, Tennessee, USA",,"Elizabethton, Carter County, Tennessee, 37643, United States of America",36.3487196,-82.2106876
+500,/title/tt0099399/,Delta Force 2: The Colombian Connection,"Roan Mountain, Tennessee, USA",(drug lab)                        ,"Roan Mountain, Carter County, Tennessee, United States of America",36.1045626,-82.122068
+501,/title/tt0099399/,Delta Force 2: The Colombian Connection,"Buck Mountain, Tennessee, USA",(exteriors jungle drug labs)                        ,"Buck Mountain, Fentress County, Tennessee, United States of America",36.5172903,-85.0046699
+502,/title/tt0058536/,Rudolph the Red-Nosed Reindeer,"Toronto, Ontario, Canada",(voice overs)                        ,"Toronto, Peel, Golden Horseshoe, Ontario, Canada",43.6534817,-79.3839347
+503,/title/tt0080391/,Attack of the Killer Tomatoes!,"Qualcomm Stadium - 9449 Friars Road, San Diego, California, USA",,,,
+504,/title/tt0080391/,Attack of the Killer Tomatoes!,"San Diego, California, USA",,"San Diego, San Diego County, California, United States of America",32.7174209,-117.1627714
+505,/title/tt0190641/,Pokémon: De Film - Mew Tegen Mewtwo,"Setagaya, Tokyo, Japan","(OLM, Inc.)                        ","世田谷区, 東京都, 日本 (Japan)",35.646096,139.65627
+506,/title/tt0190641/,Pokémon: De Film - Mew Tegen Mewtwo,"New York City, New York, USA",(4Kids Entertainment)                        ,"New York, United States of America",40.7127281,-74.0060152
+507,/title/tt0157472/,Clockstoppers,"Santa Clarita, California, USA",,"Santa Clarita, Los Angeles County, California, United States of America",34.3916641,-118.542586
+508,/title/tt0157472/,Clockstoppers,"Verdugo Hills High School - 10625 Plainview Avenue, Tujunga, Los Angeles, California, USA",,,,
+509,/title/tt0157472/,Clockstoppers,"Rockwell Defense Plant - Bellflower & Imperial Highway, Downey, California, USA",,,,
+510,/title/tt1760943/,Charlie's Angels,"Florida, USA",,"Florida, United States of America",27.7567667,-81.4639835
+511,/title/tt1760943/,Charlie's Angels,"Miami, Florida, USA",,"Miami, Miami-Dade County, Florida, United States of America",25.7742658,-80.1936589
+512,/title/tt0419294/,The Three Burials of Melquiades Estrada,"Van Horn, Texas, USA",,"Van Horn, Culberson County, Texas, 79855, United States of America",31.0380062,-104.8303694
+513,/title/tt0419294/,The Three Burials of Melquiades Estrada,"Shafter, Texas, USA",,"Shafter, Presidio County, Texas, United States of America",29.8173646,-104.3061281
+514,/title/tt0419294/,The Three Burials of Melquiades Estrada,"Lajitas, Texas, USA",,"Lajitas, Brewster County, Texas, United States of America",29.26222,-103.7758178
+515,/title/tt0419294/,The Three Burials of Melquiades Estrada,"Odessa, Texas, USA",,"Odessa, Ector County, Texas, United States of America",31.8457149,-102.367687
+516,/title/tt0419294/,The Three Burials of Melquiades Estrada,"Redford, Texas, USA",,"Redford, Presidio County, Texas, United States of America",29.4499109,-104.1893657
+517,/title/tt0419294/,The Three Burials of Melquiades Estrada,USA,,United States,39.7837304,-100.4458825
+518,/title/tt3480796/,Vice,"Mobile, Alabama, USA",,"Mobile, Mobile County, Alabama, United States of America",30.6943566,-88.0430541
+519,/title/tt0053445/,The Wild and the Innocent,"Big Bear Valley, San Bernardino National Forest, California, USA",,,,
+520,/title/tt0053445/,The Wild and the Innocent,"Universal Studios - 100 Universal City Plaza, Universal City, California, USA",(studio)                        ,,,
+521,/title/tt0059126/,Dr. Who and the Daleks,"Shepperton Studios, Shepperton, Surrey, England, UK",(studio) (studio: produced at)                        ,,,
+522,/title/tt0337851/,Baywatch: Hawaiian Wedding,"Malibu, California, USA",,"Malibu, Los Angeles County, California, 90265-4797, United States of America",34.035591,-118.689423
+523,/title/tt0337851/,Baywatch: Hawaiian Wedding,"Los Angeles, California, USA",,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+524,/title/tt0337851/,Baywatch: Hawaiian Wedding,"Hawaii, USA",,"Hawaii, United States of America",19.58726775,-155.42688965312746
+525,/title/tt0071598/,Harry and Tonto,"Palisades Park, Santa Monica, California, USA",(walking above the beach after Tonto dies)                        ,"Palisades Park, Santa Monica, Los Angeles County, California, United States of America",34.0225593,-118.50841725405078
+526,/title/tt0071598/,Harry and Tonto,"Hollywood Walk of Fame, Hollywood, Los Angeles, California, USA",(Where Eddie picks up Harry in his Cadillac convertible.)                        ,"Hollywood Wax Museum, Walk of Fame, Whitley Heights Historic District, Hollywood, Los Angeles, Los Angeles County, California, 90028, United States of America",34.10173,-118.3381249
+527,/title/tt0071598/,Harry and Tonto,"56 East Oak Street, Chicago, Illinois, USA",(Harry and Ginger go to a bookstore and meet Norman and Shirley)                        ,"56, East Oak Street, Near North Side, Chicago, Cook County, Illinois, 60611, United States of America",41.9009616,-87.626233
+528,/title/tt0071598/,Harry and Tonto,"Geneva, Illinois, USA",(Geneva Motel)                        ,"Geneva, Kane County, Illinois, 60134, United States of America",41.8875281,-88.3053525
+529,/title/tt0071598/,Harry and Tonto,"Los Angeles, California, USA",(Eddie's apartment.)                        ,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+530,/title/tt0071598/,Harry and Tonto,"Sedona, Arizona, USA",(Where Harry meets Wade.)                        ,"Sedona, Coconino County, Arizona, United States of America",34.8679599,-111.7617165
+531,/title/tt0071598/,Harry and Tonto,"6724 Hollywood Boulevard, Los Angeles, California, USA",(Hollywood Inn where Harry is first seen on the Hollywood Walk of Fame)                        ,"Hollywood Boulevard, Whitley Heights Historic District, Hollywood, Los Angeles, Los Angeles County, California, 90028, United States of America",34.1015706,-118.3347596
+532,/title/tt0071598/,Harry and Tonto,"Las Vegas, Nevada, USA",(Old Las Vegas and casino scenes.)                        ,"Las Vegas, Clark County, Nevada, United States of America",36.1672559,-115.1485163
+533,Code,Show Name,Location,Scene,"Location, Tucker County, West Virginia, United States of America",39.2138905,-79.6371124
+534,/title/tt0119718/,Mr. Magoo,"Foz do Iguaçu, Paraná, Brazil",(Waterfall Sequence)                        ,"Foz do Iguaçu, Região Geográfica Imediata de Foz do Iguaçu, Região Geográfica Intermediária de Cascavel, Paraná, Região Sul, Brasil",-25.5401479,-54.5858139
+535,/title/tt0119718/,Mr. Magoo,"Vancouver, British Columbia, Canada",,"Vancouver, Metro Vancouver Regional District, British Columbia, Canada",49.2608724,-123.1139529
+536,/title/tt0407384/,Earthsea,"Vancouver, British Columbia, Canada",,"Vancouver, Metro Vancouver Regional District, British Columbia, Canada",49.2608724,-123.1139529
+537,/title/tt1461312/,Alice,"Aldergrove, British Columbia, Canada",,"Aldergrove, Township of Langley, Metro Vancouver Regional District, British Columbia, V2Y 0Y7, Canada",49.0596635,-122.4922381
+538,/title/tt1461312/,Alice,"Vancouver, British Columbia, Canada",,"Vancouver, Metro Vancouver Regional District, British Columbia, Canada",49.2608724,-123.1139529
+539,/title/tt0049092/,The Conqueror,"Escalante Desert, St. George, Utah, USA",,"Escalante Desert, Lund Highway, Lund, Iron County, Utah, United States of America",37.9383043,-113.3071824
+540,/title/tt0049092/,The Conqueror,"RKO Studios - 780 N. Gower Street, Hollywood, Los Angeles, California, USA",,,,
+541,/title/tt0049092/,The Conqueror,"Snow Canyon, Utah, USA",,"Snow Canyon, Layton, Davis County, Utah, 84040, United States of America",41.0777322,-111.906602
+542,/title/tt0049092/,The Conqueror,"Warner Canyon, California, USA",,"Warner Canyon Trail, Mill Valley, Marin County, California, 94941, United States of America",37.917529,-122.544242
+543,/title/tt0052365/,The Vikings,"Hardanger, Norway",,"Hardanger, Frogner, Oslo, 0287, Norge",59.9053968,10.6792306
+544,/title/tt0052365/,The Vikings,"Walchensee, Bavaria, Germany",,"Walchensee, Sachenbach, Jachenau, Landkreis Bad Tölz-Wolfratshausen, Bayern, 83676, Deutschland",47.59326485,11.346423961252746
+545,/title/tt0052365/,The Vikings,Germany,,Deutschland,51.0834196,10.4234469
+546,/title/tt0052365/,The Vikings,"Brittany, France",,"Bretagne, Les Franquenelles, Loudéac, Saint-Brieuc, Côtes-d'Armor, Bretagne, France métropolitaine, 22600, France",48.16282835,-2.684147344521837
+547,/title/tt5200330/,Dino Dana,"Toronto, Ontario, Canada",,"Toronto, Peel, Golden Horseshoe, Ontario, Canada",43.6534817,-79.3839347
+548,/title/tt1807165/,Danger 5,"South Australian Film Corporation, Hendon, Adelaide, South Australia, Australia",(studio) (as Anomaly Studios)                        ,,,
+549,/title/tt1807165/,Danger 5,"Hendon Studios, Hendon, Adelaide, South Australia, Australia",(studio) (as Anomaly Studios)                        ,,,
+550,/title/tt1807165/,Danger 5,"Anomaly Studios, Hendon, Adelaide, South Australia, Australia",(studio)                        ,,,
+551,/title/tt3622120/,Kajaki,Jordan,(Kajaki Dam)                        ,الأردن,31.1667049,36.941628
+552,/title/tt11032990/,Malibu Rescue: The Next Wave,"Malibu California, USA",,"Malibu, Los Angeles County, California, 90265-4797, United States of America",34.035591,-118.689423
+553,/title/tt0765476/,Meet Dave,"Los Angeles, California, USA",,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+554,/title/tt0765476/,Meet Dave,"New York Street, Backlot, Universal Studios - 100 Universal City Plaza, Universal City, California, USA",,,,
+555,/title/tt3072732/,Jim Button en de stad van de draken,"Studio Babelsberg, Berlin, Germany",,,,
+556,/title/tt3072732/,Jim Button en de stad van de draken,"Capetown, South Africa",,"Capetown Backpackers, 81, New Church Street, Gardens, Cape Town, City of Cape Town, Western Cape, 8001, South Africa",-33.9285616,18.4094545
+557,/title/tt3072732/,Jim Button en de stad van de draken,"Berlin, Germany",,"Berlin, 10117, Deutschland",52.5170365,13.3888599
+558,/title/tt0112922/,El día de la bestia,"Edificio Capitol-Callao, Gran Vía, 41, 28013, Madrid, Spain",(Exteriors Prof. Cavan's apartment)                        ,,,
+559,/title/tt0112922/,El día de la bestia,"Estella, Navarra, Spain",,"Estella-Lizarra, Navarra - Nafarroa, 31200, España",42.672094,-2.0314834
+560,/title/tt0112922/,El día de la bestia,"Torrejón del Rey, Guadalajara, Spain",(studio)                        ,"Torrejón del Rey, Guadalajara, Castilla-La Mancha, España",40.6449395,-3.336053
+561,/title/tt0112922/,El día de la bestia,"Santuario de Aránzazu, Euskadi, Spain",(First scene)                        ,,,
+562,/title/tt0112922/,El día de la bestia,"Calle Preciados, Madrid, Spain",(Three Wise Men scene)                        ,"Calle Preciados, Sol, Centro, Madrid, Área metropolitana de Madrid y Corredor del Henares, Comunidad de Madrid, 28001, España",40.418349,-3.7048736
+563,/title/tt0112922/,El día de la bestia,"Calle Desengaño, Madrid, Spain","(interiors: Pension, Cavan's apartment, Security manager's office)                        ","Calle Desengaño, La Fontadela, Loeches, Cuenca del Henares, Comunidad de Madrid, 28890, España",40.3812444,-3.4092025
+564,/title/tt0112922/,El día de la bestia,"Plaza de Colón, Madrid, Spain",(Monk with megaphone)                        ,"Plaza de Colón, Paseo de Recoletos, Recoletos, Centro, Madrid, Área metropolitana de Madrid y Corredor del Henares, Comunidad de Madrid, 28001, España",40.42535935,-3.690502696291291
+565,/title/tt0112922/,El día de la bestia,"Sala Revólver - Calle Silva, 6, 28013 Madrid, Spain",(interior: Sala Infierno)                        ,,,
+566,/title/tt0112922/,El día de la bestia,"Avenida Daroca, 61, 28017, Madrid, Spain",(TV Shop where the Priest speaks with Cavan by phone)                        ,,,
+567,/title/tt0112922/,El día de la bestia,"Calle Alcalá, 23, 28014 Madrid, Spain",(Indigent burned alive)                        ,"Calle Alcalá, Valdilecha, Las Vegas, Comunidad de Madrid, España",40.298463,-3.3019204
+568,/title/tt2113681/,De 100-jarige man die uit het raam klom en verdween,Hungary,,Magyarország,47.1817585,19.5060937
+569,/title/tt2113681/,De 100-jarige man die uit het raam klom en verdween,Sweden,,Sverige,59.6749712,14.5208584
+570,/title/tt1014775/,Beverly Hills Chihuahua,"Beverly Hills, California, USA",,"Beverly Hills, Los Angeles County, California, United States of America",34.0696501,-118.3963062
+571,/title/tt1014775/,Beverly Hills Chihuahua,"Hermosillo, Sonora, Mexico",,"Hermosillo, Sonora, 83140, México",29.0948207,-110.9692202
+572,/title/tt1014775/,Beverly Hills Chihuahua,"Puerto Vallarta, Jalisco, Mexico",,"Puerto Vallarta, San Martín de Las Flores, Tlaquepaque, San Pedro Tlaquepaque, Jalisco, 45625, México",20.6151593,-103.2928715
+573,/title/tt1014775/,Beverly Hills Chihuahua,"Estudios Churubusco Azteca, Mexico City, Distrito Federal, Mexico",,,,
+574,/title/tt1014775/,Beverly Hills Chihuahua,"Los Angeles, California, USA",,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+575,/title/tt1014775/,Beverly Hills Chihuahua,"Xochimilco, Mexico City, Distrito Federal, Mexico",,"Xochimilco, Avenida 20 de Noviembre, Xochimilco, Xico, 16000, México",19.2593554,-99.1078466
+576,/title/tt5503688/,6 Below: Miracle on the Mountain,"Utah, USA",,"Utah, United States of America",39.4225192,-111.7143584
+577,/title/tt8360902/,6-Headed Shark Attack,South Africa,,South Africa,-28.8166236,24.991639
+578,/title/tt2842418/,Batman: Arkham Origins,"Chicago, Illinois, USA",(Gotham)                        ,"Chicago, Cook County, Illinois, United States of America",41.8755616,-87.6244212
+579,/title/tt8318702/,D-Railed,"Los Angeles, California, USA",,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+580,/title/tt5691024/,Show Dogs,"Cardiff, Wales, UK",,"Cardiff, Cymru / Wales, CF, United Kingdom",51.4816546,-3.1791934
+581,/title/tt1876261/,Bigfoot,"Carnation, Washington, USA",,"Carnation, King County, Washington, 98014, United States of America",47.6475134,-121.9129419
+582,/title/tt5710996/,Star Wars: Battlefront II,"New York City, New York, USA",,"New York, United States of America",40.7127281,-74.0060152
+583,/title/tt1282022/,Batman: Arkham Asylum,"Chicago, Illinois, USA",,"Chicago, Cook County, Illinois, United States of America",41.8755616,-87.6244212
+584,/title/tt0942903/,Stargate: The Ark of Truth,"Vancouver, British Columbia, Canada",,"Vancouver, Metro Vancouver Regional District, British Columbia, Canada",49.2608724,-123.1139529
+585,/title/tt6404142/,Toruk: The First Flight,"Max Bell Centre - 1001 Barlow Trail SE, Calgary, Alberta, Canada",,,,
+586,/title/tt11610250/,Daniel Craig vs James Bond,"Cardona, Spain",(town)                        ,"Cardona, Bages, Catalunya, 08261, España",41.9142758,1.68133
+587,/title/tt11610250/,Daniel Craig vs James Bond,"Cardona, Catalonia, Spain",(town)                        ,"Cardona, Bages, Catalunya, 08261, España",41.9142758,1.68133
+588,/title/tt11610250/,Daniel Craig vs James Bond,"Barcelona, Spain",(province) (environs)                        ,"Barcelona, Barcelonès, Catalunya, 08001, España",41.3828939,2.1774322
+589,/title/tt11610250/,Daniel Craig vs James Bond,"Catalonia, Spain",(province)                        ,"Catalunya, España",41.8523094,1.5745043
+590,/title/tt11610250/,Daniel Craig vs James Bond,"Parador of Cardona - Castell de Cardona, Cardona, Catalonia, Spain",(hotel) (pool)                        ,,,
+591,/title/tt11610250/,Daniel Craig vs James Bond,"National Parador of Cardona, Barcelona, Spain",(castle)                        ,,,
+592,/title/tt0467110/,Underdog,"Providence, Rhode Island, USA",,"Providence, Providence County, Rhode Island, United States of America",41.8239891,-71.4128343
+593,/title/tt5721182/,Vampire Academy: the Officially Unofficial Fan Series,"Oakwood, Georgia, USA",(location)                        ,"Oakwood, Hall County, Georgia, United States of America",34.227602,-83.8843455
+594,/title/tt0104418/,Highway to Hell,"Phoenix, Arizona, USA",,"Phoenix, Maricopa County, Arizona, United States of America",33.4484367,-112.0741417
+595,/title/tt0104418/,Highway to Hell,"Page, Arizona, USA",,"Page, Coconino County, Arizona, 86040-0418, United States of America",36.9148305,-111.4572942
+596,/title/tt0215392/,BeastMaster,"Queensland, Australia",,"Queensland, Australia",-22.1646782,144.5844903
+597,/title/tt0366905/,Pippi Långstrump,"Gotland, Sweden",,"Gotland, Gotlands kommun, Gotlands län, Götaland, Sverige",57.4174802,18.536957927499856
+598,/title/tt0366905/,Pippi Långstrump,"57°37'02.7""N 18°16'34.4""E",(Villa Villekulla)                        ,"Länna, Visborg, Visby, Gotlands kommun, Gotlands län, Götaland, 621 81, Sverige",57.6151468,18.2777012
+599,/title/tt2544766/,Michiel de Ruyter,"Bergen op Zoom, Noord-Brabant, Netherlands","(MarkiezenHof, King Charles Palace, Whitehall)                        ","Bergen op Zoom, Noord-Brabant, Nederland",51.4965864,4.289740797263708
+600,/title/tt2544766/,Michiel de Ruyter,"Veere, Zeeland, Netherlands",(Michiel de Ruyter residence)                        ,"Veere, Zeeland, Nederland",51.5475163,3.6660882
+601,/title/tt2544766/,Michiel de Ruyter,"Middelburg, Zeeland, Netherlands","(Home town of De Ruyter, Vlissingen/ Den Haag, Parlement and Exterior lynch scene / Staaten Generaal interior scenes)                        ","Middelburg, Zeeland, Nederland",51.50529485,3.6100710049422853
+602,/title/tt2544766/,Michiel de Ruyter,"Kasteel Dussen, Dussen, North Brabant, Netherlands",(home of the Prince of Orange)                        ,"Kasteel Dussen, Binnen, Dussen, Altena, Noord-Brabant, Nederland, 4271BW, Nederland",51.73379475,4.969705761811078
+603,/title/tt2343137/,Spies of Warsaw,"Kraków, Malopolskie, Poland",,"Kraków, województwo małopolskie, Polska",50.0619474,19.9368564
+604,/title/tt2343137/,Spies of Warsaw,Poland,,Polska,52.215933,19.134422
+605,/title/tt6579422/,Middle-Earth: Shadow of War,"Chicago Illinois, USA",(shire)                        ,"Chicago, Cook County, Illinois, United States of America",41.8755616,-87.6244212
+606,/title/tt0091757/,Pirates,Malta,,Malta,35.8885993,14.4476911
+607,/title/tt0091757/,Pirates,Tunisia,,تونس,33.8439408,9.400138
+608,/title/tt0464913/,"OSS 117: Le Caire, nid d'espions","Devant la mairie, avenue Mohamed VI, El Djadida, Morocco",(scenes supposed to take place outside the Metropolitan Hotel)                        ,,,
+609,/title/tt0464913/,"OSS 117: Le Caire, nid d'espions","Kenitra, Morocco",(scenes outside the SEP building)                        ,"Kénitra ⵇⵏⵉⵟⵔⴰ القنيطرة, Pachalik de Kenitra باشوية القنيطرة, Province de Kenitra إقليم القنيطرة, Rabat-Salé-Kénitra ⵔⴱⴰⵟ-ⵙⵍⴰ-ⵇⵏⵉⵟⵔⴰ الرباط-سلا-القنيطرة, 14003, Maroc",34.26457,-6.570169
+610,/title/tt0464913/,"OSS 117: Le Caire, nid d'espions","Quartier des Habous, Casablanca, Morocco",,"Quartier Houbous, Méchouar de Casablanca ⵍⵎⵉⵛⵡⴰⵔ ⵏ ⵜⴳⵎⵉ ⵜⵓⵎⵍⵉⵍⵜ مشور الدار البيضاء, Pachalik de Méchouar de Casablanca, Préfecture de Casablanca عمالة الدار البيضاء, Casablanca-Settat ⵜⵉⴳⵎⵉ ⵜⵓⵎⵍⵉⵍⵜ-ⵙⵟⵟⴰⵜ الدار البيضاء-سطات, 20504, Maroc",33.5774555,-7.6063917
+611,/title/tt0464913/,"OSS 117: Le Caire, nid d'espions",Spain,,España,39.3262345,-4.8380649
+612,/title/tt0464913/,"OSS 117: Le Caire, nid d'espions","Hall de l' université Paris II, 92 rue d'Assas, Paris 6, Paris, France",(scene at the airport)                        ,,,
+613,/title/tt0464913/,"OSS 117: Le Caire, nid d'espions","Mairie, 131 rue de la République, Puteaux, Hauts-de-Seine, France",(scenes at the British embassy in Cairo)                        ,"Mairie, 131, Rue de la République, La Défense 8, Puteaux, Arrondissement de Nanterre, Hauts-de-Seine, Île-de-France, France métropolitaine, 92800, France",48.884028099999995,2.2381945901380655
+614,/title/tt0464913/,"OSS 117: Le Caire, nid d'espions","Carrières de Nucourt, route de Serans, Nucourt, Val d'Oise, France",(scenes inside the pyramid)                        ,,,
+615,/title/tt0464913/,"OSS 117: Le Caire, nid d'espions","Paris 15, Paris, France",(offices of the French embassy in Cairo)                        ,"Paris, Île-de-France, France métropolitaine, France",48.8566969,2.3514616
+616,/title/tt2387409/,Call of Duty: Black Ops II,"New York City, New York, USA",,"New York, United States of America",40.7127281,-74.0060152
+617,/title/tt2387409/,Call of Duty: Black Ops II,"Los Angeles, California, USA",,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+618,/title/tt2387409/,Call of Duty: Black Ops II,"Chicago, Illinois, USA",,"Chicago, Cook County, Illinois, United States of America",41.8755616,-87.6244212
+619,/title/tt0101744/,Do or Die,"Rio All-Suite Hotel & Casino - 3700 W Flamingo Road, Las Vegas, Nevada, USA",,,,
+620,Code,Show Name,Location,Scene,"Location, Tucker County, West Virginia, United States of America",39.2138905,-79.6371124
+621,/title/tt0038574/,Great Expectations,"St Mary's Marshes, Kent, England, UK",(opening sequence - Pip and Herbert Pocket ride in rowboat)                        ,,,
+622,/title/tt0038574/,Great Expectations,"London, England, UK",,"London, Greater London, England, United Kingdom",51.5073219,-0.1276474
+623,/title/tt0038574/,Great Expectations,"River Medway, Kent, England, UK",(Rotterdam paddle boat)                        ,"River Medway, Tonbridge and Malling, Kent, South East, England, ME18 6HG, United Kingdom",51.2022462,0.3359502
+624,/title/tt0038574/,Great Expectations,"D&P Studios, Denham Studios, Denham, Buckinghamshire, England, UK",(studio) (studio: made at D&P Studios England)                        ,,,
+625,/title/tt0038574/,Great Expectations,"Kent, England, UK",,"Kent, Egerton, Ashford, Kent, South East, England, United Kingdom",51.20707485,0.7210361813401444
+626,/title/tt0061810/,In Like Flint,"Dunn's River Falls, Ocho Rios, St. Ann, Jamaica",(Flint climbing up waterfall)                        ,,,
+627,/title/tt0061810/,In Like Flint,Jamaica,,"Jamaica, Spanish Town, Saint Catherine, Middlesex County, Jamaika",18.1152958,-77.1598454610168
+628,/title/tt0061810/,In Like Flint,"Stage 21, 20th Century Fox Studios - 10201 Pico Blvd., Century City, Los Angeles, California, USA",,,,
+629,/title/tt0111323/,Surviving the Game,"Lake Wenatchee State Airport, Washington, USA",(cabin and landing strip)                        ,"Lake Wenatchee State Airport, Wye Connector Road, Chelan County, Washington, United States of America",47.8196,-120.7196
+630,/title/tt0111323/,Surviving the Game,"Bruce Hotel, Wenatchee, Washington, USA",(Mason spends a night here)                        ,,,
+631,/title/tt0111323/,Surviving the Game,"Palouse Street, Wenatchee, Washington, USA",(Mason's dog is hit by a taxi)                        ,"Palouse Street, Wenatchee, Chelan County, Washington, 98801, United States of America",47.4237933,-120.3187045
+632,/title/tt0111323/,Surviving the Game,"Columbia River Bridge, Wenatchee, Washington, USA",(Burns and Mason drive over this bridge)                        ,,,
+633,/title/tt0111323/,Surviving the Game,"Lake Wenatchee, Washington, USA",,"Lake Wenatchee, Southeast Spur USFS 6607 - 112 Road, Telma, Chelan County, Washington, United States of America",47.8210884,-120.7879704
+634,/title/tt0024894/,The Black Cat,"Universal Studios - 100 Universal City Plaza, Universal City, California, USA",,,,
+635,/title/tt1327701/,Ben 10: Alien Swarm,"Atlanta, Georgia, USA",,"Atlanta, Georgia, United States of America",33.7490987,-84.3901849
+636,/title/tt0108526/,We're Back! A Dinosaur's Story,"Amblimation - 207-211 The Vale, Acton, London, England, UK",,,,
+637,/title/tt5838282/,Escape the Night,"Paramount Ranch - 2813 Cornell Road, Agoura, California, USA",(Season 3)                        ,,,
+638,/title/tt5838282/,Escape the Night,"Rosewood Manor, 500 St. Cloud Rd, Los Angeles, California, USA",(Season 2)                        ,,,
+639,/title/tt0106154/,Time Trax,"Brisbane, Queensland, Australia",,"Brisbane City, Queensland, Australia",-27.4689682,153.0234991
+640,/title/tt0106154/,Time Trax,"Gold Coast, Queensland, Australia",,"Gold Coast City, Queensland, Australia",-28.0023731,153.4145987
+641,/title/tt4426464/,Arctic Justice,"Toronto, Ontario, Canada",(CA)                        ,"Toronto, Peel, Golden Horseshoe, Ontario, Canada",43.6534817,-79.3839347
+642,/title/tt0056142/,Kingu Kongu tai Gojira,"Tokyo, Japan",,"東京都, 日本 (Japan)",35.6828387,139.7594549
+643,/title/tt0379557/,Touching the Void,"Siula Grande, Peru",,"Siula Grande, Copa, Cajatambo, Lima, Peru",-10.2947382,-76.8916734
+644,/title/tt0379557/,Touching the Void,"Grindelwald, Kanton Bern, Switzerland",,"Grindelwald, Verwaltungskreis Interlaken-Oberhasli, Verwaltungsregion Oberland, Bern/Berne, 3818, Switzerland",46.6242733,8.0367462
+645,/title/tt0379557/,Touching the Void,France,,France,46.603354,1.8883335
+646,/title/tt0066249/,The Private Life of Sherlock Holmes,"Urquhart Castle, Drumnadrochit, Loch Ness, Highland, Scotland, UK",,,,
+647,/title/tt0066249/,The Private Life of Sherlock Holmes,"Drumnadrochit, Loch Ness, Highland, Scotland, UK",,,,
+648,/title/tt0066249/,The Private Life of Sherlock Holmes,"Broadway Tower, Cotswolds, Oxfordshire, England, UK",,,,
+649,/title/tt0066249/,The Private Life of Sherlock Holmes,"Nairn Railway Station, Nairn, Inverness, Scotland, UK",(Inverness Railway Station exterior)                        ,,,
+650,/title/tt0066249/,The Private Life of Sherlock Holmes,"Castle Stuart, Inverness, Highland, Scotland, UK",(Castle passed on bicycle ride)                        ,"Castle Stuart, Petty Churchyard Road, Newton, Inverness, Highland, Scotland, IV2 7JH, United Kingdom",57.5207525,-4.10305167801536
+651,/title/tt0066249/,The Private Life of Sherlock Holmes,"Keighley, Bradford, West Yorkshire, England, UK",(train scenes)                        ,"Keighley, Bradford, West Yorkshire, Yorkshire and the Humber, England, United Kingdom",53.86764515,-1.9387085955617687
+652,/title/tt0066249/,The Private Life of Sherlock Holmes,"Eilean Donan Castle, Kyle of Lochalsh, Highland, Scotland, UK",(Castle passed on bicycle ride)                        ,,,
+653,/title/tt0066249/,The Private Life of Sherlock Holmes,"Worth Valley, Keighley, Bradford, West Yorkshire, England, UK",(train scenes)                        ,"The Worth Valley, 1, Wesley Place, Keighley, Bradford, West Yorkshire, Yorkshire and the Humber, England, BD21 5BB, United Kingdom",53.8526144,-1.9162715149792224
+654,/title/tt0066249/,The Private Life of Sherlock Holmes,"Keighley and Worth Valley Railway, Haworth, Keighley, Bradford, West Yorkshire, England, UK",(train scenes)                        ,"Keighley and Worth Valley Railway, Providence Lane, Keighley, Bradford, West Yorkshire, Yorkshire and the Humber, England, BD22 7QZ, United Kingdom",53.8379163,-1.9474791
+655,/title/tt1219817/,Going Postal,"Budapest, Hungary",,"Budapest, Közép-Magyarország, 1011, Magyarország",47.4983815,19.0404707
+656,/title/tt0093278/,Ishtar,"100 Morningside Drive, Morningside Heights, Manhattan, New York City, New York, USA",(Chuck's apartment block)                        ,"100, Morningside Drive, Morningside Heights, Manhattan Community Board 9, Manhattan, New York County, New York, 10027, United States of America",40.8090222,-73.9576103
+657,/title/tt0093278/,Ishtar,Morocco,,Maroc / ⵍⵎⵖⵔⵉⴱ / المغرب,31.1728205,-7.3362482
+658,/title/tt0093278/,Ishtar,"Manhattan, New York City, New York, USA",,"Manhattan, New York County, New York, United States of America",40.7896239,-73.9598939
+659,/title/tt0093278/,Ishtar,"New York, USA",,"New York, United States of America",40.7127281,-74.0060152
+660,/title/tt0047013/,Garden of Evil,"Uruapan, Michoacán, Mexico",,"Uruapan, Michoacán de Ocampo, México",19.406043349999997,-102.03429004621862
+661,/title/tt0047013/,Garden of Evil,"Guanajuato, Mexico",(outdoor sequences)                        ,"Guanajuato, México",20.9876996,-101.0
+662,/title/tt0047013/,Garden of Evil,"Tepotzotlán, Mexico City, Distrito Federal, Mexico",(outdoor sequences)                        ,,,
+663,/title/tt0047013/,Garden of Evil,"Los Concheros River, Mexico",(outdoor sequences)                        ,,,
+664,/title/tt0047013/,Garden of Evil,"Church ruin of San Juan Parangaricutiro, Uruapan, Mexico",(gold mine sceneat the Parícutin volcano)                        ,,,
+665,/title/tt3511124/,The Last Shaman,USA,,United States,39.7837304,-100.4458825
+666,/title/tt5788078/,Watch Dogs 2,"San Francisco, California, USA",,"San Francisco, San Francisco City and County, California, United States of America",37.7790262,-122.4199061
+667,/title/tt6439748/,Legacy,"Baja California, Mexico",,"Baja California, México",30.0338923,-115.1425107
+668,/title/tt0078659/,Saiyûki,China,,中国,35.000074,104.999927
+669,/title/tt0063823/,Yellow Submarine,"Studios of TVC London, London, England, UK",,,,
+670,/title/tt8753438/,Askeladden - I Soria Moria slott,"Barrandov Studios, Prague, Czech Republic",,,,
+671,/title/tt8753438/,Askeladden - I Soria Moria slott,"Bodø, Nordland, Norway",,"Bodø, Nordland, Norge",67.2839476,14.3825834
+672,/title/tt0455499/,Garfield 2,"Castle Howard, York, North Yorkshire, England, UK","(Castle Carlyle: exteriors of house, bridge and lakes)                        ",,,
+673,/title/tt0455499/,Garfield 2,"Old Royal Naval College, Greenwich, London, England, UK",,"Old Royal Naval College, Park Row, East Greenwich, Royal Borough of Greenwich, London, Greater London, England, SE10 9NL, United Kingdom",51.4829661,-0.006257671681354558
+674,/title/tt0455499/,Garfield 2,"Piccadilly Circus, Piccadilly, London, England, UK",,"Piccadilly Circus, St. James's, Fitzrovia, City of Westminster, London, Greater London, England, SW1Y 4QE, United Kingdom",51.5098192,-0.1345484
+675,/title/tt0455499/,Garfield 2,"London, Greater London, England, UK",,"London, Greater London, England, United Kingdom",51.5073219,-0.1276474
+676,/title/tt0455499/,Garfield 2,USA,,United States,39.7837304,-100.4458825
+677,/title/tt0455499/,Garfield 2,"Long Beach, California, USA",,"Long Beach, Los Angeles County, California, United States of America",33.7690164,-118.1916048
+678,/title/tt2761630/,Klondike,"Calgary, Alberta, Canada",,"Calgary, Strathmore (town), Alberta, Canada",51.0534234,-114.0625892
+679,/title/tt7167686/,Reign of the Supermen,"New York City, New York, USA",(Metropolis)                        ,"New York, United States of America",40.7127281,-74.0060152
+680,/title/tt0249677/,Lady en de Vagebond II: Rakker's Avontuur,"Walt Disney Feature Animation - 500 S. Buena Vista Street, Burbank, California, USA",,,,
+681,/title/tt0091344/,King Kong Lives,"Pigeon Forge, Tennessee, USA",,"Pigeon Forge, Sevier County, Tennessee, United States of America",35.7884241,-83.5543329
+682,/title/tt0091344/,King Kong Lives,"University of North Carolina Wilmington - 601 South College Road, Wilmington, North Carolina, USA",,,,
+683,/title/tt0091344/,King Kong Lives,"Jellico, Tennessee, USA",(Cliff)                        ,"Jellico, Campbell County, Tennessee, 37762, United States of America",36.58776,-84.1268634
+684,/title/tt0490181/,Mutant Chronicles,"Bray Studios, Down Place, Oakley Green, Berkshire, England, UK","(2nd unit, model unit)                        ",,,
+685,/title/tt0490181/,Mutant Chronicles,"Shepperton Studios, Shepperton, Surrey, England, UK",(studio)                        ,,,
+686,/title/tt4106376/,Renegades,"Ogulin, Croatia",(Bridge over Dobra river canyon)                        ,"Ogulin, Grad Ogulin, Karlovačka županija, 47300, Hrvatska",45.2668211,15.2250286
+687,/title/tt4106376/,Renegades,Malta,,Malta,35.8885993,14.4476911
+688,/title/tt4106376/,Renegades,"Hum, Croatia",,"Hum, Grad Buzet, Istarska županija, Hrvatska",45.348526,14.0503632
+689,/title/tt4106376/,Renegades,"AED Studios, Lint, Flanders, Belgium","(studio) (aka AED Studios, Lint, Belgium)                        ","AED Studios, 38, Fabriekstraat, Lint, Antwerpen, Vlaanderen, 2547, België - Belgique - Belgien",51.13560855,4.477644126115031
+690,/title/tt4106376/,Renegades,Croatia,,Hrvatska,45.5643442,17.0118954
+691,/title/tt0327375/,Tremors,"Fox Baja Studios, Rosarito, Baja California Norte, Mexico",,,,
+692,/title/tt1756545/,Harry Potter and the Forbidden Journey,"Leavesden Studios, Leavesden, Hertfordshire, England, UK",(studio)                        ,"Warner Bros. Studios Leavesden, Abbots Langley, Leavesden, Hertfordshire, East of England, England, WD25 7LP, United Kingdom",51.68980175,-0.4226993868476693
+693,/title/tt0489282/,Strange Wilderness,"Los Angeles, California, USA",,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+694,/title/tt0414762/,Power Rangers S.P.D.,New Zealand,,New Zealand / Aotearoa,-41.5000831,172.8344077
+695,/title/tt0212395/,Now and Again,"Brooklyn, New York City, New York, USA",,"Brooklyn, Kings County, New York, United States of America",40.6501038,-73.9495823
+696,/title/tt8179402/,Fate: The Winx Saga,"Dublin, Ireland",,"Dublin, County Dublin, Leinster, Ireland",53.3497645,-6.2602732
+697,/title/tt8179402/,Fate: The Winx Saga,"Ardmore Studios, Herbert Road, Bray, County Wicklow, Ireland",(studio)                        ,,,
+698,/title/tt0056059/,Hatari!,"Arusha National Park, Tanzania",,"Arusha National Park, Arumeru, Arusha, Northern Zone, Tanzania",-3.2553448,36.78111419787855
+699,/title/tt0056059/,Hatari!,"Serengeti National Park, Tanzania",,"Serengeti National Park, Ikoma, Serengeti, Mara, Lake Zone, Tanzania",-2.36908165,34.70185474224895
+700,/title/tt0056059/,Hatari!,Tanzania,,Tanzania,-6.5247123,35.7878438
+701,/title/tt0056059/,Hatari!,"Ngorongoro Crater, Ngorongoro Conservation Area, Ngorongoro, Arusha, Tanzania",,,,
+702,/title/tt0056059/,Hatari!,"Ruvu River, Tanzania",,"ruvu river, Kimboza, Morogoro, Coastal Zone, Tanzania",-7.0264276,37.8192356
+703,/title/tt0056059/,Hatari!,"Momella Wildlife Lodge, Tanzania",(The compound/homestead)                        ,,,
+704,/title/tt0076915/,The White Buffalo,"Chama, New Mexico, USA",,"Chama, Rio Arriba County, New Mexico, 87520, United States of America",36.9036557,-106.5798873
+705,/title/tt0076915/,The White Buffalo,"Buckskin Joe Frontier Town & Railway - 1193 Fremont County Road 3A, Canon City, Colorado, USA",,,,
+706,/title/tt0076915/,The White Buffalo,"Cripple Creek, Colorado, USA",,"Cripple Creek, Teller County, Colorado, 80081, United States of America",38.7466555,-105.1783149
+707,/title/tt0076915/,The White Buffalo,"Window Rock, Arizona, USA",,"Window Rock, Apache County, Arizona, 86515, United States of America",35.6763274,-109.0581498
+708,/title/tt0076915/,The White Buffalo,"Red Canyon Park, Colorado, USA",,"Red Canyon Park, Fremont County, Colorado, 81812, United States of America",38.584864,-105.262213
+709,Code,Show Name,Location,Scene,"Location, Tucker County, West Virginia, United States of America",39.2138905,-79.6371124
+710,/title/tt0061584/,Doctor Dolittle,"Castle Combe, Wiltshire, England, UK",(Puddleby-on-the-Marsh)                        ,"Castle Combe, Wiltshire, South West England, England, SN14 7, United Kingdom",51.4929672,-2.230289
+711,/title/tt0061584/,Doctor Dolittle,"Bath, Somerset, England, UK",,"Bath, East Twerton, Bath, Bath and North East Somerset, South West England, England, United Kingdom",51.380926349999996,-2.37418971512966
+712,/title/tt0061584/,Doctor Dolittle,"20th Century Fox Ranch, Malibu Creek State Park - 1925 Las Virgenes Road, Calabasas, California, USA",(studio)                        ,,,
+713,/title/tt0061584/,Doctor Dolittle,"Stage 22, 20th Century Fox Studios - 10201 Pico Blvd., Century City, Los Angeles, California, USA",,,,
+714,/title/tt0358349/,Agent Cody Banks 2: Destination London,"Knebworth House, Stevenage, Hertfordshire, England, UK",,"Knebworth, Station Approach, Knebworth, Hertfordshire, East of England, England, SG3 6AT, United Kingdom",51.8670421,-0.187051
+715,/title/tt0358349/,Agent Cody Banks 2: Destination London,"Canary Wharf Underground Station, Canary Wharf, Isle of Dogs, London, England, UK",(interiors)                        ,"Adam, Reuters Plaza, Canary Wharf, Isle of Dogs, London Borough of Tower Hamlets, London, Greater London, England, E14 5AJ, United Kingdom",51.5037578,-0.0192977
+716,/title/tt0358349/,Agent Cody Banks 2: Destination London,"London, England, UK",,"London, Greater London, England, United Kingdom",51.5073219,-0.1276474
+717,/title/tt1376213/,The Adventurer: The Curse of the Midas Box,"Bath, Somerset, England, UK",,"Bath, East Twerton, Bath, Bath and North East Somerset, South West England, England, United Kingdom",51.380926349999996,-2.37418971512966
+718,/title/tt1376213/,The Adventurer: The Curse of the Midas Box,"Charlestown Harbour, Charlestown, Cornwall, England, UK",,,,
+719,/title/tt1376213/,The Adventurer: The Curse of the Midas Box,"Bristol, England, UK",,"Bristol, City of Bristol, South West England, England, United Kingdom",51.4538022,-2.5972985
+720,/title/tt1525366/,Grabbers,"County Donegal, Ireland",,"County Donegal, Ireland",54.92075415,-7.952385214651309
+721,/title/tt1525366/,Grabbers,"Rathlin Island, Co Antrim, Northern Ireland, UK",,"Rathlin Island, County Antrim, Northern Ireland, United Kingdom",55.285834449999996,-6.182911406198522
+722,/title/tt0089961/,Santa Claus: The Movie,Norway,,"Norge, Namsos, Trøndelag, Norge",64.5731537,11.52803643954819
+723,/title/tt0089961/,Santa Claus: The Movie,"Pinewood Studios, Iver Heath, Buckinghamshire, England, UK",(studio)                        ,"Pinewood Studios, Pinewood Green, Iver, Iver Heath, Buckinghamshire, South East, England, SL0 0QJ, United Kingdom",51.54831515,-0.5346765566753087
+724,/title/tt0105402/,Sidekicks,"Houston, Texas, USA",(Eleanor Tinsley Park)                        ,"Houston, Harris County, Texas, United States of America",29.7589382,-95.3676974
+725,/title/tt0105402/,Sidekicks,"Los Angeles, California, USA",,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+726,/title/tt0105402/,Sidekicks,"Waterwall - 2800 Post Oak Boulevard, Houston, Texas, USA",,,,
+727,/title/tt7131870/,Zhan lang II,South Africa,(location shots)                        ,South Africa,-28.8166236,24.991639
+728,/title/tt0092383/,The Storyteller,"Elstree Studios, Borehamwood, Hertfordshire, England, UK",,"Elstree Studios, Shenley Road, Elstree and Borehamwood, Hertsmere, Hertfordshire, East of England, England, WD6 1JG, United Kingdom",51.657052050000004,-0.2675206399488197
+729,/title/tt0057590/,Tom Jones,"Castle Street, Bridgwater, Somerset, England, UK",,"Castle Street, Eastover, Bridgwater, Sedgemoor, Somerset, South West England, England, TA6 3DD, United Kingdom",51.1296486,-3.0021156
+730,/title/tt0057590/,Tom Jones,"Somerset, England, UK",,"Somerset, Cannington, Sedgemoor, Somerset, South West England, England, United Kingdom",51.161750850000004,-3.0753867062227487
+731,/title/tt0057590/,Tom Jones,"Abbey Street, Cerne Abbas, Dorset, England, UK",(Village street)                        ,"Abbey Street, Cerne Abbas, Dorset, South West England, England, DT2 7JQ, United Kingdom",50.8099196,-2.4759582
+732,/title/tt1037011/,Ben 10: Race Against Time,"Warner Brothers Burbank Studios - 4000 Warner Boulevard, Burbank, California, USA",,,,
+733,/title/tt0091981/,Solarbabies,"Davis-Monthan Air Force Base, Tucson, Arizona, USA",,"Davis-Monthan Air Force Base, Yuma Street, Vandenberg Village, Tucson, Pima County, Arizona, 85707-3529, United States of America",32.17079565,-110.86990239630313
+734,/title/tt0091981/,Solarbabies,"Madrid, Spain",,"Madrid, Área metropolitana de Madrid y Corredor del Henares, Comunidad de Madrid, 28001, España",40.4167047,-3.7035825
+735,/title/tt0091981/,Solarbabies,"Rodalquilar, Almería, Andalucía, Spain",(Unit 43 orphanage and E-police center exterior scenes)                        ,"Rodalquilar, Níjar, Almería, Andalucía, 04115, España",36.8468019,-2.0406035
+736,/title/tt0091981/,Solarbabies,"Gádor, Almería, Andalucía, Spain",,"Gádor, Almería, Andalucía, España",36.9530744,-2.491623
+737,/title/tt0091981/,Solarbabies,"Desierto de Tabernas, Almería, Andalucía, Spain",(Tiretown set exterior scenes)                        ,"Paraje Natural del Desierto de Tabernas, Gérgal, Almería, Andalucía, España",37.0675509,-2.5294695521144464
+738,/title/tt0083467/,The Powers of Matthew Star,"Santa Clarita, California, USA",,"Santa Clarita, Los Angeles County, California, United States of America",34.3916641,-118.542586
+739,/title/tt4520906/,Beowulf: Return to the Shieldlands,"Weardale, County Durham, England, UK",,"Weardale, 16, Long Acres, Gilesgate, Durham, County Durham, North East England, England, DH1 1JF, United Kingdom",54.78128685,-1.5575420079794213
+740,/title/tt0120199/,Space Truckers,"Ardmore Studios, Herbert Road, Bray, County Wicklow, Ireland",,,,
+741,/title/tt6315800/,Teen Titans: The Judas Contract,"Chicago Illinois, USA",,"Chicago, Cook County, Illinois, United States of America",41.8755616,-87.6244212
+742,/title/tt0060588/,Khartoum,"Cairo, Egypt",,"القاهرة, Egypt / مصر",30.048819,31.243666
+743,/title/tt0060588/,Khartoum,"Al Minyal, Egypt",,,,
+744,/title/tt0060588/,Khartoum,"Abu Simbel, Egypt",,"معبد أبو سمبل, شارع المعبد, مدينه ابو سمبل, أبو سنبل, أسوان, Egypt / مصر",22.3370866,31.62580544472133
+745,/title/tt0049434/,The Last Wagon,"Sedona, Arizona, USA",,"Sedona, Coconino County, Arizona, United States of America",34.8679599,-111.7617165
+746,/title/tt0049434/,The Last Wagon,"Red Rock Crossing, Sedona, Arizona, USA",(opening titles and gunfight sequence)                        ,,,
+747,/title/tt0049434/,The Last Wagon,"Courthouse Butte, Sedona, Arizona, USA",,,,
+748,/title/tt0049434/,The Last Wagon,"Boynton Canyon, Sedona, Arizona, USA",,,,
+749,/title/tt4714568/,The Young Offenders,"English Market, Cork City, Ireland",,"English Market, City Centre, Centre A, Cork, Cork City 2019, County Cork, Munster, T12 NC8Y, Ireland",51.89763485,-8.474458553060941
+750,/title/tt4714568/,The Young Offenders,"County Cork, Ireland",,"County Cork, Munster, Ireland",51.91728445,-8.586243001266944
+751,/title/tt0273842/,Motocrossed,"Barona Oaks Motocross Park, 15226 Wildcat Canyon Rd, Ramona, California, USA",(motocross track)                        ,,,
+752,/title/tt7238392/,Taxi 5,"Studios de Paris, La Cité du Cinéma, Saint-Denis, Seine-Saint-Denis, France",,,,
+753,/title/tt7238392/,Taxi 5,"Marseille, Bouches-du-Rhône, France",,"Marseille, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France métropolitaine, 13000, France",43.2961743,5.3699525
+754,/title/tt3731688/,Harry Potter and the Escape from Gringotts,"Leavesden Studios, Leavesden, Hertfordshire, England, UK",(studio)                        ,"Warner Bros. Studios Leavesden, Abbots Langley, Leavesden, Hertfordshire, East of England, England, WD25 7LP, United Kingdom",51.68980175,-0.4226993868476693
+755,/title/tt8690918/,Resident Alien,"Vancouver, British Columbia, Canada",,"Vancouver, Metro Vancouver Regional District, British Columbia, Canada",49.2608724,-123.1139529
+756,/title/tt0133385/,Astérix & Obélix contre César,"Durness, Highland, Scotland, UK",,"Durness, Sutherland, Scotland, IV27 4PR, United Kingdom",58.5685105,-4.7470259
+757,/title/tt0133385/,Astérix & Obélix contre César,"Brittany, France",,"Bretagne, Les Franquenelles, Loudéac, Saint-Brieuc, Côtes-d'Armor, Bretagne, France métropolitaine, 22600, France",48.16282835,-2.684147344521837
+758,/title/tt0093072/,The Garbage Pail Kids Movie,"Sherman Oak Van Nuys War Memorial Park - 14118 Huston Street, Los Angeles, California, USA",(The park scenes where Juice and his gang bully Dodger.)                        ,,,
+759,/title/tt0118539/,3 Ninjas: High Noon at Mega Mountain,"Elitch Gardens - 4620 W. 38th Avenue, Denver, Colorado, USA",,,,
+760,/title/tt0118539/,3 Ninjas: High Noon at Mega Mountain,"Santa Cruz, California, USA",(park establishing shots from the ocean)                        ,"Santa Cruz County, California, United States of America",37.050096,-121.9905908
+761,/title/tt0115472/,The Adventures of Pinocchio,Croatia,,Hrvatska,45.5643442,17.0118954
+762,/title/tt0115472/,The Adventures of Pinocchio,"High Force Waterfall, County Durham, England, UK",,"High Force, County Durham, North East England, England, DL12 0XJ, United Kingdom",54.6503045,-2.1876458
+763,/title/tt0115472/,The Adventures of Pinocchio,"Troja Castle, Troja, Prague, Czech Republic",,"Troja, 1/4, U Trojského zámku, Troja, Praha, okres Hlavní město Praha, Hlavní město Praha, Praha, 17100, Česká republika",50.11640225,14.41302325650553
+764,/title/tt4898730/,Temple,"Akasawa Village, Yamanashi, Japan",,,,
+765,/title/tt0432373/,Bachelor Party Vegas,"D.C. Stages, 1360 East 6th Street, Downtown, Los Angeles, California, USA",,,,
+766,/title/tt0432373/,Bachelor Party Vegas,"Gambler's General Store - 800 S. Main Street, Las Vegas, Nevada, USA",,,,
+767,/title/tt0432373/,Bachelor Party Vegas,"Neon Museum - 770 Las Vegas Boulevard North, Las Vegas, Nevada, USA",,"Neon Museum, 770, Las Vegas Boulevard North, Cultural Corridor, Las Vegas, Clark County, Nevada, 89101, United States of America",36.17651265,-115.13527674279658
+768,/title/tt2309961/,Afflicted,"Vernazza, Liguria, Italy",,"Vernazza, La Spezia, Liguria, Italia",44.1349412,9.6827757
+769,/title/tt2309961/,Afflicted,"Paris, France",,"Paris, Île-de-France, France métropolitaine, France",48.8566969,2.3514616
+770,/title/tt2309961/,Afflicted,"Vancouver, British Columbia, Canada",,"Vancouver, Metro Vancouver Regional District, British Columbia, Canada",49.2608724,-123.1139529
+771,/title/tt0092732/,Castaway,"Cousin, Seychelles",,"Cousin, Victoria, Seychelles",-4.3314159,55.66271643904621
+772,/title/tt0092732/,Castaway,"Praslin, Seychelles",,"Praslin, Victoria, Seychelles",-4.3250708499999995,55.73560817266318
+773,/title/tt0092732/,Castaway,"Charles House, Kensington High Street, Kensington, London, England, UK",(Tax Office)                        ,"Charles House, 385, Kensington High Street, Royal Borough of Kensington and Chelsea, London, Greater London, England, W14 8QA, United Kingdom",51.4960471,-0.206418144866921
+774,/title/tt0092732/,Castaway,"Harrow, Middlesex, England, UK",,"Harrow Stores, 95, Middlesex Street, Aldgate, City of London, Greater London, England, E1 7DA, United Kingdom",51.5162734,-0.07678289753866739
+775,/title/tt0092732/,Castaway,"Kensington, London, England, UK",,"Kensington, Greater London, England, W8 6NA, United Kingdom",51.4989948,-0.1991229
+776,Code,Show Name,Location,Scene,"Location, Tucker County, West Virginia, United States of America",39.2138905,-79.6371124
+777,/title/tt0865907/,Into the Blue 2: The Reef,"Honolulu, O'ahu, Hawaii, USA",,,,
+778,/title/tt0075147/,Robin and Marian,"Pamplona, Navarra, Spain",,"Pamplona/Iruña, Navarra - Nafarroa, España",42.8184538,-1.6442556
+779,/title/tt0075147/,Robin and Marian,"Artajona, Navarra, Spain",(as Nottingham city)                        ,"Artajona, Navarra - Nafarroa, 31140, España",42.5876058,-1.7644227
+780,/title/tt4158594/,Boar,"Gympie, Queensland, Australia",(Outdoor Locations)                        ,"Gympie Regional, Queensland, Australia",-26.1766225,152.4785507268936
+781,/title/tt0087065/,Cloak & Dagger,"River Walk, San Antonio, Texas, USA","(Davey under table, boat ride, final chase and shootout)                        ","River Walk, East Crockett Street, Downtown, San Antonio, Bexar County, Texas, 78205, United States of America",29.42327155,-98.49179042933488
+782,/title/tt0087065/,Cloak & Dagger,"St. Mary's St, and E Nueva St, San Antonio, Texas, USA",(Davey and Kim exit bus on Textronics mission)                        ,,,
+783,/title/tt0087065/,Cloak & Dagger,"3812 N St. Mary's St, San Antonio, Texas, USA",(Kim and Davey flee down stony slope to bus outside Sunken Garden)                        ,"3812, North Saint Mary's Street, Saint Mary's Strip, San Antonio, Bexar County, Texas, 78212, United States of America",29.460432567435152,-98.47612160449111
+784,/title/tt0087065/,Cloak & Dagger,"The GameKeeper, Glendale Galleria, Glendale, California, USA",(interiors)                        ,,,
+785,/title/tt0087065/,Cloak & Dagger,"Broadway St., San Antonio, Texas, USA",(Bus ride after escape from Sunken Gardens)                        ,"Broadway Street, S and C Colonia, Sebastian, Willacy County, Texas, 78594, United States of America",26.343749,-97.791073
+786,/title/tt0087065/,Cloak & Dagger,"Backlot, Universal Studios - 100 Universal City Plaza, Universal City, California, USA",(Jack Flack opening foreign operation scene)                        ,,,
+787,/title/tt0087065/,Cloak & Dagger,"Texas, USA",,"Texas, United States of America",31.8160381,-99.5120986
+788,/title/tt0087065/,Cloak & Dagger,"Square of Warriors, Backlot, Universal Studios - 100 Universal City Plaza, Universal City, California, USA",,,,
+789,/title/tt7279188/,Kona fer í stríð,Iceland,,Ísland,64.9841821,-18.1059013
+790,/title/tt7279188/,Kona fer í stríð,"Reykjavík, Iceland",(street scenes)                        ,"Reykjavíkurborg, Höfuðborgarsvæðið, Ísland",64.145981,-21.9422367
+791,/title/tt7279188/,Kona fer í stríð,"Thingvellir, Iceland",(historical viking site)                        ,"Þingvellir, Bláskógabyggð, Suðurland, Ísland",64.2590673,-21.1211042
+792,/title/tt7279188/,Kona fer í stríð,"Antik Húsið - Skólavörðustíg 21, Reykjavík, Iceland",(antique shop)                        ,,,
+793,/title/tt0174388/,The Famous Jett Jackson,"Brooklin, Ontario, Canada",,"Brooklin, Whitby, Durham Region, Golden Horseshoe, Ontario, L1M 1A2, Canada",43.9587134,-78.9600543
+794,/title/tt3391046/,Quantum Break,"Ivan Allen Jr Blvd NW, Atlanta, Georgia, USA",(Liam Burke's car racing in Act 1 episode)                        ,"Ivan Allen Jr Boulevard, Atlanta, Georgia, 30308-3217, United States of America",33.764828,-84.386717
+795,/title/tt3391046/,Quantum Break,"1716 Rogers Avenue Southwest, Atlanta, Georgia, USA",(Liam Burke's house)                        ,"1716, Rogers Avenue Southwest, Westview, Atlanta, Georgia, 30310, United States of America",33.73704555,-84.4438576858467
+796,/title/tt0111359/,Tall Tale,"Glenwood Springs, Colorado, USA",,"Glenwood Springs, Garfield County, Colorado, 81601, United States of America",39.5507448,-107.3255001
+797,/title/tt0111359/,Tall Tale,"Carbondale, Colorado, USA",,"Carbondale, Garfield County, Colorado, United States of America",39.4022054,-107.2111628
+798,/title/tt0111359/,Tall Tale,"San Juan River, Mexican Hat, Utah, USA",,,,
+799,/title/tt0309141/,Cyberchase,"New York City, New York, USA",,"New York, United States of America",40.7127281,-74.0060152
+800,/title/tt4870838/,Batman: Bad Blood,"Chicago Illinois, USA",(Gotham City)                        ,"Chicago, Cook County, Illinois, United States of America",41.8755616,-87.6244212
+801,/title/tt0097050/,Koneko monogatari,"Kitakyûshû City, Fukuoka, Japan",,"北九州市, 福岡県, 日本 (Japan)",33.8829996,130.8749015
+802,/title/tt0097050/,Koneko monogatari,"Mutsugoro Animal Kingdom, Hamanaka, Hokkaido, Japan","(most of the film was shot here) (coordinates for entrance: 43°08'25.8""N, 145°07'51.2""E)                        ",,,
+803,/title/tt0097050/,Koneko monogatari,"Kiritappu Wetland, Hamanaka, Hokkaido, Japan",(cotton blossom field where Milo meets Deer)                        ,"Kiritappu Wetland Trust information Center, 北海道道123号別海厚岸線, 仲の浜, 浜中町, 厚岸郡, 釧路総合振興局, 北海道, 088-1525, 日本 (Japan)",43.06512455,145.08502745
+804,/title/tt4831420/,Sharknado 4: The 4th Awakens,"Santa Clarita, California, USA",,"Santa Clarita, Los Angeles County, California, United States of America",34.3916641,-118.542586
+805,/title/tt4831420/,Sharknado 4: The 4th Awakens,"Niagara Falls, New York, USA",,"Niagara Falls, Niagara County, New York, United States of America",43.08436,-79.0614686
+806,/title/tt0108798/,Hawkeye,"North Vancouver, British Columbia, Canada",,"North Vancouver, Metro Vancouver Regional District, British Columbia, V7M 1H9, Canada",49.3207133,-123.0737831
+807,/title/tt0108798/,Hawkeye,"Fraser Valley, British Columbia, Canada",,"Fraser, Stikine Region, British Columbia, Canada",59.715297,-135.0479946
+808,/title/tt0838232/,The Pink Panther 2,"Boston, Massachusetts, USA",,"Boston, Suffolk County, Massachusetts, United States of America",42.3602534,-71.0582912
+809,/title/tt0838232/,The Pink Panther 2,"Winchester, Massachusetts, USA",,"Winchester, Middlesex County, Massachusetts, United States of America",42.4523178,-71.1369982
+810,/title/tt0838232/,The Pink Panther 2,"Chelsea, Massachusetts, USA",,"Chelsea, Suffolk County, Massachusetts, 02150, United States of America",42.3917638,-71.0328284
+811,/title/tt0838232/,The Pink Panther 2,"Trenton, New Jersey, USA",,"Trenton, Mercer County, New Jersey, United States of America",40.2170575,-74.7429463
+812,/title/tt0838232/,The Pink Panther 2,"Westwood, Massachusetts, USA",,"Westwood, Norfolk County, Massachusetts, 02090-1444, United States of America",42.2139873,-71.2244987
+813,/title/tt0115351/,The Sentinel,"Vancouver, British Columbia, Canada",,"Vancouver, Metro Vancouver Regional District, British Columbia, Canada",49.2608724,-123.1139529
+814,/title/tt0113114/,Free Willy 2: The Adventure Home,"San Juan Islands, Washington, USA",,"San Juan Islands, Unorganized Borough, Alaska, United States of America",57.2870602,-134.00490622741472
+815,/title/tt0113114/,Free Willy 2: The Adventure Home,"San Diego, California, USA",,"San Diego, San Diego County, California, United States of America",32.7174209,-117.1627714
+816,/title/tt0113114/,Free Willy 2: The Adventure Home,"Washington, USA",,"Washington, District of Columbia, 20230, United States of America",38.8949924,-77.0365581
+817,/title/tt0113114/,Free Willy 2: The Adventure Home,"California, USA",,"California, United States of America",36.7014631,-118.7559974
+818,/title/tt0088771/,Barbarian Queen,Argentina,,Argentina,-34.9964963,-64.9672817
+819,/title/tt0144964/,Highlander: Endgame,"Bucharest, Romania",,"Municipiul București, România",44.4361414,26.1027202
+820,/title/tt0144964/,Highlander: Endgame,"Appin, Argyll and Bute, Scotland, UK",,"Appin, Port Appin, Argyll and Bute, Scotland, PA38 4DB, United Kingdom",56.5622142,-5.3605993
+821,/title/tt0144964/,Highlander: Endgame,"Castle Stalker, Appin, Argyll and Bute, Scotland, UK",,"Castle Stalker, A828, Portnacroish, Port Appin, Argyll and Bute, Scotland, PA38 4BH, United Kingdom",56.571554899999995,-5.386109373894546
+822,/title/tt0144964/,Highlander: Endgame,"Millennium Dome, Greenwich, London, England, UK",,"The O2, Peninsula Square, Greenwich Peninsula, Royal Borough of Greenwich, London, Greater London, England, SE10 0DX, United Kingdom",51.502931200000006,0.0031968368061770624
+823,/title/tt0144964/,Highlander: Endgame,France,,France,46.603354,1.8883335
+824,/title/tt0144964/,Highlander: Endgame,"Loch Laich, Appin, Argyll and Bute, Scotland, UK",,,,
+825,/title/tt0144964/,Highlander: Endgame,"New York City, New York, USA",,"New York, United States of America",40.7127281,-74.0060152
+826,/title/tt0144964/,Highlander: Endgame,"Scotland, UK",,"Scotland, United Kingdom",56.7861112,-4.1140518
+827,/title/tt0058371/,The Moon-Spinners,"Agios Nicholaos, Crete, Greece",,,,
+828,/title/tt0058371/,The Moon-Spinners,"Elounda, Crete, Greece",,"Ελούντα, Κοινότητα Ἐλούντας, Δήμος Αγίου Νικολάου, Περιφερειακή Ενότητα Λασιθίου, Περιφέρεια Κρήτης, Αποκεντρωμένη Διοίκηση Κρήτης, 72053, Ελλάδα",35.2611051,25.7193538
+829,/title/tt0058371/,The Moon-Spinners,"Kritsa, Crete, Greece",,"Κριτσά, Κοινότητα Κριτσάς, Δήμος Αγίου Νικολάου, Περιφερειακή Ενότητα Λασιθίου, Περιφέρεια Κρήτης, Αποκεντρωμένη Διοίκηση Κρήτης, Ελλάδα",35.1557627,25.6461433
+830,/title/tt0058371/,The Moon-Spinners,"Pinewood Studios, Iver Heath, Buckinghamshire, England, UK",(studio)                        ,"Pinewood Studios, Pinewood Green, Iver, Iver Heath, Buckinghamshire, South East, England, SL0 0QJ, United Kingdom",51.54831515,-0.5346765566753087
+831,/title/tt3496764/,Gortimer Gibbon's Life on Normal Street,"470 W. Walnut St, Pasadena, CA 91103, USA",,"470, West Walnut Street, Pasadena, Los Angeles County, California, 91103, United States of America",34.14956258448411,-118.16027073606318
+832,/title/tt0091431/,Armour of God,"Motovun, Croatia",,"Motovun, Općina Motovun, Istarska županija, 52424, Hrvatska",45.3367292,13.8282067
+833,/title/tt0091431/,Armour of God,"Postojna, Slovenia","(Monk monastery, exterior)                        ","Postojna, Slovenija",45.7752438,14.2117877
+834,/title/tt0091431/,Armour of God,"Vienna, Austria",,"Wien, 1010, Österreich",48.2083537,16.3725042
+835,/title/tt0091431/,Armour of God,Spain,,España,39.3262345,-4.8380649
+836,/title/tt0091431/,Armour of God,"Paris, France",,"Paris, Île-de-France, France métropolitaine, France",48.8566969,2.3514616
+837,/title/tt11853364/,Operation Buffalo,"Sydney, New South Wales, Australia",,"Sydney, New South Wales, Australia",-33.8548157,151.2164539
+838,/title/tt11853364/,Operation Buffalo,"Flinders Ranges, South Australia, Australia",,"Flinders Ranges, Pastoral Unincorporated Area, South Australia, Australia",-31.497,138.545
+839,/title/tt11853364/,Operation Buffalo,"New South Wales, Australia",,"New South Wales, Australia",-31.8759835,147.2869493
+840,/title/tt11853364/,Operation Buffalo,"Mid Northern South Australia, South Australia, Australia",,,,
+841,/title/tt11853364/,Operation Buffalo,"Parachilna, South Australia, Australia",,"Parachilna, Pastoral Unincorporated Area, South Australia, 5730, Australia",-31.1320475,138.3961801
+842,/title/tt11853364/,Operation Buffalo,"Northern Flinders Ranges, Flinders Ranges, South Australia, Australia",,"Northern Boundary Track, Emeroo, The Flinders Ranges Council, South Australia, 5713, Australia",-32.2992154,137.9573689
+843,/title/tt0057748/,Flipper,"Virginia Key, Florida, USA",,"Virginia Key, Miami, Miami-Dade County, Florida, 33149, United States of America",25.7449289,-80.1458679
+844,/title/tt0057748/,Flipper,"Miami, Florida, USA",,"Miami, Miami-Dade County, Florida, United States of America",25.7742658,-80.1936589
+845,/title/tt5420886/,Walking Out,"Montana, USA",,"Montana, United States of America",47.3752671,-109.6387579
+846,/title/tt5420886/,Walking Out,"Livingston, Montana, USA",,"Livingston, Park County, Montana, United States of America",45.671445,-110.52926004348622
+847,/title/tt1606610/,Heavy Rain,"Chicago Illinois, USA",(Factory Scenes)                        ,"Chicago, Cook County, Illinois, United States of America",41.8755616,-87.6244212
+848,/title/tt0101329/,An American Tail: Fievel Goes West,"Amblimation - 207-211 The Vale, Acton, London, England, UK",,,,
+849,/title/tt0101217/,Tarzán,Mexico,,"Ciudad de México, 06060, México",19.4326296,-99.1331785
+850,/title/tt0074593/,Grizzly,"Clayton, Georgia, USA",,"Clayton County, Georgia, United States of America",33.5204959,-84.3591713
+851,/title/tt4591310/,Xi you ji zhi: Sun Wukong san da Baigu Jing,China,,中国,35.000074,104.999927
+852,/title/tt0057180/,The Incredible Journey,"Mono Mills, Ontario, Canada",(Main house)                        ,"Mono Mills, Caledon, Peel Region, Golden Horseshoe, Ontario, L7K 0A1, Canada",43.9463057,-79.9698337
+853,/title/tt0057180/,The Incredible Journey,"Lake Vernon, Huntsville, Ontario, Canada",(Opening sequence lake fly-over)                        ,"Lake Vernon, Island View Lane, Huntsville, District Municipality of Muskoka, Muskoka District, Central Ontario, Ontario, P1H 2J2, Canada",45.3295038,-79.2971226
+854,/title/tt0057180/,The Incredible Journey,"Aspdin, Muskoka, Ontario, Canada",(Opening credits)                        ,"Aspdin, Huntsville, District Municipality of Muskoka, Muskoka District, Central Ontario, Ontario, Canada",45.298194,-79.3725595
+855,/title/tt8237172/,Gundala,"Jakarta, Indonesia",,"Daerah Khusus Ibukota Jakarta, Indonesia",-6.1753942,106.827183
+856,/title/tt0452718/,Surface,"North Carolina Aquarium at Fort Fisher - 900 Loggerhead Road, Kure Beach, North Carolina, USA",(Miles develops his interest in sea life)                        ,,,
+857,/title/tt0452718/,Surface,"Boiling Spring Lakes, North Carolina, USA",(a creature drains a lake)                        ,"Boiling Spring Lakes, Brunswick County, North Carolina, United States of America",34.0313504,-78.0672677
+858,/title/tt0452718/,Surface,"Hampstead, North Carolina, USA",,"Hampstead, Pender County, North Carolina, United States of America",34.3676686,-77.7105332
+859,/title/tt0452718/,Surface,"Screen Gems Studios - 1223 North 23rd Street, Wilmington, North Carolina, USA",(studio)                        ,,,
+860,/title/tt0452718/,Surface,"Stage 19, Universal Studios - 100 Universal City Plaza, Universal City, California, USA",,,,
+861,/title/tt0452718/,Surface,"University of North Carolina Wilmington - 601 South College Road, Wilmington, North Carolina, USA",,,,
+862,/title/tt0452718/,Surface,"Wrightsville Beach, North Carolina, USA",,"Wrightsville Beach, New Hanover County, North Carolina, United States of America",34.2079917,-77.7955907
+863,/title/tt0108983/,Viper,"Los Angeles, California, USA",(1st season)                        ,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+864,/title/tt0108983/,Viper,"Vancouver, British Columbia, Canada",(2nd season)                        ,"Vancouver, Metro Vancouver Regional District, British Columbia, Canada",49.2608724,-123.1139529
+865,/title/tt0108983/,Viper,"Black Diamond, Alberta, Canada",,"Black Diamond, Town of Black Diamond, Alberta, T0L 0H0, Canada",50.687795,-114.2335483
+866,/title/tt0108983/,Viper,"Convocation Mall, Simon Fraser University, Burnaby, British Columbia, Canada",,,,
+867,/title/tt0108983/,Viper,"Vancouver, British Columbia, Canada",,"Vancouver, Metro Vancouver Regional District, British Columbia, Canada",49.2608724,-123.1139529
+868,/title/tt0365675/,The Red Baron,Czech Republic,,Česko,49.8167003,15.4749544
+869,/title/tt0365675/,The Red Baron,"Prague Studios, Prague, Czech Republic",(studio)                        ,,,
+870,/title/tt0365675/,The Red Baron,France,,France,46.603354,1.8883335
+871,Code,Show Name,Location,Scene,"Location, Tucker County, West Virginia, United States of America",39.2138905,-79.6371124
+872,/title/tt0073906/,The Wind and the Lion,"La Calahorra, Granada, Andalucía, Spain",(El Raisuli's fort)                        ,"La Calahorra, Comarca de Guadix, Granada, Andalucía, 18512, España",37.1814745,-3.0640503
+873,/title/tt0073906/,The Wind and the Lion,"Andalucía, Spain",,"Andalucía, España",37.3399964,-4.5811614
+874,/title/tt0073906/,The Wind and the Lion,"Cabo de Gata, Almería, Andalucía, Spain",,"Cabo de Gata, AL-3115, La Fabriquilla, Níjar, Almería, Andalucía, España",36.7210296,-2.1932327
+875,/title/tt0073906/,The Wind and the Lion,"Almería, Andalucía, Spain",,"Almería, Andalucía, España",36.8414197,-2.4628135
+876,/title/tt0073906/,The Wind and the Lion,"Real Alcázar, Seville, Andalucia, Spain",(Sultan's palace)                        ,"real alcazar, Patio de Banderas, Santa Cruz, Casco Antiguo, Sevilla, Andalucía, 41004, España",37.3840154,-5.9911316
+877,/title/tt0073906/,The Wind and the Lion,"Almería, Almería, Andalucía, Spain",,"Almería, Andalucía, España",36.8414197,-2.4628135
+878,/title/tt0073906/,The Wind and the Lion,"Gergal, Almeria, Andalucia, Spain",(Raisuli's tent)                        ,"Gérgal, Almería, Andalucía, España",37.118565,-2.5395634
+879,/title/tt0073906/,The Wind and the Lion,"Playa de Monsul, Cabo de Gata, Almería, Andalucía, Spain",,,,
+880,/title/tt0073906/,The Wind and the Lion,"Genovese Beach, San José, Almería, Andalucía, Spain",,,,
+881,/title/tt0108903/,ReBoot,"Vancouver, British Columbia, Canada",,"Vancouver, Metro Vancouver Regional District, British Columbia, Canada",49.2608724,-123.1139529
+882,/title/tt0108903/,ReBoot,"Calgary, Alberta, Canada",,"Calgary, Strathmore (town), Alberta, Canada",51.0534234,-114.0625892
+883,/title/tt1121628/,Power Rangers Jungle Fury,"Auckland, New Zealand",,"Auckland, 1010, New Zealand",-36.852095,174.7631803
+884,/title/tt1121628/,Power Rangers Jungle Fury,New Zealand,,New Zealand / Aotearoa,-41.5000831,172.8344077
+885,/title/tt0108258/,Surf Ninjas,"Chiang Mai, Thailand",(Patu San)                        ,"เชียงใหม่, จังหวัดเชียงใหม่, 4452, ประเทศไทย",18.790876,98.988048
+886,/title/tt0108258/,Surf Ninjas,"Phuket, Thailand",(Patu San)                        ,"จังหวัดภูเก็ต, ประเทศไทย",7.9366015,98.3529292
+887,/title/tt0108258/,Surf Ninjas,"Chinatown, Los Angeles, California, USA",(Little Patu San)                        ,"Chinatown, Los Angeles, Los Angeles County, California, 90012, United States of America",34.0638402,-118.2358676
+888,/title/tt0108258/,Surf Ninjas,"Santa Monica Pier, Santa Monica, California, USA",(nighttime park scene)                        ,"Santa Monica Pier, Santa Monica, Los Angeles County, California, United States of America",34.00889605,-118.49740225045329
+889,/title/tt0108258/,Surf Ninjas,"Manhattan Beach, California, USA",,"Manhattan Beach, Los Angeles County, California, 90266, United States of America",33.8915985,-118.3951241
+890,/title/tt0108258/,Surf Ninjas,Thailand,,ประเทศไทย,14.8971921,100.83273
+891,/title/tt0077278/,Buck Rogers in the 25th Century,"Westin Bonaventure Hotel & Suites - 404 S. Figueroa Street, Downtown, Los Angeles, California, USA",,,,
+892,/title/tt1245112/,[Rec]²,"Barcelona, Catalonia, Spain",,"Barcelona, Barcelonès, Catalunya, 08001, España",41.3828939,2.1774322
+893,/title/tt1316622/,Wrecked,"Errington, British Columbia, Canada",,"Errington, Area F (Alberni Highway), Regional District of Nanaimo, British Columbia, V0R 1V0, Canada",49.2894628,-124.37063
+894,/title/tt0041190/,The Blue Lagoon,"Vitu Levu, Fiji",(island north of)                        ,,,
+895,/title/tt0041190/,The Blue Lagoon,"Pinewood Studios, Iver Heath, Buckinghamshire, England, UK",(studio)                        ,"Pinewood Studios, Pinewood Green, Iver, Iver Heath, Buckinghamshire, South East, England, SL0 0QJ, United Kingdom",51.54831515,-0.5346765566753087
+896,/title/tt0143436/,The Long Way Home,"Ladysmith, British Columbia, Canada",,"Ladysmith, Cowichan Valley Regional District, British Columbia, Canada",48.9936579,-123.8157964
+897,/title/tt0104391/,Hard Hunted,"Coconino National Forest, Arizona, USA",,"Coconino National Forest, Tempe Camp, Coconino County, Arizona, United States of America",34.9455958,-111.4330018089496
+898,/title/tt0104391/,Hard Hunted,"Sky Harbor Airport - 3400 E. Sky Harbor Boulevard, Phoenix, Arizona, USA",,,,
+899,/title/tt0104391/,Hard Hunted,"Las Vegas, Nevada, USA",,"Las Vegas, Clark County, Nevada, United States of America",36.1672559,-115.1485163
+900,/title/tt4420110/,Invisible Sister,"New Orleans, Louisiana, USA",,"New Orleans, Orleans Parish, Louisiana, United States of America",29.9499323,-90.0701156
+901,/title/tt1104123/,The Scorpion King 2: Rise of a Warrior,"Atlantis, Western Cape, South Africa",,"Atlantis, City of Cape Town, Western Cape, South Africa",-33.5672222,18.5002778
+902,/title/tt1104123/,The Scorpion King 2: Rise of a Warrior,"Epping, Cape Town, Western Cape, South Africa",,"Epping Industria 1, Cape Town, City of Cape Town, Western Cape, South Africa",-33.9333695,18.534577
+903,/title/tt0399102/,Gojira: Fainaru uôzu,"Broken Hill, New South Wales, Australia",(Arizona scenes)                        ,"Broken Hill, Broken Hill City Council, New South Wales, 2880, Australia",-31.965,141.4511111
+904,/title/tt0399102/,Gojira: Fainaru uôzu,Egypt,,مصر,26.2540493,29.2675469
+905,/title/tt0399102/,Gojira: Fainaru uôzu,"New York City, New York, USA",,"New York, United States of America",40.7127281,-74.0060152
+906,/title/tt0399102/,Gojira: Fainaru uôzu,"Paris, France",,"Paris, Île-de-France, France métropolitaine, France",48.8566969,2.3514616
+907,/title/tt0399102/,Gojira: Fainaru uôzu,"Sydney Harbour Bridge, Sydney, New South Wales, Australia",,"Sydney Harbour Bridge, Olympic Drive, Kirribilli, Lower North Shore, North Sydney Council, New South Wales, 2061, Australia",-33.85225755,151.21069310558983
+908,/title/tt0399102/,Gojira: Fainaru uôzu,"Sydney, New South Wales, Australia",(principal New York scenes)                        ,"Sydney, New South Wales, Australia",-33.8548157,151.2164539
+909,/title/tt0399102/,Gojira: Fainaru uôzu,"Vancouver, British Columbia, Canada",,"Vancouver, Metro Vancouver Regional District, British Columbia, Canada",49.2608724,-123.1139529
+910,/title/tt0073075/,The Great Waldo Pepper,"Floresville, Texas, USA",,"Floresville, Wilson County, Texas, United States of America",29.1335781,-98.1561192
+911,/title/tt0073075/,The Great Waldo Pepper,"Kerrville, Texas, USA",,"Kerrville, Kerr County, Texas, United States of America",30.0474688,-99.1400207
+912,/title/tt0073075/,The Great Waldo Pepper,"Francis Ave, Los Angeles, California, USA",,"Francis Avenue, Koreatown, Westlake, Los Angeles, Los Angeles County, California, 90005, United States of America",34.056819,-118.288423
+913,/title/tt0073075/,The Great Waldo Pepper,"Universal Studios - 100 Universal City Plaza, Universal City, California, USA",(studio)                        ,,,
+914,/title/tt0073075/,The Great Waldo Pepper,"San Antonio, Texas, USA",(aerial sequences filmed at Zuehl Airfield)                        ,"San Antonio, Bexar County, Texas, United States of America",29.4246002,-98.4951405
+915,/title/tt1321869/,The Lovers,"Pinewood Studios, Iver Heath, Buckinghamshire, England, UK",(studio)                        ,"Pinewood Studios, Pinewood Green, Iver, Iver Heath, Buckinghamshire, South East, England, SL0 0QJ, United Kingdom",51.54831515,-0.5346765566753087
+916,/title/tt1321869/,The Lovers,"Gwalior, Madhya Pradesh, India",,"Gwalior, Maharani LaxhmiBai Marg, Gwalior, Gwalior Tahsil, Gwalior, Madhya Pradesh, 474001, India",26.2037247,78.1573628
+917,/title/tt1321869/,The Lovers,"Bryants Lane Quarry, Heath and Reach, Bedfordshire, England, UK",,,,
+918,/title/tt1321869/,The Lovers,"Mount Tamborine, Queensland, Australia",,"Mount Tamborine, Scenic Rim Regional, Queensland, 4272, Australia",-27.9684035,153.1967792
+919,/title/tt1321869/,The Lovers,"Village Roadshow Studios, Oxenford, Queensland, Australia",(studio)                        ,"Village Roadshow Studios, Entertainment Road, Oxenford, Gold Coast City, Queensland, 4210, Australia",-27.910527700000003,153.3118145855983
+920,/title/tt1321869/,The Lovers,Australia,,Australia,-24.7761086,134.755
+921,/title/tt0081400/,Raise the Titanic,"The Sloop Inn, The Wharf, St Ives, Cornwall, England, UK",(John Bigalow shows Dirk Pitt his collection of Titanic memorabilia at the Sloop Inn)                        ,"The Sloop Inn, The Wharf, St Ives, St. Ives, St Ives, Cornwall, South West England, England, TR26 1LP, United Kingdom",50.2151342,-5.479114
+922,/title/tt0081400/,Raise the Titanic,"Mediterranean Film Studios, Kalkara, Malta",(Model exteriors during scenes of Titanic surfacing)                        ,,,
+923,/title/tt0081400/,Raise the Titanic,"Bronson Caves, Bronson Canyon, Griffith Park - 4730 Crystal Springs Drive, Los Angeles, California, USA",(Mine on Svardlov island)                        ,,,
+924,/title/tt0081400/,Raise the Titanic,"Morven Park, 17195 Southern Planter Ln, Leesburg, Virginia, USA","(The White House, close-up shots)                        ",,,
+925,/title/tt0081400/,Raise the Titanic,"Meridian House, 1630 Crescent Place NW, Washington, District of Columbia, USA","(Soviet Embassy, exterior and interior)                        ",,,
+926,/title/tt0081400/,Raise the Titanic,"Prospect House, 3508 Prospect Street Northwest, Washington, District of Columbia, USA",(Admiral Sandecker's house)                        ,,,
+927,/title/tt0081400/,Raise the Titanic,"Andrew Mellon Building, 1785 Massachusetts Avenue, Washington, District of Columbia, USA","(Admiral Sandecker's office, exterior and interior)                        ","Andrew Mellon Building, 1785, Massachusetts Avenue Northwest, Dupont Circle and surrunding block, Dupont Circle, Washington, District of Columbia, 20036, United States of America",38.90930075,-77.04136235884826
+928,/title/tt0081400/,Raise the Titanic,"Naval Research Laboratory Cyclotron, Building 256, McGuire Avenue, Washington, District of Columbia, USA",(Sicilian Project)                        ,,,
+929,/title/tt0081400/,Raise the Titanic,"Palio Faliro, Attica, Greece","(Titanic docked in New York, exterior)                        ","Cine Όνειρο, Χρυσοστόμου Σμύρνης, Απόλλωνας, Νέο Φάληρο, Πειραιάς, Δήμος Πειραιώς, Περιφερειακή Ενότητα Πειραιώς, Περιφέρεια Αττικής, Αποκεντρωμένη Διοίκηση Αττικής, 18541, Ελλάδα",37.95550155,23.66849329687855
+930,/title/tt0081400/,Raise the Titanic,"Valdez, Alaska, USA","(Svardlov island, Soviet Union)                        ","Valdez, Unorganized Borough, Alaska, 99686, United States of America",61.1299396,-146.3493638
+931,/title/tt0081400/,Raise the Titanic,"San Diego, California, USA","(Salvage fleet scenes, exterior)                        ","San Diego, San Diego County, California, United States of America",32.7174209,-117.1627714
+932,/title/tt0118360/,Johnny Bravo,"Burbank, California, USA",(studio) (Cartoon Network Studios)                        ,"Burbank, Los Angeles County, California, United States of America",34.1816482,-118.3258554
+933,/title/tt0118360/,Johnny Bravo,"Hanna-Barbera Studios - 3400 Cahuenga Boulevard W, Los Angeles, California, USA",,,,
+934,/title/tt1031241/,From Time to Time,"Athelhampton House, Athelhampton, Dorset, England, UK",(Green Knowe estate exteriors/library/great hall)                        ,"Athelhampton House, Board Walk, Athelhampton, Dorset, South West England, England, DT2 7LG, United Kingdom",50.747682,-2.3264080903306255
+935,/title/tt1031241/,From Time to Time,"Ockwells Manor, Ockwells Road, Cox Green, Maidenhead, Berkshire, England, UK",(Tolly's bedroom/1944 dining room/passageways)                        ,,,
+936,/title/tt1031241/,From Time to Time,"Medstead and Four Marks Station, Watercress Line, Hampshire, England, UK","(railway station, opening scenes)                        ",,,
+937,/title/tt8368408/,Gunpowder Milkshake,"Berlin, Germany",(main location)                        ,"Berlin, 10117, Deutschland",52.5170365,13.3888599
+938,/title/tt1762399/,Walking with Dinosaurs: The Movie,New Zealand,(location)                        ,New Zealand / Aotearoa,-41.5000831,172.8344077
+939,/title/tt1762399/,Walking with Dinosaurs: The Movie,"Fox Studios, Moore Park, Sydney, New South Wales, Australia",(studio)                        ,"Fox Studios Australia, Moore Park, Sydney, Council of the City of Sydney, New South Wales, 2021, Australia",-33.890960899999996,151.22750517838074
+940,/title/tt0094318/,White Water Summer,"Cromberg, California, USA",,"Cromberg, Little Long Valley Creek Road, Cromberg, Plumas County, California, United States of America",39.8726675,-120.69156928057554
+941,/title/tt0094318/,White Water Summer,"Rangitaiki River, Bay of Plenty, New Zealand",,"Rangitaiki River, Whakatāne District, Bay of Plenty, 3167, New Zealand",-38.0944186,176.8168188
+942,/title/tt0094318/,White Water Summer,"Sierra Nevada Mountains, California, USA",,"Rancho Sierra Vista, West Potrero Road, Thousand Oaks, Ventura County, California, 93012, United States of America",34.151052,-118.95678037704732
+943,/title/tt0094318/,White Water Summer,"Quincy, California, USA",,"Quincy, Nugget Lane, Cedar Mill, Quincy, Plumas County, California, 95971, United States of America",39.9309945,-120.95357394728885
+944,/title/tt0387736/,Farscape: The Peacekeeper Wars,"Fox Studios, Moore Park, Sydney, New South Wales, Australia",,"Fox Studios Australia, Moore Park, Sydney, Council of the City of Sydney, New South Wales, 2021, Australia",-33.890960899999996,151.22750517838074
+945,/title/tt0080641/,The Dogs of War,"Belize City, Belize",(Central America)                        ,"Belize City, Belize District, Belize",17.5000543,-88.2003115
+946,/title/tt0080641/,The Dogs of War,Belize,(Central America)                        ,Belize,16.8259793,-88.7600927
+947,/title/tt0080641/,The Dogs of War,"St John's Cathedral, Belize City, Belize",(Zangaran Church)                        ,"St. John's Cathedral, Regent Street, Belize City, Belize District, 1021, Belize",17.48872945,-88.1877603445229
+948,/title/tt0080641/,The Dogs of War,"Broadgate, London, England, UK",,"Broadgate, Bishopsgate, City of London, Greater London, England, EC2M 2PJ, United Kingdom",51.5191676,-0.0839187
+949,/title/tt0080641/,The Dogs of War,"Lee International Studios, Wembley, London, England, UK",(studio)                        ,,,
+950,/title/tt0080641/,The Dogs of War,"New York City, New York, USA",,"New York, United States of America",40.7127281,-74.0060152
+951,/title/tt5774002/,Jupiter's Legacy,"Toronto, Ontario, Canada",,"Toronto, Peel, Golden Horseshoe, Ontario, Canada",43.6534817,-79.3839347
+952,/title/tt3510480/,Anacleto: Agente secreto,"Barcelona, Catalonia, Spain",,"Barcelona, Barcelonès, Catalunya, 08001, España",41.3828939,2.1774322
+953,/title/tt0246544/,The Musketeer,"Castle, Cassaigne, Gers, France",,"Château de Cassaigne, D 142, A la Bordère, A Cantougros, Cassaigne, Condom, Gers, Occitanie, France métropolitaine, 32100, France",43.90858315,0.3358070398164761
+954,/title/tt0246544/,The Musketeer,"Castle, Vianden, Luxembourg",,"Château de Vianden, Promenade B, Vianden, Canton Vianden, 9410, Luxembourg",49.9348804,6.202804160734983
+955,/title/tt0246544/,The Musketeer,"Toulouse, Haute-Garonne, France",,"Toulouse, Haute-Garonne, Occitanie, France métropolitaine, France",43.6044622,1.4442469
+956,/title/tt0246544/,The Musketeer,"Auch, Gers, France",,"Auch, Gers, Occitanie, France métropolitaine, 32000, France",43.6463558,0.5850507
+957,/title/tt0246544/,The Musketeer,Luxembourg,,Lëtzebuerg,49.8158683,6.1296751
+958,/title/tt0246544/,The Musketeer,"Tillac, Gers, France",,"Tillac, Mirande, Gers, Occitanie, France métropolitaine, 32170, France",43.4761111,0.2763889
+959,/title/tt0076975/,The Amazing Spider-Man,"Los Angeles, California, USA",,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+960,/title/tt0100232/,Navy Seals,"Hampton, Virginia, USA",(Graveyard Scene)                        ,"Hampton, Hampton City, Virginia, 23669-4019, United States of America",37.0300969,-76.3452057
+961,/title/tt0100232/,Navy Seals,"Virginia Beach, Virginia, USA",(Virginia Beach oceanfront)                        ,"Virginia Beach, Virginia Beach (city), Virginia, United States of America",36.8529841,-75.9774183
+962,/title/tt0100232/,Navy Seals,"Portsmouth, Virginia, USA","(WAVY-TV, interiors)                        ","Portsmouth, Virginia, United States of America",36.8678592,-76.37559852679193
+963,/title/tt0100232/,Navy Seals,"5302 Oceanfront Ave, Virginia Beach, VA 23451, USA",(Beach House scene prior to wedding scene where Charlie Sheen is laid out on the Beach)                        ,,,
+964,/title/tt0100232/,Navy Seals,"Richmond, Virginia, USA",(Capitol Building; doubling for the Pentagon scenes)                        ,"Richmond, Richmond City, Virginia, 23298, United States of America",37.5385087,-77.43428
+965,/title/tt0100232/,Navy Seals,"San Diego, California, USA",,"San Diego, San Diego County, California, United States of America",32.7174209,-117.1627714
+966,/title/tt0100232/,Navy Seals,"Christ and Saint Luke's Episcopal Church, Norfolk, Virginia, USA",(Wedding Scene)                        ,,,
+967,/title/tt0100232/,Navy Seals,"Red Wing Lake Golf Course, Virginia Beach, Virginia, USA",(Golf Scene)                        ,"Red Wing Lake Golf Course, Hempstead Court, Macons Corner, Virginia Beach, Virginia, 23451, United States of America",36.7981287,-75.9815327354759
+968,/title/tt0100232/,Navy Seals,"Almería, Andalucía, Spain",,"Almería, Andalucía, España",36.8414197,-2.4628135
+969,/title/tt1070742/,Wiedzmin,Poland,,Polska,52.215933,19.134422
+970,/title/tt2865120/,Ratchet & Clank,"Vancouver, British Columbia, Canada",,"Vancouver, Metro Vancouver Regional District, British Columbia, Canada",49.2608724,-123.1139529
+971,/title/tt0062569/,Here Come the Brides,"Columbia/Sunset Gower Studios - 1438 N. Gower Street, Hollywood, Los Angeles, California, USA",,,,
+972,/title/tt0120604/,Beowulf,Romania,,România,45.9852129,24.6859225
+973,/title/tt1618435/,Scooby-Doo! Curse of the Lake Monster,"California, USA",,"California, United States of America",36.7014631,-118.7559974
+974,/title/tt2369041/,Legendary,China,,中国,35.000074,104.999927
+975,/title/tt0452573/,The Triangle,"Seven Mile Bridge, Florida Keys, Florida, USA",,,,
+976,/title/tt0452573/,The Triangle,"Cape Town, Western Cape, South Africa",,"Cape Town, City of Cape Town, Western Cape, 8001, South Africa",-33.928992,18.417396
+977,/title/tt0060033/,Tarzan,"Acapulco, Mexico",,"Acapulco, Acapulco de Juárez, Guerrero, 39300, México",16.8680495,-99.8940182
+978,/title/tt0060033/,Tarzan,"Durango, Mexico",,"Durango, México",24.833333,-104.833333
+979,/title/tt0093593/,Na srebrnym globie,"Pustynia Bledowska, Slaskie, Poland",(desert)                        ,"Pustynia Błędowska, Hutnicza, Chechło, gmina Klucze, powiat olkuski, Górnośląsko-Zagłębiowska Metropolia, województwo śląskie, Polska",50.340284600000004,19.51384620770148
+980,/title/tt0093593/,Na srebrnym globie,"Crimea, Ukraine",,"Кримській півострів, Амурское сельское поселение, Красногвардейский район, Автономна Республіка Крим, Україна",45.28350435,34.20081877526554
+981,/title/tt0093593/,Na srebrnym globie,"Krakowskie Przedmiescie, Sródmiescie, Warsaw, Mazowieckie, Poland",,"Krakowskie Przedmieście, Śródmieście Północne, Śródmieście, Warszawa, województwo mazowieckie, 00-046, Polska",52.2394315,21.017105
+982,/title/tt0093593/,Na srebrnym globie,"Wieliczka Salt Mine, Wieliczka, Malopolskie, Poland",,"Kopalnia soli Wieliczka, 10, Jana Mikołaja Daniłowicza, Górsko, Osiedle Zdrojowe, Wieliczka, gmina Wieliczka, powiat wielicki, województwo małopolskie, 32-020, Polska",49.9830427,20.05566105995854
+983,/title/tt0093593/,Na srebrnym globie,"Lisi Jar, Pomorskie, Poland",,"Lisi Jar, gmina Władysławowo, Jastrzębia Góra, powiat pucki, województwo pomorskie, 84-104, Polska",54.8319817,18.3249079
+984,/title/tt0093593/,Na srebrnym globie,"Warsaw, Mazowieckie, Poland",,"Warszawa, województwo mazowieckie, Polska",52.2319581,21.0067249
