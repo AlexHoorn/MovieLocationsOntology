@@ -17,14 +17,16 @@ startUrlPart2 = ""
 
 def GetSaveName(count):
     # Get a save name based on the genre and 500movies
-    return currentGENRE+"MovieLocations" + str(count) + "-" + str(count+500) + ".csv"
+    return (
+        currentGENRE + "MovieLocations" + str(count) + "-" + str(count + 500) + ".csv"
+    )
 
 
 def GetNewSaveName(count, previousSaveName):
     # Get a **new** save name every 500 entries.
     # If the program crashes it at least has saved on a lot of "safe points"
     saveName = previousSaveName
-    if (count % 500 < 2):
+    if count % 500 < 2:
         saveName = GetSaveName(count)
         previousSaveName = saveName
         print("saving under new filename: " + saveName)
@@ -33,9 +35,9 @@ def GetNewSaveName(count, previousSaveName):
 
 def GetLocationDiv(a):
     # Go to the locations page of the movie
-    newLink = "https://www.imdb.com" + a['href'] + "locations"
+    newLink = "https://www.imdb.com" + a["href"] + "locations"
     newPage = requests.get(newLink)
-    newSoup = bs(newPage.text, 'html.parser')
+    newSoup = bs(newPage.text, "html.parser")
 
     # Get the element from the HTML holding the locations
     locationHolder = newSoup.find(id="filming_locations")
@@ -50,8 +52,14 @@ def WriteLocationData(locationElement, writer, movieElement):
     scene = locationElement.find("dd")
 
     # Write tconst code, moviename, location, scene to CSV
-    writer.writerow([movieElement['href'], movieElement.text, location.text.replace("\n", "", 999),
-                     scene.text.replace("\n", "", 999)])
+    writer.writerow(
+        [
+            movieElement["href"],
+            movieElement.text,
+            location.text.replace("\n", "", 999),
+            scene.text.replace("\n", "", 999),
+        ]
+    )
 
 
 def GetMovieListElement(url):
@@ -59,7 +67,7 @@ def GetMovieListElement(url):
     page = requests.get(url)
 
     # parse the html using beautiful soup and store in variable `soup`
-    soup = bs(page.text, 'html.parser')
+    soup = bs(page.text, "html.parser")
 
     # Get the items of the list on the page
     movieLists = soup.find_all(class_="lister-item-header")
@@ -88,18 +96,16 @@ def ScrapeMoviesData(movieLists, writer):
 
             # Get all locations from this locations div
             if locationDiv is not None:
-                locationElements = locationDiv.find_all(
-                    class_="soda sodavote odd")
+                locationElements = locationDiv.find_all(class_="soda sodavote odd")
 
                 for locationElement in locationElements:
                     # Actual location description
-                    WriteLocationData(
-                        locationElement, writer, movieElement)
+                    WriteLocationData(locationElement, writer, movieElement)
 
 
 def ScrapeAndWritePage(saveName, url):
     # Scrapes all movies and their locations on a page
-    with open(saveName, 'a', newline='') as file:
+    with open(saveName, "a", newline="") as file:
         writer = csv.writer(file)
         writer.writerow(["Code", "Show Name", "Location", "Scene"])
 
@@ -133,6 +139,7 @@ def Scrape50Shows(count):
     # After parsing 2500 movies sleep a bit to avoid connection refused
     SleepAvoidTimeout(count)
 
+
 # Actual program
 ########################################################################
 
@@ -144,15 +151,33 @@ def Run():
     global startUrlPart2
 
     # The list of genres from IMDB we will scrape for
-    genres = ["Action", "Adventure", "Family", "Fantasy", "History", "Horror", "Music", "Musical",
-              "Mystery", "Sci-Fi", "Sport", "Superhero", "Thriller", "War", "Western"]
+    genres = [
+        "Action",
+        "Adventure",
+        "Family",
+        "Fantasy",
+        "History",
+        "Horror",
+        "Music",
+        "Musical",
+        "Mystery",
+        "Sci-Fi",
+        "Sport",
+        "Superhero",
+        "Thriller",
+        "War",
+        "Western",
+    ]
 
     # Run scraper on every category
     for genre in genres:
         # Set the url we will scrape from currently
         currentGENRE = genre
-        startUrlPart1 = "https://www.imdb.com/search/title/?genres=" + genre.lower() + \
-            "&view=simple&start="
+        startUrlPart1 = (
+            "https://www.imdb.com/search/title/?genres="
+            + genre.lower()
+            + "&view=simple&start="
+        )
         startUrlPart2 = "&explore=title_type,genres&ref_=adv_nxt"
 
         # Scrape the range amount of movies. There are 50 movies per page.

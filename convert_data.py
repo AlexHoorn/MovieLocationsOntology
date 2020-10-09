@@ -6,8 +6,7 @@ import pandas as pd
 
 # %% Load all codes of shows for which locations are in the dataset
 title_filter = (
-    pd.read_excel("location_data/processed_location_data.xlsx",
-                  usecols=["Code"])
+    pd.read_excel("location_data/processed_location_data.xlsx", usecols=["Code"])
     .drop_duplicates()["Code"]
     .values
 )
@@ -36,8 +35,7 @@ show = (
         # Converts `titleType` to category
         titleType=lambda x: pd.Categorical(x["titleType"]),
         # Converts `runtimeMinutes` to float
-        runtimeMinutes=lambda x: pd.to_numeric(
-            x["runtimeMinutes"], errors="coerce"),
+        runtimeMinutes=lambda x: pd.to_numeric(x["runtimeMinutes"], errors="coerce"),
         # Add ratings
         averageRating=lambda x: x.index.map(rating["averageRating"]),
     )
@@ -98,8 +96,7 @@ actor = (
     .drop(["ordering", "category"], axis=1)
 )
 
-person_filter = np.append(
-    director_map["nconst"].values, actor["nconst"].values)
+person_filter = np.append(director_map["nconst"].values, actor["nconst"].values)
 # Creates a dataframe with characters for each title and their actor
 character = actor.copy().dropna()
 # Creates a dataframe for the remaining cases where the character is unknown
