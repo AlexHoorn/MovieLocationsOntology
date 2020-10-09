@@ -1,11 +1,11 @@
-tconst,primaryTitle,genre
-tt0000012,The Arrival of a Train,Action
-tt0000012,The Arrival of a Train,Documentary
-tt0000012,The Arrival of a Train,Short
-tt0000439,The Great Train Robbery,Action
-tt0000439,The Great Train Robbery,Crime
-tt0000439,The Great Train Robbery,Short
-tt0003740,Cabiria,Adventure
-tt0003740,Cabiria,Drama
-tt0003740,Cabiria,History
-tt0004972,The Birth of a Nation,Drama
+tconst,genre
+tt0000012,Action
+tt0000012,Documentary
+tt0000012,Short
+tt0000439,Action
+tt0000439,Crime
+tt0000439,Short
+tt0003740,Adventure
+tt0003740,Drama
+tt0003740,History
+tt0004972,Drama

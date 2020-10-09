@@ -43,7 +43,7 @@ show = (
 
 # %% Creates a dataframe that is used to map shows with their **multiple** genres
 genre_map = (
-    show[["primaryTitle", "genres"]]
+    show[["genres"]]
     # The genres are denoted by a long string with commas, this converts it to lists
     .assign(genres=lambda x: x["genres"].str.split(","))
     # Create new rows for every item in the lists from the previous step
@@ -70,7 +70,7 @@ director_map = (
     # Create new rows for every item in the lists from the previous step
     .explode("directors")
     # Rename column
-    .rename(columns={"directors": "director"})
+    .rename(columns={"directors": "nconst"})
 )
 
 # %% Loads principals to a dataframe, this is used for actors and their characters
@@ -96,7 +96,7 @@ actor = (
     .drop(["ordering", "category"], axis=1)
 )
 
-person_filter = np.append(director_map["director"].values, actor["nconst"].values)
+person_filter = np.append(director_map["nconst"].values, actor["nconst"].values)
 # Creates a dataframe with characters for each title and their actor
 character = actor.copy().dropna()
 # Creates a dataframe for the remaining cases where the character is unknown
