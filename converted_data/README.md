@@ -1,4 +1,4 @@
-- [Explaination of converted data files](#explaination-of-converted-data-files)
+- [Explanation of converted data files](#explanation-of-converted-data-files)
   - [actor_map](#actor_map)
   - [character](#character)
   - [director_map](#director_map)
@@ -7,7 +7,7 @@
   - [show](#show)
   - [Overview](#overview)
 
-# Explaination of converted data files
+# Explanation of converted data files
 
 ## actor_map
 
