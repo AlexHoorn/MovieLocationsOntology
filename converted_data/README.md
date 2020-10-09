@@ -11,7 +11,7 @@
 
 ## actor_map
 
-[Sample](actor_map_sample.csv)
+[Sample](samples/actor_map_sample.csv)
 
 This table maps actors to a show. A show can have **multiple** actors. This table appears limited because **only the actors for who their character in the show is unknown appear in this table.** Further information of each specific actor is added to the ontology through the [person](#person) table.
 
@@ -24,7 +24,7 @@ This table maps actors to a show. A show can have **multiple** actors. This tabl
 
 ## character
 
-[Sample](character_sample.csv)
+[Sample](samples/character_sample.csv)
 
 This table adds characters and their actors to a show. A show can have **multiple** characters. It's important to note that **these actors are not to be added directly to the show**. This should be through inference instead. Further information of each specific actor is added to the ontology through the [person](#person) table.
 
@@ -39,7 +39,7 @@ This table adds characters and their actors to a show. A show can have **multipl
 
 ## director_map
 
-[Sample](director_map_sample.csv)
+[Sample](samples/director_map_sample.csv)
 
 This table maps directors to a show. A show can have **multiple** directors. Further information of each specific director is added to the ontology through the [person](#person) table.
 
@@ -52,7 +52,7 @@ This table maps directors to a show. A show can have **multiple** directors. Fur
 
 ## genre_map
 
-[Sample](genre_map_sample.csv)
+[Sample](samples/genre_map_sample.csv)
 
 This table maps genres to a show. A show can have **multiple** genres.
 
@@ -65,7 +65,7 @@ This table maps genres to a show. A show can have **multiple** genres.
 
 ## person
 
-[Sample](person_sample.csv)
+[Sample](samples/person_sample.csv)
 
 This table adds information to every person.
 
@@ -80,7 +80,7 @@ This table adds information to every person.
 
 ## show
 
-[Sample](show_sample.csv)
+[Sample](samples/show_sample.csv)
 
 This table adds information to every show.
 

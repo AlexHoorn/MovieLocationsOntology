@@ -2,3 +2,4 @@
 .mypy_cache
 .vscode
 raw_data/*.tsv
+.pre-commit-config-yaml

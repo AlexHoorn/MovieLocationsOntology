@@ -126,7 +126,7 @@ person = (
 
 def save_df(name, **kwargs):
     df = eval(name)
-    df.head(10).to_csv(f"converted_data/{name}_sample.csv", **kwargs)
+    df.head(10).to_csv(f"converted_data/samples/{name}_sample.csv", **kwargs)
     df.to_excel(f"converted_data/{name}.xlsx", **kwargs)
 
 

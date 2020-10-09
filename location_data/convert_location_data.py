@@ -31,31 +31,31 @@ index = 0
 
 dir = os.getcwd() + "/raw_data_geocoded/"
 for subdirs, dirs, file in os.walk(dir):
-        # Load CSV
-        print("Processing file:", str(index))
-        loadedCSV = pd.read_csv(dir+file)
+    # Load CSV
+    print("Processing file:", str(index))
+    loadedCSV = pd.read_csv(dir+file)
 
-        # Remove special characters and double spaces
-        loadedCSV["Code"] = loadedCSV["Code"].apply(CleanTitle)
+    # Remove special characters and double spaces
+    loadedCSV["Code"] = loadedCSV["Code"].apply(CleanTitle)
 
-        # Remove special characters and double spaces
-        loadedCSV["Scene"] = loadedCSV["Scene"].apply(RemoveSpecialChars)
+    # Remove special characters and double spaces
+    loadedCSV["Scene"] = loadedCSV["Scene"].apply(RemoveSpecialChars)
 
-        # Get names for all rows with studios instead of scenes
-        indexNames = loadedCSV[loadedCSV['Scene'].str.contains(
-            "(studio)", na=False)].index
+    # Get names for all rows with studios instead of scenes
+    indexNames = loadedCSV[loadedCSV['Scene'].str.contains(
+        "(studio)", na=False)].index
 
-        # Delete these row indexes from dataFrame
-        loadedCSV.drop(indexNames, inplace=True)
+    # Delete these row indexes from dataFrame
+    loadedCSV.drop(indexNames, inplace=True)
 
-        # Make Nan values empty strings
-        loadedCSV["Scene"] = loadedCSV["Scene"].apply(MakeNANsEmpty)
+    # Make Nan values empty strings
+    loadedCSV["Scene"] = loadedCSV["Scene"].apply(MakeNANsEmpty)
 
-        # Append dataframe without its header
-        frames.append(loadedCSV[1:])
+    # Append dataframe without its header
+    frames.append(loadedCSV[1:])
 
-        # Add to index to get overview of processing stage
-        index += 1
+    # Add to index to get overview of processing stage
+    index += 1
 
     # Merge all df's
     merged = pd.concat(frames)
