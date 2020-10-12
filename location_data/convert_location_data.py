@@ -73,3 +73,6 @@ showDF = pd.read_csv(os.getcwd() + "allmerged.csv")
 
 # Give each scene a unique id. I would be hard pressed to have multiple scenes with same name but we can't be sure
 df["sceneConst"] = df.groupby(["Show", "Scene"]).ngroup()
+
+
+# dropduplicates()
