@@ -125,6 +125,12 @@
     
 
 
+    <!-- http://example.com/projectkand/hasFullName -->
+
+    <owl:DatatypeProperty rdf:about="http://example.com/projectkand/hasFullName"/>
+    
+
+
     <!-- http://example.com/projectkand/hasLatitude -->
 
     <owl:DatatypeProperty rdf:about="http://example.com/projectkand/hasLatitude"/>
@@ -367,10 +373,45 @@
     
 
 
+    <!-- http://example.com/projectkand/jenifferLawrence -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/projectkand/jenifferLawrence">
+        <rdf:type rdf:resource="http://example.com/projectkand/Actor"/>
+        <hasFullName xml:lang="en">Jennifer Lawrence</hasFullName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/projectkand/katniss -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/projectkand/katniss">
+        <playedBy rdf:resource="http://example.com/projectkand/jenifferLawrence"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/projectkand/kay -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/projectkand/kay">
+        <playedBy rdf:resource="http://example.com/projectkand/tommyLeeJones"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/projectkand/tommyLeeJones -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/projectkand/tommyLeeJones">
+        <rdf:type rdf:resource="http://example.com/projectkand/Actor"/>
+        <hasFullName xml:lang="en">Tommy Lee Jones</hasFullName>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://example.com/projectkand/tt0119654 -->
 
     <owl:NamedIndividual rdf:about="http://example.com/projectkand/tt0119654">
         <rdf:type rdf:resource="http://example.com/projectkand/Movie"/>
+        <hasCharacter rdf:resource="http://example.com/projectkand/kay"/>
         <hasScene rdf:resource="http://example.com/projectkand/tt0119654rosenburgjewelrystore"/>
         <hasScene rdf:resource="http://example.com/projectkand/tt0119654saucerCrash"/>
         <hasPrimaryTitle xml:lang="en">Men in Black (1997)</hasPrimaryTitle>
@@ -402,6 +443,7 @@
 
     <owl:NamedIndividual rdf:about="http://example.com/projectkand/tt1392170">
         <rdf:type rdf:resource="http://example.com/projectkand/Movie"/>
+        <hasCharacter rdf:resource="http://example.com/projectkand/katniss"/>
         <hasScene rdf:resource="http://example.com/projectkand/tt1392170reapingceremony"/>
         <hasPrimaryTitle xml:lang="en">The Hunger Games</hasPrimaryTitle>
     </owl:NamedIndividual>
