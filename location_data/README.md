@@ -1,3 +1,8 @@
+tconst -> sconst
+tconst -> lconst
+sconst -> lconst, label
+lconst -> lat, long, label
+
 <h2>Current instructions</h2>
 
 9/10: All you need to do is run the fetch_nominatim_data.py install the dependencies and enter your number. You can stop the program, when you start it again it will take off at the file where it stopped.
