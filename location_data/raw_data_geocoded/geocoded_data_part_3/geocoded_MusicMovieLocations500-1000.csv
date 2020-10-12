@@ -1,0 +1,769 @@
+,Code,Show Name,Location,Scene,geocodedLocation,latitude,longitude
+0,/title/tt1814614/,A Cinderella Story: Once Upon a Song,"Wilmington, North Carolina, USA",,"Wilmington, New Hanover County, North Carolina, United States of America",34.2257282,-77.9447107
+1,/title/tt0094747/,Bird,"Greystone Park & Mansion - 905 Loma Vista Drive, Beverly Hills, California, USA",,,,
+2,/title/tt0094747/,Bird,"Sacramento, California, USA",,"Sacramento, Sacramento County, California, United States of America",38.5815719,-121.4943996
+3,/title/tt0094747/,Bird,"Locke, Sacramento, California, USA",,"Locke, Walnut Grove, Sacramento County, California, 95680, United States of America",38.250465,-121.5094371
+4,/title/tt0094747/,Bird,"Stage 3, Warner Brothers Burbank Studios - 4000 Warner Boulevard, Burbank, California, USA",,,,
+5,/title/tt0094747/,Bird,"Stockton, California, USA",,"Stockton, San Joaquin County, California, United States of America",37.9577016,-121.2907796
+6,/title/tt2870648/,Amy,"Camden, London, England, UK",,"Camden Town, Greater London, England, NW1 9PJ, United Kingdom",51.5423045,-0.1395604
+7,/title/tt0078382/,Thank God It's Friday,"333 S La Cienega Blvd, Los Angeles, California, USA","(as Zoo Disco, demolished)                        ","333, La Cienega Boulevard, Beverly Hills, Los Angeles County, California, 90211, United States of America",34.06207312244898,-118.3762112244898
+8,/title/tt0078382/,Thank God It's Friday,"Jack's Leather & Suedes - 808 S Los Angeles St, Los Angeles, California, USA",(exterior: biker takes off with Marv Gomez's clothes rack)                        ,,,
+9,/title/tt0078382/,Thank God It's Friday,"La Cienega Boulevard, Los Angeles, California, USA",,"La Cienega Boulevard, Lennox, Los Angeles County, California, 90045-5663, United States of America",33.9399877,-118.3699821
+10,/title/tt0078382/,Thank God It's Friday,"Los Angeles, California, USA",,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+11,/title/tt6018502/,Kenzo World,"Dorothy Chandler Pavilion, Los Angeles County Music Center - 135 N. Grand Avenue, Downtown, Los Angeles, California, USA",(location)                        ,,,
+12,/title/tt0297037/,Brown Sugar,"Central Park, Manhattan, New York City, New York, USA",,"Central Park, Manhattan, New York County, New York, United States of America",40.7827725,-73.9653627406542
+13,/title/tt0297037/,Brown Sugar,"New York City, New York, USA",,"New York, United States of America",40.7127281,-74.0060152
+14,/title/tt0102065/,House Party 2,"Ambassador Hotel - 3400 Wilshire Boulevard, Los Angeles, California, USA",,,,
+15,/title/tt0088178/,Stop Making Sense,"Pantages Theater - 6233 Hollywood Blvd., Hollywood, Los Angeles, California, USA",(concert venue)                        ,"Pantages Theater, Walk of Fame, Whitley Heights Historic District, Hollywood, Los Angeles, Los Angeles County, California, 90028-5420, United States of America",34.1022047,-118.32576733237735
+16,/title/tt4559006/,Ae Dil Hai Mushkil,"Vienna, Austria",,"Wien, 1010, Österreich",48.2083537,16.3725042
+17,/title/tt4559006/,Ae Dil Hai Mushkil,"Southwark, London, England, UK",(outdoor location)                        ,"Southwark, London Borough of Southwark, London, Greater London, England, SE1 0QB, United Kingdom",51.5029222,-0.103458
+18,/title/tt4559006/,Ae Dil Hai Mushkil,"Shoreditch, London, England, UK",,"Shoreditch, London Borough of Hackney, London, Greater London, England, EC2A 3BE, United Kingdom",51.5266694,-0.0798926
+19,/title/tt4559006/,Ae Dil Hai Mushkil,"The Roundhouse, Chalk Farm Road, Camden, London, England, UK",(Indoor Concert Scene)                        ,"Roundhouse, Chalk Farm Road, Maitland Park, Chalk Farm, London Borough of Camden, London, Greater London, England, NW1 8EH, United Kingdom",51.54333545,-0.15244071515323326
+20,/title/tt4559006/,Ae Dil Hai Mushkil,"The Ring Road, Vienna, Austria",,"The Ring, 8, Kärntner Ring, Kärntner Viertel, KG Innere Stadt, Innere Stadt, Wien, 1010, Österreich",48.2016507,16.371008782993762
+21,/title/tt4559006/,Ae Dil Hai Mushkil,"Graben, Vienna, Austria",,"Graben, Widmerviertel, KG Innere Stadt, Innere Stadt, Wien, 1010, Österreich",48.2083596,16.3702141
+22,/title/tt4559006/,Ae Dil Hai Mushkil,"Grand Ferdinand Hotel, Vienna, Austria",,"Grand Ferdinand, 10-12, Schubertring, Stubenviertel, KG Innere Stadt, Innere Stadt, Wien, 1010, Österreich",48.2023205,16.3749675
+23,/title/tt4559006/,Ae Dil Hai Mushkil,"Trattnerhof, Vienna, Austria",,"Trattnerhof, Kärntner Viertel, KG Innere Stadt, Innere Stadt, Wien, 1010, Österreich",48.2087135,16.3706791
+24,/title/tt0098090/,The Phantom of the Opera,"London, England, UK",,"London, Greater London, England, United Kingdom",51.5073219,-0.1276474
+25,/title/tt0098090/,The Phantom of the Opera,"Manhattan, New York City, New York, USA",,"Manhattan, New York County, New York, United States of America",40.7896239,-73.9598939
+26,/title/tt3594982/,Sex & Drugs & Rock & Roll,"New York City, New York, USA",,"New York, United States of America",40.7127281,-74.0060152
+27,/title/tt2515086/,One Direction: This Is Us,"Tokyo, Japan",,"東京都, 日本 (Japan)",35.6828387,139.7594549
+28,/title/tt2515086/,One Direction: This Is Us,"O2 Arena, London, England, UK",(concert scenes)                        ,"The O2 Arena, Up at The O2, Greenwich Peninsula, Royal Borough of Greenwich, London, Greater London, England, SE10 0DX, United Kingdom",51.502918,0.0030255532020142147
+29,/title/tt2515086/,One Direction: This Is Us,"East Bowling, Bradford, West Yorkshire, England, UK",,"Bowling, Bradford, West Yorkshire, Yorkshire and the Humber, England, BD4 8QY, United Kingdom",53.7790976,-1.727322
+30,/title/tt2515086/,One Direction: This Is Us,"Bradford, West Yorkshire, England, UK",,"Bradford, West Yorkshire, Yorkshire and the Humber, England, United Kingdom",53.7944229,-1.7519186
+31,/title/tt0102411/,The Marrying Man,"Greystone Park & Mansion - 905 Loma Vista Drive, Beverly Hills, California, USA",,,,
+32,/title/tt0102411/,The Marrying Man,"Los Angeles, California, USA",,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+33,/title/tt0206917/,The Man Who Cried,"Bourne Woods, Farnham, Surrey, England, UK",,,,
+34,/title/tt0206917/,The Man Who Cried,"Place de la Concorde, Paris 8, Paris, France",,"Place de la Concorde, Quartier Saint-Germain-l'Auxerrois, Paris 8e Arrondissement, Paris, Île-de-France, France métropolitaine, 75008, France",48.863856,2.3214879
+35,/title/tt0206917/,The Man Who Cried,"Rue de l'Hôtel de Ville, Pontoise, Val-d'Oise, France",,"Rue de l'Hôtel de Ville, Centre-Ville, Pontoise, Val-d'Oise, Île-de-France, France métropolitaine, 95300, France",49.0502468,2.0979317
+36,/title/tt0047757/,The Mickey Mouse Club,"Morrison Ranch, Agoura, California, USA",,,,
+37,/title/tt0067820/,Taking Off,"Greenwich Village, Manhattan, New York City, New York, USA",,"Greenwich Village, 7th Avenue South, West Village, Manhattan Community Board 2, Manhattan, New York County, New York, 10014, United States of America",40.7335844,-74.0028172
+38,/title/tt0047749/,The Dodge Dancing Party,"Hollywood Palladium - 6215 Sunset Blvd., Hollywood, Los Angeles, California, USA",,,,
+39,/title/tt0047749/,The Dodge Dancing Party,"Los Angeles, California, USA",,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+40,/title/tt2172935/,Metallica Through the Never,"Rexall Place- 7424 118 Avenue NW, Edmonton, Alberta, Canada",(Live Concert Footage)                        ,,,
+41,/title/tt2172935/,Metallica Through the Never,"New York City, New York, USA",,"New York, United States of America",40.7127281,-74.0060152
+42,/title/tt2172935/,Metallica Through the Never,"Newark, New Jersey, USA",,"Newark, Essex County, New Jersey, United States of America",40.735657,-74.1723667
+43,/title/tt9077184/,Accidentally in Love,China,,中国,35.000074,104.999927
+44,/title/tt0388139/,It's All Gone Pete Tong,"Ibiza, Balearic Islands, Spain",,"Eivissa, Sant Antoni de Portmany, Eivissa, Illes Balears, España",38.974390099999994,1.4197463178515335
+45,/title/tt0393596/,Pixel Perfect,"Salt Lake City, Utah, USA",,"Salt Lake City, Salt Lake County, Utah, United States of America",40.7596198,-111.8867975
+46,/title/tt0052472/,Hawaiian Eye,"Stage 27A, Warner Brothers Burbank Studios - 4000 Warner Boulevard, Burbank, California, USA",,,,
+47,/title/tt0052472/,Hawaiian Eye,"Stage 26, Warner Brothers Burbank Studios - 4000 Warner Boulevard, Burbank, California, USA",,,,
+48,/title/tt9022950/,The Kelly Clarkson Show,"Universal Studios - 100 Universal City Plaza, Universal City, California, USA",(stages)                        ,,,
+49,/title/tt0361693/,Happy Endings,"Glendale, California, USA",,"Glendale, Los Angeles County, California, United States of America",34.1469416,-118.2478471
+50,/title/tt7090140/,Coda,"Maison symphonique, Place des Arts, Montréal, Québec, Canada",(Concert hall)                        ,,,
+51,/title/tt7090140/,Coda,"Sils in Engadin, Switzerland",,"Segl, Maloja, Graubünden/Grigioni/Grischun, 7515, Switzerland",46.4332131,9.7619436
+52,/title/tt7090140/,Coda,"New York City, New York, USA",,"New York, United States of America",40.7127281,-74.0060152
+53,/title/tt0101891/,The Five Heartbeats,"New York City, New York, USA",,"New York, United States of America",40.7127281,-74.0060152
+54,/title/tt0101891/,The Five Heartbeats,"Tinsel Townsend Studios, Hollywood, Los Angeles, California, USA",(studio)                        ,,,
+55,/title/tt0103129/,Truly Madly Deeply,"Goldney Hall - Bristol University, Lower Clifton Hill, Clifton, Bristol, England, UK",,,,
+56,/title/tt0081635/,Times Square,"Times Square, Manhattan, New York City, New York, USA",(main location)                        ,"Times Square, West 45th Street, Times Square, Manhattan Community Board 5, Times Square, New York County, New York, 10036, United States of America",40.757280550000004,-73.98585503545917
+57,/title/tt0081635/,Times Square,"Hudson River, Manhattan, New York City, New York, USA",(Nicky & Pamela's crash pad)                        ,"Hudson, 358, West 58th Street, Columbus Circle, Manhattan Community Board 4, Manhattan, New York County, New York, 10019, United States of America",40.76807475,-73.98499204961365
+58,/title/tt0090110/,Sweet Dreams,"Hagerstown, Maryland, USA",,"Hagerstown, Washington County, Maryland, United States of America",39.6419219,-77.7202641
+59,/title/tt0090110/,Sweet Dreams,"Winter Street Elementary School, 59 Winter Street, Hagerstown, Maryland, USA",,"Winter Street Elementary School, Winter Street, Wood Point, Hagerstown, Washington County, Maryland, 21740, United States of America",39.6482823,-77.7307645
+60,/title/tt0090110/,Sweet Dreams,"Ryman Auditorium - 116 5th Avenue N., Downtown, Nashville, Tennessee, USA",,,,
+61,/title/tt0072608/,The Adventure of Sherlock Holmes' Smarter Brother,"Shepperton Studios, Shepperton, Surrey, England, UK",(studio)                        ,,,
+62,/title/tt0020697/,Der blaue Engel,"Berlin, Germany",,"Berlin, 10117, Deutschland",52.5170365,13.3888599
+63,/title/tt0020697/,Der blaue Engel,"Universum-Film-Aktengesellschaft Studios, Berlin, Germany",(studio)                        ,,,
+64,/title/tt9196186/,Dior J'adore: The New Absolu,"Origo Studios, Budapest, Hungary",,"Origo Studios, 9, Rákospalota, XV. kerület, Közép-Magyarország, 1151, Magyarország",47.5801079,19.13692565665975
+65,/title/tt0056778/,The Patty Duke Show,"Metro-Goldwyn-Mayer Studios - 10202 W. Washington Blvd., Culver City, California, USA",(1966)                        ,,,
+66,/title/tt1798243/,Rudderless,"Oklahoma City, Oklahoma, USA",,"Oklahoma City, Oklahoma County, Oklahoma, United States of America",35.4729886,-97.5170536
+67,/title/tt1798243/,Rudderless,"Oklahoma, USA",,"Oklahoma, United States of America",34.9550817,-97.2684063
+68,/title/tt1798243/,Rudderless,"Edmond, Oklahoma, USA",,"Edmond, Oklahoma County, Oklahoma, United States of America",35.6571367,-97.4649038
+69,/title/tt9184970/,Skylines,"Frankfurt, Germany",,"Frankfurt am Main, Hessen, 60311, Deutschland",50.1106444,8.6820917
+70,/title/tt0415856/,Hounddog,USA,,United States,39.7837304,-100.4458825
+71,/title/tt0415856/,Hounddog,"North Carolina, USA",,"North Carolina, United States of America",35.6729639,-79.0392919
+72,/title/tt0151568/,Topsy-Turvy,"Richmond Theatre, Richmond Theatre, Little Green, Richmond, London, England, UK","(Savoy Theatre, London, England, UK)                        ",,,
+73,/title/tt0151568/,Topsy-Turvy,"London, England, UK",,"London, Greater London, England, United Kingdom",51.5073219,-0.1276474
+74,Code,Show Name,Location,Scene,"Location, Tucker County, West Virginia, United States of America",39.2138905,-79.6371124
+75,/title/tt0413015/,Mrs Henderson Presents,"Serre Rd. No. 1 1914-1918, Commonwealth Cemetery, Picardy, France",,,,
+76,/title/tt0413015/,Mrs Henderson Presents,"Cliveden House, Taplow, Buckinghamshire, England, UK",,"Cliveden House, Cliveden Road, Taplow, Hedsor, Buckinghamshire, South East, England, SL6 0JF, United Kingdom",51.558432749999994,-0.6888447675171189
+77,/title/tt0413015/,Mrs Henderson Presents,France,(British military cemetery sequences)                        ,France,46.603354,1.8883335
+78,/title/tt0413015/,Mrs Henderson Presents,"Shepperton Studios, Shepperton, Surrey, England, UK",,,,
+79,/title/tt0111293/,The Stöned Age,"Los Angeles, California, USA",,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+80,/title/tt0082639/,"Ladies and Gentlemen, the Fabulous Stains","Johnstown, Pennsylvania, USA",,"Johnstown, Cambria County, Pennsylvania, United States of America",40.3267407,-78.9219698
+81,/title/tt0082639/,"Ladies and Gentlemen, the Fabulous Stains","Coquitlam, British Columbia, Canada",(background shots)                        ,"Coquitlam, Metro Vancouver Regional District, British Columbia, Canada",49.2842958,-122.793281
+82,/title/tt0082639/,"Ladies and Gentlemen, the Fabulous Stains","The Penthouse Nightclub, 1019 Seymour St, Vancouver, British Columbia, Canada",,,,
+83,/title/tt2133196/,Born to Be Blue,"Sudbury, Ontario, Canada",,"Sudbury, Sudbury District, Northeastern Ontario, Ontario, P3C 1S9, Canada",46.49272,-80.991211
+84,/title/tt2133196/,Born to Be Blue,"Los Angeles, California, USA",(listed in credits)                        ,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+85,/title/tt0102167/,The Josephine Baker Story,"Budapest, Hungary",,"Budapest, Közép-Magyarország, 1011, Magyarország",47.4983815,19.0404707
+86,/title/tt0082816/,The Night the Lights Went Out in Georgia,"Chattanooga, Tennessee, USA",,"Chattanooga, Hamilton County, Tennessee, United States of America",35.0457219,-85.3094883
+87,/title/tt0082816/,The Night the Lights Went Out in Georgia,"Trenton, Georgia, USA",,"Trenton, Dade County, Georgia, United States of America",34.8720222,-85.50913
+88,/title/tt0096037/,Satisfaction,"Charleston, South Carolina, USA",,"Charleston, Charleston County, South Carolina, United States of America",32.7876012,-79.9402728
+89,/title/tt0096037/,Satisfaction,"Balboa, Newport Beach, California, USA",,"Balboa, Newport Beach, Orange County, California, 92661, United States of America",33.6006761,-117.8971141
+90,/title/tt0096037/,Satisfaction,"Kiawah Island, South Carolina, USA","(Pool, exteriors)                        ","Kiawah Island, Charleston County, South Carolina, United States of America",32.6082373,-80.0848166
+91,/title/tt0058642/,Tini zabutykh predkiv,Ukraine,,Україна,49.4871968,31.2718321
+92,/title/tt0058642/,Tini zabutykh predkiv,"Dovzhenko Film Studios, Ukraine",(studio)                        ,"Кіностудія ім. Олександра Довженка, 44, Шулявка, Шевченківський район, Київ, 03057, Україна",50.4560446,30.449583054600808
+93,/title/tt3547740/,La famille Bélier,"Collège Les Hautiers - 18 rue des Hautiers, Marines, Val-d'Oise, France",(school)                        ,,,
+94,/title/tt3547740/,La famille Bélier,"Domfront, Orne, France",(city hall)                        ,"Domfront, Domfront en Poiraie, Argentan, Orne, Normandie, France métropolitaine, 61700, France",48.5926703,-0.6459187
+95,/title/tt3547740/,La famille Bélier,"Maison de Radio-France, Paris 16, Paris, France",(singing contest)                        ,"Maison de Radio France, 104, Avenue du Président Kennedy, Hameau Boileau, Paris 16e Arrondissement, Paris, Île-de-France, France métropolitaine, 75016, France",48.85247925,2.278670697861209
+96,/title/tt3547740/,La famille Bélier,"Place du Maréchal Leclerc, Marines, Val-d'Oise, France",(street market)                        ,"Place du Maréchal Leclerc, La Levrière, Marines, Pontoise, Val-d'Oise, Île-de-France, France métropolitaine, 95640, France",49.1449358,1.9827496
+97,/title/tt0134630/,Duets,"Burnaby, British Columbia, Canada",,"Burnaby, Metro Vancouver Regional District, British Columbia, Canada",49.2433804,-122.9725459
+98,/title/tt0134630/,Duets,"Las Vegas, Nevada, USA",,"Las Vegas, Clark County, Nevada, United States of America",36.1672559,-115.1485163
+99,/title/tt0134630/,Duets,"New Westminster, British Columbia, Canada",,"New Westminster, Metro Vancouver Regional District, British Columbia, Canada",49.2067726,-122.9108818
+100,/title/tt0134630/,Duets,"Pitt Meadows, British Columbia, Canada",,"Pitt Meadows, Metro Vancouver Regional District, British Columbia, Canada",49.2207623,-122.6901534
+101,/title/tt0134630/,Duets,"Port Moody, British Columbia, Canada",,"Port Moody, Metro Vancouver Regional District, British Columbia, Canada",49.2822243,-122.8293424
+102,/title/tt0134630/,Duets,"Surrey, British Columbia, Canada",,"Surrey, Metro Vancouver Regional District, British Columbia, Canada",49.1913033,-122.8491439
+103,/title/tt0445336/,Du levande,"Stockholm, Stockholms län, Sweden",,"Stockholm, Stockholms kommun, Stockholms län, Svealand, 111 29, Sverige",59.3251172,18.0710935
+104,/title/tt0800318/,The Cheetah Girls 2,"Barcelona, Catalonia, Spain",,"Barcelona, Barcelonès, Catalunya, 08001, España",41.3828939,2.1774322
+105,/title/tt1827579/,Spike Island,"Widnes, Cheshire, England, UK",,,,
+106,/title/tt1827579/,Spike Island,"Salford, Greater Manchester, England, UK",,"Salford, Greater Manchester, North West England, England, United Kingdom",53.4877463,-2.2891921
+107,/title/tt1827579/,Spike Island,"Stockport, Greater Manchester, England, UK",,"Stockport, Greater Manchester, North West England, England, United Kingdom",53.407901,-2.160243
+108,/title/tt0075485/,The Brady Bunch Variety Hour,"Studio 2, KTLA Studios - 5858 Sunset Blvd., Hollywood, Los Angeles, California, USA",,,,
+109,/title/tt0093119/,Grizzly II: The Predator,"Budapest, Hungary",,"Budapest, Közép-Magyarország, 1011, Magyarország",47.4983815,19.0404707
+110,/title/tt0465142/,American Dreamz,"Los Angeles Center Studios - 450 S. Bixel Street, Downtown, Los Angeles, California, USA",(studio)                        ,,,
+111,/title/tt0345074/,Connie and Carla,"Los Angeles, California, USA",,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+112,/title/tt0345074/,Connie and Carla,"West Broadway at Balaclava Street, Vancouver, BC V6K 2G9, Canada",(DRAG meaning explanation scene)                        ,,,
+113,/title/tt5176536/,Center Stage: On Pointe,"Vancouver, British Columbia, Canada",,"Vancouver, Metro Vancouver Regional District, British Columbia, Canada",49.2608724,-123.1139529
+114,/title/tt0069332/,Super Fly,"Harlem, Manhattan, New York City, New York, USA","(Mister B's bar, 2297 7th Avenue and West 135th Street)                        ","Harlem, Manhattan Community Board 10, Manhattan, New York County, New York, United States of America",40.8078786,-73.9454154
+115,/title/tt0069332/,Super Fly,"New York City, New York, USA",(location)                        ,"New York, United States of America",40.7127281,-74.0060152
+116,/title/tt5540194/,Interlude in Prague,"Prague, Czech Republic",,"Praha, okres Hlavní město Praha, Hlavní město Praha, Praha, Česká republika",50.0874654,14.4212535
+117,/title/tt5540194/,Interlude in Prague,"Ploskovice, Czech Republic",,"Ploskovice, okres Litoměřice, Ústecký kraj, Severozápad, 41142, Česká republika",50.5602359,14.1984767
+118,/title/tt5540194/,Interlude in Prague,"Estates Theatre, Ovocný trh 1, Old Town, Prague, Czech Republic",,"Stavovské divadlo, 540/1, Ovocný trh, Staré Město, Praha, okres Hlavní město Praha, Hlavní město Praha, Praha, 11000, Česká republika",50.08596145,14.42363905460526
+119,/title/tt4114744/,Unutursam Fisilda,"Izmir, Turkey",,"İzmir, Ege Bölgesi, 35240, Türkiye",38.4147331,27.1434119
+120,/title/tt4114744/,Unutursam Fisilda,"Istanbul, Turkey",(location)                        ,"İstanbul, Beyazıt Meydanı, Beyazıt Mahallesi, Fatih, İstanbul, Marmara Bölgesi, 34126, Türkiye",41.0096215,28.9651867
+121,/title/tt4538292/,Die Antwoord: Ugly Boy,"Stage This, Los Angeles, Ukraine",(studio)                        ,,,
+122,/title/tt2243393/,Love Never Dies,"Melbourne, Victoria, Australia",,"Melbourne, City of Melbourne, Victoria, 3000, Australia",-37.8142176,144.9631608
+123,/title/tt2566644/,Seoul Searching,"Seoul, South Korea",,"서울, 대한민국",37.5666791,126.9782914
+124,/title/tt2566644/,Seoul Searching,"Cheongyang, South Korea",,"청양군, 충청남도, 대한민국",36.4585999,126.8022
+125,/title/tt0072189/,Son of Dracula,"London, England, UK",,"London, Greater London, England, United Kingdom",51.5073219,-0.1276474
+126,/title/tt0292610/,No Good Deed,"Montréal, Québec, Canada",,"Montréal, Agglomération de Montréal, Montréal (06), Québec, Canada",45.4972159,-73.6103642
+127,/title/tt0363473/,Beyond the Sea,"Berlin, Germany",,"Berlin, 10117, Deutschland",52.5170365,13.3888599
+128,/title/tt0363473/,Beyond the Sea,"London, England, UK",,"London, Greater London, England, United Kingdom",51.5073219,-0.1276474
+129,/title/tt0363473/,Beyond the Sea,"Studio Babelsberg, Potsdam, Brandenburg, Germany",,"Studio Babelsberg, 15, Babelsberg, Potsdam, Brandenburg, 14482, Deutschland",52.38260355,13.113726021425222
+130,/title/tt0363473/,Beyond the Sea,"Orangerieschloss, Potsdam, Germany",,"Orangerieschloss, 3-5, An der Orangerie, Brandenburger Vorstadt, Potsdam Nord, Potsdam, Brandenburg, 14469, Deutschland",52.405044700000005,13.030521497437167
+131,/title/tt0034862/,Holiday Inn,"Monte Rio, California, USA",,"Monte Rio, Bohemian Highway, Tyrone, Guerneville, Sonoma County, California, 95419, United States of America",38.466359,-123.01964563931804
+132,/title/tt0034862/,Holiday Inn,"California, USA",,"California, United States of America",36.7014631,-118.7559974
+133,/title/tt5039860/,Dalida,"Paris, France",,"Paris, Île-de-France, France métropolitaine, 75004, France",48.8566969,2.3514616
+134,/title/tt5039860/,Dalida,"San Remo, Imperia, Liguria, Italy",,,,
+135,/title/tt0472023/,So You Think You Can Dance,"Studio 36, CBS Television City - 7800 Beverly Boulevard, Fairfax, Los Angeles, California, USA",(studio)                        ,,,
+136,/title/tt0472023/,So You Think You Can Dance,"Los Angeles, California, USA",,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+137,/title/tt0086744/,Kids Incorporated,"Los Angeles, California, USA",,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+138,/title/tt7342838/,Leto,"Saint Petersburg, Russia",(setting of the action)                        ,"Санкт-Петербург, Центральный район, Санкт-Петербург, Северо-Западный федеральный округ, 190000, Россия",59.938732,30.316229
+139,/title/tt2179936/,School Dance,"Los Angeles, California, USA",,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+140,/title/tt2461132/,Happy New Year,"Atlantis The Palm, Palm Jumeirah, Dubai, United Arab Emirates",,,,
+141,/title/tt2461132/,Happy New Year,"Mehboob Studios, Mumbai, Maharashtra, India",,"Mehboob Studio, Mount Carmel Road, Mount Mary, Bandra West, Zone 3, Mumbai, Mumbai Suburban, Maharashtra, 400050, India",19.0524573,72.8247562
+142,/title/tt0070464/,O Lucky Man!,"Bracknell, Berkshire, England, UK",(Caesar's Camp)                        ,,,
+143,/title/tt0070464/,O Lucky Man!,"England, UK",,"England, United Kingdom",52.7954791,-0.5402402866174321
+144,/title/tt0070464/,O Lucky Man!,"St Pauls Junior School, Hammersmith, London, England, UK",,,,
+145,/title/tt0070464/,O Lucky Man!,"Great Eastern Hotel, Liverpool Street, Broadgate, London, England, UK",,,,
+146,/title/tt0070464/,O Lucky Man!,"Ivinghoe, Buckinghamshire, England, UK",,"Ivinghoe, Buckinghamshire, South East, England, LU7 9EQ, United Kingdom",51.8364034,-0.6298887
+147,/title/tt0070464/,O Lucky Man!,"Scotland, UK",,"Scotland, United Kingdom",56.7861112,-4.1140518
+148,/title/tt3270108/,Jackie & Ryan,"Union Station & 25th St., Ogden, Utah, USA","(Interiors, Street Scenes)                        ","Union Station, Wall Avenue, 25th Street, Ogden, Weber County, Utah, 84408, United States of America",41.22116475,-111.97970670471045
+149,/title/tt3270108/,Jackie & Ryan,"Utah, USA",,"Utah, United States of America",39.4225192,-111.7143584
+150,/title/tt0382330/,As It Is in Heaven,"Innsbruck, Tyrol, Austria",,"Innsbruck, Tirol, Österreich",47.2654296,11.3927685
+151,/title/tt0382330/,As It Is in Heaven,"Stockholm, Stockholms län, Sweden",,"Stockholm, Stockholms kommun, Stockholms län, Svealand, 111 29, Sverige",59.3251172,18.0710935
+152,/title/tt5224012/,Kiss and Cry,"Toronto, Ontario, Canada",(location)                        ,"Toronto, Peel, Golden Horseshoe, Ontario, Canada",43.6534817,-79.3839347
+153,/title/tt0149151/,Still Crazy,"Avebury Stone Circle, Avebury, Wiltshire, England, UK",(exterior scenes)                        ,"Avebury Stone Circle, West Kennett Avenue, Avebury Truslow, Avebury, Wiltshire, South West England, England, SN8 1RD, United Kingdom",51.42860985,-1.8517052547062374
+154,/title/tt0149151/,Still Crazy,"Albert R. Broccoli 007 Stage, Pinewood Studios, Iver Heath, Buckinghamshire, England, UK",(studio) (interiors: rock concert)                        ,,,
+155,/title/tt0410696/,Stuck in the Suburbs,"New Orleans, Louisiana, USA",,"New Orleans, Orleans Parish, Louisiana, United States of America",29.9499323,-90.0701156
+156,/title/tt0790770/,Miles Ahead,"Cincinnati, Ohio, USA",(Entire Movie)                        ,"Cincinnati, Hamilton County, Ohio, United States of America",39.1014537,-84.5124602
+157,Code,Show Name,Location,Scene,"Location, Tucker County, West Virginia, United States of America",39.2138905,-79.6371124
+158,/title/tt2822672/,Rock Dog,"Los Angeles, California, USA",(Reel FX Santa Monica)                        ,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+159,/title/tt1922612/,Glee: The 3D Concert Movie,"Continental Airlines Arena, East Rutherford, New Jersey, USA",,,,
+160,/title/tt0093415/,Light of Day,"Crestwood, Illinois, USA",(Motel)                        ,"Crestwood, Worth Township, Cook County, Illinois, United States of America",41.6611444,-87.7525511
+161,/title/tt0093415/,Light of Day,"Cleveland Heights, Ohio, USA",,"Cleveland Heights, Cuyahoga County, Ohio, 44118, United States of America",41.5200518,-81.556235
+162,/title/tt0093415/,Light of Day,"MarshAllan Industries - 1971 W 85th St., Cleveland, Ohio, USA",(foundry)                        ,,,
+163,/title/tt0093415/,Light of Day,"Berwyn, Illinois, USA",,"Berwyn, Cook County, Illinois, 60402, United States of America",41.8505874,-87.7936685
+164,/title/tt0093415/,Light of Day,"Hammond, Indiana, USA",,"Hammond, Lake County, Indiana, United States of America",41.5833658,-87.500043
+165,/title/tt0093415/,Light of Day,"Streamwood, Illinois, USA",,"Streamwood, Hanover Township, Cook County, Illinois, 60107, United States of America",42.0255827,-88.1784085
+166,/title/tt2950052/,Strings,"Winnipeg, Manitoba, Canada",,"Winnipeg, Winnipeg (city), Manitoba, Canada",49.8955367,-97.1384584
+167,/title/tt1104733/,Hamlet 2,"West Mesa High School, 6701 Fortuna Road NW, Albuquerque, New Mexico, USA",(high school)                        ,,,
+168,/title/tt1104733/,Hamlet 2,"Albuquerque, New Mexico, USA",,"Albuquerque, Bernalillo County, New Mexico, United States of America",35.0841034,-106.6509851
+169,/title/tt0075244/,The Song Remains the Same,"Loch Ness, Highland, Scotland, UK",(Moonlit mountain climb)                        ,"Loch Ness, Highland, Scotland, PH32 4BN, United Kingdom",57.27379265,-4.485355485811402
+170,/title/tt0075244/,The Song Remains the Same,"Felt Forum, Madison Square Garden - 4 Pennsylvania Plaza, Manhattan, New York City, New York, USA",(live musical performances)                        ,,,
+171,/title/tt0075244/,The Song Remains the Same,"Santa Pod Raceway, Podington, Bedfordshire, England, UK",,,,
+172,/title/tt0075244/,The Song Remains the Same,"Manhattan, New York City, New York, USA",,"Manhattan, New York County, New York, United States of America",40.7896239,-73.9598939
+173,/title/tt0038718/,Make Mine Music,"Walt Disney Studios, 500 South Buena Vista Street, Burbank, California, USA",,,,
+174,/title/tt0080380/,The Apple,"ICC Berlin, West Berlin, Berlin, Germany",(location)                        ,"ICC, Halenseestraße, Westend, Charlottenburg-Wilmersdorf, 14055, Deutschland",52.5028585,13.2799385
+175,/title/tt0080380/,The Apple,Germany,,Deutschland,51.0834196,10.4234469
+176,/title/tt0163375/,Vicious Lips,"Culver City, California, USA",,"Culver City, Los Angeles County, California, United States of America",34.0211224,-118.3964665
+177,/title/tt4130418/,Hip-Hop Evolution,"New York City, New York, USA",,"New York, United States of America",40.7127281,-74.0060152
+178,/title/tt0073298/,Lisztomania,"New Wimbledon Theatre, The Broadway, Wimbledon, London, England, UK",(Theatre interiors)                        ,"New Wimbledon Theatre, 93, The Broadway, South Wimbledon, London Borough of Merton, London, Greater London, England, SW19 1QG, United Kingdom",51.41920545,-0.2014408465960715
+179,/title/tt0073298/,Lisztomania,"Bluebell Railway, East Sussex, England, UK",,"Bluebell Railway, Lewes Road, Newick, Lewes, East Sussex, South East, England, TN22 3QB, United Kingdom",50.9953013,-0.0007083
+180,/title/tt1432148/,Degrassi Goes Hollywood,"Hollywood, Los Angeles, California, USA",,"Hollywood, Los Angeles, Los Angeles County, California, 90028-8127, United States of America",34.0980031,-118.329523
+181,/title/tt1432148/,Degrassi Goes Hollywood,"Toronto, Ontario, Canada",,"Toronto, Peel, Golden Horseshoe, Ontario, Canada",43.6534817,-79.3839347
+182,/title/tt0035575/,Yankee Doodle Dandy,"New York Street, Warner Brothers Burbank Studios - 4000 Warner Boulevard, Burbank, California, USA",,,,
+183,/title/tt0035575/,Yankee Doodle Dandy,"Stage 11, Warner Brothers Burbank Studios - 4000 Warner Boulevard, Burbank, California, USA",,,,
+184,/title/tt0035575/,Yankee Doodle Dandy,"Stage 16, Warner Brothers Burbank Studios - 4000 Warner Boulevard, Burbank, California, USA",,,,
+185,/title/tt0035575/,Yankee Doodle Dandy,"Stage 19, Warner Brothers Burbank Studios - 4000 Warner Boulevard, Burbank, California, USA",,,,
+186,/title/tt0035575/,Yankee Doodle Dandy,"Stage 22, Warner Brothers Burbank Studios - 4000 Warner Boulevard, Burbank, California, USA",,,,
+187,/title/tt0035575/,Yankee Doodle Dandy,"Stage 28, Warner Brothers Burbank Studios - 4000 Warner Boulevard, Burbank, California, USA",,,,
+188,/title/tt0035575/,Yankee Doodle Dandy,"Stage 4, Warner Brothers Burbank Studios - 4000 Warner Boulevard, Burbank, California, USA",,,,
+189,/title/tt0035575/,Yankee Doodle Dandy,"Stage 6, Warner Brothers Burbank Studios - 4000 Warner Boulevard, Burbank, California, USA",,,,
+190,/title/tt0035575/,Yankee Doodle Dandy,"Stage 8, Warner Brothers Burbank Studios - 4000 Warner Boulevard, Burbank, California, USA",,,,
+191,/title/tt0035575/,Yankee Doodle Dandy,"Washington, District of Columbia, USA",,"Washington, District of Columbia, 20230, United States of America",38.8949924,-77.0365581
+192,/title/tt0124288/,Michael Jackson: Bad,"New York City, New York, USA",,"New York, United States of America",40.7127281,-74.0060152
+193,/title/tt0119347/,I Want You,"Hastings, East Sussex, England, UK",,"Hastings, East Sussex, South East, England, United Kingdom",50.8553888,0.5824703
+194,/title/tt0119347/,I Want You,"Pett Level, Hastings, East Sussex, England, UK",(beach)                        ,,,
+195,/title/tt2071590/,Spinning Gold,"Montreal, Québec, Canada",,"Montréal, Agglomération de Montréal, Montréal (06), Québec, Canada",45.4972159,-73.6103642
+196,/title/tt0120576/,Dance with Me,Dominican Republic,,República Dominicana,19.0974031,-70.3028026
+197,/title/tt0120576/,Dance with Me,"Houston, Texas, USA",,"Houston, Harris County, Texas, United States of America",29.7589382,-95.3676974
+198,/title/tt0162710/,Trick,"""Don Hill"", Tribeca, Manhattan, New York City, New York, USA",(dance-bar scene)                        ,,,
+199,/title/tt0162710/,Trick,"Greenwich Village, Manhattan, New York City, New York, USA",(Street Scene on Cover)                        ,"Greenwich Village, 7th Avenue South, West Village, Manhattan Community Board 2, Manhattan, New York County, New York, 10014, United States of America",40.7335844,-74.0028172
+200,/title/tt0098052/,Paganini,Italy,,Italia,42.6384261,12.674297
+201,/title/tt0098052/,Paganini,"Venice, Veneto, Italy",,"Venezia, Veneto, Italia",45.4371908,12.3345898
+202,/title/tt4202274/,The Filthy Frank Show,"Tokyo, Japan",(home)                        ,"東京都, 日本 (Japan)",35.6828387,139.7594549
+203,/title/tt4202274/,The Filthy Frank Show,"Perth, Australia",,"Perth, City of Perth, Western Australia, 6000, Australia",-31.9527121,115.8604796
+204,/title/tt0166943/,Music of the Heart,"New York City, New York, USA",,"New York, United States of America",40.7127281,-74.0060152
+205,/title/tt0166943/,Music of the Heart,"Kearny, New Jersey, USA",,"Kearny, Hudson County, New Jersey, 07032, United States of America",40.7684342,-74.1454214
+206,/title/tt1535101/,Killing Bono,"Belfast, County Antrim, Northern Ireland, UK",,"Belfast, County Antrim, Northern Ireland, BT1 5GS, United Kingdom",54.5964411,-5.9302761
+207,/title/tt0065976/,Let It Be,"Apple Corps, 3 Savile Row, Mayfair, London, England, UK",(13-24 January 1969)                        ,,,
+208,/title/tt1433495/,I'm in the Band,"Los Angeles, California, USA",,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+209,/title/tt2474958/,Kill Your Friends,"Black Hangar Studios, Hampshire, England, UK",,,,
+210,/title/tt5265898/,Dead Ant,"Santa Clarita, California, USA",,"Santa Clarita, Los Angeles County, California, United States of America",34.3916641,-118.542586
+211,/title/tt2141751/,God Help the Girl,"Glasgow, Strathclyde, Scotland, UK",,"DoubleTree by Hilton Glasgow Strathclyde, Phoenix Crescent, Strathclyde Business Park, Shawhead (farm), Bellshill, North Lanarkshire, Scotland, ML4 3JQ, United Kingdom",55.8317061,-4.0333295
+212,/title/tt6697582/,Arif V 216,"Istanbul, Turkey",(location)                        ,"İstanbul, Beyazıt Meydanı, Beyazıt Mahallesi, Fatih, İstanbul, Marmara Bölgesi, 34126, Türkiye",41.0096215,28.9651867
+213,/title/tt0068326/,Vlinders zijn vrij,"San Francisco, California, USA",,"San Francisco, San Francisco City and County, California, United States of America",37.7790262,-122.4199061
+214,/title/tt0068326/,Vlinders zijn vrij,"1521 Grant Avenue, San Francisco, California, USA",(Don walks Jill to the Toy Sun laundry)                        ,"1521, Grant Avenue, North Beach, San Francisco, San Francisco City and County, California, 94133, United States of America",37.800828,-122.407727
+215,/title/tt0068326/,Vlinders zijn vrij,"1944 Union Street, San Francisco, California, USA",(Jill and Mrs. Baker have lunch at Perry's restaurant)                        ,"Perry's, 1944, Union Street, Cow Hollow, San Francisco, San Francisco City and County, California, 94123, United States of America",37.7977287,-122.4313043
+216,/title/tt10162490/,Jenny Lewis: Red Bull & Hennessy,"Los Angeles, California, USA",(studio)                        ,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+217,/title/tt0089994/,Follow That Bird,"Bolton, Ontario, Canada",,"Bolton, Peel Region, Golden Horseshoe, Ontario, L7E 1C8, Canada",43.879548,-79.73826
+218,/title/tt0089994/,Follow That Bird,"Georgetown, Ontario, Canada",,"Georgetown, Halton Region, Golden Horseshoe, Ontario, L7G 4A9, Canada",43.6502652,-79.9036058
+219,/title/tt0089994/,Follow That Bird,"3rd Line and 20th Sideroad, New Tecumseth, Ontario, Canada",(No Thru Road)                        ,,,
+220,/title/tt0089994/,Follow That Bird,"12911 Creditview Road, Caledon, Ontario, Canada",(Floyd and Ruthie's farm)                        ,"12911, Creditview Road, Brampton, Peel Region, Golden Horseshoe, Ontario, L7A 4R8, Canada",43.7243611,-79.8834383
+221,/title/tt0040053/,Toast of the Town,"Ed Sullivan Theater - 1697 Broadway, Manhattan, New York City, New York, USA",,"Ed Sullivan Theater, Broadway, Midtown, Manhattan Community Board 5, Manhattan, New York County, New York, 10019, United States of America",40.7637743,-73.9828196
+222,/title/tt0040053/,Toast of the Town,"CBS Television City - 7800 Beverly Boulevard, Fairfax, Los Angeles, California, USA",,"CBS Television City, Beverly Boulevard, Fairfax, Los Angeles, Los Angeles County, California, 90036, United States of America",34.0746936,-118.35963130080704
+223,/title/tt0040053/,Toast of the Town,"Miami Beach Convention Center - 1900 Convention Center Dr, Miami Beach, Florida, USA",(episode 16.16)                        ,"Miami Beach Convention Center, 1901, Convention Center Drive, South Beach, Miami Beach, Miami-Dade County, Florida, 33169, United States of America",25.795525650000002,-80.13351499950102
+224,/title/tt0040053/,Toast of the Town,"Shea Stadium - 12301 Roosevelt Avenue, Flushing Meadows Park, Queens, New York City, New York, USA",,,,
+225,/title/tt0040053/,Toast of the Town,"Walter Reed Army Medical Center - 6900 Georgia Avenue NW, Washington, District of Columbia, USA",,,,
+226,/title/tt0075617/,ABBA: The Movie,"Adelaide Airport, Adelaide, South Australia, Australia",(ABBA's arrival scene)                        ,"Adelaide Airport, Tapleys Hill Road, West Beach, Adelaide, City of West Torrens, South Australia, 5024, Australia",-34.947240449999995,138.5330688373241
+227,/title/tt0075617/,ABBA: The Movie,"Kingsford Smith International Airport, Sydney, New South Wales, Australia",,"Sydney Airport, Sir Reginald Ansett Drive, Mascot, Sydney, Bayside Council, New South Wales, 2020, Australia",-33.9498935,151.18196819346016
+228,/title/tt0075617/,ABBA: The Movie,"Perth, Western Australia, Australia",(concert footage)                        ,"Perth, City of Perth, Western Australia, 6000, Australia",-31.9527121,115.8604796
+229,/title/tt0075617/,ABBA: The Movie,"Sidney Myer Music Bowl, Kings Domain, Melbourne, Victoria, Australia",(concert footage)                        ,,,
+230,/title/tt0075617/,ABBA: The Movie,"Stockholm, Stockholms län, Sweden",(studio) (studio and final scene)                        ,"Stockholm, Stockholms kommun, Stockholms län, Svealand, 111 29, Sverige",59.3251172,18.0710935
+231,/title/tt0075617/,ABBA: The Movie,"Football Park, Adelaide, South Australia, Australia",(concert footage)                        ,"AAMI Stadium, Sea Lake Court, West Lakes, Adelaide, City of Charles Sturt, South Australia, 5021, Australia",-34.879817700000004,138.49609264203963
+232,/title/tt0075617/,ABBA: The Movie,"Football Park - Turner Drive, West Lakes, South Australia, Australia",(concert footage)                        ,,,
+233,/title/tt0045464/,"The 5,000 Fingers of Dr. T.","Hollywood, California, USA",,"Hollywood, Los Angeles, Los Angeles County, California, 90028-8127, United States of America",34.0980031,-118.329523
+234,/title/tt0335013/,The Company,"Chicago, Illinois, USA",,"Chicago, Cook County, Illinois, United States of America",41.8755616,-87.6244212
+235,/title/tt0106052/,Late Night with Conan O'Brien,"Studio 6A, Rockefeller Plaza, Manhattan, New York City, New York, USA",,"WABC & ABC Headquarters, 77, West 66th Street, Lincoln Square, Manhattan Community Board 7, Manhattan, New York County, New York, 10023, United States of America",40.77346165,-73.9805620005215
+236,/title/tt0106052/,Late Night with Conan O'Brien,"Chicago, Illinois, USA",,"Chicago, Cook County, Illinois, United States of America",41.8755616,-87.6244212
+237,/title/tt0106052/,Late Night with Conan O'Brien,"Stage 1, NBC Studios - 3000 W. Alameda Avenue, Burbank, California, USA",(studio) (studio 1)                        ,,,
+238,/title/tt0296845/,Little Secrets,"Salt Lake City, Utah, USA",,"Salt Lake City, Salt Lake County, Utah, United States of America",40.7596198,-111.8867975
+239,Code,Show Name,Location,Scene,"Location, Tucker County, West Virginia, United States of America",39.2138905,-79.6371124
+240,/title/tt8602408/,Holly Hobbie,"Toronto, Ontario, Canada",,"Toronto, Peel, Golden Horseshoe, Ontario, Canada",43.6534817,-79.3839347
+241,/title/tt3717804/,England Is Mine,"Manchester, Greater Manchester, England, UK",(location)                        ,"Manchester, Greater Manchester, North West England, England, United Kingdom",53.4794892,-2.2451148
+242,/title/tt0063141/,Isadora,"Kingsdown, Deal, Kent, England, UK",(Filming took place on the beach near The Zetland Arms)                        ,"Kingsdown, Kent, South East, England, CT14 8AT, United Kingdom",51.186841,1.4027375
+243,/title/tt0063141/,Isadora,"Opatija, Croatia",(Nice)                        ,"Opatija, Grad Opatija, Primorsko-goranska županija, 51410, Hrvatska",45.332782,14.3029538
+244,/title/tt0063141/,Isadora,"Cable Street, Whitechapel, London, England, UK",,,,
+245,/title/tt0063141/,Isadora,"East End, London, England, UK",,"Enfield Bus Garage, Southbury Road, Southbury, London Borough of Enfield, London, Greater London, England, EN3 4HX, United Kingdom",51.648020200000005,-0.050424273820555046
+246,/title/tt0063141/,Isadora,"Grace's Alley, Wellclose Square, Tower Hamlets, London, England, UK",,,,
+247,/title/tt0063141/,Isadora,Italy,,Italia,42.6384261,12.674297
+248,/title/tt0063141/,Isadora,"Maksimir, Croatia",,"Maksimir, Zagreb, Grad Zagreb, 10000 ZAGREB, Hrvatska",45.8333119,16.0101508
+249,/title/tt0063141/,Isadora,"National Theatre, Rijeka, Croatia",(Berlin theatre)                        ,,,
+250,/title/tt0063141/,Isadora,"Ptuj, Slovenia",,"Ptuj, Slovenija",46.4198096,15.8717378
+251,/title/tt0063141/,Isadora,"Theatre Royal, Drury Lane, Covent Garden, London, England, UK",(theatre)                        ,,,
+252,/title/tt0063141/,Isadora,"Waddesdon Manor, Waddesdon, Buckinghamshire, England, UK",(Bellevue)                        ,"Waddesdon Manor, North Avenue, Waddesdon, Buckinghamshire, South East, England, HP18 0JH, United Kingdom",51.84250175,-0.9373236865937951
+253,/title/tt0063141/,Isadora,"Whitechapel, London, England, UK",,"Whitechapel, London Borough of Tower Hamlets, London, Greater London, England, E1 1DE, United Kingdom",51.5186227,-0.0620807
+254,/title/tt0063141/,Isadora,"Zagreb, Croatia",,"Zagreb, Grad Zagreb, Hrvatska",45.813177,15.977048
+255,/title/tt0063141/,Isadora,France,,France,46.603354,1.8883335
+256,/title/tt5070062/,"Music, War and Love","Lódz, Lódzkie, Poland",,"Łódź, województwo łódzkie, Polska",51.7687323,19.4569911
+257,/title/tt5070062/,"Music, War and Love","New York City, New York, USA",,"New York, United States of America",40.7127281,-74.0060152
+258,/title/tt5070062/,"Music, War and Love",Poland,,Polska,52.215933,19.134422
+259,/title/tt0102103/,Impromptu,"Château des Briottières, Champigné, Maine-et-Loire, France",,"Château des Briottières, D 190, La Chabossière, Marigné, Les Hauts-d'Anjou, Segré, Maine-et-Loire, Pays de la Loire, France métropolitaine, 49330, France",47.6881505,-0.5892535963076937
+260,/title/tt0102103/,Impromptu,"Bibliothèque Thiers, place Saint Georges Paris, France",(Publisher's office)                        ,,,
+261,/title/tt4677938/,Honey 3: Dare to Dance,"Cape Town, South Africa",,"Cape Town, City of Cape Town, Western Cape, 8001, South Africa",-33.928992,18.417396
+262,/title/tt1702443/,Justin Bieber: Never Say Never,"Madison Square Garden, 7th Avenue, Chelsea, Manhattan, New York City, New York, USA",,,,
+263,/title/tt1702443/,Justin Bieber: Never Say Never,"Stratford, Ontario, Canada",,"Stratford, Southwestern Ontario, Ontario, N5A 3K2, Canada",43.3700899,-80.9818016
+264,/title/tt0046874/,The Country Girl,"The closing shot is 1070 Park Avenue, at 88th Street, in New York City, New York, USA",,,,
+265,/title/tt0046874/,The Country Girl,"Paramount Studios - 5555 Melrose Avenue, Hollywood, Los Angeles, California, USA",(studio)                        ,,,
+266,/title/tt0067148/,Gojira tai Hedora,"Mt. Fuji, Japan",,"富士山, 富士宮市, 駿東郡, 静岡県, 日本 (Japan)",35.362799,138.730781
+267,/title/tt1629440/,Sharpay's Fabulous Adventure,"Toronto, Ontario, Canada",,"Toronto, Peel, Golden Horseshoe, Ontario, Canada",43.6534817,-79.3839347
+268,/title/tt0319829/,Masked and Anonymous,"Los Angeles, California, USA",,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+269,/title/tt4941556/,Noches con Platanito,"2820 N Hollywood Way, Burbank, California, USA",(studio)                        ,"North Hollywood Way, McNeil, Burbank, Los Angeles County, California, 91505, United States of America",34.1696758,-118.3478653
+270,/title/tt0046906/,Destry,"Alabama Hills, Lone Pine, California, USA",,"Alabama Hills, Lone Pine, Inyo County, California, 93545, United States of America",36.5677117,-118.0898097
+271,/title/tt0046906/,Destry,"Universal Studios - 100 Universal City Plaza, Universal City, California, USA",(studio)                        ,,,
+272,/title/tt0036326/,Saludos Amigos,"Lake Titicaca, Bolivia",,"Titicaca, Avenida Illampu, El Rosario, Centro, La Paz, Pedro Domingo Murillo, La Paz, 020101, Bolivia",-16.4960161,-68.1398328
+273,/title/tt0076240/,Jubilee,"St. Saviour's Dock, Southwark, London, England, UK",,"St Saviour's Dock, London Borough of Southwark, London, Greater London, England, United Kingdom",51.50146355,-0.07200166072277868
+274,/title/tt0076240/,Jubilee,"Bermondsey, London, England, UK",,"Bermondsey, London Borough of Southwark, London, Greater London, England, SE16 4DB, United Kingdom",51.4970125,-0.063268
+275,/title/tt0076240/,Jubilee,"England, UK",,"England, United Kingdom",52.7954791,-0.5402402866174321
+276,/title/tt0076240/,Jubilee,"London, England, UK",,"London, Greater London, England, United Kingdom",51.5073219,-0.1276474
+277,/title/tt0076240/,Jubilee,"Southwark, London, England, UK",,"Southwark, London Borough of Southwark, London, Greater London, England, SE1 0QB, United Kingdom",51.5029222,-0.103458
+278,/title/tt0076240/,Jubilee,"Westminster Cathedral, 42 Francis Street, Westminster, Greater London, England, UK",,,,
+279,/title/tt0076240/,Jubilee,"Winspit, Isle of Purbeck, Dorset, England, UK",,,,
+280,/title/tt0104802/,The Mambo Kings,"Tower Theatre - 802 S. Broadway, Downtown, Los Angeles, California, USA",,"Tower Theatre, 802, South Broadway, Historic Core District, Downtown, Los Angeles, Los Angeles County, California, 90013, United States of America",34.043458799999996,-118.25452018117771
+281,/title/tt0411270/,De battre mon coeur s'est arrêté,"Paris, France",,"Paris, Île-de-France, France métropolitaine, 75004, France",48.8566969,2.3514616
+282,/title/tt0411270/,De battre mon coeur s'est arrêté,"Théâtre des Champs-Elysées, 15 Avenue Montaigne, 75008 Paris, France",(concert)                        ,"Théâtre des Champs-Elysées, Avenue Montaigne, Quartier des Champs-Élysées, Paris, Île-de-France, France métropolitaine, 75008, France",48.8658174,2.3029039
+283,/title/tt0080219/,Fridays,"Los Angeles, California, USA",,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+284,/title/tt8666022/,Electric Jesus,"2236 Warm Springs Road, Columbus, Georgia, USA",,"2236, Warm Springs Road, Clubview Heights, Edgewood, Columbus, Muscogee County, Georgia, 31904, United States of America",32.49883211150049,-84.96016111062438
+285,/title/tt8666022/,Electric Jesus,"Columbus, Georgia",,"Columbus, Muscogee County, Georgia, United States of America",32.4609764,-84.9877094
+286,/title/tt0070155/,The Harder They Come,"Kingston, Jamaica",,"Kingston, Surrey County, KINGSTON 14, Jamaika",17.9712148,-76.7928128
+287,/title/tt0070155/,The Harder They Come,Jamaica,,"Jamaica, Spanish Town, Saint Catherine, Middlesex County, Jamaika",18.1152958,-77.1598454610168
+288,/title/tt0041989/,Trottie True,"Camden Town, Camden, London, England, UK",,"Camden Town, Camden High Street, Chalk Farm, London Borough of Camden, London, Greater London, England, NW1 8QH, United Kingdom",51.5394276,-0.1426923
+289,/title/tt0041989/,Trottie True,"Pinewood Studios, Iver Heath, Buckinghamshire, England, UK",,"Pinewood Studios, Pinewood Green, Iver, Iver Heath, Buckinghamshire, South East, England, SL0 0QJ, United Kingdom",51.54831515,-0.5346765566753087
+290,/title/tt7832124/,Müslüm,"Istanbul, Turkey",(location)                        ,"İstanbul, Beyazıt Meydanı, Beyazıt Mahallesi, Fatih, İstanbul, Marmara Bölgesi, 34126, Türkiye",41.0096215,28.9651867
+291,/title/tt7832124/,Müslüm,"Sanliurfa, Turkey",(location)                        ,"Şanlıurfa, Güneydoğu Anadolu Bölgesi, Türkiye",37.2595198,39.0408174
+292,/title/tt10373830/,Aviva,"New York City, New York, USA",,"New York, United States of America",40.7127281,-74.0060152
+293,/title/tt10373830/,Aviva,"Los Angeles, California, USA",,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+294,/title/tt6964076/,Pavarotti,"Modena, Emilia-Romagna, Italy",,"Modena, Emilia-Romagna, Italia",44.5384728,10.935960870530739
+295,/title/tt6964076/,Pavarotti,"Baths of Caracalla, Rome, Lazio, Italy",,"Terme di Caracalla, Viale Guido Baccelli, Rione XXI San Saba, Municipio Roma I, Roma, Roma Capitale, Lazio, 00154, Italia",41.87882845,12.492473652251636
+296,/title/tt6964076/,Pavarotti,Barbados,,Barbados,13.1500331,-59.5250305
+297,/title/tt6964076/,Pavarotti,"Beijing, China",,"北京市, 通州区, 北京市, China 中国",39.9020668,116.718583
+298,/title/tt6964076/,Pavarotti,"Atlantic City, New Jersey, USA",,"Atlantic City, Atlantic County, New Jersey, United States of America",39.3642852,-74.4229351
+299,/title/tt6964076/,Pavarotti,"Los Angeles, California, USA",,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+300,/title/tt0087810/,No Small Affair,"San Francisco, California, USA",,"San Francisco, San Francisco City and County, California, United States of America",37.7790262,-122.4199061
+301,/title/tt0087810/,No Small Affair,"100 Broderick St, San Francisco, California, USA",(exterior of Cummings' family apartment)                        ,"100, Broderick Street, Western Addition, San Francisco, San Francisco City and County, California, 94117, United States of America",37.771323699999996,-122.4385903631882
+302,/title/tt0087810/,No Small Affair,"1220 Noe St, San Francisco, California, USA",(outside school Laura asks Charles to photograph her)                        ,"James Lick Middle School, 1220, Noe Street, Noe Valley, San Francisco, San Francisco City and County, California, 94114, United States of America",37.7493966,-122.43198566639566
+303,/title/tt0065537/,Change of Habit,"Universal Studios - 100 Universal City Plaza, Universal City, California, USA",(studio)                        ,,,
+304,/title/tt4935462/,Amazing Grace,"New Temple Missionary Baptist Church, Los Angeles, California, USA",(main location)                        ,"New Temple Missionary Baptist Church, West 87th Place, Broadway-Manchester, Los Angeles, Los Angeles County, California, 90044, United States of America",33.9580703,-118.2778514
+305,/title/tt4935462/,Amazing Grace,"California, USA",,"California, United States of America",36.7014631,-118.7559974
+306,/title/tt4935462/,Amazing Grace,"Watts, Los Angeles, California, USA",,"Watts, Los Angeles, Los Angeles County, California, 90002-3024, United States of America",33.9405674,-118.2428485
+307,/title/tt0493076/,Nina,"Los Angeles, California, USA",,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+308,/title/tt6854672/,Battle,"Oslo, Norway",(on location)                        ,"Oslo, 0026, Norge",59.9133301,10.7389701
+309,/title/tt6854672/,Battle,"Fyn, Denmark",(on location)                        ,"Fyn, Odense, Odense Kommune, Region Syddanmark, Danmark",55.324596850000006,10.347213055566993
+310,/title/tt0084088/,Honkytonk Man,"Birds Landing, California, USA",,"Birds Landing, Fairfield, Solano County, California, 94512, United States of America",38.132695,-121.8707927
+311,/title/tt0084088/,Honkytonk Man,"California, USA",(Driving Scenes)                        ,"California, United States of America",36.7014631,-118.7559974
+312,/title/tt0084088/,Honkytonk Man,"Dayton, Nevada, USA",(street scenes)                        ,"Dayton, Lyon County, Nevada, United States of America",39.2371689,-119.59295
+313,/title/tt0084088/,Honkytonk Man,"Sheepranch, California, USA",,,,
+314,/title/tt0084088/,Honkytonk Man,"Latrobe, California, USA",,"Latrobe, Amador, California, United States of America",38.559629,-120.9838307
+315,/title/tt0077788/,Kiss Meets the Phantom of the Park,"Santa Clarita, California, USA",,"Santa Clarita, Los Angeles County, California, United States of America",34.3916641,-118.542586
+316,/title/tt6371588/,The Song of Sway Lake,"Blue Mountain Lake, New York, USA",(Crane Point Lodge)                        ,"Blue Mountain Lake, Town of Indian Lake, Hamilton County, New York, 12812, United States of America",43.8553412,-74.4434931
+317,/title/tt1196956/,One Chance,"Port Talbot, Neath Port Talbot, Wales, UK",,"Port Talbot, Neath Port Talbot, Cymru / Wales, SA13 1RD, United Kingdom",51.5952119,-3.782199
+318,/title/tt1196956/,One Chance,"Chertsey, Surrey, England, UK",(Some high street scenes)                        ,"Chertsey, Surrey, South East, England, United Kingdom",51.392296,-0.5038294
+319,/title/tt1196956/,One Chance,"London, England, UK",,"London, Greater London, England, United Kingdom",51.5073219,-0.1276474
+320,/title/tt0044926/,Moulin Rouge,"Montmartre, Paris 18, Paris, France",,"Montmartre, Rue Charles Nodier, Barbès, Quartier de Clignancourt, Paris, Île-de-France, France métropolitaine, 75018, France",48.88546185,2.3391535013803098
+321,/title/tt0044926/,Moulin Rouge,"Château de Malromé, 3bis Château de Malromé, Saint-André du Bois, Gironde, France",,,,
+322,/title/tt0044926/,Moulin Rouge,"London, England, UK",,"London, Greater London, England, United Kingdom",51.5073219,-0.1276474
+323,/title/tt0044926/,Moulin Rouge,"Paris 7, Paris, France",,"Paris, Île-de-France, France métropolitaine, 75004, France",48.8566969,2.3514616
+324,/title/tt0044926/,Moulin Rouge,"Paris, France",,"Paris, Île-de-France, France métropolitaine, 75004, France",48.8566969,2.3514616
+325,/title/tt0044926/,Moulin Rouge,"Rue Royale, Paris 8, Paris, France",,"Rue Royale, Quartier de la Madeleine, Paris, Île-de-France, France métropolitaine, 75008, France",48.8666151,2.3219719
+326,/title/tt0057887/,Bikini Beach,"Auto Club Raceway at Pomona - 2780 Fairplex Drive, Pomona, California, USA",(Drag racing scenes)                        ,,,
+327,/title/tt0059314/,Inside Daisy Clover,"Santa Monica Pier, Santa Monica, California, USA",(pier and carousel scenes)                        ,"Santa Monica Pier, Santa Monica, Los Angeles County, California, United States of America",34.00889605,-118.49740225045329
+328,/title/tt0442722/,The Doodlebops,"Toronto, Ontario, Canada",,"Toronto, Peel, Golden Horseshoe, Ontario, Canada",43.6534817,-79.3839347
+329,Code,Show Name,Location,Scene,"Location, Tucker County, West Virginia, United States of America",39.2138905,-79.6371124
+330,/title/tt3710966/,Hello Again,"New York City, New York, USA",,"New York, United States of America",40.7127281,-74.0060152
+331,/title/tt1706470/,Weekender,"Amsterdam, Noord-Holland, Netherlands",,"Amsterdam, Noord-Holland, Nederland",52.3727598,4.8936041
+332,/title/tt1706470/,Weekender,Spain,,España,39.3262345,-4.8380649
+333,/title/tt6336270/,The Girl from the Song,"Black Rock Desert, Nevada, USA",,"Black Rock Desert, Nevada, United States of America",41.08322595,-118.79699135337323
+334,/title/tt6336270/,The Girl from the Song,"Barcelona, Barcelona, Catalonia, Spain",,"Barcelona, Avinguda de Barberà, Sant Oleguer, Sabadell, Vallès Occidental, Catalunya, 08203, España",41.5320947,2.1161527
+335,/title/tt6336270/,The Girl from the Song,"Terrassa, Catalonia, Spain",,"Terrassa, Vallès Occidental, Catalunya, 08221, España",41.5629885,2.0102442
+336,/title/tt6336270/,The Girl from the Song,USA,,United States,39.7837304,-100.4458825
+337,/title/tt0411027/,Strictly Come Dancing,"Blackpool Tower Ballroom, Blackpool, Lancashire, England, UK",,,,
+338,/title/tt0411027/,Strictly Come Dancing,"Elstree Studios, Borehamwood, Hertfordshire, England, UK",(studio)                        ,"Elstree Studios, Shenley Road, Elstree and Borehamwood, Hertsmere, Hertfordshire, East of England, England, WD6 1JG, United Kingdom",51.657052050000004,-0.2675206399488197
+339,/title/tt0411027/,Strictly Come Dancing,"Stage 1, Elstree Studios, Borehamwood, Hertfordshire, England, UK",(September - December 2013)                        ,"Elstree Studios, Shenley Road, Elstree and Borehamwood, Hertsmere, Hertfordshire, East of England, England, WD6 1JG, United Kingdom",51.657052050000004,-0.2675206399488197
+340,/title/tt1226240/,A Late Quartet,"Metropolitan Museum of Art, Manhattan, New York City, New York, USA",,"The Metropolitan Museum of Art, 1000, 5th Avenue, Manhattan Community Board 8, Manhattan, New York County, New York, 10035, United States of America",40.779443650000005,-73.96336411385192
+341,/title/tt1226240/,A Late Quartet,"Central Park, Manhattan, New York City, New York, USA",,"Central Park, Manhattan, New York County, New York, United States of America",40.7827725,-73.9653627406542
+342,/title/tt1226240/,A Late Quartet,"Bow Bridge, Central Park, Manhattan, New York City, New York, USA",,"Bow Bridge, Manhattan, New York County, New York, 10023-5104, United States of America",40.77576035,-73.97176891989135
+343,/title/tt0068828/,Lady Sings the Blues,"Paramount Studios - 5555 Melrose Avenue, Hollywood, Los Angeles, California, USA",(studio)                        ,,,
+344,/title/tt0068828/,Lady Sings the Blues,"KEHE Studios - 133 North Vermont Avenue, Los Angeles, California, USA",,,,
+345,/title/tt0074235/,Bound for Glory,"Altamont, California, USA",,"Altamont, Alameda County, California, United States of America",37.7438175,-121.6627285
+346,/title/tt0074235/,Bound for Glory,"Pittsburg, California, USA",,"Pittsburg, Contra Costa County, California, 94565, United States of America",38.0181745,-121.8901232
+347,/title/tt0074235/,Bound for Glory,"Isleton, California, USA",,"Isleton, Sacramento County, California, 95641, United States of America",38.1618614,-121.6116206
+348,/title/tt0074235/,Bound for Glory,"Old Tucson - 201 S. Kinney Road, Tucson, Arizona, USA",,"Old Tucson, 201, Kinney Road, Tucson Estates, Pima County, Arizona, 85735, United States of America",32.2186224,-111.1300273
+349,/title/tt0074235/,Bound for Glory,"Ambassador Hotel - 3400 Wilshire Boulevard, Los Angeles, California, USA",,,,
+350,/title/tt2517044/,The Song,"(Louisville, Kentucky, USA)",,"Louisville, Jefferson County, Kentucky, United States of America",38.2542376,-85.759407
+351,/title/tt2517044/,The Song,"Georgetown, Indiana, USA",,"Georgetown, Saint Joseph County, Indiana, United States of America",41.7307474,-86.22653021640718
+352,/title/tt2517044/,The Song,"Simpsonville, Kentucky, USA",,"Simpsonville, Shelby County, Kentucky, 40067, United States of America",38.22257,-85.3552349
+353,/title/tt0424908/,Copying Beethoven,"Katona József Theatre, Kecskemét, Hungary",(interiors)                        ,,,
+354,/title/tt0424908/,Copying Beethoven,"Kecskemét, Hungary",,"Kecskemét, Kecskeméti járás, Bács-Kiskun megye, Dél-Alföld, Alföld és Észak, Magyarország",46.9080769,19.6928133
+355,/title/tt0424908/,Copying Beethoven,"London, England, UK",,"London, Greater London, England, United Kingdom",51.5073219,-0.1276474
+356,/title/tt0424908/,Copying Beethoven,UK,,United Kingdom,54.7023545,-3.2765753
+357,/title/tt0092469/,The Tracey Ullman Show,"Stage 17, 20th Century Fox Studios - 10201 Pico Blvd., Century City, Los Angeles, California, USA",,,,
+358,/title/tt0422783/,Music Within,"Subic, Zambales, Philippines",,"Subic, Olongapo, Zambales, Central Luzon, 2200, Philippines",14.8774796,120.2344695
+359,/title/tt0422783/,Music Within,"Los Angeles, California, USA",,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+360,/title/tt0422783/,Music Within,"Portland, Oregon, USA",,"Portland, Multnomah County, Oregon, United States of America",45.5202471,-122.6741949
+361,/title/tt1649780/,"Peace, Love & Misunderstanding","Woodstock, New York, USA",,"Woodstock, Town of Woodstock, Ulster County, New York, 12498, United States of America",42.0410578,-74.1182492
+362,/title/tt1649780/,"Peace, Love & Misunderstanding","Rhinebeck, New York, USA",,"Rhinebeck, Town of Rhinebeck, Dutchess County, New York, United States of America",41.9268754,-73.9126639
+363,/title/tt1649780/,"Peace, Love & Misunderstanding","New York City, New York, USA",,"New York, United States of America",40.7127281,-74.0060152
+364,/title/tt5543284/,Maya & Marty,"Studio 6A, NBC Studios - 30 Rockefeller Plaza, Manhattan, New York City, New York, USA",(studio)                        ,,,
+365,/title/tt1323605/,Suck,"Toronto Film Studios, Toronto, Ontario, Canada",(studio)                        ,,,
+366,/title/tt1996607/,Deurim hai,"Seoul, South Korea",,"서울, 대한민국",37.5666791,126.9782914
+367,/title/tt0033723/,Het spookhuis,"Universal Studios - 100 Universal City Plaza, Universal City, California, USA",(studio)                        ,,,
+368,/title/tt0090036/,The Slugger's Wife,"Horseshoe Bend Country Club, Roswell, Georgia, USA",(Palmer Home)                        ,"Horseshoe Bend Country Club, 2100, Steeplechase Lane, Horseshoe Bend, Roswell, Georgia, 30076, United States of America",33.984292249999996,-84.29047654494788
+369,/title/tt0090036/,The Slugger's Wife,USA,,United States,39.7837304,-100.4458825
+370,/title/tt0090036/,The Slugger's Wife,"Atlanta-Fulton County Stadium - 521 Capital Avenue, Atlanta, Georgia, USA",,,,
+371,/title/tt0106053/,Late Show with David Letterman,"Ed Sullivan Theater - 1697 Broadway, Manhattan, New York City, New York, USA",,"Ed Sullivan Theater, Broadway, Midtown, Manhattan Community Board 5, Manhattan, New York County, New York, 10019, United States of America",40.7637743,-73.9828196
+372,/title/tt0106053/,Late Show with David Letterman,"London, England, UK",,"London, Greater London, England, United Kingdom",51.5073219,-0.1276474
+373,/title/tt0106053/,Late Show with David Letterman,"San Francisco, California, USA",,"San Francisco, San Francisco City and County, California, United States of America",37.7790262,-122.4199061
+374,/title/tt0075249/,Sparkle,"Stage 24, Warner Brothers Burbank Studios - 4000 Warner Boulevard, Burbank, California, USA",,,,
+375,/title/tt0079822/,Roller Boogie,"Muscle Beach Venice - 1800 Ocean Front Walk, Venice, Los Angeles, California, USA",(where Bobby James and pals lift weights)                        ,"Muscle Beach, Ocean Front Walk, Venice, Los Angeles, Los Angeles County, California, 90291-3879, United States of America",33.985445999999996,-118.4725821875
+376,/title/tt0079822/,Roller Boogie,"Moonlight Rollerway - 5110 San Fernando Road, Glendale, California, USA",(exterior of skating rink)                        ,,,
+377,/title/tt0079822/,Roller Boogie,"1401 Ocean Front Walk, Venice, California, USA",(Bobby James leads a conga skating line)                        ,"The Sidewalk Cafe, 1401, Ocean Front Walk, Venice, Los Angeles, Los Angeles County, California, 90291, United States of America",33.9879317,-118.4744328
+378,/title/tt0079822/,Roller Boogie,"211 Sherman Canal, Venice, California, USA",(Jammer's house)                        ,"211, Sherman Canal, Venice, Los Angeles, Los Angeles County, California, 90291, United States of America",33.982422535353535,-118.46599026262626
+379,/title/tt0079822/,Roller Boogie,"163 S Rockingham Ave, Los Angeles, CA 90049, USA",(Lana's house)                        ,"163, South Rockingham Avenue, Brentwood Park, Brentwood, Santa Monica, Los Angeles County, California, 90049, United States of America",34.05537707945854,-118.49284822960573
+380,/title/tt0079822/,Roller Boogie,"Venice, Los Angeles, California, USA",,"Venice, Los Angeles, Los Angeles County, California, United States of America",33.995044,-118.4668875
+381,/title/tt0065780/,Gimme Shelter,"Muscle Shoals, Alabama, USA",(studio) (Playback of tracks in studio)                        ,"Muscle Shoals, Colbert County, Alabama, 35661, United States of America",34.7451786,-87.6686733
+382,/title/tt0065780/,Gimme Shelter,"Altamont Speedway - 17001 Midway Road, Tracy, California, USA",,"Altamont Speedway, William Elton Brown Freeway, Midway, Alameda County, California, 95391, United States of America",37.7382995,-121.56343167942123
+383,/title/tt0065780/,Gimme Shelter,"Madison Square Garden - 50th Street and Eighth Avenue, Manhattan, New York City, New York, USA",,,,
+384,/title/tt4632440/,La danseuse,"Opéra de Vichy, 1 rue du Casino, Vichy, Allier, France",(scenes in the American theatre)                        ,,,
+385,/title/tt4632440/,La danseuse,Czech Republic,,Česko,49.8167003,15.4749544
+386,/title/tt4632440/,La danseuse,"Valenciennes, Nord, France",,"Valenciennes, Nord, Hauts-de-France, France métropolitaine, 59300, France",50.3579317,3.5234846
+387,/title/tt4632440/,La danseuse,"Château de Fontainebleau, Seine-et-Marne, France",,"Château de Fontainebleau, Rue Richelieu, Fontainebleau, Seine-et-Marne, Île-de-France, France métropolitaine, 77300, France",48.4023346,2.7005387366907625
+388,/title/tt12141112/,Metal Lords,"Portland, Oregon, USA",,"Portland, Multnomah County, Oregon, United States of America",45.5202471,-122.6741949
+389,/title/tt1724597/,London Town,"Wilmington, North Carolina, USA",(Taxi scenes)                        ,"Wilmington, New Hanover County, North Carolina, United States of America",34.2257282,-77.9447107
+390,/title/tt0105531/,Tango argentino,"Belgrade, Serbia",,"Београд, Град Београд, Централна Србија, 11000, Србија (Serbia)",44.8178131,20.4568974
+391,/title/tt6485304/,Quién te cantará,"Cádiz, Cádiz, Andalucía, Spain",,"Cádiz, Bahía de Cádiz, Andalucía, España",36.5297438,-6.2928976
+392,/title/tt6485304/,Quién te cantará,"Zahara de los Atunes, Cádiz, Andalucía, Spain",,,,
+393,/title/tt6485304/,Quién te cantará,"Madrid, Spain",,"Madrid, Área metropolitana de Madrid y Corredor del Henares, Comunidad de Madrid, 28001, España",40.4167047,-3.7035825
+394,/title/tt0437729/,The Late Late Show with Craig Ferguson,"Studio 42, CBS Television City - 7800 Beverly Boulevard, Fairfax, Los Angeles, California, USA",,,,
+395,/title/tt0306370/,The Osbournes,"Beverly Hills, California, USA",,"Beverly Hills, Los Angeles County, California, United States of America",34.0696501,-118.3963062
+396,/title/tt0306370/,The Osbournes,"Los Angeles, California, USA",,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+397,/title/tt0047030/,The Glenn Miller Story,"Elitch Garden's Trocadero Ballroom, Denver, Colorado, USA",,,,
+398,/title/tt0047030/,The Glenn Miller Story,"Boulder, Colorado, USA",,"Boulder, Boulder County, Colorado, United States of America",40.0149856,-105.2705456
+399,/title/tt0047030/,The Glenn Miller Story,"Angels Flight Railway - 351 S Hill St, Los Angeles, California, USA",,"Angels Flight, South Hill Street, Bunker Hill, Downtown, Los Angeles, Los Angeles County, California, 90071, United States of America",34.0511576,-118.2499232
+400,/title/tt0047030/,The Glenn Miller Story,"Universal Studios - 100 Universal City Plaza, Universal City, California, USA",(studio)                        ,,,
+401,/title/tt0047030/,The Glenn Miller Story,"Santa Monica Pier, Santa Monica, California, USA",,"Santa Monica Pier, Santa Monica, Los Angeles County, California, United States of America",34.00889605,-118.49740225045329
+402,/title/tt0211946/,Berlin Calling,"Berlin, Germany",,"Berlin, 10117, Deutschland",52.5170365,13.3888599
+403,/title/tt0165859/,Liberty Heights,"Baltimore County Courthouse - 401 Bosley Avenue, Towson, Maryland, USA",,,,
+404,/title/tt0165859/,Liberty Heights,"Frederick, Maryland, USA",(James Brown concert)                        ,"Frederick, Frederick County, Maryland, United States of America",39.4142186,-77.4109269
+405,/title/tt0165859/,Liberty Heights,"Hippodrome Theater, Baltimore, Maryland, USA",(Stand In for Royal)                        ,,,
+406,/title/tt0104541/,The Jacksons: An American Dream,"Pittsburgh, Pennsylvania, USA",,"Pittsburgh, Allegheny County, Pennsylvania, United States of America",40.4416941,-79.9900861
+407,/title/tt0104541/,The Jacksons: An American Dream,"The Wiltern - 3790 Wilshire Blvd., Los Angeles, California, USA",,"Wiltern Theatre and Pellissier Building, 3780, Wilshire Boulevard, Koreatown, Los Angeles, Los Angeles County, California, 90010, United States of America",34.061270199999996,-118.30856470082979
+408,/title/tt0056347/,The Phantom of the Opera,"New Wimbledon Theatre, The Broadway, Wimbledon, London, England, UK",(Theatre Auditorium Interiors)                        ,"New Wimbledon Theatre, 93, The Broadway, South Wimbledon, London Borough of Merton, London, Greater London, England, SW19 1QG, United Kingdom",51.41920545,-0.2014408465960715
+409,/title/tt0103569/,The Tonight Show with Jay Leno,"Studio 11, NBC Studios - 3000 W. Alameda Avenue, Burbank, California, USA",(studio)                        ,,,
+410,/title/tt0103569/,The Tonight Show with Jay Leno,"Hollywood, Los Angeles, California, USA",,"Hollywood, Los Angeles, Los Angeles County, California, 90028-8127, United States of America",34.0980031,-118.329523
+411,/title/tt3704352/,Bessie,"Olde Town Conyers, Georgia, USA",(Chattanooga Streets)                        ,"Olde Town Conyers PATH Trail, Conyers, Rockdale County, Georgia, 30013-2028, United States of America",33.6423785,-84.0305231
+412,/title/tt0082252/,The Decline of Western Civilization,"Los Angeles, California, USA",(main location)                        ,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+413,/title/tt0082252/,The Decline of Western Civilization,"Venice, California, USA",(interview) (Claude Bessey interview)                        ,"Venice, Los Angeles, Los Angeles County, California, United States of America",33.995044,-118.4668875
+414,Code,Show Name,Location,Scene,"Location, Tucker County, West Virginia, United States of America",39.2138905,-79.6371124
+415,/title/tt0083433/,Joanie Loves Chachi,"Paramount Studios - 5555 Melrose Avenue, Hollywood, Los Angeles, California, USA",,,,
+416,/title/tt0448300/,Spicks and Specks,"Melbourne, Victoria, Australia",,"Melbourne, City of Melbourne, Victoria, 3000, Australia",-37.8142176,144.9631608
+417,/title/tt10662310/,Romeo and Juliet: Beyond Words,"Budapest, Hungary",,"Budapest, Közép-Magyarország, 1011, Magyarország",47.4983815,19.0404707
+418,/title/tt0040820/,A Song Is Born,"Samuel Goldwyn Studios - 7200 Santa Monica Boulevard, West Hollywood, California, USA",(studio)                        ,,,
+419,/title/tt0037514/,Anchors Aweigh,"Hollywood Bowl - 2301 N. Highland Avenue, Hollywood, Los Angeles, California, USA",,,,
+420,/title/tt0406032/,Little House on the Prairie,"Alberta, Canada",,"Alberta, Canada",55.001251,-115.002136
+421,/title/tt0090461/,Jem,Japan,(Animation)                        ,日本,36.5748441,139.2394179
+422,/title/tt0109771/,Farinelli,"Bayreuth, Bavaria, Germany",,"Bayreuth, Bayern, Deutschland",49.9427202,11.5763079
+423,/title/tt0109771/,Farinelli,"Markgrafentheater, Erlangen, Bavaria, Germany",,"Markgrafentheater Erlangen, 2, Theaterplatz, Burgberg, Erlangen, Bayern, 91054, Deutschland",49.599733650000005,11.005797447569318
+424,/title/tt11278140/,Fandango at the Wall,"Tijuana, Mexico",(At the border between the United States and Mexico)                        ,"Tijuana, Municipio de Tijuana, Baja California, 22105, México",32.5010188,-116.9646629
+425,/title/tt11278140/,Fandango at the Wall,"New York City, New York, USA","(Times Square, Central Park, The Symphony Space)                        ","New York, United States of America",40.7127281,-74.0060152
+426,/title/tt10016704/,Patsy & Loretta,"Ryman Auditorium, Nashville, Tennessee, USA",(Grand Ole Opry)                        ,"Ryman Auditorium, #116, 5th Avenue North, East Nashville, Nashville-Davidson, Davidson County, Tennessee, 37219, United States of America",36.16124725,-86.77849545948979
+427,/title/tt10016704/,Patsy & Loretta,"Dee's Country Cocktail Lounge, Madison, Tennessee, USA",(Honkey Tonk)                        ,,,
+428,/title/tt10305932/,The Oscars,"Dolby Theatre - 6801 Hollywood Blvd., Hollywood & Highland Center, Hollywood, Los Angeles, California, USA",,,,
+429,/title/tt0186508/,Buena Vista Social Club,"Havana, Cuba",,"La Habana, La Habana Vieja, Cuba",23.135305,-82.3589631
+430,/title/tt0186508/,Buena Vista Social Club,"Carnegie Hall - 57th Street & 7th Avenue, Manhattan, New York City, New York, USA",,,,
+431,/title/tt3302706/,Boychoir,"Yale University, New Haven, Connecticut, USA",,"Yale University Art Gallery, 1111, Chapel Street, Downtown, New Haven, New Haven County, Connecticut, 06515, United States of America",41.3084354,-72.93087953034963
+432,/title/tt3302706/,Boychoir,"Fairfield University - 1073 N. Benson Road, Fairfield, Connecticut, USA",,"Fairfield University, 1073, North Benson Road, Tunxis Hill, Fairfield, Fairfield County, Connecticut, 06824, United States of America",41.15967565,-73.25740310197213
+433,/title/tt3302706/,Boychoir,"New Haven, Connecticut, USA",,"New Haven, New Haven County, Connecticut, United States of America",41.3082138,-72.9250518
+434,/title/tt3302706/,Boychoir,"New York City, New York, USA",,"New York, United States of America",40.7127281,-74.0060152
+435,/title/tt3302706/,Boychoir,USA,,United States,39.7837304,-100.4458825
+436,/title/tt0097262/,Eddie and the Cruisers II: Eddie Lives!,"Asbury Park, New Jersey, USA",(boardwalk)                        ,"Asbury Park, New Jersey, United States of America",40.2203907,-74.0120817
+437,/title/tt0097262/,Eddie and the Cruisers II: Eddie Lives!,"Nevada, USA",,"Nevada, United States of America",39.5158825,-116.8537227
+438,/title/tt7291268/,Gaga: Five Foot Two,"New York City, New York, USA",,"New York, United States of America",40.7127281,-74.0060152
+439,/title/tt7291268/,Gaga: Five Foot Two,"NRG Arena Houston, Texas, USA",,"NRG Arena, South Loop East Frontage Road, Myrtle, Houston, Harris County, Texas, 77054-1921, United States of America",29.681172850000003,-95.40596882763566
+440,/title/tt0280720/,The Guru,"Bay Ridge, Brooklyn, New York City, New York, USA",,"Bay Ridge, Brooklyn, Kings County, New York, 11220, United States of America",40.6339929,-74.0145841
+441,/title/tt0280720/,The Guru,"New York City, New York, USA",,"New York, United States of America",40.7127281,-74.0060152
+442,/title/tt0138467/,Girl,"Los Angeles, California, USA",,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+443,/title/tt4146132/,Fan Girl,"Long Island, New York, USA",,"Long Island, Suffolk County, New York, United States of America",40.85172235,-73.09921882199973
+444,/title/tt0107617/,Mùi du du xanh,"Paris, France",,"Paris, Île-de-France, France métropolitaine, 75004, France",48.8566969,2.3514616
+445,/title/tt1329457/,Gainsbourg (Vie héroïque),"Rue de Verneuil, Paris 6, Paris, France",(Gainsbourg's house)                        ,"Rue de Verneuil, Quartier de Saint-Germain-des-Prés, Paris, Île-de-France, France métropolitaine, 75006, France",48.8579551,2.329253
+446,/title/tt1329457/,Gainsbourg (Vie héroïque),"Paris, France",,"Paris, Île-de-France, France métropolitaine, 75004, France",48.8566969,2.3514616
+447,/title/tt1329457/,Gainsbourg (Vie héroïque),"Abbaye de Royaumont, Asnières-sur-Oise, Val d'Oise, France",,"Abbaye de Royaumont, Baillon, Asnières-sur-Oise, Sarcelles, Val-d'Oise, Île-de-France, France métropolitaine, 95270, France",49.1470077,2.3811948840320207
+448,/title/tt0063919/,The Johnny Cash Show,"Old Tucson - 201 S. Kinney Road, Tucson, Arizona, USA",(1971 episode)                        ,"Old Tucson, 201, Kinney Road, Tucson Estates, Pima County, Arizona, 85735, United States of America",32.2186224,-111.1300273
+449,/title/tt0063919/,The Johnny Cash Show,"Columbia/Warner Bros. Ranch - 411 North Hollywood Way, Burbank, California, USA",,,,
+450,/title/tt5361610/,The Killers: Here with Me,"Blackpool, Lancashire, UK",,"The Blackpool Sixth Form College, Blackpool Old Road, Wyre, Lancashire, North West England, England, FY3 7LR, United Kingdom",53.84036055,-3.016109110103627
+451,/title/tt1071812/,Mao's Last Dancer,"China Garden Restaurant - 1602 Leeland St, Houston, Texas, USA",,"China Garden Restaurant, Leeland Street, Houston, Harris County, Texas, 77002, United States of America",29.7490803,-95.3632120089145
+452,/title/tt1071812/,Mao's Last Dancer,"JP Morgan Chase Tower - 600 Travis St., Houston, Texas, USA",(Charles Foster's office scene)                        ,,,
+453,/title/tt1071812/,Mao's Last Dancer,"Wortham Theater Center - 500 Texas Street, Houston, Texas, USA","(Plaza entrance on Texas Ave. was featured as a scene setting, and the Prairie St entrance was the location of Li's parents' arrival for ""Le Sacre du Printemps"")                        ",,,
+454,/title/tt1071812/,Mao's Last Dancer,"Acer Arena, Olympic Boulevard, Sydney Olympic Park, Sydney, New South Wales, Australia",,,,
+455,/title/tt1071812/,Mao's Last Dancer,"Darling Street, Glebe, Sydney, New South Wales, Australia",,"Darling Street, Glebe, Sydney, Council of the City of Sydney, New South Wales, 2037, Australia",-33.8783459,151.1897059
+456,/title/tt1071812/,Mao's Last Dancer,"Kensington, Sydney, New South Wales, Australia",,"Kensington, Sydney, Randwick City Council, New South Wales, 2033, Australia",-33.9117191,151.2195058
+457,/title/tt1071812/,Mao's Last Dancer,"Science House, The Rocks, Sydney, New South Wales, Australia",,"Science House, Gloucester Street, The Rocks, Sydney, Council of the City of Sydney, New South Wales, 2000, Australia",-33.8620557,151.20617763161408
+458,/title/tt1071812/,Mao's Last Dancer,"Strickland House, Vaucluse, Sydney, New South Wales, Australia",,"Strickland House, Vaucluse Rd, Vaucluse Road, Vaucluse, Sydney, Woollahra Municipal Council, New South Wales, 2030, Australia",-33.8551969,151.2686092
+459,/title/tt1071812/,Mao's Last Dancer,"Washington, District of Columbia, USA",,"Washington, District of Columbia, 20230, United States of America",38.8949924,-77.0365581
+460,/title/tt1532958/,Battle of the Year,"Los Angeles, California, USA",,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+461,/title/tt0094752/,Black Roses,"Dundas, Ontario, Canada",,"Dundas, Hopkins Survey, Hamilton, Golden Horseshoe, Ontario, L9H 1T5, Canada",43.2661904,-79.9546341
+462,/title/tt0100361/,The Phantom of the Opera,"Paris, France",(Paris Opera House/Caves of Mello)                        ,"Paris, Île-de-France, France métropolitaine, 75004, France",48.8566969,2.3514616
+463,/title/tt1111948/,Soul Men,"Louisiana, USA",,"Louisiana, United States of America",30.8703881,-92.007126
+464,/title/tt0377800/,Don't Come Knocking,"Butte, Montana, USA",,"Butte, Silver Bow County, Montana, United States of America",46.0131505,-112.5365089
+465,/title/tt0377800/,Don't Come Knocking,"Elko, Nevada, USA",,"Elko County, Nevada, United States of America",41.1958128,-115.3272864
+466,/title/tt0377800/,Don't Come Knocking,"Moab, Utah, USA",,"Moab, Grand County, Utah, United States of America",38.5738096,-109.5462146
+467,/title/tt0377800/,Don't Come Knocking,"Utah, USA",,"Utah, United States of America",39.4225192,-111.7143584
+468,/title/tt0377800/,Don't Come Knocking,USA,,United States,39.7837304,-100.4458825
+469,/title/tt0103110/,Tous les matins du monde,"Le Château de Bodeau, Rougnat, Creuse, France",(Sainte-Colombe's castle)                        ,,,
+470,/title/tt0103110/,Tous les matins du monde,"Paris, France",,"Paris, Île-de-France, France métropolitaine, 75004, France",48.8566969,2.3514616
+471,/title/tt1425922/,Black Nativity,"New York City, New York, USA",,"New York, United States of America",40.7127281,-74.0060152
+472,/title/tt0496319/,The Hottest State,"El Paso, Texas, USA",,"El Paso, El Paso County, Texas, United States of America",31.7754152,-106.4646348
+473,/title/tt0496319/,The Hottest State,"New Jersey, USA",,"New Jersey, United States of America",40.0757384,-74.4041622
+474,/title/tt0496319/,The Hottest State,"Nutley, New Jersey, USA",,"Nutley, Essex County, New Jersey, 07110, United States of America",40.8223223,-74.1598663
+475,/title/tt0426627/,Stoned,"Battersea Park, Battersea, London, England, UK",,"Battersea Park, Battersea, London Borough of Wandsworth, London, Greater London, England, United Kingdom",51.479193300000006,-0.15707865471804333
+476,/title/tt0426627/,Stoned,"Hampton, Surrey, England, UK",,"Hampton Court, Hampton Court Way, Hampton Court, Thames Ditton, Elmbridge, Surrey, South East, England, KT8 9AE, United Kingdom",51.4020159,-0.3425203
+477,/title/tt0095812/,Paganini Horror,"Venice, Veneto, Italy",,"Venezia, Veneto, Italia",45.4371908,12.3345898
+478,Code,Show Name,Location,Scene,"Location, Tucker County, West Virginia, United States of America",39.2138905,-79.6371124
+479,/title/tt0089444/,Krush Groove,"Times Square, Manhattan, New York City, New York, USA",(sbarro's fat boys' all you can eat buffet scene)                        ,"Times Square, West 45th Street, Times Square, Manhattan Community Board 5, Times Square, New York County, New York, 10036, United States of America",40.757280550000004,-73.98585503545917
+480,/title/tt0089444/,Krush Groove,"Brooklyn, New York City, New York, USA",,"Brooklyn, Kings County, New York, United States of America",40.6501038,-73.9495823
+481,/title/tt0089444/,Krush Groove,"Silvercup Studios - 4222 22nd Street, Long Island City, Queens, New York City, New York, USA",,"Silvercup Studios Main Lot, 42-22, 22nd Street, Queens, Queens County, New York, 11101, United States of America",40.7513513,-73.94424267969767
+482,/title/tt0089444/,Krush Groove,"Silvercup Studios East, Long Island City, Queens, New York City, New York, USA",,"Silvercup Studios Main Lot, 42-22, 22nd Street, Queens, Queens County, New York, 11101, United States of America",40.7513513,-73.94424267969767
+483,/title/tt0165643/,Black and White,"Columbia University - Broadway & 116th Street, Manhattan, New York City, New York, USA",,,,
+484,/title/tt0165643/,Black and White,"Manhattan, New York City, New York, USA",,"Manhattan, New York County, New York, United States of America",40.7896239,-73.9598939
+485,/title/tt0165643/,Black and White,"New York, USA",,"New York, United States of America",40.7127281,-74.0060152
+486,/title/tt1920945/,Good Vibrations,"Belfast, County Antrim, Northern Ireland, UK",,"Belfast, County Antrim, Northern Ireland, BT1 5GS, United Kingdom",54.5964411,-5.9302761
+487,/title/tt5616718/,Vital Signs,"Los Angeles, California, USA",,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+488,/title/tt0322420/,Zivot je cudo,"Zlatibor, Serbia",,"Златибор, Општина Чајетина, Златиборски управни округ, Централна Србија, Србија (Serbia)",43.6531807,19.6405865
+489,/title/tt0322420/,Zivot je cudo,"Golubici Station, Mokra Gora, Serbia",(Luka's railway station)                        ,"Голубићи, 28, Мокра Гора, Градска општина Ужице, Град Ужице, Златиборски управни округ, Централна Србија, 31243, Србија (Serbia)",43.7972375,19.5211245
+490,/title/tt0322420/,Zivot je cudo,Serbia,,"Србија, Доње Комарице, Град Крагујевац, Шумадијски управни округ, Централна Србија, Србија (Serbia)",44.024322850000004,21.07657433209902
+491,/title/tt0082361/,Der Fan,"FSM, Unterföhring, Bavaria, Germany",,,,
+492,/title/tt0082361/,Der Fan,"Ulm, Baden-Württemberg, Germany",,"Ulm, Baden-Württemberg, Deutschland",48.3974003,9.9934336
+493,/title/tt0082361/,Der Fan,"Baden-Württemberg, Germany",,"Baden-Württemberg, Deutschland",48.6296972,9.1949534
+494,/title/tt0064002/,Alice's Restaurant,"New York City, New York, USA",(U.S. Army Building 39 Whitehall Stree)                        ,"New York, United States of America",40.7127281,-74.0060152
+495,/title/tt0064002/,Alice's Restaurant,"Stockbridge, Massachusetts, USA",,"Stockbridge, Berkshire County, Massachusetts, United States of America",42.308301,-73.3230114
+496,/title/tt0064002/,Alice's Restaurant,"Great Barrington, Massachusetts, USA",(Railroad Street)                        ,"Great Barrington, Berkshire County, Massachusetts, United States of America",42.2103722,-73.3389121
+497,/title/tt0064002/,Alice's Restaurant,"Great Barrington, Massachusetts, USA",(Rt 183)                        ,"Great Barrington, Berkshire County, Massachusetts, United States of America",42.2103722,-73.3389121
+498,/title/tt0064002/,Alice's Restaurant,"Great Barrington, Massachusetts, USA",(Muddy Brook Cemetery Stony Brook Rd.)                        ,"Great Barrington, Berkshire County, Massachusetts, United States of America",42.2103722,-73.3389121
+499,/title/tt0064002/,Alice's Restaurant,"Lee, Massachusetts, USA",(court house)                        ,"Lee, Berkshire County, Massachusetts, 01238-1612, United States of America",42.3039199,-73.2340974
+500,/title/tt0101902/,For the Boys,"Inyo National Forest, California, USA",,"Inyo National Forest, Mono County, California, United States of America",37.81771915,-118.87561980413251
+501,/title/tt0101902/,For the Boys,"Los Angeles, California, USA",,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+502,/title/tt0064689/,Monterey Pop,"Monterey County Fairgrounds - 2004 Fairground Road, Monterey, California, USA",(location of the festival)                        ,"Monterey County Fairgrounds, Fairground Road, Del Monte, Monterey, Monterey County, California, 93940, United States of America",36.59436645,-121.86284605293017
+503,/title/tt0080277/,Solid Gold,"KTLA Studios - 5858 Sunset Blvd., Hollywood, Los Angeles, California, USA",(studio) (1980-1984)                        ,,,
+504,/title/tt0080277/,Solid Gold,"Paramount Studios - 5555 Melrose Avenue, Hollywood, Los Angeles, California, USA",(studio) (1984-1988)                        ,,,
+505,/title/tt8974368/,De belofte van Pisa,"Amsterdam, Noord-Holland, Netherlands",,"Amsterdam, Noord-Holland, Nederland",52.3727598,4.8936041
+506,/title/tt1440266/,Pina,"Essen, North Rhine-Westphalia, Germany",,"Essen, Nordrhein-Westfalen, 45127, Deutschland",51.4582235,7.0158171
+507,/title/tt1440266/,Pina,"North Rhine-Westphalia, Germany",,"Nordrhein-Westfalen, Deutschland",51.4781796,7.5542336
+508,/title/tt1440266/,Pina,"Müngstener Brücke, Solingen, North Rhine-Westphalia, Germany",,"Müngstener Brücke, Müngstener Brückenweg, Dorperhof, Höhscheid/Burg, Solingen, Nordrhein-Westfalen, 42659, Deutschland",51.16084055,7.132595930494392
+509,/title/tt1440266/,Pina,"Zeche Zollverein, Essen, North Rhine-Westphalia, Germany",,"Zeche Zollverein, Bullmannaue, Katernberg, Stadtbezirk VI, Essen, Nordrhein-Westfalen, 45327, Deutschland",51.488001,7.038687317505814
+510,/title/tt1440266/,Pina,"Wuppertal Opera House, Wuppertal, North Rhine-Westphalia, Germany",(stage)                        ,,,
+511,/title/tt0180241/,Tenacious D,"Los Angeles, California, USA",,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+512,/title/tt10768410/,Christmas at Graceland: Home for the Holidays,"Graceland - 3734 Elvis Presley Boulevard, Memphis, Tennessee, USA",,"Graceland, Elvis Presley Boulevard, Nonconnah, Memphis, Shelby County, Tennessee, 38116, United States of America",35.0457404,-90.02307247718191
+513,/title/tt0458522/,El cantante,"New York, USA",,"New York, United States of America",40.7127281,-74.0060152
+514,/title/tt1185418/,The Wrecking Crew!,"Palm Springs, California, USA",(interview) (Hal Blaine interview)                        ,"Palm Springs, Riverside County, California, United States of America",33.8246269,-116.540303
+515,/title/tt0049993/,Bandstand,"Philadelphia, Pennsylvania, USA",,"Philadelphia, Philadelphia County, Pennsylvania, United States of America",39.9527237,-75.1635262
+516,/title/tt0049993/,Bandstand,"Los Angeles, California, USA",,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+517,/title/tt0066109/,The Music Lovers,"Pump Room, Roman Baths, Bath, Somerset, England, UK",(Moscow Conservatoire)                        ,,,
+518,/title/tt0342882/,The PianoTuner of EarthQuakes,Germany,,Deutschland,51.0834196,10.4234469
+519,/title/tt1320082/,Le concert,"Paris, France",,"Paris, Île-de-France, France métropolitaine, 75004, France",48.8566969,2.3514616
+520,/title/tt1320082/,Le concert,"Bucharest, Romania",,"Municipiul București, România",44.4361414,26.1027202
+521,/title/tt1320082/,Le concert,"Théâtre du Châtelet, Place du Châtelet, Paris 1, Paris, France",,,,
+522,/title/tt1320082/,Le concert,France,,France,46.603354,1.8883335
+523,/title/tt1320082/,Le concert,"Smolensky Boulevard, Moscow, Russia",(Andrey and Sasha drive in an ambulance past the Ministry of Foreign Affairs)                        ,"Smolensky De Luxe, 19-21, 1-й Смоленский переулок, район Арбат, Центральный административный округ, Москва, Центральный федеральный округ, 121099, Россия",55.74908685,37.5792787994215
+524,/title/tt1320082/,Le concert,"Moskvoretskaya Naberezhnaya, Moscow, Russia",(Andrey and Sasha drive in an ambulance across Moscow)                        ,,,
+525,/title/tt1320082/,Le concert,"Hôtel Résidence Maxim's - 42 avenue Gabriel, Paris, France",(the Russian musicians arrive at their hotel in Paris)                        ,,,
+526,/title/tt1320082/,Le concert,"Restaurant Founti Agadir, 117 rue Monge, Paris 5, Paris, France",(restaurant scene)                        ,,,
+527,/title/tt1320082/,Le concert,"Devant le magasin Vilmorin, 6 quai de la Mégisserie, Paris 1, Paris, France",(the Russian calls a cab)                        ,,,
+528,/title/tt1320082/,Le concert,"Rue des Tournelles, Paris 4, Paris, France",(Viktor and Sasha walk in a street)                        ,"Rue des Tournelles, Quartier de l'Arsenal, Paris, Île-de-France, France métropolitaine, 75004, France",48.853767,2.3673509
+529,/title/tt1320082/,Le concert,"43 rue des Francs-Bourgeois, Paris 4, Paris, France",(Sasha calls on Ann-Marie and Guylène)                        ,"43, Rue des Francs Bourgeois, Quartier des Archives, Paris, Île-de-France, France métropolitaine, 75003, France",48.8581102,2.3596997
+530,/title/tt1320082/,Le concert,"Red Square, Kitai-gorod, Tverskoy District, Moscow, Russia",,"Красная площадь, Китай-город, Тверской район, Центральный административный округ, Москва, Центральный федеральный округ, Россия",55.7536283,37.62137960067377
+531,/title/tt1447972/,StreetDance 3D,"London, England, UK",,"London, Greater London, England, United Kingdom",51.5073219,-0.1276474
+532,/title/tt9077090/,I'll Be Around,"Los Angeles, California, USA",(location)                        ,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+533,/title/tt0172348/,Introducing Dorothy Dandridge,"Hollywood Roosevelt Hotel - 7000 Hollywood Blvd., Hollywood, Los Angeles, California, USA",,"Hollywood Roosevelt Hotel, 7000, Hollywood Boulevard, Hollywood, Los Angeles, Los Angeles County, California, 90028, United States of America",34.100968050000006,-118.34181478202902
+534,/title/tt0172348/,Introducing Dorothy Dandridge,"Hollywood Athletic Club - 6525 W. Sunset Blvd., Hollywood, Los Angeles, California, USA",,,,
+535,/title/tt0172348/,Introducing Dorothy Dandridge,"Los Angeles, California, USA",,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+536,/title/tt0093970/,Sign 'o' the Times,"Rotterdam, Zuid-Holland, Netherlands","(Live footage, Ahoy Stadium)                        ","Rotterdam, 1207, Weena, CS-Kwartier, Centrum, Rotterdam, Zuid-Holland, Nederland, 3013AL, Nederland",51.9228934,4.4631786
+537,/title/tt0093970/,Sign 'o' the Times,"Paisley Park Studios - 7801 Audubon Road, Chanhassen, Minnesota, USA",(studio)                        ,"Paisley Park Studios, 7801, Audubon Road, Ashling Meadows, Greenwood Shores, Chanhassen, Carver County, Minnesota, 55317, United States of America",44.86166555,-93.56067202214953
+538,/title/tt0080556/,The Competition,"Shrine Auditorium - 665 W. Jefferson Boulevard, Los Angeles, California, USA",(filming location)                        ,"Shrine Auditorium, West Jefferson Boulevard, University Park, Los Angeles, Los Angeles County, California, 90089-0871, United States of America",34.0233199,-118.2815445
+539,/title/tt0080556/,The Competition,"Pier 39, San Francisco, California, USA",,"Pier 39, North Beach, San Francisco, San Francisco City and County, California, 94133-1312, United States of America",37.8086301,-122.40979
+540,/title/tt0094980/,The Decline of Western Civilization Part II: The Metal Years,"Los Angeles, California, USA",(main location)                        ,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+541,/title/tt0094980/,The Decline of Western Civilization Part II: The Metal Years,"Hollywood, Los Angeles, California, USA",(Cathouse club)                        ,"Hollywood, Los Angeles, Los Angeles County, California, 90028-8127, United States of America",34.0980031,-118.329523
+542,/title/tt0044103/,The Tales of Hoffmann,"Shepperton Studios, Shepperton, Surrey, England, UK",(studio)                        ,,,
+543,/title/tt0057083/,Fun in Acapulco,"Acapulco, Guerrero, Mexico",,"Acapulco, Acapulco de Juárez, Guerrero, 39300, México",16.8680495,-99.8940182
+544,/title/tt0057083/,Fun in Acapulco,"Paramount Studios - 5555 Melrose Avenue, Hollywood, Los Angeles, California, USA",(studio)                        ,,,
+545,/title/tt0058631/,The T.A.M.I. Show,"Santa Monica Civic Auditorium - 1855 Main Street, Santa Monica, California, USA",,"Santa Monica Civic Auditorium, West Pico Boulevard, Ocean Park, Santa Monica, Los Angeles County, California, 90401-2405, United States of America",34.009059199999996,-118.489305241662
+546,/title/tt0058631/,The T.A.M.I. Show,"Sunset Blvd., Hollywood, Los Angeles, California, USA",,"Sunset Boulevard, East Hollywood, Los Angeles, Los Angeles County, California, 90027-5517, United States of America",34.0981514,-118.2912164
+547,/title/tt5740866/,Whitney,"New Hope Baptist Church, Newark, New Jersey, USA",,"New Hope Baptist Church, Dey Street, University Heights, Roseville, Newark, Essex County, New Jersey, 07103, United States of America",40.74625495,-74.17997221552018
+548,/title/tt5740866/,Whitney,"Beverly Hilton Hotel - 9876 Wilshire Blvd., Beverly Hills, California, USA",,,,
+549,/title/tt7776838/,Das schönste Mädchen der Welt,"Berlin, Germany",(Filmed at several locations throughout the city.)                        ,"Berlin, 10117, Deutschland",52.5170365,13.3888599
+550,/title/tt3568088/,Cilla,"Belgrave Pub, Bryanston Road, Aigburth, Liverpool, Merseyside, England, UK",(interiors: White family's flat)                        ,,,
+551,/title/tt3568088/,Cilla,"Town Hall, Brighton Street, Wallasey, Wirral, Merseyside, England, UK",(register office wedding)                        ,,,
+552,/title/tt3568088/,Cilla,"Dingle, Liverpool, Merseyside, England, UK",(Bobbies Bakery)                        ,"Dingle, Liverpool, North West England, England, L8 9UN, United Kingdom",53.3798767,-2.9634677
+553,/title/tt10687158/,Western Stars,"Joshua Tree, California, USA",(A Private Ranch located in)                        ,"Joshua Tree, Cougar Lane, Friendly Hills, Joshua Tree, San Bernardino County, California, 92295, United States of America",34.1265262,-116.32093491214893
+554,/title/tt10687158/,Western Stars,"Colts Neck, New Jersey, USA",(Springsteen's barn)                        ,"Trump National Golf Club, Colts Neck, One, Westbury Place, Colts Neck Township, Monmouth, New Jersey, 07722, United States of America",40.278173100000004,-74.17801734190269
+555,/title/tt12130840/,Ben Platt: Ease My Mind,"New York City, New York, USA",,"New York, United States of America",40.7127281,-74.0060152
+556,Code,Show Name,Location,Scene,"Location, Tucker County, West Virginia, United States of America",39.2138905,-79.6371124
+557,/title/tt3090634/,Eden,"New York City, New York, USA",(New York Unit)                        ,"New York, United States of America",40.7127281,-74.0060152
+558,/title/tt3090634/,Eden,"Paris, France",,"Paris, Île-de-France, France métropolitaine, 75004, France",48.8566969,2.3514616
+559,/title/tt3090634/,Eden,"Rue la Vieuville, Paris 18, Paris, France","(house party, 1st Daft Punk performance)                        ","Rue la Vieuville, Quartier de Clignancourt, Paris, Île-de-France, France métropolitaine, 75018, France",48.8846696,2.3397661
+560,/title/tt3090634/,Eden,"1 Rue Jacques-Coeur, Paris 4, Paris, France",(Paul's apartment)                        ,"1, Rue Jacques Cœur, Quartier de l'Arsenal, Paris, Île-de-France, France métropolitaine, 75004, France",48.8519479,2.3670033
+561,/title/tt3090634/,Eden,"33 Rue du Faubourg Saint-Antoine, Paris 12, Paris, France",(Radio Nova exteriors)                        ,"33, Rue du Faubourg Saint-Antoine, Quartier des Quinze-Vingts, Paris, Île-de-France, France métropolitaine, 75011, France",48.8525292,2.3718645
+562,/title/tt3090634/,Eden,"Rue Galande, Paris 5, Paris, France",(Paul is given the book The End)                        ,"Rue Galande, Quartier de la Sorbonne, Paris, Île-de-France, France métropolitaine, 75005, France",48.8517407,2.3468532
+563,/title/tt0095853/,Permanent Record,"Benson High School - 546 NE 12th Avenue, Portland, Oregon, USA",,"Benson Polytechnic High School, 546, Northeast 12th Avenue, Kerns, Portland, Multnomah County, Oregon, 97232, United States of America",45.5272449,-122.65203392572118
+564,/title/tt0095853/,Permanent Record,"Ecola State Park - Highway 101, Cannon Beach, Oregon, USA",,,,
+565,/title/tt0095853/,Permanent Record,"Lung Fung Restaurant - 8001 SE Division Street, Portland, Oregon, USA",,,,
+566,/title/tt0095853/,Permanent Record,"SW 12th Avenue & SW Taylor Street intersection, Portland, Oregon, USA",,,,
+567,/title/tt0436231/,The Devil and Daniel Johnston,"Austin, Texas, USA",,"Austin, Travis County, Texas, United States of America",30.2711286,-97.7436995
+568,/title/tt0436231/,The Devil and Daniel Johnston,"Los Angeles, California, USA",,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+569,/title/tt0436231/,The Devil and Daniel Johnston,"New York City, New York, USA",,"New York, United States of America",40.7127281,-74.0060152
+570,/title/tt0436231/,The Devil and Daniel Johnston,"Stockholm, Stockholms län, Sweden",,"Stockholm, Stockholms kommun, Stockholms län, Svealand, 111 29, Sverige",59.3251172,18.0710935
+571,/title/tt0436231/,The Devil and Daniel Johnston,"West Virginia, USA",,"West Virginia, United States of America",38.4758406,-80.8408415
+572,/title/tt0048317/,Love Me or Leave Me,"Metro-Goldwyn-Mayer Studios - 10202 W. Washington Blvd., Culver City, California, USA",(studio)                        ,,,
+573,/title/tt8874916/,Lucero: Long Way Back Home,"Memphis, Tennessee, USA",,"Memphis, Shelby County, Tennessee, United States of America",35.1490215,-90.0516285
+574,/title/tt8874916/,Lucero: Long Way Back Home,"Marion, Arkansas, USA",,"Marion County, Arkansas, United States of America",36.2378521,-92.6999559
+575,/title/tt0110222/,Kabhi Haan Kabhi Naa,"Goa, India",,"Goa, India",15.3004543,74.0855134
+576,/title/tt0069590/,The Helen Reddy Show,"NBC Studios - 3000 W. Alameda Avenue, Burbank, California, USA",(studio)                        ,,,
+577,/title/tt0066732/,200 Motels,"Pinewood Studios, Iver Heath, Buckinghamshire, England, UK",(studio)                        ,"Pinewood Studios, Pinewood Green, Iver, Iver Heath, Buckinghamshire, South East, England, SL0 0QJ, United Kingdom",51.54831515,-0.5346765566753087
+578,/title/tt0058797/,The Dean Martin Show,"Stage 4, Stage 1, NBC Studios - 3000 W. Alameda Avenue, Burbank, California, USA",,,,
+579,/title/tt5980638/,The Transcendents,"Austin, Texas, USA",,"Austin, Travis County, Texas, United States of America",30.2711286,-97.7436995
+580,/title/tt5980638/,The Transcendents,"Bastrop, Texas, USA",,"Bastrop County, Texas, United States of America",30.0900753,-97.3127179
+581,/title/tt3901944/,Country Crush,"Ontario, Canada",,"Ontario, Canada",50.000678,-86.000977
+582,/title/tt1032856/,Bikur Ha-Tizmoret,"Yeruham, Israel",,"ירוחם, ישראל",30.9888033,34.9250975
+583,/title/tt2349460/,Grace Unplugged,"Birmingham, Alabama, USA",,"Birmingham, Jefferson County, Alabama, United States of America",33.5206824,-86.8024326
+584,/title/tt2349460/,Grace Unplugged,"Hollywood, Los Angeles, California, USA",,"Hollywood, Los Angeles, Los Angeles County, California, 90028-8127, United States of America",34.0980031,-118.329523
+585,/title/tt1718903/,StreetDance 2,"Rome, Lazio, Italy",,"Roma Capitale, Lazio, Italia",41.85223935,12.631036615953583
+586,/title/tt1718903/,StreetDance 2,"London, England, UK",,"London, Greater London, England, United Kingdom",51.5073219,-0.1276474
+587,/title/tt0090557/,'Round Midnight,"Lyon, Rhône, Rhône-Alpes, France",,"Lyon, Métropole de Lyon, Circonscription départementale du Rhône, Auvergne-Rhône-Alpes, France métropolitaine, France",45.7578137,4.8320114
+588,/title/tt0090557/,'Round Midnight,"New York City, New York, USA",,"New York, United States of America",40.7127281,-74.0060152
+589,/title/tt0055278/,Paris Blues,"Studios de Boulogne, Avenue Jean-Baptiste Clément, Boulogne-Billancourt, Hauts-de-Seine, France",(studio)                        ,,,
+590,/title/tt0119194/,Ghosts,"Amsterdam, Noord-Holland, Netherlands",,"Amsterdam, Noord-Holland, Nederland",52.3727598,4.8936041
+591,/title/tt0119194/,Ghosts,"Cologne, North Rhine-Westphalia, Germany",,"Köln, Regierungsbezirk Köln, Nordrhein-Westfalen, 50667, Deutschland",50.938361,6.959974
+592,/title/tt0119194/,Ghosts,"Sherman Oaks, Los Angeles, California, USA",,"Sherman Oaks, Los Angeles, Los Angeles County, California, 91403, United States of America",34.1508718,-118.4489865
+593,/title/tt0210299/,Songcatcher,"Asheville, North Carolina, USA",,"Asheville, Buncombe County, North Carolina, United States of America",35.6009498,-82.5540161
+594,/title/tt0116745/,Kansas City,"Kansas City, Kansas, USA",,"Kansas City, Wyandotte County, Kansas, United States of America",39.1134562,-94.626497
+595,/title/tt0038622/,Humoresque,"Warner Brothers Burbank Studios - 4000 Warner Boulevard, Burbank, California, USA",(studio)                        ,,,
+596,/title/tt0038622/,Humoresque,"Laguna Beach, California, USA",(beach scenes)                        ,"Laguna Beach, Orange County, California, United States of America",33.5426975,-117.785366
+597,/title/tt1242499/,Hollyoaks Later,"Belfast, County Antrim, Northern Ireland, UK",,"Belfast, County Antrim, Northern Ireland, BT1 5GS, United Kingdom",54.5964411,-5.9302761
+598,/title/tt0041604/,Love Happy,"General Service Studios - 1040 N. Las Palmas, Hollywood, Los Angeles, California, USA",(studio)                        ,,,
+599,/title/tt0063808/,Wild in the Streets,"Sunset Strip, West Hollywood, California, USA",,"Sunset Strip, West Hollywood, Los Angeles County, California, United States of America",34.0938564,-118.3767660046168
+600,/title/tt0063808/,Wild in the Streets,"Hollywood, Los Angeles, California, USA",,"Hollywood, Los Angeles, Los Angeles County, California, 90028-8127, United States of America",34.0980031,-118.329523
+601,/title/tt0063808/,Wild in the Streets,"Bullocks Wilshire, 3050 Wilshire Blvd Los Angeles, California, USA",,,,
+602,/title/tt0063808/,Wild in the Streets,"Hollywood Hills, Los Angeles, California, USA",,"Hollywood Hills, Los Angeles, Los Angeles County, California, United States of America",34.1311792,-118.3355474
+603,/title/tt0063808/,Wild in the Streets,"National Mall, Washington, District of Columbia, USA",,"National Mall, Washington, District of Columbia, United States of America",38.8854281,-77.0414734922376
+604,/title/tt0063808/,Wild in the Streets,"Los Angeles, California, USA",,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+605,/title/tt0063808/,Wild in the Streets,"5214 Wilshire Boulevard, Los Angeles, California, USA","(Fox Ritz Theatre, later the Lindy Opera House, demolished 1977 - concert venue)                        ","Wilshire Boulevard, Westwood Village, Westwood, Los Angeles, Los Angeles County, California, 90024-3990, United States of America",34.0584002,-118.4453576
+606,/title/tt0426615/,In the Mix,"Hollywood, Los Angeles, California, USA",,"Hollywood, Los Angeles, Los Angeles County, California, 90028-8127, United States of America",34.0980031,-118.329523
+607,/title/tt0426615/,In the Mix,"Los Angeles, California, USA",,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+608,/title/tt0427089/,Confetti,"Spielplatz Sun Club, St Albans, Hertfordshire, England, UK",,,,
+609,/title/tt10147546/,Homecoming: A Film by Beyoncé,"Coachella Valley Music and Arts Festival, 81-800 Avenue 51, Indio, California, USA",,,,
+610,/title/tt6204018/,Ted - För kärlekens skull,"Göteborg, Västra Götalands län, Sweden",,"Göteborg, Göteborgs Stad, Västra Götalands län, Götaland, 41106, Sverige",57.7072326,11.9670171
+611,/title/tt0099691/,Graffiti Bridge,"Eden Prairie, Minnesota, USA",,"Eden Prairie, Hennepin County, Minnesota, United States of America",44.8546856,-93.470786
+612,/title/tt0099691/,Graffiti Bridge,"Minnesota, USA",,"Minnesota, United States of America",45.9896587,-94.6113288
+613,/title/tt0072201/,Stardust,"Granada, Andalucía, Spain",(La Calahorra Castle)                        ,"Granada, Comarca de la Vega de Granada, Granada, Andalucía, España",37.183054,-3.6021928
+614,/title/tt0072201/,Stardust,"Edgwarebury Hotel, Barnet Lane, Elstree, Hertfordshire, England, UK",,,,
+615,/title/tt0072201/,Stardust,"St Bernard's Church, Mandeville Road, Northolt, Middlesex, England, UK",(funeral of Jim's mother)                        ,,,
+616,/title/tt0072201/,Stardust,"London, England, UK",,"London, Greater London, England, United Kingdom",51.5073219,-0.1276474
+617,/title/tt0072201/,Stardust,"Marbella, Málaga, Andalucía, Spain",,"Marbella, Costa del Sol Occidental, Málaga, Andalucía, España",36.508976,-4.88562
+618,/title/tt0072201/,Stardust,"New York City, New York, USA",,"New York, United States of America",40.7127281,-74.0060152
+619,/title/tt1533817/,Stomp the Yard 2: Homecoming,"Atlanta, Georgia, USA",,"Atlanta, Georgia, United States of America",33.7490987,-84.3901849
+620,/title/tt0069090/,Pink Floyd: Live at Pompeii,"Roman Amphitheatre, Pompeii, Naples, Campania, Italy",,,,
+621,/title/tt0069090/,Pink Floyd: Live at Pompeii,"Caserta, Campania, Italy",(Reggia di Caserta)                        ,"Caserta, Campania, Italia",41.20348345,14.117057688141852
+622,/title/tt0069090/,Pink Floyd: Live at Pompeii,"London, England, UK",,"London, Greater London, England, United Kingdom",51.5073219,-0.1276474
+623,/title/tt0102913/,Shout,"Circle Drive, Backlot, Universal Studios - 100 Universal City Plaza, Universal City, California, USA",(Colonial Mansion)                        ,,,
+624,/title/tt0102370/,Madonna: Truth or Dare,"Houston, Texas, USA",,"Houston, Harris County, Texas, United States of America",29.7589382,-95.3676974
+625,/title/tt0102370/,Madonna: Truth or Dare,"Palace of Auburn Hills - 4 Championship Drive, Auburn Hills, Michigan, USA",,,,
+626,/title/tt0102370/,Madonna: Truth or Dare,"Toronto, Ontario, Canada",,"Toronto, Peel, Golden Horseshoe, Ontario, Canada",43.6534817,-79.3839347
+627,/title/tt0102370/,Madonna: Truth or Dare,"Detroit, Michigan, USA",,"Detroit, Wayne County, Michigan, United States of America",42.3315509,-83.0466403
+628,/title/tt0102370/,Madonna: Truth or Dare,"New York City, New York, USA",,"New York, United States of America",40.7127281,-74.0060152
+629,/title/tt0102370/,Madonna: Truth or Dare,"Paris, France",,"Paris, Île-de-France, France métropolitaine, 75004, France",48.8566969,2.3514616
+630,/title/tt0102370/,Madonna: Truth or Dare,"Tokyo, Japan",,"東京都, 日本 (Japan)",35.6828387,139.7594549
+631,/title/tt0484111/,The Good Night,"Ealing Studios, Ealing, London, England, UK",,"Ealing Studios, London Borough of Ealing, London, Greater London, England, United Kingdom",51.50903755,-0.30734058249777363
+632,/title/tt0484111/,The Good Night,"London, England, UK",,"London, Greater London, England, United Kingdom",51.5073219,-0.1276474
+633,/title/tt0143080/,Zoom,"Boston, Massachusetts, USA",,"Boston, Suffolk County, Massachusetts, United States of America",42.3602534,-71.0582912
+634,Code,Show Name,Location,Scene,"Location, Tucker County, West Virginia, United States of America",39.2138905,-79.6371124
+635,/title/tt0096180/,Stormy Monday,"Walker, Tyne & Wear, England, UK",,"Walker, Newcastle upon Tyne, Tyne and Wear, North East England, England, NE6 3BA, United Kingdom",54.9716047,-1.5541737
+636,/title/tt0096180/,Stormy Monday,"Gateshead, Tyne & Wear, England, UK",,"Gateshead, Tyne and Wear, North East England, England, United Kingdom",54.9625789,-1.6019294
+637,/title/tt0096180/,Stormy Monday,"Queen Street, Newcastle upon Tyne, UK",(Car blows up)                        ,"Queen Street, Grainger Town, Newcastle upon Tyne, Tyne and Wear, North East England, England, NE1 3JL, United Kingdom",54.9692117,-1.6078474
+638,/title/tt0096180/,Stormy Monday,"High Level Bridge, Newcastle upon Tyne, Gateshead, Newcastle, England, UK",(Cosmo and Finney meet)                        ,"High Level Bridge, Tyne Bridge, Grainger Town, Newcastle upon Tyne, Tyne and Wear, North East England, England, NE1 3UF, United Kingdom",54.966873449999994,-1.6084778355654687
+639,/title/tt0063894/,The Dick Cavett Show,"ABC Television Center - 4151 Prospect Avenue, Los Angeles, California, USA",,,,
+640,/title/tt0095895/,Powaqqatsi,"Jaisalmer, Rajasthan, India",,"Jaisalmer, Rajasthan, India",27.02801615,70.7785056232077
+641,/title/tt0095895/,Powaqqatsi,"Kaiser-Wilhelm-Gedächtniskirche, Berlin, Germany",,"Kaiser-Wilhelm-Gedächtniskirche, Kurfürstendamm, Charlottenburg, Charlottenburg-Wilmersdorf, 10789, Deutschland",52.5047053,13.3350328
+642,/title/tt0095895/,Powaqqatsi,"Bhaktapur, Nepal",,"Bhaktapur, भक्तपुर, वाग्मती प्रदेश, 44880, Nepal",27.6720657,85.428171
+643,/title/tt0095895/,Powaqqatsi,"Cuzco, Peru",,"Cusco, 08001, Peru",-13.5170887,-71.9785356
+644,/title/tt0095895/,Powaqqatsi,"Hong Kong, China",,"香港島 Hong Kong Island, 香港 Hong Kong, China 中国",22.2793278,114.1628131
+645,/title/tt0095895/,Powaqqatsi,"Kathmandu, Nepal",,"Kathmandu, Kamaladi Marg, Kamalpokhari, Baghbazar, काठमाडौं, वाग्मती प्रदेश, 46600, Nepal",27.708317,85.3205817
+646,/title/tt0095895/,Powaqqatsi,"Serra Pelada, Pará, Brazil",,"Serra Pelada, Curionópolis, Microrregião de Parauapebas, Mesorregião Sudeste Paraense, Pará, Região Norte, Brasil",-5.9464861,-49.6612072
+647,/title/tt0407936/,Lackawanna Blues,"Los Angeles, California, USA",,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+648,/title/tt0099595/,The Forbidden Dance,"Los Angeles County Arboretum & Botanic Garden - 301 N. Baldwin Avenue, Arcadia, California, USA",,,,
+649,/title/tt2796782/,The Oscars,"Los Angeles, California, USA",,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+650,/title/tt9886006/,Kono Oto Tomare!,"Tokyo, Japan",,"東京都, 日本 (Japan)",35.6828387,139.7594549
+651,/title/tt0085551/,Get Crazy,"The Wiltern - 3790 Wilshire Blvd., Los Angeles, California, USA",,"Wiltern Theatre and Pellissier Building, 3780, Wilshire Boulevard, Koreatown, Los Angeles, Los Angeles County, California, 90010, United States of America",34.061270199999996,-118.30856470082979
+652,/title/tt0093163/,Hearts of Fire,"Bristol, England, UK",(concert scenes)                        ,"Bristol, City of Bristol, South West England, England, United Kingdom",51.4538022,-2.5972985
+653,/title/tt0093163/,Hearts of Fire,"Hamilton, Ontario, Canada",,"Hamilton, Golden Horseshoe, Ontario, L8P 0B3, Canada",43.2560802,-79.8728583
+654,/title/tt0093163/,Hearts of Fire,"Toronto, Ontario, Canada",,"Toronto, Peel, Golden Horseshoe, Ontario, Canada",43.6534817,-79.3839347
+655,/title/tt0093163/,Hearts of Fire,UK,,United Kingdom,54.7023545,-3.2765753
+656,/title/tt1549571/,Pure Country 2: The Gift,"Nashville, Tennessee, USA",,"Nashville-Davidson, Davidson County, Tennessee, United States of America",36.1622296,-86.7743531
+657,/title/tt1549571/,Pure Country 2: The Gift,USA,,United States,39.7837304,-100.4458825
+658,/title/tt0812243/,Ex Drummer,"Ostend, Flanders, Belgium",,"Oostende, West-Vlaanderen, Vlaanderen, 8400, België - Belgique - Belgien",51.2258565,2.919496
+659,/title/tt0812243/,Ex Drummer,Belgium,,België / Belgique / Belgien,50.6402809,4.6667145
+660,/title/tt0103757/,Bad Channels,"Los Angeles, California, USA",,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+661,/title/tt0478829/,Vitus,"Zürich, Kanton Zürich, Switzerland",,"Zürich, Bezirk Zürich, Zürich, Switzerland",47.3723941,8.5423328
+662,/title/tt0478829/,Vitus,"Solothurn, Kanton Solothurn, Switzerland",,"Solothurn, Bezirk Solothurn, Amtei Solothurn-Lebern, Solothurn, Switzerland",47.2081355,7.5384045
+663,/title/tt1229360/,It Might Get Loud,"Detroit, Michigan, USA",,"Detroit, Wayne County, Michigan, United States of America",42.3315509,-83.0466403
+664,/title/tt1229360/,It Might Get Loud,"Headley Grange, Headley, Hampshire, England, UK",,"Headley Grange, Headley, East Hampshire, Hampshire, South East, England, GU35 8NG, United Kingdom",51.11377085,-0.8194832797095731
+665,/title/tt1229360/,It Might Get Loud,"Austin, Texas, USA",,"Austin, Travis County, Texas, United States of America",30.2711286,-97.7436995
+666,/title/tt1229360/,It Might Get Loud,"Nashville, Tennessee, USA",,"Nashville-Davidson, Davidson County, Tennessee, United States of America",36.1622296,-86.7743531
+667,/title/tt1229360/,It Might Get Loud,"Seattle, Washington, USA",,"Seattle, King County, Washington, United States of America",47.6038321,-122.3300624
+668,/title/tt0170980/,The Mike Douglas Show,"Cleveland, Ohio, USA",(studio) (studio:)                        ,"Cleveland, Cuyahoga County, Ohio, United States of America",41.5051613,-81.6934446
+669,/title/tt0170980/,The Mike Douglas Show,"KYW - 5th & Market Streets, Philadelphia, Pennsylvania, USA",(studio)                        ,,,
+670,/title/tt0170980/,The Mike Douglas Show,"Philadelphia, Pennsylvania, USA",,"Philadelphia, Philadelphia County, Pennsylvania, United States of America",39.9527237,-75.1635262
+671,/title/tt1409008/,Memphis Beat,"New Orleans, Louisiana, USA",,"New Orleans, Orleans Parish, Louisiana, United States of America",29.9499323,-90.0701156
+672,/title/tt5213534/,Supersonic,"Knebworth House, Knebworth, Stevenage, Hertfordshire, England, UK",,"Knebworth, Station Approach, Knebworth, Hertfordshire, East of England, England, SG3 6AT, United Kingdom",51.8670421,-0.187051
+673,/title/tt1042499/,Filth and Wisdom,"London, England, UK",,"London, Greater London, England, United Kingdom",51.5073219,-0.1276474
+674,/title/tt1042499/,Filth and Wisdom,UK,,United Kingdom,54.7023545,-3.2765753
+675,/title/tt1791504/,Beastie Boys: Fight for Your Right Revisited,"Warner Brothers Burbank Studios - 4000 Warner Boulevard, Burbank, California, USA",,,,
+676,/title/tt5662106/,Beyoncé: Lemonade,"Louisiana, USA",,"Louisiana, United States of America",30.8703881,-92.007126
+677,/title/tt5662106/,Beyoncé: Lemonade,"Madewood Plantation - 4250 Highway 308, Napoleonville, Louisiana, USA",,,,
+678,/title/tt9406716/,Pantene Altin Kelebek Ödül Töreni,"Zorlu Center, Istanbul, Turkey",,"Zorlu Center, 2, Koru Sokak, Levazım Mahallesi, Beşiktaş, İstanbul, Marmara Bölgesi, 3430, Türkiye",41.0658357,29.0172586
+679,/title/tt0084171/,Jekyll and Hyde... Together Again,"Los Angeles, California, USA",,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+680,/title/tt5032492/,Teit meistä kauniin,"Heinola, Finland",,"Heinola, Lahden seutukunta, Päijät-Häme, Manner-Suomi, Suomi",61.2027188,26.031371
+681,/title/tt5032492/,Teit meistä kauniin,"Nuorisoseurantalo, Koria, Elimäki, Kouvola, Finland",(final scene concert venue)                        ,,,
+682,/title/tt5032492/,Teit meistä kauniin,"Nuorisoseurantalo, Koria, Elimäki, Kouvola, Finland",,,,
+683,/title/tt0096223/,Tapeheads,"Los Angeles, California, USA",,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+684,/title/tt0461694/,Vier Minuten,"Luckau, Brandenburg, Germany",,"Luckau, Dahme-Spreewald, Brandenburg, 15926, Deutschland",51.8524163,13.7150055
+685,/title/tt0461694/,Vier Minuten,"Mannheim, Baden-Württemberg, Germany",,"Mannheim, Baden-Württemberg, 68159, Deutschland",49.489591,8.467236
+686,/title/tt0391666/,Morangos com Açúcar,"Natal, Rio Grande do Norte, Brazil",,"Natal, Região Geográfica Imediata de Natal, Região Geográfica Intermediária de Natal, Rio Grande do Norte, Região Nordeste, Brasil",-5.805398,-35.2080905
+687,/title/tt0391666/,Morangos com Açúcar,"Costa do Sol, Lisbon, Portugal",,"Costa do Sol, 144, Rua Domingos Sequeira, Areias, Estoril, Cascais e Estoril, Cascais, Lisboa, Grande Lisboa, Área Metropolitana de Lisboa, 2765-542, Portugal",38.6982789,-9.3746811
+688,/title/tt0391666/,Morangos com Açúcar,"Funchal, Madeira, Portugal",,"Funchal, Madeira, 9000-072, Portugal",32.6496497,-16.9086783
+689,/title/tt0391666/,Morangos com Açúcar,"Lisbon, Portugal",,"Lisboa, Grande Lisboa, Área Metropolitana de Lisboa, Portugal",38.7077507,-9.1365919
+690,/title/tt0391666/,Morangos com Açúcar,"London, England, UK",,"London, Greater London, England, United Kingdom",51.5073219,-0.1276474
+691,/title/tt0391666/,Morangos com Açúcar,"NPB Studios, Vialonga, Lisbon, Portugal",,,,
+692,/title/tt0095037/,"Distant Voices, Still Lives","Liverpool, Merseyside, England, UK",,,,
+693,/title/tt1014809/,Until the Light Takes Us,"Milan, Italy",,"Milano, Lombardia, Italia",45.4668,9.1905
+694,/title/tt1014809/,Until the Light Takes Us,"Trondheim fengsel, Trondheim, Sør-Trøndelag, Norway",(interview) (Varg Vikernes' interview)                        ,,,
+695,/title/tt1014809/,Until the Light Takes Us,Norway,,"Norge, Namsos, Trøndelag, Norge",64.5731537,11.52803643954819
+696,/title/tt1014809/,Until the Light Takes Us,USA,,United States,39.7837304,-100.4458825
+697,/title/tt0058555/,Scorpio Rising,"Brooklyn, New York City, New York, USA",,"Brooklyn, Kings County, New York, United States of America",40.6501038,-73.9495823
+698,/title/tt0058555/,Scorpio Rising,"Walden's Pond, New York, USA",,"Walden's Pond, Walden Lane, Eddy Corners, City of Saratoga Springs, Saratoga County, New York, 12866, United States of America",43.052222900000004,-73.772071186385
+699,/title/tt2442526/,Ring of Fire,"Atlanta, Georgia, USA",,"Atlanta, Georgia, United States of America",33.7490987,-84.3901849
+700,/title/tt1047011/,Song for Marion,"Durham Johnston Comprehensive School, County Durham, England, UK",(interior)                        ,,,
+701,/title/tt1047011/,Song for Marion,"Devon Crescent, County Durham, England, UK",(interior scenes in garage)                        ,,,
+702,/title/tt1047011/,Song for Marion,"Tyne Journal Theatre, Newcastle upon Tyne, England, UK",(interior choir contest)                        ,,,
+703,/title/tt1047011/,Song for Marion,"Crystal Palace, London, England, UK",,"Crystal Palace, London Borough of Bromley, London, Greater London, England, SE19 2GA, United Kingdom",51.4193664,-0.0711328
+704,/title/tt1047011/,Song for Marion,"Battersea Park, Battersea, London, England, UK",(Arthur going for a stroll after his argument with Marion)                        ,"Battersea Park, Battersea, London Borough of Wandsworth, London, Greater London, England, United Kingdom",51.479193300000006,-0.15707865471804333
+705,/title/tt0061589/,Dont Look Back,"Greenwood, Mississippi, USA","(footage of Dylan singing ""Only a Pawn in Their Game"")                        ","Greenwood, Leflore County, Mississippi, United States of America",33.5162315,-90.1795281
+706,/title/tt0061589/,Dont Look Back,"Manchester, England, UK",,"Manchester, Greater Manchester, North West England, England, United Kingdom",53.4794892,-2.2451148
+707,/title/tt0061589/,Dont Look Back,"London, England, UK",,"London, Greater London, England, United Kingdom",51.5073219,-0.1276474
+708,Code,Show Name,Location,Scene,"Location, Tucker County, West Virginia, United States of America",39.2138905,-79.6371124
+709,/title/tt0065872/,I Never Sang for My Father,"New York City, New York, USA",,"New York, United States of America",40.7127281,-74.0060152
+710,/title/tt0065872/,I Never Sang for My Father,"JFK International Airport, Jamaica, Queens, New York City, New York, USA",(Terminal 2 - Gene meets his parents at the airport)                        ,,,
+711,/title/tt1171225/,Brütal Legend,"Record Surplus, 11609 West Pico Boulevard, Los Angeles, California, USA",(record store in live-action Jack Black game intro)                        ,,,
+712,/title/tt0407398/,Hi Hi Puffy AmiYumi,"New York City, New York, USA",,"New York, United States of America",40.7127281,-74.0060152
+713,/title/tt0407398/,Hi Hi Puffy AmiYumi,"Los Angeles, California, USA",,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+714,/title/tt1837613/,Northern Soul,"Bentley Lane, Bury, Greater Manchester, England, UK",(Bridge Matt drives under in the final scene.)                        ,"Bentley Lane, Chesham, Bury, Greater Manchester, North West England, England, BL9 6RZ, United Kingdom",53.6239955,-2.2874662
+715,/title/tt1837613/,Northern Soul,"Burnley, Lancashire, England, UK",,"Burnley, Lancashire, North West England, England, United Kingdom",53.7907262,-2.2439196
+716,/title/tt0488349/,Yellow,"New York City, New York, USA",,"New York, United States of America",40.7127281,-74.0060152
+717,/title/tt2218364/,Sigur Rós: Fjögur píanó,"Los Angeles, California, USA",,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+718,/title/tt0381270/,Ils se marièrent et eurent beaucoup d'enfants,"Marrakech, Morocco",,"Marrakech ⵎⵕⵕⴰⴽⵛ مراكش, Pachalik de Marrakech, Préfecture de Marrakech عمالة مراكش, Marrakech-Safi ⵎⵕⵕⴰⴽⵛ-ⴰⵙⴼⵉ مراكش-أسفي, 40034, Maroc",31.6258257,-7.9891608
+719,/title/tt1964831/,Katy Perry: Last Friday Night (T.G.I.F.),"Agoura Hills, California, USA",,"Agoura Hills, Los Angeles County, California, 91301, United States of America",34.14791,-118.7657042
+720,/title/tt0087188/,E la nave va,"Cinecittà Studios, Cinecittà, Rome, Lazio, Italy",(studio)                        ,,,
+721,/title/tt0061610/,Elvis beat en blues,"Long Beach Naval Station, San Pedro, Los Angeles, California, USA",,,,
+722,/title/tt4238858/,The Fits,"Cincinnati, Ohio, USA",,"Cincinnati, Hamilton County, Ohio, United States of America",39.1014537,-84.5124602
+723,/title/tt0033601/,Fighting Bill Fargo,"Universal Studios - 100 Universal City Plaza, Universal City, California, USA",(studio)                        ,,,
+724,/title/tt0073822/,Trollflöjten,"Drottningholm Castle Theater, Drottningholm Castle, Drottningholm, Stockholms län, Sweden",,,,
+725,/title/tt0073822/,Trollflöjten,"Filmhusateljéerna, Filmhuset, Svenska Filminstitutet, Gärdet, Stockholm, Stockholms län, Sweden",(studio)                        ,,,
+726,/title/tt0073822/,Trollflöjten,"Stockholm, Stockholms län, Sweden",,"Stockholm, Stockholms kommun, Stockholms län, Svealand, 111 29, Sverige",59.3251172,18.0710935
+727,/title/tt0073800/,O thiasos,"Ioannina, Greece",,"Ιωάννινα, Δήμος Ιωαννιτών, Περιφερειακή Ενότητα Ιωαννίνων, Περιφέρεια Ηπείρου, Αποκεντρωμένη Διοίκηση Ηπείρου - Δυτικής Μακεδονίας, 45333, Ελλάδα",39.6639818,20.8522784
+728,/title/tt0073800/,O thiasos,"Mesolongi, Greece",(Exteriors of the Old Railroad Station of Mesolongi)                        ,"Μεσολόγγι, Δήμος Ιεράς Πόλεως Μεσολογγίου, Περιφερειακή Ενότητα Αιτωλοακαρνανίας, Περιφέρεια Δυτικής Ελλάδας, Αποκεντρωμένη Διοίκηση Πελοποννήσου, Δυτικής Ελλάδας και Ιονίου, 30200, Ελλάδα",38.3686353,21.4283544
+729,/title/tt0073800/,O thiasos,"Zagorohoria, Ipiros, Greece",(mountain scene)                        ,,,
+730,/title/tt0073800/,O thiasos,"Lefkada, Greece","(Prison of Lefkada, now demolished)                        ","Λευκάδα, Δήμος Λευκάδας, Περιφερειακή Ενότητα Λευκάδας, Περιφέρεια Ιονίων Νήσων, Αποκεντρωμένη Διοίκηση Πελοποννήσου, Δυτικής Ελλάδας και Ιονίου, Ελλάδα",38.7064968,20.64176774486984
+731,/title/tt0073800/,O thiasos,"Lefkada, Greece",(Filippa Papagou Street)                        ,"Λευκάδα, Δήμος Λευκάδας, Περιφερειακή Ενότητα Λευκάδας, Περιφέρεια Ιονίων Νήσων, Αποκεντρωμένη Διοίκηση Πελοποννήσου, Δυτικής Ελλάδας και Ιονίου, Ελλάδα",38.7064968,20.64176774486984
+732,/title/tt0073800/,O thiasos,"Karditsa, Greece",(Public Market of Karditsa)                        ,"Καρδίτσα, Δήμος Καρδίτσας, Περιφερειακή Ενότητα Καρδίτσας, Περιφέρεια Θεσσαλίας, Αποκεντρωμένη Διοίκηση Θεσσαλίας - Στερεάς Ελλάδας, 43100, Ελλάδα",39.3634604,21.9211192
+733,/title/tt0073800/,O thiasos,"Karditsa, Greece",(interiors of a hotel)                        ,"Καρδίτσα, Δήμος Καρδίτσας, Περιφερειακή Ενότητα Καρδίτσας, Περιφέρεια Θεσσαλίας, Αποκεντρωμένη Διοίκηση Θεσσαλίας - Στερεάς Ελλάδας, 43100, Ελλάδα",39.3634604,21.9211192
+734,/title/tt0073800/,O thiasos,"Xanthi, Greece",(Antika Square)                        ,"Ξάνθη, Δήμος Ξάνθης, Περιφερειακή Ενότητα Ξάνθης, Περιφέρεια Ανατολικής Μακεδονίας και Θράκης, Αποκεντρωμένη Διοίκηση Μακεδονίας - Θράκης, 67100, Ελλάδα",41.1380289,24.8862688
+735,/title/tt0073800/,O thiasos,"Ioannina, Greece",(Chanopoulos Inn/Han at Kannigos Street)                        ,"Ιωάννινα, Δήμος Ιωαννιτών, Περιφερειακή Ενότητα Ιωαννίνων, Περιφέρεια Ηπείρου, Αποκεντρωμένη Διοίκηση Ηπείρου - Δυτικής Μακεδονίας, 45333, Ελλάδα",39.6639818,20.8522784
+736,/title/tt0116790/,Kolja,"Prague, Czech Republic",,"Praha, okres Hlavní město Praha, Hlavní město Praha, Praha, Česká republika",50.0874654,14.4212535
+737,/title/tt0088153/,Songwriter,"Austin, Texas, USA",,"Austin, Travis County, Texas, United States of America",30.2711286,-97.7436995
+738,/title/tt0893382/,Shine a Light,"New York, USA",,"New York, United States of America",40.7127281,-74.0060152
+739,/title/tt0893382/,Shine a Light,"Beacon Theatre - 2124 Broadway, Manhattan, New York City, New York, USA",(concert venue)                        ,,,
+740,/title/tt0123324/,Why Do Fools Fall in Love,"Stahl House, Case House 22 - 1635 Woods Drive, Los Angeles, California, USA",,,,
+741,/title/tt0123324/,Why Do Fools Fall in Love,"Starke, Florida, USA",,"Starke, Bradford County, Florida, 32091, United States of America",29.9443488,-82.1101137
+742,/title/tt0116442/,Grace of My Heart,"1365 S Oakland Avenue, Pasadena, California, USA",(Buxton Residence)                        ,"1365, South Oakland Avenue, Madison Heights, Pasadena, Los Angeles County, California, 91106, United States of America",34.12272138844446,-118.13971600435714
+743,/title/tt0116442/,Grace of My Heart,"New York City, New York, USA",,"New York, United States of America",40.7127281,-74.0060152
+744,/title/tt7616124/,Killian & The Comeback Kids,"Easton, Pennsylvania, USA",,"Easton, Northampton County, Pennsylvania, United States of America",40.6916081,-75.2099866
+745,/title/tt7616124/,Killian & The Comeback Kids,"New York City, New York, USA",,"New York, United States of America",40.7127281,-74.0060152
+746,/title/tt0088326/,Unfaithfully Yours,"New York City, New York, USA",,"New York, United States of America",40.7127281,-74.0060152
+747,/title/tt0066717/,The Sonny and Cher Comedy Hour,"Studio 31, CBS Television City - 7800 Beverly Boulevard, Fairfax, Los Angeles, California, USA",(studio)                        ,,,
+748,/title/tt0796368/,Talk to Me,"Hamilton, Ontario, Canada",,"Hamilton, Golden Horseshoe, Ontario, L8P 0B3, Canada",43.2560802,-79.8728583
+749,/title/tt0796368/,Talk to Me,"Toronto, Ontario, Canada",,"Toronto, Peel, Golden Horseshoe, Ontario, Canada",43.6534817,-79.3839347
+750,/title/tt0796368/,Talk to Me,"Tooele County, Utah, USA",,"Tooele County, Utah, United States of America",40.4062872,-113.1966394
+751,/title/tt0796368/,Talk to Me,"Utah, USA",,"Utah, United States of America",39.4225192,-111.7143584
+752,/title/tt0796368/,Talk to Me,"Washington, District of Columbia, USA",,"Washington, District of Columbia, 20230, United States of America",38.8949924,-77.0365581
+753,/title/tt7666250/,Yuli,"La Habana, Cuba",,"La Habana, La Habana Vieja, Cuba",23.135305,-82.3589631
+754,/title/tt7666250/,Yuli,"Madrid, Spain",,"Madrid, Área metropolitana de Madrid y Corredor del Henares, Comunidad de Madrid, 28001, España",40.4167047,-3.7035825
+755,/title/tt0220608/,The Last of the Blonde Bombshells,"Craigievar Castle, Kintocher, Aberdeenshire, Scotland, UK",,,,
+756,/title/tt0220608/,The Last of the Blonde Bombshells,"Hastings, East Sussex, England, UK",,"Hastings, East Sussex, South East, England, United Kingdom",50.8553888,0.5824703
+757,/title/tt0220608/,The Last of the Blonde Bombshells,"London, England, UK",,"London, Greater London, England, United Kingdom",51.5073219,-0.1276474
+758,/title/tt0038360/,Black Angel,"Wilshire Boulevard and Normandie Avenue, Los Angeles, California, USA",(opening establishing shot looking East on Wilshire showing Gaylord Hotel and Little Tampico Mexican Restaurant)                        ,,,
+759,/title/tt0038360/,Black Angel,"Universal Studios - 100 Universal City Plaza, Universal City, California, USA",(studio)                        ,,,
+760,/title/tt9358196/,Marianne & Leonard: Words of Love,"Hydra, Greece",(island) (main location)                        ,"Ύδρα, Δήμος Ύδρας, Περιφερειακή Ενότητα Νήσων, Ελλάδα",37.332093,23.46646349926514
+761,/title/tt0095089/,Elvis and Me,"Las Vegas, Nevada, USA",,"Las Vegas, Clark County, Nevada, United States of America",36.1672559,-115.1485163
+762,/title/tt0095089/,Elvis and Me,"Virginia Road, San Marino, California, USA",(Lacy Park Tennis Courts)                        ,"Virginia Road, San Marino, Los Angeles County, California, 91108, United States of America",34.1157844,-118.1162385
+763,/title/tt0077532/,FM,"The Summit - 10 Greenwood Plaza, Houston, Texas, USA",(Linda Ronstadt concert sequence)                        ,,,
+764,/title/tt0038955/,Smoky,"Kanab, Utah, USA",,"Kanab, Kane County, Utah, United States of America",37.0481417,-112.5285476
+765,/title/tt0038955/,Smoky,"Remount Ranch - 198 County Road, Buford, Wyoming, USA",(lake)                        ,,,
+766,/title/tt0038955/,Smoky,"Duck Creek, Utah, USA",(Ranch)                        ,"Duck Creek, Sage Creek Junction, Rich County, Utah, United States of America",41.7936755,-111.126041
+767,/title/tt9036126/,Adam Sandler: 100% Fresh,"Los Angeles, California, USA",,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
