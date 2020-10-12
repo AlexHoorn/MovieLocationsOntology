@@ -35,6 +35,10 @@ def GetIdentifier(input, char, unique=True):
         return ""
 
 
+def RemoveBrackets(input):
+    return str(input).replace("(", "").replace(")", "")
+
+
 # VARIABLES
 ##########################################
 frames = []
@@ -52,9 +56,6 @@ for subdirs, dirs, files in os.walk(dir):
 
         # Load CSV
         loadedCSV = pd.read_csv(os.path.join(subdirs + "/" + file))
-
-        # # Make Nan values empty strings
-        # loadedCSV["Scene"] = loadedCSV["Scene"].apply(MakeNANsEmpty)
 
         # Append dataframe without its header
         frames.append(loadedCSV[1:])
@@ -89,6 +90,9 @@ merged.rename({"Show Name": "tLabel"}, inplace=True, axis="columns")
 ##########################################
 # Remove special characters from scenes
 merged["Scene"] = merged["Scene"].apply(RemoveSpace)
+
+# Remove brackets
+merged["Scene"] = merged["Scene"].apply(RemoveBrackets)
 
 # Get names for all rows with studios instead of scenes
 merged.drop(merged.loc[merged["Scene"] == "(studio)"].index, inplace=True)
