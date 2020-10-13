@@ -80,6 +80,7 @@ def findMovie():
     sparql = SPARQLWrapper("http://dbpedia.org/sparql")
     return movieList
 
+
 def findActor():
     sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/projectTest")
     sparql.setQuery(
@@ -99,7 +100,8 @@ def findActor():
     sparql = SPARQLWrapper("http://dbpedia.org/sparql")
     return actorList
 
-def findMovieActor(Actor): ## finds all movies with a specific actor in it
+
+def findMovieActor(Actor):  ## finds all movies with a specific actor in it
     sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/projectTest")
     sparql.setQuery(
         """
@@ -111,9 +113,9 @@ def findMovieActor(Actor): ## finds all movies with a specific actor in it
             ?character ex:playedBy ?actor.
             ?movie ex:hasPrimaryTitle ?title 
     } limit 100 
-    """ 
-    % (Actor)
-    )## when i say "movie ex:hasCharacter" it doesn't work. It infers actors in protege, but not in graphdb...
+    """
+        % (Actor)
+    )  ## when i say "movie ex:hasCharacter" it doesn't work. It infers actors in protege, but not in graphdb...
     print(Actor)
     sparql.setReturnFormat(JSON)
     results = sparql.query().convert()
@@ -130,21 +132,20 @@ st.title("Movie location finder")
 st.text("So that you can fall into the same vulcano as Gollum")
 
 
-
-#movieExpander = st.beta_expander("Movies", expanded=False)
-#actorExpander = st.beta_expander("Actors", expanded=False)
-#locationExpander = st.beta_expander("Locations", expanded=False)
+# movieExpander = st.beta_expander("Movies", expanded=False)
+# actorExpander = st.beta_expander("Actors", expanded=False)
+# locationExpander = st.beta_expander("Locations", expanded=False)
 ## I'm trying to add logic to the expanders (open 1, other 2 close), but can't find any documentation about it yet.
 
 ## User selects his favorite movie/actor/whatever
 with st.beta_expander("Movies"):
-    #if searchMode == "Movies":
+    # if searchMode == "Movies":
 
     movieList = findMovie()
-    inputMovie = st.selectbox("Select your favorite movie", movieList, key='1')
+    inputMovie = st.selectbox("Select your favorite movie", movieList, key="1")
     if inputMovie != "":  ## If movie is selected, render the scene selectbox
         sceneList, mappingCoordinates = findScene(inputMovie)
-        inputScene = st.selectbox("Select your scene", sceneList, key='2')
+        inputScene = st.selectbox("Select your scene", sceneList, key="2")
         if (
             inputScene != ""
         ):  ##if scene is selected, render the button to call the folium map
@@ -153,20 +154,20 @@ with st.beta_expander("Movies"):
                     coordinates = [value[0], value[1]]
             m2 = folium.Map(location=coordinates, zoom_start=16)
             folium.Marker(coordinates, popup="test", tooltip="test").add_to(m2)
-            if st.button("test!", key='moviesButton'):
+            if st.button("test!", key="moviesButton"):
                 folium_static(m2)
 
 
 with st.beta_expander("Actors"):
-#if searchMode == "Actors":
+    # if searchMode == "Actors":
     actorList = findActor()
-    inputActor = st.selectbox("Select your favorite Actor", actorList, key='3')
-    if inputActor != '':
+    inputActor = st.selectbox("Select your favorite Actor", actorList, key="3")
+    if inputActor != "":
         movieActorList = findMovieActor(inputActor)
-        inputMovie2 = st.selectbox('select a movie', movieActorList, key='4')
-        if inputMovie2 != '':
+        inputMovie2 = st.selectbox("select a movie", movieActorList, key="4")
+        if inputMovie2 != "":
             sceneList, mappingCoordinates = findScene(inputMovie2)
-            inputScene = st.selectbox("Select your scene", sceneList, key='5')
+            inputScene = st.selectbox("Select your scene", sceneList, key="5")
             if (
                 inputScene != ""
             ):  ##if scene is selected, render the button to call the folium map
@@ -175,14 +176,13 @@ with st.beta_expander("Actors"):
                         coordinates = [value[0], value[1]]
                 m2 = folium.Map(location=coordinates, zoom_start=16)
                 folium.Marker(coordinates, popup="test", tooltip="test").add_to(m2)
-                if st.button("test!", key='actorButton'):
+                if st.button("test!", key="actorButton"):
                     folium_static(m2)
-
 
 
 ## searchmode locations is still kind of outdated and doesn't use our own graphdb endpoint
 with st.beta_expander("Locations"):
-#if searchMode == "Locations":
+    # if searchMode == "Locations":
     inputLocation = st.selectbox("Select your location", locationList)
 ## These coordinates should come from querying our own ontology
 ## With the query being based on the user's selection ofcourse
