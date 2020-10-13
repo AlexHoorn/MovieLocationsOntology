@@ -6,8 +6,8 @@ import pandas as pd
 
 # %% Load all codes of shows for which locations are in the dataset
 title_filter = (
-    pd.read_excel("location_data/processed_location_data.xlsx", usecols=["Code"])
-    .drop_duplicates()["Code"]
+    pd.read_csv("location_data/allmerged.csv", usecols=["tconst"])
+    .drop_duplicates()["tconst"]
     .values
 )
 
