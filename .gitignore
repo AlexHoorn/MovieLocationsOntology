@@ -3,3 +3,4 @@
 .vscode
 raw_data/*.tsv
 .pre-commit-config-yaml
+ontology/import rules/cellfie.log
