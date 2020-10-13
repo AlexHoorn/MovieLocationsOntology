@@ -1,6 +1,20 @@
 import pandas as pd
 import os
 
+
+def RemoveIllegalChars(input):
+    return (
+        str(input)
+        .replace('"', "")
+        .replace("'", "")
+        .replace("{", "")
+        .replace("}", "")
+        .replace("[", "")
+        .replace("]", "")
+        .replace(".", "")
+    )
+
+
 merged = pd.read_csv(os.getcwd() + "/location_data/allmerged.csv")
 
 # Drop index columns
@@ -44,6 +58,9 @@ only_scenes_df = merged[merged["sLabel"].notnull()]
 
 # Create scene info
 scene_info = only_scenes_df[["sconst", "sLabel", "lconst"]]
+
+# Remove some leftover invalid characters
+scene_info["sLabel"] = scene_info["sLabel"].apply(RemoveIllegalChars)
 
 # Save scene info
 scene_info.to_excel("location_data/converted_data/scene_info.xlsx", index=False)
