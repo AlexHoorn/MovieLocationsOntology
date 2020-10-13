@@ -3,3 +3,6 @@
 .vscode
 raw_data/*.tsv
 .pre-commit-config-yaml
+cellfie.log
+.DS_Store
+.log
