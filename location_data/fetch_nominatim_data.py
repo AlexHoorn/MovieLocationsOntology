@@ -138,7 +138,7 @@ for file in os.listdir(readDir):
         # Save CSV as geocoded raw data
         df.to_csv(writeFilePath)
 
-if df!= None:
+if df != None:
     print(df)
 else:
     print("All files in directory already fetched")
