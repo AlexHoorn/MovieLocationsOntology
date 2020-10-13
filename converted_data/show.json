@@ -1,0 +1,1 @@
+{"Collections":[{"sheetName":"Sheet1","startColumn":"A","endColumn":"H","startRow":"2","endRow":"+","comment":"","rule":"Individual: @A*\nTypes: @B*\nFacts: hasPrimaryTitle @C*,\nisAdult @D*(xsd:boolean),\nhasStartYear @E*(xsd:integer),\nhasEndYear @F*(xsd:integer),\nhasRuntime @G*(xsd:integer),\nhasRating @H*(xsd:float)","active":true}]}
