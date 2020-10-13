@@ -12,14 +12,17 @@ def findScene(show):
     sparql.setQuery(
         """
         PREFIX ex: <http://example.com/projectkand/>
-        select ?scene ?lon ?lat where { 
+        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+        select DISTINCT ?sceneName ?lon ?lat where { 
         ?show a ex:Show.
         ?show ex:hasPrimaryTitle ?title.
         ?show ex:hasScene ?scene.
-        ?scene ex:hasLongitude ?lon;
-            ex:hasLatitude ?lat    
-        FILTER(?title = '%s'@en) 
-    } limit 100 
+        ?scene rdfs:label ?sceneName.
+    	?scene ex:hasLocation ?location.
+    	    ?location ex:hasLongitude ?lon;
+            ex:hasLatitude ?lat   
+        FILTER(?title = '%s') 
+    } 
     """
         % (show)
     )  ## paste the show far into the string with %
@@ -27,7 +30,7 @@ def findScene(show):
     results = sparql.query().convert()
     sceneList, lonList, latList, lonLatList = [], [], [], []
     for result in results["results"]["bindings"]:
-        sceneList.append(result["scene"]["value"])
+        sceneList.append(result["sceneName"]["value"])
         lonList.append(result["lon"]["value"])
         latList.append(result["lat"]["value"])
     i = 0
@@ -52,7 +55,7 @@ def findShow():
         select ?title where { 
             ?show a ex:Show;
                 ex:hasPrimaryTitle ?title  
-    } limit 100 
+    } 
     """
     )
     sparql.setReturnFormat(JSON)
@@ -69,19 +72,25 @@ def findActor():
     sparql.setQuery(
         """
         PREFIX ex: <http://example.com/projectkand/>
-        select ?name where { 
-            ?actor a ex:Actor;
-                ex:hasFullName ?name  
-    } limit 100 
+        select ?name ?actor where { 
+            ?character ex:playedBy ?actor.
+            ?actor ex:hasFullName ?name
+    }
     """
     )
     sparql.setReturnFormat(JSON)
     results = sparql.query().convert()
-    actorList = []
+    actorNameList = []
+    actorList = [] ## contains the actor code for our ontology
     for result in results["results"]["bindings"]:
-        actorList.append(result["name"]["value"])
+        actorNameList.append(result["name"]["value"])
+        actorList.append(result["actor"]["value"])
     sparql = SPARQLWrapper("http://dbpedia.org/sparql")
-    return actorList
+    actorNameList2 = []
+    for actor in actorNameList: ## remove strings out of names. Dwayne 'The Rock" Johnson ==> Dwayne The Rock Johnson
+        actor = actor.replace("'", "") 
+        actorNameList2.append(actor)
+    return actorNameList2
 
 
 def findShowActor(Actor):  ## finds all movies with a specific actor in it
@@ -90,16 +99,15 @@ def findShowActor(Actor):  ## finds all movies with a specific actor in it
         """
         PREFIX ex: <http://example.com/projectkand/>
         select ?title where { 
-            ?actor ex:hasFullName '%s'@en.
+            ?actor ex:hasFullName '%s'.
             ?show a ex:Show.
             ?show ex:hasCharacter ?character.
             ?character ex:playedBy ?actor.
             ?show ex:hasPrimaryTitle ?title 
-    } limit 100 
+    } 
     """
         % (Actor)
     )  ## when i say "movie ex:hasCharacter" it doesn't work. It infers actors in protege, but not in graphdb...
-    print(Actor)
     sparql.setReturnFormat(JSON)
     results = sparql.query().convert()
     showActorList = []
