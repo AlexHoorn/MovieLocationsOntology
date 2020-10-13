@@ -7,22 +7,22 @@ from SPARQLWrapper import SPARQLWrapper, JSON
 st.beta_set_page_config(layout="wide")  ## comment this out to disable widescreen
 
 ##if user selects to enter a scene, loads all scene from the selected movie
-def findScene(movie):
+def findScene(show):
     sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/projectTest")
     sparql.setQuery(
         """
         PREFIX ex: <http://example.com/projectkand/>
         select ?scene ?lon ?lat where { 
-        ?movie a ex:Movie.
-        ?movie ex:hasPrimaryTitle ?title.
-        ?movie ex:hasScene ?scene.
+        ?show a ex:Show.
+        ?show ex:hasPrimaryTitle ?title.
+        ?show ex:hasScene ?scene.
         ?scene ex:hasLongitude ?lon;
             ex:hasLatitude ?lat    
         FILTER(?title = '%s'@en) 
     } limit 100 
     """
-        % (movie)
-    )  ## paste the movie far into the string with %
+        % (show)
+    )  ## paste the show far into the string with %
     sparql.setReturnFormat(JSON)
     results = sparql.query().convert()
     sceneList, lonList, latList, lonLatList = [], [], [], []
@@ -44,24 +44,24 @@ def findScene(movie):
     return sceneList, mappingCoordinates  ##
 
 
-def findMovie():
+def findShow():
     sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/projectTest")
     sparql.setQuery(
         """
         PREFIX ex: <http://example.com/projectkand/>
         select ?title where { 
-            ?movie a ex:Movie;
+            ?show a ex:Show;
                 ex:hasPrimaryTitle ?title  
     } limit 100 
     """
     )
     sparql.setReturnFormat(JSON)
     results = sparql.query().convert()
-    movieList = []
+    showList = []
     for result in results["results"]["bindings"]:
-        movieList.append(result["title"]["value"])
+        showList.append(result["title"]["value"])
     sparql = SPARQLWrapper("http://dbpedia.org/sparql")
-    return movieList
+    return showList
 
 
 def findActor():
@@ -84,17 +84,17 @@ def findActor():
     return actorList
 
 
-def findMovieActor(Actor):  ## finds all movies with a specific actor in it
+def findShowActor(Actor):  ## finds all movies with a specific actor in it
     sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/projectTest")
     sparql.setQuery(
         """
         PREFIX ex: <http://example.com/projectkand/>
         select ?title where { 
             ?actor ex:hasFullName '%s'@en.
-            ?movie a ex:Movie.
-            ?movie ex:hasCharacter ?character.
+            ?show a ex:Show.
+            ?show ex:hasCharacter ?character.
             ?character ex:playedBy ?actor.
-            ?movie ex:hasPrimaryTitle ?title 
+            ?show ex:hasPrimaryTitle ?title 
     } limit 100 
     """
         % (Actor)
@@ -102,11 +102,11 @@ def findMovieActor(Actor):  ## finds all movies with a specific actor in it
     print(Actor)
     sparql.setReturnFormat(JSON)
     results = sparql.query().convert()
-    movieActorList = []
+    showActorList = []
     for result in results["results"]["bindings"]:
-        movieActorList.append(result["title"]["value"])
+        showActorList.append(result["title"]["value"])
     sparql = SPARQLWrapper("http://dbpedia.org/sparql")
-    return movieActorList
+    return showActorList
 
 
 ##########################################################################################################################
@@ -118,11 +118,11 @@ with col2:
 
 ## User selects his favorite movie/actor/whatever
 with col2:
-    with st.beta_expander("Movies"):
-        movieList = findMovie()
-        inputMovie = st.selectbox("Select your favorite movie", movieList, key="1")
-        if inputMovie != "":  ## If movie is selected, render the scene selectbox
-            sceneList, mappingCoordinates = findScene(inputMovie)
+    with st.beta_expander("Shows"):
+        showList = findShow()
+        inputShow = st.selectbox("Select your favorite show", showList, key="1")
+        if inputShow != "":  ## If movie is selected, render the scene selectbox
+            sceneList, mappingCoordinates = findScene(inputShow)
             inputScene = st.selectbox("Select your scene", sceneList, key="2")
             if (
                 inputScene != ""
@@ -132,7 +132,7 @@ with col2:
                         coordinates = [value[0], value[1]]
                 m2 = folium.Map(location=coordinates, zoom_start=16)
                 folium.Marker(coordinates, popup="test", tooltip="test").add_to(m2)
-                if st.button("test!", key="moviesButton"):
+                if st.button("test!", key="showButton"):
                     with col4:
                         folium_static(m2)
 
@@ -141,10 +141,10 @@ with col2:
         actorList = findActor()
         inputActor = st.selectbox("Select your favorite Actor", actorList, key="3")
         if inputActor != "":
-            movieActorList = findMovieActor(inputActor)
-            inputMovie2 = st.selectbox("select a movie", movieActorList, key="4")
-            if inputMovie2 != "":
-                sceneList, mappingCoordinates = findScene(inputMovie2)
+            showActorList = findShowActor(inputActor)
+            inputShow2 = st.selectbox("select a show", showActorList, key="4")
+            if inputShow2 != "":
+                sceneList, mappingCoordinates = findScene(inputShow2)
                 inputScene = st.selectbox("Select your scene", sceneList, key="5")
                 if (
                     inputScene != ""
