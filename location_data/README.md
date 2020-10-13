@@ -3,6 +3,7 @@
   - [location_map](#location_map)
   - [scene_info](#scene_info)
   - [location_info](#location_info)
+  - [Overview](#overview)
 - [Other](#other)
     - [Old notes](#old-notes)
 
@@ -56,9 +57,9 @@ This table contains the location identifier and it's attributes. A location has 
 | lat       | Latitude of the location  |
 | long      | Longitude of the location |
 
+## Overview
 
-
-
+![Overview](../converted_data/images/overview.png)
 
 
 # Other
