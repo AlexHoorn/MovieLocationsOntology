@@ -1,0 +1,1 @@
+{"Collections":[{"sheetName":"Sheet1","startColumn":"B","endColumn":"B","startRow":"2","endRow":"+","comment":"","rule":"Individual: @B*","active":true},{"sheetName":"Sheet1","startColumn":"A","endColumn":"A","startRow":"2","endRow":"+","comment":"","rule":"Individual: @A*\nTypes: Show\nFacts: hasActor @B*","active":true}]}
