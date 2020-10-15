@@ -1,5 +1,5 @@
-@prefix : <http://example.com/projectkand/> .
-@prefix ex: <http://example.com/projectkand/> .
+@prefix : <http://example.com/movieLocations/> .
+@prefix ml: <http://example.com/movieLocations/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -7,47 +7,47 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
-@base <http://example.com/projectkand/> .
+@base <http://example.com/movieLocations/> .
 
-<http://example.com/projectkand/> rdf:type owl:Ontology .
+<http://example.com/movieLocations/> rdf:type owl:Ontology .
 
 #################################################################
 #    Object Properties
 #################################################################
 
-###  http://example.com/projectkand/hasActor
-ex:hasActor rdf:type owl:ObjectProperty ;
+###  http://example.com/movieLocations/hasActor
+ml:hasActor rdf:type owl:ObjectProperty ;
             owl:equivalentProperty schema:actor ;
-            owl:propertyChainAxiom ( ex:hasCharacter
-                                     ex:playedBy
+            owl:propertyChainAxiom ( ml:hasCharacter
+                                     ml:playedBy
                                    ) .
 
 
-###  http://example.com/projectkand/hasCharacter
-ex:hasCharacter rdf:type owl:ObjectProperty ;
+###  http://example.com/movieLocations/hasCharacter
+ml:hasCharacter rdf:type owl:ObjectProperty ;
                 owl:equivalentProperty schema:character .
 
 
-###  http://example.com/projectkand/hasDirector
-ex:hasDirector rdf:type owl:ObjectProperty ;
+###  http://example.com/movieLocations/hasDirector
+ml:hasDirector rdf:type owl:ObjectProperty ;
                owl:equivalentProperty schema:director .
 
 
-###  http://example.com/projectkand/hasLocation
-ex:hasLocation rdf:type owl:ObjectProperty .
+###  http://example.com/movieLocations/hasLocation
+ml:hasLocation rdf:type owl:ObjectProperty .
 
 
-###  http://example.com/projectkand/hasScene
-ex:hasScene rdf:type owl:ObjectProperty ;
-            rdfs:range ex:Scene .
+###  http://example.com/movieLocations/hasScene
+ml:hasScene rdf:type owl:ObjectProperty ;
+            rdfs:range ml:Scene .
 
 
-###  http://example.com/projectkand/isGenre
-ex:isGenre rdf:type owl:ObjectProperty .
+###  http://example.com/movieLocations/isGenre
+ml:isGenre rdf:type owl:ObjectProperty .
 
 
-###  http://example.com/projectkand/playedBy
-ex:playedBy rdf:type owl:ObjectProperty .
+###  http://example.com/movieLocations/playedBy
+ml:playedBy rdf:type owl:ObjectProperty .
 
 
 ###  http://schema.org/actor
@@ -66,154 +66,154 @@ schema:director rdf:type owl:ObjectProperty .
 #    Data properties
 #################################################################
 
-###  http://example.com/projectkand/bornIn
-ex:bornIn rdf:type owl:DatatypeProperty .
+###  http://example.com/movieLocations/bornIn
+ml:bornIn rdf:type owl:DatatypeProperty .
 
 
-###  http://example.com/projectkand/diedIn
-ex:diedIn rdf:type owl:DatatypeProperty .
+###  http://example.com/movieLocations/diedIn
+ml:diedIn rdf:type owl:DatatypeProperty .
 
 
-###  http://example.com/projectkand/hasEndYear
-ex:hasEndYear rdf:type owl:DatatypeProperty .
+###  http://example.com/movieLocations/hasEndYear
+ml:hasEndYear rdf:type owl:DatatypeProperty .
 
 
-###  http://example.com/projectkand/hasFullName
-ex:hasFullName rdf:type owl:DatatypeProperty .
+###  http://example.com/movieLocations/hasFullName
+ml:hasFullName rdf:type owl:DatatypeProperty .
 
 
-###  http://example.com/projectkand/hasLatitude
-ex:hasLatitude rdf:type owl:DatatypeProperty .
+###  http://example.com/movieLocations/hasLatitude
+ml:hasLatitude rdf:type owl:DatatypeProperty .
 
 
-###  http://example.com/projectkand/hasLongitude
-ex:hasLongitude rdf:type owl:DatatypeProperty .
+###  http://example.com/movieLocations/hasLongitude
+ml:hasLongitude rdf:type owl:DatatypeProperty .
 
 
-###  http://example.com/projectkand/hasPrimaryTitle
-ex:hasPrimaryTitle rdf:type owl:DatatypeProperty .
+###  http://example.com/movieLocations/hasPrimaryTitle
+ml:hasPrimaryTitle rdf:type owl:DatatypeProperty .
 
 
-###  http://example.com/projectkand/hasRating
-ex:hasRating rdf:type owl:DatatypeProperty .
+###  http://example.com/movieLocations/hasRating
+ml:hasRating rdf:type owl:DatatypeProperty .
 
 
-###  http://example.com/projectkand/hasRuntime
-ex:hasRuntime rdf:type owl:DatatypeProperty .
+###  http://example.com/movieLocations/hasRuntime
+ml:hasRuntime rdf:type owl:DatatypeProperty .
 
 
-###  http://example.com/projectkand/hasSceneName
-ex:hasSceneName rdf:type owl:DatatypeProperty .
+###  http://example.com/movieLocations/hasSceneName
+ml:hasSceneName rdf:type owl:DatatypeProperty .
 
 
-###  http://example.com/projectkand/hasStartYear
-ex:hasStartYear rdf:type owl:DatatypeProperty .
+###  http://example.com/movieLocations/hasStartYear
+ml:hasStartYear rdf:type owl:DatatypeProperty .
 
 
-###  http://example.com/projectkand/isAdult
-ex:isAdult rdf:type owl:DatatypeProperty .
+###  http://example.com/movieLocations/isAdult
+ml:isAdult rdf:type owl:DatatypeProperty .
 
 
 #################################################################
 #    Classes
 #################################################################
 
-###  http://example.com/projectkand/Actor
-ex:Actor rdf:type owl:Class ;
-         rdfs:subClassOf ex:NaturalPerson .
+###  http://example.com/movieLocations/Actor
+ml:Actor rdf:type owl:Class ;
+         rdfs:subClassOf ml:NaturalPerson .
 
 
-###  http://example.com/projectkand/Character
-ex:Character rdf:type owl:Class ;
-             rdfs:subClassOf ex:Person .
+###  http://example.com/movieLocations/Character
+ml:Character rdf:type owl:Class ;
+             rdfs:subClassOf ml:Person .
 
 
-###  http://example.com/projectkand/Director
-ex:Director rdf:type owl:Class ;
-            rdfs:subClassOf ex:NaturalPerson .
+###  http://example.com/movieLocations/Director
+ml:Director rdf:type owl:Class ;
+            rdfs:subClassOf ml:NaturalPerson .
 
 
-###  http://example.com/projectkand/Genre
-ex:Genre rdf:type owl:Class .
+###  http://example.com/movieLocations/Genre
+ml:Genre rdf:type owl:Class .
 
 
-###  http://example.com/projectkand/Location
-ex:Location rdf:type owl:Class .
+###  http://example.com/movieLocations/Location
+ml:Location rdf:type owl:Class .
 
 
-###  http://example.com/projectkand/Movie
-ex:Movie rdf:type owl:Class ;
+###  http://example.com/movieLocations/Movie
+ml:Movie rdf:type owl:Class ;
          owl:equivalentClass schema:Movie ;
-         rdfs:subClassOf ex:Show .
+         rdfs:subClassOf ml:Show .
 
 
-###  http://example.com/projectkand/NaturalPerson
-ex:NaturalPerson rdf:type owl:Class ;
-                 rdfs:subClassOf ex:Person .
+###  http://example.com/movieLocations/NaturalPerson
+ml:NaturalPerson rdf:type owl:Class ;
+                 rdfs:subClassOf ml:Person .
 
 
-###  http://example.com/projectkand/Person
-ex:Person rdf:type owl:Class ;
+###  http://example.com/movieLocations/Person
+ml:Person rdf:type owl:Class ;
           owl:equivalentClass foaf:Person .
 
 
-###  http://example.com/projectkand/Scene
-ex:Scene rdf:type owl:Class .
+###  http://example.com/movieLocations/Scene
+ml:Scene rdf:type owl:Class .
 
 
-###  http://example.com/projectkand/Series
-ex:Series rdf:type owl:Class ;
-          rdfs:subClassOf ex:Show .
+###  http://example.com/movieLocations/Series
+ml:Series rdf:type owl:Class ;
+          rdfs:subClassOf ml:Show .
 
 
-###  http://example.com/projectkand/Short
-ex:Short rdf:type owl:Class ;
-         rdfs:subClassOf ex:Show .
+###  http://example.com/movieLocations/Short
+ml:Short rdf:type owl:Class ;
+         rdfs:subClassOf ml:Show .
 
 
-###  http://example.com/projectkand/Show
-ex:Show rdf:type owl:Class .
+###  http://example.com/movieLocations/Show
+ml:Show rdf:type owl:Class .
 
 
-###  http://example.com/projectkand/TvEpisode
-ex:TvEpisode rdf:type owl:Class ;
-             rdfs:subClassOf ex:Show .
+###  http://example.com/movieLocations/TvEpisode
+ml:TvEpisode rdf:type owl:Class ;
+             rdfs:subClassOf ml:Show .
 
 
-###  http://example.com/projectkand/TvMiniSeries
-ex:TvMiniSeries rdf:type owl:Class ;
-                rdfs:subClassOf ex:Series .
+###  http://example.com/movieLocations/TvMiniSeries
+ml:TvMiniSeries rdf:type owl:Class ;
+                rdfs:subClassOf ml:Series .
 
 
-###  http://example.com/projectkand/TvMovie
-ex:TvMovie rdf:type owl:Class ;
-           rdfs:subClassOf ex:Movie .
+###  http://example.com/movieLocations/TvMovie
+ml:TvMovie rdf:type owl:Class ;
+           rdfs:subClassOf ml:Movie .
 
 
-###  http://example.com/projectkand/TvSeries
-ex:TvSeries rdf:type owl:Class ;
+###  http://example.com/movieLocations/TvSeries
+ml:TvSeries rdf:type owl:Class ;
             owl:equivalentClass schema:TvSeries ;
-            rdfs:subClassOf ex:Series .
+            rdfs:subClassOf ml:Series .
 
 
-###  http://example.com/projectkand/TvShort
-ex:TvShort rdf:type owl:Class ;
-           rdfs:subClassOf ex:Short .
+###  http://example.com/movieLocations/TvShort
+ml:TvShort rdf:type owl:Class ;
+           rdfs:subClassOf ml:Short .
 
 
-###  http://example.com/projectkand/TvSpecial
-ex:TvSpecial rdf:type owl:Class ;
-             rdfs:subClassOf ex:Show .
+###  http://example.com/movieLocations/TvSpecial
+ml:TvSpecial rdf:type owl:Class ;
+             rdfs:subClassOf ml:Show .
 
 
-###  http://example.com/projectkand/Video
-ex:Video rdf:type owl:Class ;
-         rdfs:subClassOf ex:Show .
+###  http://example.com/movieLocations/Video
+ml:Video rdf:type owl:Class ;
+         rdfs:subClassOf ml:Show .
 
 
-###  http://example.com/projectkand/Videogame
-ex:Videogame rdf:type owl:Class ;
-             rdfs:subClassOf ex:Show .
+###  http://example.com/movieLocations/Videogame
+ml:Videogame rdf:type owl:Class ;
+             rdfs:subClassOf ml:Show .
 
 
 ###  http://schema.org/Movie
