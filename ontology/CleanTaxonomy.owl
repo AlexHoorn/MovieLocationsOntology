@@ -1,0 +1,231 @@
+@prefix : <http://example.com/projectkand/> .
+@prefix ex: <http://example.com/projectkand/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@base <http://example.com/projectkand/> .
+
+<http://example.com/projectkand/> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://example.com/projectkand/hasActor
+ex:hasActor rdf:type owl:ObjectProperty ;
+            owl:equivalentProperty schema:actor ;
+            owl:propertyChainAxiom ( ex:hasCharacter
+                                     ex:playedBy
+                                   ) .
+
+
+###  http://example.com/projectkand/hasCharacter
+ex:hasCharacter rdf:type owl:ObjectProperty ;
+                owl:equivalentProperty schema:character .
+
+
+###  http://example.com/projectkand/hasDirector
+ex:hasDirector rdf:type owl:ObjectProperty ;
+               owl:equivalentProperty schema:director .
+
+
+###  http://example.com/projectkand/hasLocation
+ex:hasLocation rdf:type owl:ObjectProperty .
+
+
+###  http://example.com/projectkand/hasScene
+ex:hasScene rdf:type owl:ObjectProperty ;
+            rdfs:range ex:Scene .
+
+
+###  http://example.com/projectkand/isGenre
+ex:isGenre rdf:type owl:ObjectProperty .
+
+
+###  http://example.com/projectkand/playedBy
+ex:playedBy rdf:type owl:ObjectProperty .
+
+
+###  http://schema.org/actor
+schema:actor rdf:type owl:ObjectProperty .
+
+
+###  http://schema.org/character
+schema:character rdf:type owl:ObjectProperty .
+
+
+###  http://schema.org/director
+schema:director rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://example.com/projectkand/bornIn
+ex:bornIn rdf:type owl:DatatypeProperty .
+
+
+###  http://example.com/projectkand/diedIn
+ex:diedIn rdf:type owl:DatatypeProperty .
+
+
+###  http://example.com/projectkand/hasEndYear
+ex:hasEndYear rdf:type owl:DatatypeProperty .
+
+
+###  http://example.com/projectkand/hasFullName
+ex:hasFullName rdf:type owl:DatatypeProperty .
+
+
+###  http://example.com/projectkand/hasLatitude
+ex:hasLatitude rdf:type owl:DatatypeProperty .
+
+
+###  http://example.com/projectkand/hasLongitude
+ex:hasLongitude rdf:type owl:DatatypeProperty .
+
+
+###  http://example.com/projectkand/hasPrimaryTitle
+ex:hasPrimaryTitle rdf:type owl:DatatypeProperty .
+
+
+###  http://example.com/projectkand/hasRating
+ex:hasRating rdf:type owl:DatatypeProperty .
+
+
+###  http://example.com/projectkand/hasRuntime
+ex:hasRuntime rdf:type owl:DatatypeProperty .
+
+
+###  http://example.com/projectkand/hasSceneName
+ex:hasSceneName rdf:type owl:DatatypeProperty .
+
+
+###  http://example.com/projectkand/hasStartYear
+ex:hasStartYear rdf:type owl:DatatypeProperty .
+
+
+###  http://example.com/projectkand/isAdult
+ex:isAdult rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://example.com/projectkand/Actor
+ex:Actor rdf:type owl:Class ;
+         rdfs:subClassOf ex:NaturalPerson .
+
+
+###  http://example.com/projectkand/Character
+ex:Character rdf:type owl:Class ;
+             rdfs:subClassOf ex:Person .
+
+
+###  http://example.com/projectkand/Director
+ex:Director rdf:type owl:Class ;
+            rdfs:subClassOf ex:NaturalPerson .
+
+
+###  http://example.com/projectkand/Genre
+ex:Genre rdf:type owl:Class .
+
+
+###  http://example.com/projectkand/Location
+ex:Location rdf:type owl:Class .
+
+
+###  http://example.com/projectkand/Movie
+ex:Movie rdf:type owl:Class ;
+         owl:equivalentClass schema:Movie ;
+         rdfs:subClassOf ex:Show .
+
+
+###  http://example.com/projectkand/NaturalPerson
+ex:NaturalPerson rdf:type owl:Class ;
+                 rdfs:subClassOf ex:Person .
+
+
+###  http://example.com/projectkand/Person
+ex:Person rdf:type owl:Class ;
+          owl:equivalentClass foaf:Person .
+
+
+###  http://example.com/projectkand/Scene
+ex:Scene rdf:type owl:Class .
+
+
+###  http://example.com/projectkand/Series
+ex:Series rdf:type owl:Class ;
+          rdfs:subClassOf ex:Show .
+
+
+###  http://example.com/projectkand/Short
+ex:Short rdf:type owl:Class ;
+         rdfs:subClassOf ex:Show .
+
+
+###  http://example.com/projectkand/Show
+ex:Show rdf:type owl:Class .
+
+
+###  http://example.com/projectkand/TvEpisode
+ex:TvEpisode rdf:type owl:Class ;
+             rdfs:subClassOf ex:Show .
+
+
+###  http://example.com/projectkand/TvMiniSeries
+ex:TvMiniSeries rdf:type owl:Class ;
+                rdfs:subClassOf ex:Series .
+
+
+###  http://example.com/projectkand/TvMovie
+ex:TvMovie rdf:type owl:Class ;
+           rdfs:subClassOf ex:Movie .
+
+
+###  http://example.com/projectkand/TvSeries
+ex:TvSeries rdf:type owl:Class ;
+            owl:equivalentClass schema:TvSeries ;
+            rdfs:subClassOf ex:Series .
+
+
+###  http://example.com/projectkand/TvShort
+ex:TvShort rdf:type owl:Class ;
+           rdfs:subClassOf ex:Short .
+
+
+###  http://example.com/projectkand/TvSpecial
+ex:TvSpecial rdf:type owl:Class ;
+             rdfs:subClassOf ex:Show .
+
+
+###  http://example.com/projectkand/Video
+ex:Video rdf:type owl:Class ;
+         rdfs:subClassOf ex:Show .
+
+
+###  http://example.com/projectkand/Videogame
+ex:Videogame rdf:type owl:Class ;
+             rdfs:subClassOf ex:Show .
+
+
+###  http://schema.org/Movie
+schema:Movie rdf:type owl:Class .
+
+
+###  http://schema.org/TvSeries
+schema:TvSeries rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Person
+foaf:Person rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
