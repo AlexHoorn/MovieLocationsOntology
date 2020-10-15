@@ -20,7 +20,7 @@ def findScene(show):
                 '?title = "' + x + '" || '
             )  ## basically adds multiple arguments to the filter condition
             filterstr = filterstr + tempvar
-        filterstr = filterstr[:-3]
+        filterstr = filterstr[:-3]  ## remove last 3 characters of str, which are "|| "
         filterstr = filterstr + ")"
 
     sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/projectTest")
@@ -69,9 +69,11 @@ def findShow():
     sparql.setQuery(
         """
         PREFIX ex: <http://example.com/projectkand/>
-        select ?title where { 
+        select DISTINCT ?title where { 
             ?show a ex:Show;
-                ex:hasPrimaryTitle ?title  
+                ex:hasPrimaryTitle ?title;
+                  
+            
     } 
     """
     )
@@ -117,12 +119,13 @@ def findShowActor(Actor):  ## finds all movies with a specific actor in it
     sparql.setQuery(
         """
         PREFIX ex: <http://example.com/projectkand/>
-        select ?title where { 
+        select DISTINCT ?title where { 
             ?actor ex:hasFullName '%s'.
             ?show a ex:Show.
             ?show ex:hasCharacter ?character.
             ?character ex:playedBy ?actor.
-            ?show ex:hasPrimaryTitle ?title 
+            ?show ex:hasPrimaryTitle ?title;
+                    ex:hasScene ?scene  
     } 
     """
         % (Actor)
@@ -133,6 +136,42 @@ def findShowActor(Actor):  ## finds all movies with a specific actor in it
     for result in results["results"]["bindings"]:
         showActorList.append(result["title"]["value"])
     return showActorList
+
+
+def findCoordinatesLocation(location):
+    sparql = SPARQLWrapper("https://query.wikidata.org/bigdata/namespace/wdq/sparql")
+    sparql.setQuery(
+        """
+            PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+            PREFIX wd: <http://www.wikidata.org/entity/>
+            PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+            SELECT ?city ?cityLabel ?coordinates WHERE {   
+                ?city wdt:P31 wd:Q515;
+                        rdfs:label ?cityLabel.
+                filter(LANG(?cityLabel) = 'en').
+                filter(?cityLabel = '%s'@en).
+                ?city wdt:P625 ?coordinates
+            }
+            """
+        % (location)
+    )
+    sparql.setReturnFormat(JSON)
+    results = sparql.query().convert()
+    print(results)
+    coordinates = ""
+    for result in results["results"]["bindings"]:
+        coordinates = result["coordinates"]["value"]  ## get the coordinate value
+        coordinates = coordinates.replace("Point(", "")
+        coordinates = coordinates.replace(")", "")  ## remove unneccesary characters
+        coordinates = coordinates.replace(" ", ", ")
+        stringList = coordinates.split(",")  ## put lon and lat into a list
+        coordinateList = [float(x) for x in stringList]  ##convert str to float numbers
+        coordinateList[0], coordinateList[1] = (
+            coordinateList[1],
+            coordinateList[0],
+        )  ## change lon and lat indexes because wikidata is weird.
+        print("dit is de coordinateList =    ", coordinateList)
+    return coordinateList
 
 
 ##########################################################################################################################
@@ -146,6 +185,7 @@ with col1:
     with st.beta_expander("Shows"):
         showList = findShow()
         inputShow = st.multiselect("Select your favorite show", showList, key="1")
+        st.write("Total number of movies in list = " + str(len(showList)))
         if inputShow != []:  ## If movie is selected, render the scene selectbox
             sceneList, mappingCoordinates = findScene(inputShow)
             inputScene = st.multiselect("Select your scene", sceneList, key="2")
@@ -183,10 +223,12 @@ with col1:
 with col1:
     with st.beta_expander("Actors"):
         actorList = findActor()
+        st.write("Total number of actors in list = " + str(len(actorList)))
         inputActor = st.selectbox("Select your favorite Actor", actorList, key="3")
         if inputActor != "":
             showActorList = findShowActor(inputActor)
             inputShow2 = st.multiselect("select a show", showActorList, key="4")
+            st.write("Total number of movies in list = " + str(len(showActorList)))
             if inputShow2 != []:
                 sceneList, mappingCoordinates = findScene(inputShow2)
                 inputScene = st.multiselect("Select your scene", sceneList, key="5")
@@ -218,4 +260,17 @@ with col1:
 ## searchmode locations is still kind of outdated and doesn't use our own graphdb endpoint
 with col1:
     with st.beta_expander("Locations"):
-        st.write("Work in progress")
+        locationInput = st.text_input(
+            "Type your (ENGLISH) location name here", key="textinput1"
+        )
+        radiusInput = st.number_input(
+            "Radius around the location, in meters", key="numberinput1"
+        )
+        if locationInput != "" and radiusInput != "":
+            with col3:
+                coordinatesList = findCoordinatesLocation(locationInput)
+                m2 = folium.Map(location=coordinatesList, zoom_start=12)
+                folium.Circle(
+                    coordinatesList, radius=radiusInput, fill=True, fill_color="#3186cc"
+                ).add_to(m2)
+                folium_static(m2)
