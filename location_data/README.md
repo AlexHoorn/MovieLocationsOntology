@@ -17,6 +17,7 @@
 The process of gathering the locations for the shows consisted of several steps. The steps are: Scraping, Geocoding, Processing & cleaning, Creating maps and finally loading the data into protege.
 
 The proces from internet pages for scenes and locations to an ontology can be visualized as follows:
+
 ![location_data_progress](images/location_data_process.png)
 
 ## Scraping
