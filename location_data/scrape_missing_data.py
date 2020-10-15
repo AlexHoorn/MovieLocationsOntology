@@ -7,6 +7,7 @@ import pandas as pd
 from tqdm import tqdm
 
 #/Users/sethvanderbijl/Coding Projects/group51-kdd/location_data/raw_data/RomanceMovieLocations1000-1500_appendix.csv
+#/Users/sethvanderbijl/Coding Projects/group51-kdd/location_data/raw_data/raw_data_part_1/BiographyMovieLocations500-1000.csv
 #NEEDS A CHECK
 
 def GetLocationDiv(tconst, tries):
