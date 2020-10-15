@@ -4,11 +4,29 @@ import csv
 import time
 import os
 import pandas as pd
+from tqdm import tqdm
 
-def GetLocationDiv(tconst):
+def GetLocationDiv(tconst, tries):
+    if tconst == "Code":
+        return None
+    if tries == 2:
+        return None
     # Go to the locations page of the movie
-    newLink = "https://www.imdb.com" + tconst + "locations"
-    newPage = requests.get(newLink)
+    try:
+        newLink = "https://www.imdb.com" + tconst + "locations"
+        newPage = requests.get(newLink)
+    except Exception:
+        print(Exception)
+        print("Sleeping for 30 secs and trying again")
+        print("link:", newLink)
+        print("trying {} more times".format(1-tries))
+        time.sleep(30)
+        tries+=1
+        if tries == 2:
+            return None
+        return GetLocationDiv(tconst, tries)
+
+
     newSoup = bs(newPage.text, "html.parser")
 
     # Get the element from the HTML holding the locations
@@ -35,13 +53,13 @@ def WriteLocationData(locationElement, writer, tconst, df):
     if scene != "":
         rows = rows[rows.Scene == scene]
 
-    print("Rows for title: \n",showRows, "\n matching rows: ", rows, "\n Searching for location: ", location, "\n Searching for scene: ", scene, "\n")
     
     #Check if we already have this data
-    if(rows.shape[0] > 0):
-        print('already in there')
+    # if not rows.empty:
+        # print('DUPLICATE DATA, SKIPPING:', rows, "\n")
+        # print("Rows for title: \n",showRows, "\n matching rows: ", rows, "\n Searching for location: ", location, "\n Searching for scene: ", scene, "\n")
 
-    else:
+    if rows.empty:
         writer.writerow(
             [
                 tconst,
@@ -69,53 +87,59 @@ for subdirs, dirs, files in os.walk(readDir):
         #Write file to raw_data general directory, append filename with appendix, indicating missed locations
         writeFilePath = writeDir + file.replace(".csv", "") + "_appendix.csv"
 
+        #Skip if aleady loaded
+        if os.path.isfile(writeFilePath):
+            print("Already exists, skipping: ",writeFilePath)
+
         #Only if the file was not processed yet
-        # if not os.path.isfile(writeFilePath):
-        #Only if file is a csv and also we don't want to scan the newly generated files in an endless loop
-        if file.__contains__(".csv") and subdirs.__contains__("part"):
-        
-            #Initiliaze to write new csv
-            with open(writeFilePath, "a", newline="") as writeCSV:
-                writer = csv.writer(writeCSV)
-                writer.writerow(["Code", "Show Name", "Location", "Scene"])
+        if not os.path.isfile(writeFilePath):
+            #Only if file is a csv and also we don't want to scan the newly generated files in an endless loop
+            if file.__contains__(".csv") and subdirs.__contains__("part"):
             
-                #Keep track of the proces
-                print(fileIndex, "Processing file: ", file, "\n")
-                
-                #Write file to raw_data general directory, append filename with appendix, indicating missed locations
-                print("Writing to: ", writeFilePath, "\n")
+                #Initiliaze to write new csv
+                with open(writeFilePath, "a", newline="") as writeCSV:
+                    writer = csv.writer(writeCSV)
+                    writer.writerow(["Code", "Show Name", "Location", "Scene"])
 
-                #Construct read path
-                readFilePath = os.path.join(subdirs + "/" + file)
+                    #Construct read path
+                    readFilePath = os.path.join(subdirs + "/" + file)
 
-                #open with pandas
-                df = pd.read_csv(readFilePath)
-                print(df)
+                    #Keep track of the proces
+                    print(fileIndex, "Processing file: ", file)
+                    
+                    #Reading from
+                    print("Reading from: ", readFilePath)
 
-                #Preprocess so values are recognized
-                df["Location"] = df["Location"].apply(Strip)
-                df["Scene"] = df["Scene"].apply(Strip)
+                    #Write file to raw_data general directory, append filename with appendix, indicating missed locations
+                    print("Writing to: ", writeFilePath, "\n")
 
-                #Get a list of all unique ttvalues
-                movieTitles = df.Code.unique()
+                    #open with pandas
+                    df = pd.read_csv(readFilePath)
+                    df = df[1:]
 
-                #Loop through every movie in this raw data file
-                for tconst in movieTitles:
-                    print(tconst)
+                    #Preprocess so values are recognized
+                    df["Location"] = df["Location"].apply(Strip)
+                    df["Scene"] = df["Scene"].apply(Strip)
 
-                    #And now get the location page for this movie
-                    # Go to the location webpage of the movie and the div holding the locations
-                    locationDiv = GetLocationDiv(tconst)
+                    #Get a list of all unique ttvalues
+                    movieTitles = df.Code.unique()
 
-                    # Get all locations from this locations div
-                    if locationDiv is not None:
-                        locationElements = locationDiv.find_all(class_="soda sodavote odd")
-                        locationElements += locationDiv.find_all(class_="soda sodavote even")
+                    #Loop through every movie in this raw data file
+                    for tconst in tqdm(movieTitles):
 
-                        for locationElement in locationElements:
-                            # Actual location description
-                            WriteLocationData(locationElement, writer, tconst, df)
+                        #And now get the location page for this movie
+                        # Go to the location webpage of the movie and the div holding the locations
+                        locationDiv = GetLocationDiv(tconst, 0)
+
+                        # Get all locations from this locations div
+                        if locationDiv is not None:
+                            locationElements = locationDiv.find_all(class_="soda sodavote odd")
+                            locationElements += locationDiv.find_all(class_="soda sodavote even")
+
+                            for locationElement in locationElements:
+                                # Actual location description
+                                WriteLocationData(locationElement, writer, tconst, df)
 
 
-                #Track indices of files
-                fileIndex+=1
+                    #Track indices of files
+                    fileIndex+=1
