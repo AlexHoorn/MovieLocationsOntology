@@ -1,4 +1,4 @@
-- [Explanation of location gathering process](#explanation-of-location-gathering-process)
+- [Explanation of location data gathering process](#explanation-of-location-data-gathering-process)
   - [Scraping](#scraping)
   - [Geocoding](#geocoding)
   - [Proces and clean data](#proces-and-clean-data)
@@ -12,7 +12,7 @@
 - [Other](#other)
     - [Old notes](#old-notes)
 
-# Explanation of location gathering process
+# Explanation of location data gathering process
 
 The process of gathering the locations for the shows consisted of several steps. The steps are: Scraping, Geocoding, Processing & cleaning, Creating maps and finally loading the data into protege.
 

@@ -6,6 +6,9 @@ import os
 import pandas as pd
 from tqdm import tqdm
 
+#/Users/sethvanderbijl/Coding Projects/group51-kdd/location_data/raw_data/RomanceMovieLocations1000-1500_appendix.csv
+#NEEDS A CHECK
+
 def GetLocationDiv(tconst, tries):
     if tconst == "Code":
         return None
