@@ -67,6 +67,7 @@ def WriteLocationData(locationElement, writer, tconst, df):
         writer.writerow(
             [
                 tconst,
+                "",
                 location.replace("\n", "", 999),
                 scene.replace("\n", "", 999),
             ]

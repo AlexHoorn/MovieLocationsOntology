@@ -14,11 +14,6 @@ from tqdm import tqdm
 yourPartNr = input(
     "Please enter the number of your part. See the top of the code of the page "
 )
-############################################################################
-
-
-# CODE, NO NEED TO TEACH ANYTHING HERE ANYMORE
-############################################################################
 
 # Variables
 ############################################################################
@@ -36,8 +31,6 @@ writeDir = (
 
 # Some helper functions
 ############################################################################
-
-
 def GetRandomString(length):
     letters = string.ascii_lowercase
     result_str = "".join(random.choice(letters) for i in range(length))
@@ -98,13 +91,13 @@ tqdm.pandas()
 
 # Doublecheck that everybody scans the right part
 if int(yourPartNr) == 1:
-    v = input("Please press any button to confirm that you're Seth")
+    v = input("Please press enter to confirm that you're Seth")
 if int(yourPartNr) == 2:
-    v = input("Please press any button to confirm that you're Ramon")
+    v = input("Please press enter to confirm that you're Ramon")
 if int(yourPartNr) == 3:
-    v = input("Please press any button to confirm that you're Alex")
+    v = input("Please press enter to confirm that you're Alex")
 if int(yourPartNr) == 4:
-    v = input("Please press any button to confirm that you're Davey")
+    v = input("Please press enter to confirm that you're Davey")
 
 
 # Initial start statement
@@ -126,6 +119,14 @@ for file in os.listdir(readDir):
         print("Processing file:", file)
         df = pd.read_csv(readDir + file)
 
+        #NOTE: DUE TO A BUG IN THE SCRAPE_MISSING_DATA.PY THE CONTENTS OF THE COLUMNS MIGHT BE SHIFTED LEFT RESPECTIVE TO THEIR COLUMN HEADERS, THE BUG IS NOW FIXED.
+        #Shift columns back correctly for faulty raw data:
+        if df["Location"].isnull().values.any():
+            #This column is incorrectly shifted, shift columns back
+            df["Scene"] = df["Location"]
+            df["Location"] = df["Show Name"]
+            df["Show Name"].values[:] = ""
+
         # Geocode location values of dataframe
         TryGeocode(df)
         df["latitude"] = df["geocodedLocation"].apply(
@@ -134,6 +135,8 @@ for file in os.listdir(readDir):
         df["longitude"] = df["geocodedLocation"].apply(
             lambda loc: loc.point[1] if loc else None
         )
+
+        
 
         # Save CSV as geocoded raw data
         df.to_csv(writeFilePath)
