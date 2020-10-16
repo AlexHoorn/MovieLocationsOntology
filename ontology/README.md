@@ -78,7 +78,7 @@ Sub-classes |[ml:Director](http://example.com/movieLocations/Director) (c)<br />
 Property | Value
 --- | ---
 URI | `http://example.com/movieLocations/Person`
-Sub-classes |[ml:Character](http://example.com/movieLocations/Character) (c)<br />[ml:NaturalPerson](http://example.com/movieLocations/NaturalPerson) (c)<br />
+Sub-classes |[ml:NaturalPerson](http://example.com/movieLocations/NaturalPerson) (c)<br />[ml:Character](http://example.com/movieLocations/Character) (c)<br />
 ### Scene
 Property | Value
 --- | ---
@@ -88,7 +88,7 @@ Property | Value
 --- | ---
 URI | `http://example.com/movieLocations/Series`
 Super-classes |[ml:Show](http://example.com/movieLocations/Show) (c)<br />
-Sub-classes |[ml:TvMiniSeries](http://example.com/movieLocations/TvMiniSeries) (c)<br />[ml:TvSeries](http://example.com/movieLocations/TvSeries) (c)<br />
+Sub-classes |[ml:TvSeries](http://example.com/movieLocations/TvSeries) (c)<br />
 ### Short
 Property | Value
 --- | ---
@@ -99,7 +99,7 @@ Sub-classes |[ml:TvShort](http://example.com/movieLocations/TvShort) (c)<br />
 Property | Value
 --- | ---
 URI | `http://example.com/movieLocations/Show`
-Sub-classes |[ml:TvSpecial](http://example.com/movieLocations/TvSpecial) (c)<br />[ml:Videogame](http://example.com/movieLocations/Videogame) (c)<br />[ml:Series](http://example.com/movieLocations/Series) (c)<br />[ml:TvEpisode](http://example.com/movieLocations/TvEpisode) (c)<br />[ml:Movie](http://example.com/movieLocations/Movie) (c)<br />[ml:Short](http://example.com/movieLocations/Short) (c)<br />[ml:Video](http://example.com/movieLocations/Video) (c)<br />
+Sub-classes |[ml:TvSpecial](http://example.com/movieLocations/TvSpecial) (c)<br />[ml:Series](http://example.com/movieLocations/Series) (c)<br />[ml:Short](http://example.com/movieLocations/Short) (c)<br />[ml:Movie](http://example.com/movieLocations/Movie) (c)<br />[ml:Video](http://example.com/movieLocations/Video) (c)<br />[ml:Videogame](http://example.com/movieLocations/Videogame) (c)<br />[ml:TvEpisode](http://example.com/movieLocations/TvEpisode) (c)<br />
 ### TvEpisode
 Property | Value
 --- | ---
@@ -109,7 +109,7 @@ Super-classes |[ml:Show](http://example.com/movieLocations/Show) (c)<br />
 Property | Value
 --- | ---
 URI | `http://example.com/movieLocations/TvMiniSeries`
-Super-classes |[ml:Series](http://example.com/movieLocations/Series) (c)<br />
+Super-classes |[ml:TvSeries](http://example.com/movieLocations/TvSeries) (c)<br />
 ### TvMovie
 Property | Value
 --- | ---
@@ -120,6 +120,7 @@ Property | Value
 --- | ---
 URI | `http://example.com/movieLocations/TvSeries`
 Super-classes |[ml:Series](http://example.com/movieLocations/Series) (c)<br />
+Sub-classes |[ml:TvMiniSeries](http://example.com/movieLocations/TvMiniSeries) (c)<br />
 ### TvShort
 Property | Value
 --- | ---

@@ -15,8 +15,6 @@
 
 ## Properties
 
-**All object properties** in our ontology can be marked as both **asymmetric** and **irreflexive**.
-
 ### hasActor
 
 ```
