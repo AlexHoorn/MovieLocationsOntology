@@ -23,6 +23,10 @@ def MakeNANsEmpty(input):
         return ""
     return input
 
+row_index = 0
+def GiveRowIdentifier(input, tconst, lconst):
+    return str(input) + tconst + lconst
+
 #TODO make scenes same if they have same label for same location in same movie
 def GetIdentifier(input, char, unique=True):
     if unique:
@@ -144,24 +148,14 @@ merged = merged[
 
 print(merged.shape)
 
-#Drop duplicates, this should remove rows where the movie, location
-# Get all the locations we already have, qwe don't want to nominatim it all again
-for index, row in merged.iterrows():
-    rowsWithShow = merged.loc[merged["tconst"] == row["tconst"]]
+#Create a identifier that we can use to match duplicate scenes
+merged['rowconst'] = merged['tconst'] + merged["sLabel"] + merged["lconst"]
 
-    # Get rows with the same location
-    rows = rowsWithShow[rowsWithShow.lconst == row["lconst"]]
+#Drop duplicate scenes (e.g. same scene name, same location and same movie)
+merged = merged.drop_duplicates(subset='rowconst', keep="first")
 
-    # Get rows where also scene is the same
-    if row["sLabel"] != "":
-        rows = rows[rows.sLabel == row["sLabel"]]
-
-    if rows.shape[0] > 1:
-        print(row, "\n has duplicates. Dropping: \n", rows[1:])
-       
-        for line in rows.iterrows():
-            print(line)
-            merged[((merged.tconst != line["tconst"]) &( merged.sLabel != line["sLabel"]) & (merged.lconst != line["lconst"]))]
+print(merged.shape)
 
 # Save
 merged.to_csv(os.getcwd() + "/location_data/allmerged.csv")
+merged.to_excel(os.getcwd() + "/location_data/allmerged.xlsx")
