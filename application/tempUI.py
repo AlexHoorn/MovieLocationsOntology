@@ -3,8 +3,16 @@ import streamlit.components.v1 as comp
 from streamlit_folium import folium_static
 import folium
 from SPARQLWrapper import SPARQLWrapper, JSON
+from geopy.geocoders import Nominatim
+from geopy.extra.rate_limiter import RateLimiter
 
 st.beta_set_page_config(layout="wide")  ## comment this out to disable widescreen
+
+userName = 'sceneLocator'
+geolocator = Nominatim(user_agent=userName)
+geocode = RateLimiter(
+    geolocator.geocode, min_delay_seconds=1.05, swallow_exceptions=True
+)
 
 ##if user selects to enter a scene, loads all scene from the selected movie
 def findScene(show):
@@ -138,7 +146,7 @@ def findShowActor(Actor):  ## finds all movies with a specific actor in it
     return showActorList
 
 
-def findCoordinatesLocation(location):
+def findCoordinatesLocation(location): ## This is currently not being used
     sparql = SPARQLWrapper("https://query.wikidata.org/bigdata/namespace/wdq/sparql")
     sparql.setQuery(
         """
@@ -257,20 +265,24 @@ with col1:
                             folium_static(m2)
 
 
-## searchmode locations is still kind of outdated and doesn't use our own graphdb endpoint
+## use Nominatim to gather coordinate information
 with col1:
     with st.beta_expander("Locations"):
         locationInput = st.text_input(
-            "Type your (ENGLISH) location name here", key="textinput1"
+            "Type your location name here", key="textinput1"
         )
         radiusInput = st.number_input(
-            "Radius around the location, in meters", key="numberinput1"
+            "Radius around the location, in meters",format='%i', min_value=0, value=0, key="numberinput1"
         )
         if locationInput != "" and radiusInput != "":
             with col3:
-                coordinatesList = findCoordinatesLocation(locationInput)
-                m2 = folium.Map(location=coordinatesList, zoom_start=12)
-                folium.Circle(
-                    coordinatesList, radius=radiusInput, fill=True, fill_color="#3186cc"
-                ).add_to(m2)
-                folium_static(m2)
+                coordinatesList = []
+                coordinateOutput = geolocator.geocode(locationInput)
+                coordinatesList.extend([coordinateOutput.latitude , coordinateOutput.longitude])
+                if coordinatesList != []:
+                    m2 = folium.Map(location=coordinatesList, zoom_start=12)
+                    folium.Circle(
+                        coordinatesList, radius=radiusInput, fill=True, fill_color="#3186cc"
+                    ).add_to(m2)
+                    folium_static(m2)
+                    ## todo : actually search for scene locations within the radius
