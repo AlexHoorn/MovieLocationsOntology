@@ -23,7 +23,7 @@ def MakeNANsEmpty(input):
         return ""
     return input
 
-
+#TODO make scenes same if they have same label for same location in same movie
 def GetIdentifier(input, char, unique=True):
     if unique:
         return char + str(input)
@@ -143,6 +143,25 @@ merged = merged[
 ]
 
 print(merged.shape)
+
+#Drop duplicates, this should remove rows where the movie, location
+# Get all the locations we already have, qwe don't want to nominatim it all again
+for index, row in merged.iterrows():
+    rowsWithShow = merged.loc[merged["tconst"] == row["tconst"]]
+
+    # Get rows with the same location
+    rows = rowsWithShow[rowsWithShow.lconst == row["lconst"]]
+
+    # Get rows where also scene is the same
+    if row["sLabel"] != "":
+        rows = rows[rows.sLabel == row["sLabel"]]
+
+    if rows.shape[0] > 1:
+        print(row, "\n has duplicates. Dropping: \n", rows[1:])
+       
+        for line in rows.iterrows():
+            print(line)
+            merged[((merged.tconst != line["tconst"]) &( merged.sLabel != line["sLabel"]) & (merged.lconst != line["lconst"]))]
 
 # Save
 merged.to_csv(os.getcwd() + "/location_data/allmerged.csv")

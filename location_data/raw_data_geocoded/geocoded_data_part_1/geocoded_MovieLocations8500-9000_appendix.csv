@@ -1,0 +1,314 @@
+,Code,Show Name,Location,Scene,geocodedLocation,latitude,longitude
+0,/title/tt0115487/,,Portugal,,Portugal,40.0332629,-7.8896263
+1,/title/tt0104645/,,"London, England, UK",,"London, Greater London, England, United Kingdom",51.5073219,-0.1276474
+2,/title/tt0104645/,,"Rajasthan, India",,"Rajasthan, India",26.8105777,73.7684549
+3,/title/tt0119272/,,"Yorke Peninsula, South Australia, Australia",(environs: Port Wakefield),"Yorke Peninsula Council, South Australia, Australia",-34.6930634,137.68577712223183
+4,/title/tt0119272/,,"Mid Northern South Australia, South Australia, Australia",,,,
+5,/title/tt0119272/,,"35 Rose Street, Ottoway, South Australia, Australia",,"Rose Street, Ottoway, Adelaide, City of Port Adelaide Enfield, South Australia, 5013, Australia",-34.8496722,138.5309745
+6,/title/tt0119272/,,"Balaklava, South Australia, Australia","(main street - second hand car lot, hair dressers, kid on the skateboard)","Balaklava, Wakefield Regional Council, South Australia, 5461, Australia",-34.1448045,138.4161903
+7,/title/tt0119272/,,"Brock Street, Port Adelaide, South Australia, Australia",,"Brock Street, Port Adelaide, Adelaide, City of Port Adelaide Enfield, South Australia, 5015, Australia",-34.8455702,138.5109199
+8,/title/tt0119272/,,"Crozier Street, Port Adelaide, South Australia, Australia",,"Crozier Street, Port Adelaide, Adelaide, City of Port Adelaide Enfield, South Australia, 5015, Australia",-34.8455205,138.5126226
+9,/title/tt0119272/,,"North Terrace, Adelaide, South Australia, Australia",,"North Terrace, Hackney, Adelaide, The City of Norwood Payneham and St Peters, South Australia, 5069, Australia",-34.9194765,138.6152639
+10,/title/tt0119272/,,"Ozone Fish Cafe - 45 Commercial Road, Port Adelaide, South Australia, Australia",,,,
+11,/title/tt0119272/,,"Port Wakefield, South Australia, Australia",,"Port Wakefield, Wakefield Regional Council, South Australia, 5550, Australia",-34.1853492,138.1553794
+12,/title/tt0119272/,,"Rose Street, Ottoway, South Australia, Australia",,"Rose Street, Ottoway, Adelaide, City of Port Adelaide Enfield, South Australia, 5013, Australia",-34.8496722,138.5309745
+13,/title/tt0119272/,,"St. Vincent Street, Port Adelaide, South Australia, Australia",,"St Vincent Street, Port Adelaide, Adelaide, City of Port Adelaide Enfield, South Australia, 5015, Australia",-34.8443706,138.5054608
+14,/title/tt0119272/,,"Sydney Harbour Bridge, Sydney, New South Wales, Australia",,"Sydney Harbour Bridge, Olympic Drive, Kirribilli, Lower North Shore, North Sydney Council, New South Wales, 2061, Australia",-33.85225755,151.21069310558983
+15,/title/tt0039235/,,"Hotel Del Sol - 200 East 3rd Street, Yuma, Arizona, USA",,,,
+16,/title/tt0039235/,,"Paramount Studios - 5555 Melrose Avenue, Hollywood, Los Angeles, California, USA",(studio),,,
+17,/title/tt0039235/,,"Gilpin Airport, Tucson, Arizona, USA",,"Freeway Airport (historical), Sun Tran Boulevard, Flowing Wells, Tucson, Pima County, Arizona, 85709, United States of America",32.2778529,-111.0089836
+18,/title/tt0443450/,,"25140 Rye Canyon Loop, Santa Clarita, California, USA",,"25140, Rye Canyon Loop, Santa Clarita, Los Angeles County, California, 91355, United States of America",34.45846693544519,-118.57931563437143
+19,/title/tt0443450/,,"904 Everett St, Los Angeles, California, USA",,"904, Everett Street, Echo Park, Los Angeles, Los Angeles County, California, 90026, United States of America",34.069273625575676,-118.24885010904315
+20,/title/tt0443450/,,"Fremont & Figueroa Sts., Downtown, Los Angeles, California, USA",(Parking Lot),,,
+21,/title/tt0443450/,,"Mann Biomedical Park, Santa Clarita, California, USA",,,,
+22,/title/tt0217979/,,"Los Angeles, California, USA",(main location),"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+23,/title/tt0056350/,,"Bray Studios, Down Place, Oakley Green, Berkshire, England, UK","(studio) (studio: made at Bray Studios, England.)",,,
+24,/title/tt0056350/,,"Callow Hill Sandpit, Virginia Water, Surrey, England, UK",(penal colony),,,
+25,/title/tt0072245/,,Philippines,,Philippines,12.7503486,122.7312101
+26,/title/tt0977663/,,"Dumont Dunes, California, USA",,"Dumont Dunes, San Bernardino County, California, United States of America",35.6833036,-116.2194652
+27,/title/tt0098619/,,"Montana, USA",,"Montana, United States of America",47.3752671,-109.6387579
+28,/title/tt0098619/,,"Choteau, Montana, USA",,"Choteau, Teton County, Montana, United States of America",47.812243,-112.1833758
+29,/title/tt1220217/,,"Possum Kingdom, Texas, USA",,"The Ranch on Possum Kingdom, Palo Pinto County, Texas, United States of America",32.8751802,-98.43806278474526
+30,/title/tt1220217/,,"Palo Pinto, Texas, USA",,"Palo Pinto County, Texas, United States of America",32.7215726,-98.2814881
+31,/title/tt0403407/,,"Burlington Street, Dunedin Central Business District, Dunedin, Otago, New Zealand",,,,
+32,/title/tt0403407/,,"Harbour Street, Oamaru, Otago, New Zealand",,"Harbour Street, Cape Wanbrow, Oamaru, Waitaki District, Otago, 9444, New Zealand",-45.103555,170.9703581
+33,/title/tt0403407/,,"Oamaru, Otago, New Zealand",,"Oamaru, Waitaki District, Otago, 9444, New Zealand",-45.0997681,170.9684232
+34,/title/tt0403407/,,"St Matthews-in-the-city, Hobson Street, Auckland Central Business District, Auckland, New Zealand",,,,
+35,/title/tt0403407/,,"Auckland, New Zealand",,"Auckland, 1010, New Zealand",-36.852095,174.7631803
+36,/title/tt0066565/,,"Lenfilm Studios, Kamennoostrovsky Prospekt, Petrogradsky District, St. Petersburg, Russia",(studio),,,
+37,/title/tt0066565/,,"Karakum Desert, Mary, Turkmenistan, Soviet Union",(sand dune scenes),,,
+38,/title/tt0066565/,,"Bairam-Ali, Turkmenistan",,,,
+39,/title/tt0060272/,,"Bronson Caves, Bronson Canyon, Griffith Park - 4730 Crystal Springs Drive, Los Angeles, California, USA",,,,
+40,/title/tt0301327/,,"Arcadia, California, USA",,"Arcadia, Los Angeles County, California, United States of America",34.1362075,-118.0401497
+41,/title/tt0301327/,,"Los Angeles River, California, USA",,"Los Angeles River, Los Angeles, Los Angeles County, California, 91303-2211, United States of America",34.1952667,-118.5886446
+42,/title/tt0301327/,,"Santa Clarita, California, USA",,"Santa Clarita, Los Angeles County, California, United States of America",34.3916641,-118.542586
+43,/title/tt0996982/,,"Bosanska Dubica, Republic of Srpska, Bosnia-Herzegovina",,"Kozarska Dubica, Opština Kozarska Dubica, Република Српска / Republika Srpska, 79240, Bosna i Hercegovina",45.1793231,16.8076706
+44,/title/tt0996982/,,"Novi Grad, Republic of Srpska, Bosnia-Herzegovina",,"Novi Grad, Општина Нови Град / Opština Novi Grad, Република Српска / Republika Srpska, 79220, Bosna i Hercegovina",45.0492984,16.3760681
+45,/title/tt0996982/,,"Samac, Republic of Srpska, Bosnia-Herzegovina",,"Šamac, Opština Šamac, Република Српска / Republika Srpska, 76230, Bosna i Hercegovina",45.0605306,18.4684585
+46,/title/tt0071344/,,"Rome, Lazio, Italy",,"Roma Capitale, Lazio, Italia",41.85223935,12.631036615953583
+47,/title/tt0020570/,,"Engadin, Kanton Graubünden, Switzerland",,"Sils im Engadin/Segl, Maloja, Graubünden/Grigioni/Grischun, Switzerland",46.400733849999995,9.78721476368516
+48,/title/tt0326450/,,"Zvenigorod, Russia",,"Звенигород, Одинцовский городской округ, Московская область, Центральный федеральный округ, Россия",55.7293613,36.8585382
+49,/title/tt0339534/,,"McKinney, Texas, USA",(prison location),"McKinney, Collin County, Texas, United States of America",33.1976496,-96.6154471
+50,/title/tt0339534/,,"Mesquite, Texas, USA",(field work sequences),"Mesquite, Dallas County, Texas, United States of America",32.7666103,-96.599472
+51,/title/tt0075344/,,"Hollywood Boulevard, Hollywood, Los Angeles, California, USA",(several scenes),"Hollywood Boulevard, Whitley Heights Historic District, Hollywood, Los Angeles, Los Angeles County, California, 90028, United States of America",34.1015833,-118.3324947
+52,/title/tt0085454/,,"Cinecittà Studios, Cinecittà, Rome, Lazio, Italy",(studio),,,
+53,/title/tt0085454/,,"Parma, Emilia-Romagna, Italy",,"Parma, Emilia-Romagna, Italia",44.8013678,10.3280833
+54,/title/tt0085454/,,"San Benedetto Po, Mantua, Lombardia, Italy",,"San Benedetto Po, Mantova, Lombardia, 46027, Italia",45.0419243,10.9282948
+55,/title/tt0085454/,,"Correggioverde, Dosolo, Mantua, Lombardia, Italy",,"Correggioverde, Mantova, Lombardia, 42044, Italia",44.9295817,10.6158713
+56,/title/tt0110052/,,"Olongapo City, Zambales, Philippines",,"Olongapo, Zambales, Central Luzon, 2200, Philippines",14.8314675,120.2835205
+57,/title/tt8466648/,,"Ontario, Canada",,"Ontario, Canada",50.000678,-86.000977
+58,/title/tt0489070/,,"Rhode Island, USA",,"Rhode Island, United States of America",41.7962409,-71.5992372
+59,/title/tt0227194/,,"Mumbai, Maharashtra, India",,"Mumbai, Mumbai City, Maharashtra, India",18.9387711,72.8353355
+60,/title/tt5809170/,,UK,(London),United Kingdom,54.7023545,-3.2765753
+61,/title/tt0118942/,,"Vancouver, British Columbia, Canada",,"Vancouver, Metro Vancouver Regional District, British Columbia, Canada",49.2608724,-123.1139529
+62,/title/tt0090354/,,"Castelldefels, Barcelona, Catalonia, Spain",,"Castelldefels, Carrer de l'Antic Camí Ral de València, Castelldefels, Baix Llobregat, Catalunya, 08860, España",41.2787125,1.9793953
+63,/title/tt0090354/,,"Girona, Girona, Catalonia, Spain",,"Girona, Gironès, Girona, Catalunya, España",41.9793006,2.8199439
+64,/title/tt0090354/,,"Perpignan, Pyrénées-Orientales, France",,"Perpignan, Pyrénées-Orientales, Occitanie, France métropolitaine, France",42.6985304,2.8953121
+65,/title/tt1507005/,,"Hyderabad, Telangana, India",,"Hyderabad, Telangana, India",17.38878595,78.46106473453146
+66,/title/tt0301231/,,"Chandivali Studio, Mumbai, Maharashtra, India",(studio),"Chandivali Film Studio, Chandivali Farm Road, Sangharsh Nagar, L Ward, Zone 5, Mumbai, Mumbai Suburban, Maharashtra, - 400072, India",19.1136423,72.8947198143332
+67,/title/tt0301231/,,"Fariyas Hotel, Lonavala, Maharashtra, India",,,,
+68,/title/tt0301231/,,"Hotel Searock, Mumbai, Maharashtra, India",(studio),,,
+69,/title/tt0301231/,,"Oberoi Towers, Mumbai, Maharashtra, India",,"Oberoi Towers, K/W Ward, Zone 3, Mumbai, Mumbai Suburban, Maharashtra, India",19.138888950000002,72.83446091244681
+70,/title/tt0301231/,,"Seth Studios, Andheri, Mumbai, Maharashtra, India",(studio),,,
+71,/title/tt0006333/,,"Universal Studios - 100 Universal City Plaza, Universal City, California, USA",(studio),,,
+72,/title/tt0046839/,,"Iverson Ranch - 1 Iverson Lane, Chatsworth, Los Angeles, California, USA",,,,
+73,/title/tt0117609/,,"New Jersey, USA",,"New Jersey, United States of America",40.0757384,-74.4041622
+74,/title/tt0117609/,,"Jersey City, New Jersey, USA",,"Jersey City, Hudson County, New Jersey, United States of America",40.7281575,-74.0776417
+75,/title/tt1781948/,,Italy,,Italia,42.6384261,12.674297
+76,/title/tt0066126/,,Philippines,,Philippines,12.7503486,122.7312101
+77,/title/tt0221309/,,"Veluzat Motion Picture Ranch, Saugus, California, USA",,,,
+78,/title/tt1821700/,,"Sawat, Pakistan",,"Sawat ColonY, Mulla Jam Muhammad, ڪراچي Karachi, Karāchi District, سنڌ, 75890, پاکستان",25.0011839,67.0298139
+79,/title/tt1821700/,,"Istanbul, Turkey",,"İstanbul, Beyazıt Meydanı, Beyazıt Mahallesi, Fatih, İstanbul, Marmara Bölgesi, 34126, Türkiye",41.0096215,28.9651867
+80,/title/tt1821700/,,"Lahore, Pakistan",,"لاہور, Lahore District, پنجاب, 531, پاکستان",31.5656822,74.3141829
+81,/title/tt0059601/,,"PC Balcazar Studios, Madrid, Spain",,,,
+82,/title/tt0059601/,,"El Pozo de los Frailes, Almería, Andalucía, Spain",,"Pozo de los Frailes, Níjar, Almería, Andalucía, 04118, España",36.7881876,-2.1093244
+83,/title/tt0059601/,,"Finca El Romeral, San José, Almería, Andalucía, Spain",(Main location),,,
+84,/title/tt0977214/,,"New Boyana Film Studios, Sofia, Bulgaria",(studio),,,
+85,/title/tt0323551/,,"Lohja, Finland",,"Lohja, Helsingin seutukunta, Uusimaa, Manner-Suomi, Suomi",60.2526036,24.0684575
+86,/title/tt0037642/,,USA,,United States,39.7837304,-100.4458825
+87,/title/tt2385104/,,"Rann of Kutch, Gujarat, India",,"Rann of Kutch, Kutch District, Gujarat, India",23.790559350000002,70.49681598808152
+88,/title/tt2239108/,,"Gothenburg, Västra Götalands län, Sweden",,"Göteborg, Göteborgs Stad, Västra Götalands län, Götaland, 41106, Sverige",57.7072326,11.9670171
+89,/title/tt2547210/,,"Santa Clarita, California, USA",,"Santa Clarita, Los Angeles County, California, United States of America",34.3916641,-118.542586
+90,/title/tt0094918/,,Peru,,Perú,-6.8699697,-75.0458515
+91,/title/tt0078035/,,"Detroit, Michigan, USA",(Tiger Stadium),"Detroit, Wayne County, Michigan, United States of America",42.3315509,-83.0466403
+92,/title/tt0078035/,,"Toledo, Ohio, USA",(Ned Skelton Stadium),"Toledo, Lucas County, Ohio, United States of America",41.6786754,-83.5127283
+93,/title/tt4303846/,,"Tata, Morocco",(Syrian prisoner camp),"Tata ⵟⴰⵟⴰ طاطا, Pachalik de Tata, Province de Tata ⵍⵉⵇⵍⵉⵎ ⵏ ⵟⴰⵟⴰ إقليم طاطا, Souss-Massa ⵙⵓⵙⵙ-ⵎⴰⵙⵙⴰ سوس-ماسة, Maroc",29.746392,-7.9696051
+94,/title/tt4303846/,,"Liège, Wallonia, Belgium",,"Liège, Wallonie, 4000, België - Belgique - Belgien",50.6451381,5.5734203
+95,/title/tt4303846/,,"Leeuwarden, Friesland, Netherlands",,"Leeuwarden, Fryslân, Nederland",53.2005936,5.7918548
+96,/title/tt0117581/,,"California, USA",,"California, United States of America",36.7014631,-118.7559974
+97,/title/tt0082594/,,"Film City, Goregaon, Mumbai, Maharashtra, India",(studio),"Dadasaheb Phalke Chitranagari, Goregaon Mulund Link Road, T Ward, Zone 6, Mumbai, Mumbai Suburban, Maharashtra, 400082, India",19.1587785,72.89173887052404
+98,/title/tt0082594/,,"Mehboob Studios, Mumbai, Maharashtra, India",(studio),"Mehboob Studio, Mount Carmel Road, Mount Mary, Bandra West, Zone 3, Mumbai, Mumbai Suburban, Maharashtra, 400050, India",19.0524573,72.8247562
+99,/title/tt0082594/,,"R.K. Studios, Chembur, Mumbai, Maharashtra, India",(studio),"R K STUDIOS, Sion Panvel Highway, Maitri Park, M/W Ward, Zone 5, Mumbai, Mumbai Suburban, Maharashtra, 400071, India",19.0463561,72.9081436
+100,/title/tt0114780/,,"Los Angeles, California, USA",,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+101,/title/tt0224902/,,"Paris, France",,"Paris, Île-de-France, France métropolitaine, 75004, France",48.8566969,2.3514616
+102,/title/tt4514660/,,"Spiderwood Studios, Austin, Texas, USA",(filming),,,
+103,/title/tt0065895/,,"Las Vegas, Nevada, USA",,"Las Vegas, Clark County, Nevada, United States of America",36.1672559,-115.1485163
+104,/title/tt0065895/,,"San Quentin State Prison, San Quentin, California, USA",,"San Quentin State Prison, Main Street, San Rafael, Marin County, California, 94964, United States of America",37.939865299999994,-122.48995246294763
+105,/title/tt0065895/,,"Manhattan, New York City, New York, USA",,"Manhattan, New York County, New York, United States of America",40.7896239,-73.9598939
+106,/title/tt0065895/,,"Los Angeles, California, USA",,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+107,/title/tt0163815/,,"Marina del Rey, California, USA",,"Marina del Rey, Los Angeles County, California, 90292, United States of America",33.9776848,-118.4486479
+108,/title/tt0068491/,,"1200 E Los Angeles Ave, Simi Valley, California, USA",(location),"1200, East Los Angeles Avenue, Greek Track, Strathearn, Simi Valley, Ventura County, California, 93065, United States of America",34.27163552941177,-118.77733126470588
+109,/title/tt0050841/,,"Genoa, Liguria, Italy",,"Genova, Liguria, Italia",44.40726,8.9338624
+110,/title/tt0050841/,,"Rome, Lazio, Italy",,"Roma Capitale, Lazio, Italia",41.85223935,12.631036615953583
+111,/title/tt0050841/,,"Elstree Studios, Borehamwood, Hertfordshire, England, UK",(studio),"Elstree Studios, Shenley Road, Elstree and Borehamwood, Hertsmere, Hertfordshire, East of England, England, WD6 1JG, United Kingdom",51.657052050000004,-0.2675206399488197
+112,/title/tt0050841/,,"Madrid, Madrid, Spain",,"Madrid, Área metropolitana de Madrid y Corredor del Henares, Comunidad de Madrid, 28001, España",40.4167047,-3.7035825
+113,/title/tt0248644/,,"Vancouver, British Columbia, Canada",,"Vancouver, Metro Vancouver Regional District, British Columbia, Canada",49.2608724,-123.1139529
+114,/title/tt5108524/,,"New Jersey, USA",(Franklinville),"New Jersey, United States of America",40.0757384,-74.4041622
+115,/title/tt11493232/,,"Izmir, Turkey",,"İzmir, Ege Bölgesi, 35240, Türkiye",38.4147331,27.1434119
+116,/title/tt5734548/,,"Pattaya, Thailand",,"พัทยา, จังหวัดชลบุรี, 20150, ประเทศไทย",12.931941,100.9009534
+117,/title/tt0057591/,,"Fontenay-sous-Bois, Val-de-Marne, France",(Bowling scenes),"Fontenay-sous-Bois, Nogent-sur-Marne, Val-de-Marne, Île-de-France, France métropolitaine, 94120, France",48.8490721,2.4749347
+118,/title/tt1258137/,,"124 S Jefferson St, Spokane, Washington, USA",(street scenes),"124, South Jefferson Street, Riverside, East Empire, Spokane, Spokane County, Washington, 99201, United States of America",47.6557448,-117.42969456
+119,/title/tt1258137/,,"Baymont by Wyndham Spokane - 907 W 3rd Ave, Spokane, Washington, USA",(formerly Trade Winds Motel),"Baymont, 907, West 3rd Avenue, Riverside, East Empire, Spokane, Spokane County, Washington, 99201, United States of America",47.65314925,-117.42520373961108
+120,/title/tt0078918/,,"Tokyo, Japan",,"東京都, 日本 (Japan)",35.6828387,139.7594549
+121,/title/tt0357894/,,China,,中国,35.000074,104.999927
+122,/title/tt3749002/,,Spain,,España,39.3262345,-4.8380649
+123,/title/tt2432464/,,"Haarlem, Noord-Holland, Netherlands",,"Haarlem, Noord-Holland, Nederland",52.383705750000004,4.643559696559635
+124,/title/tt1453409/,,"Santa Clarita, California, USA",,"Santa Clarita, Los Angeles County, California, United States of America",34.3916641,-118.542586
+125,/title/tt1453409/,,"Valencia, California, USA",,"Valencia, Santa Clarita, Los Angeles County, California, 91355, United States of America",34.413819,-118.5610378
+126,/title/tt0105900/,,"Tysons Corner, McLean, Virginia, USA",,"Gannett/USA Today, 7950, Jones Branch Drive, Tysons, Fairfax County, Virginia, 22102, United States of America",38.93254465,-77.21780054452111
+127,/title/tt0009682/,,"New Orleans, Louisiana, USA",,"New Orleans, Orleans Parish, Louisiana, United States of America",29.9499323,-90.0701156
+128,/title/tt0009682/,,"Griffith Park - 4730 Crystal Springs Drive, Los Angeles, California, USA",,,,
+129,/title/tt0009682/,,"Topanga Canyon, Woodland Hills, Los Angeles, California, USA",,,,
+130,/title/tt1210801/,,"National Palace of Culture, Sofia, Bulgaria",,"Национален Дворец на Културата, бул. Ген. Скобелев, пл. България, ж.к. Иван Вазов, Триадица, Столична, София-град, 1463, България",42.68483125,23.318970707814245
+131,/title/tt1210801/,,"Red Square, Kitai-gorod, Tverskoy District, Moscow, Russia",,"Красная площадь, Китай-город, Тверской район, Центральный административный округ, Москва, Центральный федеральный округ, Россия",55.7536283,37.62137960067377
+132,/title/tt1350512/,,"Oxnard, California, USA",,"Oxnard, Ventura County, California, United States of America",34.1976308,-119.1803818
+133,/title/tt0052156/,,"Iverson Ranch - 1 Iverson Lane, Chatsworth, Los Angeles, California, USA",,,,
+134,/title/tt0052156/,,"Malibu, California, USA",,"Malibu, Los Angeles County, California, 90265-4797, United States of America",34.035591,-118.689423
+135,/title/tt0052156/,,"ZIV Studios, Santa Monica, California, USA",(studio),,,
+136,/title/tt2083231/,,"Borobudur, Magelang, Central Java, Indonesia",(End scene at temple),"Borobudur, Jalan Salaman - Mungkid, Tegalarum, Magelang, Jawa Tengah, 56553, Indonesia",-7.60793475,110.20389767341086
+137,/title/tt0119642/,,"Twin Towers Correctional Facility - 450 Bauchet Street, Los Angeles, California, USA",(Prison Complex),"Twin Towers Correctional Facility, Bauchet Street, Mission Junction, Chinatown, Los Angeles, Los Angeles County, California, 90012, United States of America",34.05915005,-118.2305874662935
+138,/title/tt0437711/,,"Toronto, Ontario, Canada",,"Toronto, Golden Horseshoe, Ontario, Canada",43.6534817,-79.3839347
+139,/title/tt0263728/,,"Nairobi, Kenya",,"Nairobi, Kenya",-1.2832533,36.8172449
+140,/title/tt0263728/,,"Santa Clarita, California, USA",,"Santa Clarita, Los Angeles County, California, United States of America",34.3916641,-118.542586
+141,/title/tt0263728/,,"Agua Dulce, California, USA",,"Agua Dulce, Oak Hills, Castroville, Monterey County, California, 95012, United States of America",36.773557,-121.737165
+142,/title/tt0263728/,,"Madrid, Spain",,"Madrid, Área metropolitana de Madrid y Corredor del Henares, Comunidad de Madrid, 28001, España",40.4167047,-3.7035825
+143,/title/tt0263728/,,"Rome, Lazio, Italy",,"Roma Capitale, Lazio, Italia",41.85223935,12.631036615953583
+144,/title/tt0263728/,,"Tel Aviv, Israel",,"תל אביב-יפו, מחוז תל אביב, ישראל",32.0804808,34.7805274
+145,/title/tt9849830/,,"Incheon, South Korea",,"인천, 대한민국",37.456,126.7052
+146,/title/tt9849830/,,"Jeju Island, South Korea",,"제주도, 제주시, 제주특별자치도, 대한민국",33.38034745,126.54825445912047
+147,/title/tt0042279/,,"Portal, Arizona, USA",,"Portal, Cochise County, Arizona, United States of America",31.9135924,-109.1414262
+148,/title/tt0042279/,,"San Simon, Arizona, USA",,"San Simon, Cochise County, Arizona, United States of America",32.2678563,-109.2275596
+149,/title/tt0042279/,,"Tortilla Flat, Arizona, USA",,"Tortilla Flat, Gilbert, Maricopa County, Arizona, United States of America",33.5264365,-111.3898523
+150,/title/tt0042279/,,"Reavis Ranch, Arizona, USA",,"Reavis Ranch Trail #109, Pinal County, Arizona, United States of America",33.4649352,-111.1694902
+151,/title/tt0042279/,,"Tonto National Forest, Arizona, USA",,"Tonto National Forest, Tonto Basin, Gila County, Arizona, United States of America",33.8155875,-111.30698734232479
+152,/title/tt0042279/,,"Kanab Canyon, Kanab, Utah, USA",,,,
+153,/title/tt0042279/,,"Vasquez Rocks Natural Area Park - 10700 W. Escondido Canyon Rd., Agua Dulce, California, USA",,,,
+154,/title/tt0042279/,,"Slaughter Ranch, Douglas, Arizona, USA",,,,
+155,/title/tt0042279/,,"Skeleton Canyon, Arizona, USA",,"Skeleton Canyon Road, Apache, Cochise County, Arizona, United States of America",31.6902851,-109.1308878
+156,/title/tt0067206/,,"Thousand Oaks, California, USA",(City locations),"Thousand Oaks, Ventura County, California, United States of America",34.17142715,-118.91058772974445
+157,/title/tt0085627/,,"Rome, Lazio, Italy",,"Roma Capitale, Lazio, Italia",41.85223935,12.631036615953583
+158,/title/tt5803438/,,"Marbella, Málaga, Andalucía, Spain",(OVERSEAS SHOOT),"Marbella, Costa del Sol Occidental, Málaga, Andalucía, España",36.508976,-4.88562
+159,/title/tt5803438/,,"Northampton, England, UK",(Special effects),"Northampton, Northamptonshire, East Midlands, England, United Kingdom",52.2381355,-0.8963907
+160,/title/tt5803438/,,"Goring-on-Thames, Oxfordshire, England, UK",(Manor House shoot),"Goring-on-Thames, South Oxfordshire, Oxfordshire, South East, England, United Kingdom",51.52159775,-1.1218711515875064
+161,/title/tt0119660/,,"Mexico City, Distrito Federal, Mexico",,"México, Calle Benito Juárez, Unidad Habitacional Integración Latinoamericana, Naucalpan, 04350, México",19.337797000000002,-99.17851255290537
+162,/title/tt0119660/,,"San Diego, California, USA",,"San Diego, San Diego County, California, United States of America",32.7174209,-117.1627714
+163,/title/tt11079966/,,"Queens, New York, USA",,"Queens, Queens County, New York, United States of America",40.7498243,-73.7976337
+164,/title/tt11079966/,,"Staten Island, New York City, New York, USA",,"Staten Island, Richmond County, New York, United States of America",40.5834557,-74.1496048
+165,/title/tt0064300/,,Spain,,España,39.3262345,-4.8380649
+166,/title/tt0064300/,,"Almería, Andalucía, Spain",,"Almería, Andalucía, España",36.8414197,-2.4628135
+167,/title/tt4737772/,,"Sofia, Bulgaria",,"София, Оборище, Столична, София-град, 1000, България",42.6978634,23.3221789
+168,/title/tt4737772/,,"Brooklyn, New York City, New York, USA",(on location),"Brooklyn, Kings County, New York, United States of America",40.6501038,-73.9495823
+169,/title/tt1111918/,,"Los Angeles, California, USA",,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+170,/title/tt5032360/,,"Kutch, Gujarat, India",(location),"Kutch District, Gujarat, India",23.583333,70.0
+171,/title/tt5202654/,,"Paris, France",,"Paris, Île-de-France, France métropolitaine, 75004, France",48.8566969,2.3514616
+172,/title/tt2204243/,,Switzerland,,Schweiz/Suisse/Svizzera/Svizra,46.7985624,8.2319736
+173,/title/tt2204243/,,"Bangkok, Thailand",,"กรุงเทพมหานคร, เขตพระนคร, กรุงเทพมหานคร, 10200, ประเทศไทย",13.7542529,100.493087
+174,/title/tt0072107/,,"London, England, UK",,"London, Greater London, England, United Kingdom",51.5073219,-0.1276474
+175,/title/tt1830786/,,"Mumbai, Maharashtra, India",,"Mumbai, Mumbai City, Maharashtra, India",18.9387711,72.8353355
+176,/title/tt0109850/,,"Los Angeles, California, USA",,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+177,/title/tt0045991/,,"Universal Studios - 100 Universal City Plaza, Universal City, California, USA",(studio),,,
+178,/title/tt4208710/,,"London, England, UK","(London Eye, Regent Street, Trafalgar Square, Tower Bridge)","London, Greater London, England, United Kingdom",51.5073219,-0.1276474
+179,/title/tt4208710/,,"Brighton, East Sussex, England, UK","(Brighton Pier, Marina)","Brighton Electrical Assemblies, Seaford, Lewes, East Sussex, South East, England, United Kingdom",50.78357855,0.12148666117747367
+180,/title/tt0116628/,,"Argentine, Michigan, USA",,"Argentine, Argentine Township, Genesee County, Michigan, United States of America",42.794377999999995,-83.83643238800636
+181,/title/tt0116628/,,"Detroit, Michigan, USA",,"Detroit, Wayne County, Michigan, United States of America",42.3315509,-83.0466403
+182,/title/tt0116628/,,"Fenton, Michigan, USA",,"Fenton, Genesee County, Michigan, 48430, United States of America",42.7978061,-83.7049498
+183,/title/tt0116628/,,"Hartland, Michigan, USA",,"Hartland, Hartland Township, Livingston County, Michigan, 48353, United States of America",42.656697,-83.7530022
+184,/title/tt0116628/,,"Livonia, Michigan, USA",,"Livonia, Wayne County, Michigan, United States of America",42.36837,-83.3527097
+185,/title/tt0116628/,,"Novi, Michigan, USA",,"Novi, Oakland County, Michigan, United States of America",42.48059,-83.4754913
+186,/title/tt0092026/,,"Filmalaya Studio, Mumbai, Maharashtra, India",,,,
+187,/title/tt0092026/,,"Seth Studios, Andheri, Mumbai, Maharashtra, India",,,,
+188,/title/tt0265709/,,"Los Angeles, California, USA",,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+189,/title/tt2303110/,,"Los Angeles, California, USA",,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+190,/title/tt0364647/,,"Chennai, Tamil Nadu, India",,"சென்னை - Chennai, சென்னை மாவட்டம், Tamil Nadu, India",13.0801721,80.2838331
+191,/title/tt0083349/,,"Natraj Studios, Mumbai, Maharashtra, India",(studio),,,
+192,/title/tt0045077/,,"Universal Studios - 100 Universal City Plaza, Universal City, California, USA",(studio),,,
+193,/title/tt6863784/,,"Noida, Uttar Pradesh, India",(location),"Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, 201301, India",28.5356329,77.3910727
+194,/title/tt6863784/,,"Jaipur, Rajasthan, India",(location),"Jaipur, Jaipur Tehsil, Jaipur, Rajasthan, 302001, India",26.916194,75.820349
+195,/title/tt6863784/,,"Kathmandu, Nepal",(location),"Kathmandu, Kamaladi Marg, Kamalpokhari, Baghbazar, काठमाडौं, वाग्मती प्रदेश, 46600, Nepal",27.708317,85.3205817
+196,/title/tt6863784/,,"Palani, Tamil Nadu, India",(location),"Palani, திண்டுக்கல் மாவட்டம், Tamil Nadu, India",10.497812750000001,77.50049340214429
+197,/title/tt6863784/,,"Kerala, India",(location),"Kerala, India",10.3528744,76.5120396
+198,/title/tt0048091/,,"Oatman, Arizona, USA",,"Oatman, Mohave County, Arizona, 86433-9997, United States of America",35.0263915,-114.3835698
+199,/title/tt0048091/,,"Universal Studios - 100 Universal City Plaza, Universal City, California, USA",(studio),,,
+200,/title/tt0272606/,,"Here's The Scoop Ice Cream Parlor, 2 Roebuck Street, Whitby, Ontario, Canada",(Cafe),,,
+201,/title/tt0100303/,,"Croissy-sur-Seine, Yvelines, France",(Granianski's house),"Croissy-sur-Seine, Saint-Germain-en-Laye, Yvelines, Île-de-France, France métropolitaine, 78290, France",48.8791554,2.1327881
+202,/title/tt0100303/,,"Orly Airport, Orly, Val-de-Marne, France",,"Hilton Garden Inn Paris Orly Airport, 4, Place des États-Unis, Parc ICADE Paris Orly-Rungis, Rungis, Arrondissement de L'Haÿ-les-Roses, Val-de-Marne, Île-de-France, France métropolitaine, 94150, France",48.748477050000005,2.35572229362018
+203,/title/tt0100303/,,"Paris, France",,"Paris, Île-de-France, France métropolitaine, 75004, France",48.8566969,2.3514616
+204,/title/tt0151150/,,"Bassein Fort, Vasai, Palghar, Maharashtra, India",,"Fort Bassein, Killa Road, Bhayander West, Pachu Bandar, Vasai, Palghar, Maharashtra, 401200, India",19.329422,72.8143531
+205,/title/tt0151150/,,"Our Lady of Immaculate Conception, Goa, India",,"Our Lady of the Immaculate Conception, Rua Emídio Garcia, Patto Centre, Panaji, Tiswadi, North Goa, Goa, 403100, India",15.49853015,73.82973513115971
+206,/title/tt0995752/,,Greece,,Ελλάς,38.9953683,21.9877132
+207,/title/tt0995752/,,"Ladakh, Jammu & Kashmir, India",,,,
+208,/title/tt1756476/,,Switzerland,,Schweiz/Suisse/Svizzera/Svizra,46.7985624,8.2319736
+209,/title/tt0406942/,,"Palmdale, California, USA",,"Palmdale, Los Angeles County, California, United States of America",34.5793131,-118.1171108
+210,/title/tt0406942/,,"Los Angeles, California, USA",,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+211,/title/tt1151928/,,"Hamilton, Ontario, Canada",,"Hamilton, Golden Horseshoe, Ontario, L8P 0B3, Canada",43.2560802,-79.8728583
+212,/title/tt0846713/,,"Winnipeg, Manitoba, Canada",,"Winnipeg, Winnipeg (city), Manitoba, Canada",49.8955367,-97.1384584
+213,/title/tt0064148/,,"Pinewood Studios, Iver Heath, Buckinghamshire, England, UK",(studio) (studio: made at),"Pinewood Studios, Pinewood Green, Iver, Iver Heath, Buckinghamshire, South East, England, SL0 0QJ, United Kingdom",51.54831515,-0.5346765566753087
+214,/title/tt0064148/,,"London, England, UK",,"London, Greater London, England, United Kingdom",51.5073219,-0.1276474
+215,/title/tt0053902/,,"Arivaca, Arizona, USA",,"Arivaca, Pima County, Arizona, 85601, United States of America",31.5769832,-111.3306751
+216,/title/tt0053902/,,"Empire Ranch, Sonoita, Arizona, USA",,,,
+217,/title/tt0053902/,,"San Xavier Tohono O'odham Reservation, Pima County, Tucson, Arizona, USA",,,,
+218,/title/tt0053902/,,"Paramount Studios - 5555 Melrose Avenue, Hollywood, Los Angeles, California, USA",(studio),,,
+219,/title/tt0326576/,,India,,India,22.3511148,78.6677428
+220,/title/tt0326576/,,"KLCC Gardens, Kuala Lumpur, Malaysia",,"KJ10 KLCC, Jalan Ampang, Kampung Baru, Kuala Lumpur, 50400, Malaysia",3.1593058,101.7132025
+221,/title/tt0326576/,,"Padmalaya, Hyderabad, Telangana, India",,,,
+222,/title/tt0326576/,,"Planet Hollywood, Kuala Lumpur, Malaysia",,,,
+223,/title/tt0326576/,,"Surve Farm, Panvel, Maharashtra, India",,,,
+224,/title/tt0253126/,,"Eltham Palace, Court Road, Eltham, London, England, UK",,"Eltham Palace, Court Yard, Middle Park, Royal Borough of Greenwich, London, Greater London, England, SE9 5QE, United Kingdom",51.44705935,0.047831611538445215
+225,/title/tt0253126/,,"Lower Kingswood, Surrey, England, UK",,"Lower Kingswood, Surrey, South East, England, KT20 7AA, United Kingdom",51.2694664,-0.2120713
+226,/title/tt1708487/,,"Pondicherry, India",,"Puducherry, Puducherry Taluk, Puducherry district, Puducherry, 605001, India",11.9340568,79.8306447
+227,/title/tt11417930/,,"Abuja, Federal Capital Territory, Nigeria",,"Abuja, Municipal Area Council, Federal Capital Territory, 900001, Nigeria",9.0643305,7.4892974
+228,/title/tt0338769/,,"Rietvlei Dam, Pretoria, South Africa",,"Rietvlei, Corobrik, Ekurhuleni Ward 89, City of Ekurhuleni Metropolitan Municipality, Gauteng, South Africa",-25.9294444,28.3038889
+229,/title/tt1329454/,,"Macau, China",,"澳門 Macau, China 中国",22.1757605,113.5514142
+230,/title/tt0456785/,,"Inner Mongolia, China",,"内蒙古自治区, China 中国",43.2443242,114.3251664
+231,/title/tt1706317/,,"Winchester, Hampshire, England, UK",,"Winchester, Hampshire, South East, England, United Kingdom",51.0612766,-1.3131692
+232,/title/tt1706317/,,"Glasgow, Strathclyde, Scotland, UK",,"DoubleTree by Hilton Glasgow Strathclyde, Phoenix Crescent, Strathclyde Business Park, Shawhead (farm), Bellshill, North Lanarkshire, Scotland, ML4 3JQ, United Kingdom",55.8317061,-4.0333295
+233,/title/tt1706317/,,"Southall, Middlesex, England, UK",,,,
+234,/title/tt6126312/,,"Bangkok, Thailand",,"กรุงเทพมหานคร, เขตพระนคร, กรุงเทพมหานคร, 10200, ประเทศไทย",13.7542529,100.493087
+235,/title/tt0087742/,,Tunisia,,تونس,33.8439408,9.400138
+236,/title/tt0076890/,,"East Los Angeles College - 1301 Avenida Cesar Chavez, Monterey Park, California, USA","(""El Estadio Del Sol"" Stadium in Mexico)",,,
+237,/title/tt0490170/,,"Flinders Ranges, South Australia, Australia",,"Flinders Ranges, Pastoral Unincorporated Area, South Australia, Australia",-31.497,138.545
+238,/title/tt0490170/,,"Kangaroo Island, South Australia, Australia",,"Kangaroo Island, Kangaroo Island Council, South Australia, Australia",-35.8182635,137.15661254022396
+239,/title/tt0490170/,,"Adelaide Festival Centre, Adelaide, South Australia, Australia",,"Adelaide Festival Centre, Festival Drive, Adelaide, Adelaide City Council, South Australia, 5000, Australia",-34.919575800000004,138.59779051261538
+240,/title/tt0490170/,,India,,India,22.3511148,78.6677428
+241,/title/tt0490170/,,"Melbourne, Victoria, Australia",,"Melbourne, City of Melbourne, Victoria, 3000, Australia",-37.8142176,144.9631608
+242,/title/tt0490170/,,"New York, USA",,"New York, United States of America",40.7127281,-74.0060152
+243,/title/tt0247911/,,"Canberra, Australian Capital Territory, Australia",,"Canberra, Australian Capital Territory, 2601, Australia",-35.2975906,149.1012676
+244,/title/tt0247911/,,"Lake Burley Griffin, Canberra, Australian Capital Territory, Australia",,,,
+245,/title/tt1093906/,,"Patterson, Louisiana, USA",,"Patterson, St. Mary Parish, Louisiana, 70392, United States of America",29.6932642,-91.3020502
+246,/title/tt1093906/,,USA,,United States,39.7837304,-100.4458825
+247,/title/tt0081180/,,"Tucson, Arizona, USA",,"Tucson, Pima County, Arizona, United States of America",32.2228765,-110.9748477
+248,/title/tt0081180/,,"Sierrita Mountains, Arizona, USA",,,,
+249,/title/tt0081180/,,"Sonoran Desert, Arizona, USA",,"Sonoran Desert, Bates Well Road, Pima County, Arizona, United States of America",32.2598642,-112.9262583
+250,/title/tt0437072/,,"Toronto, Ontario, Canada",,"Toronto, Golden Horseshoe, Ontario, Canada",43.6534817,-79.3839347
+251,/title/tt0110419/,,"Battersea Power Station, Battersea, London, England, UK",,,,
+252,/title/tt0110419/,,"England, UK",,"England, United Kingdom",52.7954791,-0.5402402866174321
+253,/title/tt3527772/,,"Erie, Pennsylvania, USA",,"Erie, Erie County, Pennsylvania, United States of America",42.1294712,-80.0852695
+254,/title/tt3527772/,,"Sandy Lake, Pennsylvania, USA",,"Sandy Lake, Mercer County, Pennsylvania, United States of America",41.3486674,-80.0822822
+255,/title/tt1274596/,,"Los Alamos, New Mexico, USA",,"Los Alamos, Los Alamos County, New Mexico, United States of America",35.8814009,-106.2989958
+256,/title/tt0252277/,,"Mumbai, Maharashtra, India",,"Mumbai, Mumbai City, Maharashtra, India",18.9387711,72.8353355
+257,/title/tt2492344/,,"Los Angeles, California, USA",,"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+258,/title/tt0338258/,,"Essex, England, UK",,"Essex, Broomfield, Chelmsford, Essex, East of England, England, United Kingdom",51.77046785,0.46466977412300386
+259,/title/tt0338258/,,UK,,United Kingdom,54.7023545,-3.2765753
+260,/title/tt0081843/,,"Columbia/Warner Bros. Ranch - 411 North Hollywood Way, Burbank, California, USA",,,,
+261,/title/tt3283714/,,Northern Cyprus,(location),"Kuzey Kıbrıs, Κύπρος",35.2245313,33.6252379
+262,/title/tt1082075/,,UK,,United Kingdom,54.7023545,-3.2765753
+263,/title/tt1082075/,,"London, England, UK",,"London, Greater London, England, United Kingdom",51.5073219,-0.1276474
+264,/title/tt0114339/,,"Cameron, Arizona, USA",,"Cameron, Coconino County, Arizona, United States of America",35.8740383,-111.4119186
+265,/title/tt0114339/,,"Winslow, Arizona, USA",,"Winslow, Navajo County, Arizona, United States of America",35.0241874,-110.6973572
+266,/title/tt0158534/,,"Natraj Studios, Mumbai, Maharashtra, India",(studio),,,
+267,/title/tt0093276/,,"Gozo Island, Malta",,"Għawdex, Ix-Xagħra, Għawdex, Malta",36.0467778,14.25825649123654
+268,/title/tt6328004/,,"Los Angeles, California, USA",(location),"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+269,/title/tt2215673/,,"MediaPro Studios, Bucharest, Romania",,,,
+270,/title/tt5271442/,,"Karachi, Sindh, Pakistan",,"ڪراچي Karachi, Karāchi District, سنڌ, پاکستان",25.1446897,67.1847767315734
+271,/title/tt0365658/,,Romania,,România,45.9852129,24.6859225
+272,/title/tt0382385/,,"Belapur, Maharashtra, India",,"Belapur, SH44, Shrirampur, Ahmednagar, Maharashtra, 413700, India",19.6197639,74.6599008
+273,/title/tt0382385/,,"Filmistan Studios, Mumbai, Maharashtra, India",(studio),"Filmistan Studio, P/S Ward, Zone 4, Mumbai, Mumbai Suburban, Maharashtra, 400062, India",19.1653211,72.84477306829942
+274,/title/tt0382385/,,"Manali, Himachal Pradesh, India",,"Manali, Kullu, Himachal Pradesh, India",32.26309405,77.18812183241408
+275,/title/tt0060637/,,"Manzanares el Real, Madrid, Spain",,"Manzanares el Real, Cuenca Alta del Manzanares, Comunidad de Madrid, 28410, España",40.7267632,-3.864981
+276,/title/tt0060637/,,"Roma Studios, Madrid, Spain",(studio),"Rock Palace, 6, Calle de Vara del Rey, Delicias, Arganzuela, Madrid, Área metropolitana de Madrid y Corredor del Henares, Comunidad de Madrid, 28045, España",40.4021168,-3.6894874
+277,/title/tt0060637/,,Spain,,España,39.3262345,-4.8380649
+278,/title/tt0060637/,,"La Alcazaba, Almería, Almería, Andalucia, Spain",,"La Alcazaba, Calle Sereno, La Chanca, Almedina, Almería, Andalucía, 04071, España",36.841286,-2.4723476
+279,/title/tt2445568/,,"Wollaton Hall, Nottingham, Nottinghamshire, England, UK",,"Wollaton Hall, Lime Tree Avenue, Wollaton Park, Wollaton, East Midlands, England, NG8 2AE, United Kingdom",52.9479602,-1.209770975032371
+280,/title/tt0283727/,,"Warner Brothers Burbank Studios - 4000 Warner Boulevard, Burbank, California, USA",,,,
+281,/title/tt0042389/,,"Alabama Hills, Lone Pine, California, USA",,"Alabama Hills, Lone Pine, Inyo County, California, 93545, United States of America",36.5677117,-118.0898097
+282,/title/tt0379240/,,"London, England, UK",,"London, Greater London, England, United Kingdom",51.5073219,-0.1276474
+283,/title/tt0379240/,,"Raymond Revue Bar, London, England, UK",(as The Parrot Club),,,
+284,/title/tt0379240/,,"Tower Bridge, London, England, UK",,"Tower Bridge, Wapping, London Borough of Tower Hamlets, London, Greater London, England, SE1 2LY, United Kingdom",51.5054985,-0.0753581
+285,/title/tt0379240/,,"Twickenham Film Studios, St Margarets, Twickenham, Middlesex, England, UK",(studio),,,
+286,/title/tt0113950/,,"Tucson, Arizona, USA",,"Tucson, Pima County, Arizona, United States of America",32.2228765,-110.9748477
+287,/title/tt0113950/,,"Globe, Arizona, USA",,"Globe, Gila County, Arizona, United States of America",33.3959623,-110.7871344
+288,/title/tt0082525/,,"Mount Dora, Florida, USA",,"Mount Dora, Lake County, Florida, 32757, United States of America",28.818746750000003,-81.64585723799206
+289,/title/tt0082525/,,"New York City, New York, USA",,"New York, United States of America",40.7127281,-74.0060152
+290,/title/tt0082525/,,"1112 Whittier Blvd, Montebello, California, USA",(Montebello Motors - where Carmen buys a red Lincoln),"1112, Whittier Boulevard, Montebello, Los Angeles County, California, 90640, United States of America",34.01075576595745,-118.11209270212765
+291,/title/tt0489015/,,"California, USA",,"California, United States of America",36.7014631,-118.7559974
+292,/title/tt5108168/,,"San Pedro, Los Angeles, California, USA",,"San Pedro, Los Angeles, Los Angeles County, California, 90731, United States of America",33.7358518,-118.2922934
+293,/title/tt5108168/,,"Los Angeles, California, USA",(studio),"Los Angeles, Los Angeles County, California, United States of America",34.0536909,-118.2427666
+294,/title/tt0036414/,,"Sherwood Forest, California, USA",,"Sherwood Forest, Grass Valley, Nevada County, California, 95949, United States of America",39.1843138,-121.0829634
+295,/title/tt0257231/,,"Marbella, Málaga, Andalucía, Spain",,"Marbella, Costa del Sol Occidental, Málaga, Andalucía, España",36.508976,-4.88562
+296,/title/tt0257231/,,"Yunquera de Henares, Guadalajara, Castilla-La Mancha, Spain",,"Yunquera de Henares, Guadalajara, Castilla-La Mancha, 19210, España",40.7546981,-3.1662667
+297,/title/tt0133024/,,Switzerland,,Schweiz/Suisse/Svizzera/Svizra,46.7985624,8.2319736
+298,/title/tt0133024/,,"AVM Studios, Madras, India",(studio),,,
+299,/title/tt0133024/,,"Coimbatore Airport, India",,"Coimbatore International Airport, Avanishi Road, Goldwins, Ward 35, East Zone, Sulur, கோயம்புத்தூர் மாவட்டம், Tamil Nadu, 641062, India",11.0312326,77.04169829450647
+300,/title/tt0133024/,,"Filmistan Studios, Mumbai, Maharashtra, India",(studio),"Filmistan Studio, P/S Ward, Zone 4, Mumbai, Mumbai Suburban, Maharashtra, 400062, India",19.1653211,72.84477306829942
+301,/title/tt0133024/,,"Hiranadani Gardens, India",,,,
+302,/title/tt0133024/,,"Madras Port Trust, India",,,,
+303,/title/tt0133024/,,"Ooty, Tamil Nadu, India",,"உதகமண்டலம், Udhagamandalam, நீலகிரி மாவட்டம், Tamil Nadu, 643001, India",11.4126769,76.7030504
+304,/title/tt0133024/,,"S.N.D.T. College, Mumbai, Maharashtra, India",,,,
+305,/title/tt0133024/,,"Tarapore Garden Co-Op, India",,,,
+306,/title/tt0100661/,,"Columbus, New Mexico, USA",,"Columbus, Luna County, New Mexico, 88029, United States of America",31.8327963,-107.6402272
+307,/title/tt0497329/,,Bulgaria,,Бългaрия,42.6073975,25.4856617
+308,/title/tt1417108/,,"Guadalajara, Guadalajara, Castilla-La Mancha, Spain",,"Guadalajara, Castilla-La Mancha, España",40.6326979,-3.1646067
+309,/title/tt1417108/,,"Segovia, Castilla y León, Spain",,"Segovia, Castilla y León, España",40.9502159,-4.1241494
+310,/title/tt11375842/,,"Ann Arbor, Michigan, USA",,"Ann Arbor, Washtenaw County, Michigan, United States of America",42.2681569,-83.7312291
+311,/title/tt11375842/,,"Canton, Michigan, USA",,"Canton, Wayne County, Michigan, United States of America",42.3076547,-83.4868961
+312,/title/tt11375842/,,"Southfield, Michigan, USA",,"Southfield, Oakland County, Michigan, United States of America",42.4733689,-83.2218731
