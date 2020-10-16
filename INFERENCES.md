@@ -45,7 +45,7 @@ So every title will be an inidivual of one of the following classes:
     - TvMovie
   - Series
     - TvSeries
-    - TvMiniSeries
+      - TvMiniSeries
   - TvEpisode
   - TvSpecial
   - Video
