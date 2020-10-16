@@ -5,6 +5,7 @@ import folium
 from SPARQLWrapper import SPARQLWrapper, JSON
 from geopy.geocoders import Nominatim
 from geopy.extra.rate_limiter import RateLimiter
+from math import radians, cos, sin, asin, sqrt
 
 st.beta_set_page_config(layout="wide")  ## comment this out to disable widescreen
 
@@ -13,6 +14,56 @@ geolocator = Nominatim(user_agent=userName)
 geocode = RateLimiter(
     geolocator.geocode, min_delay_seconds=1.05, swallow_exceptions=True
 )
+
+def haversine(lon1, lat1, lon2, lat2):
+    """
+    Calculate the great circle distance between two points 
+    on the earth (specified in decimal degrees)
+    """
+    # convert decimal degrees to radians 
+    lon1, lat1, lon2, lat2 = map(radians, [lon1, lat1, lon2, lat2])
+
+    # haversine formula 
+    dlon = lon2 - lon1 
+    dlat = lat2 - lat1 
+    a = sin(dlat/2)**2 + cos(lat1) * cos(lat2) * sin(dlon/2)**2
+    c = 2 * asin(sqrt(a)) 
+    r = 6371 # Radius of earth in kilometers. Use 3956 for miles
+    return c * r
+
+
+def findAllLocations():
+    sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/projectTest")
+    sparql.setQuery(
+        """
+        PREFIX ex: <http://example.com/projectkand/>
+        select ?location ?lon ?lat ?sceneName where { 
+            ?location a ex:Location;
+                ex:hasLatitude ?lat;
+                ex:hasLongitude ?lon.
+            ?scene a ex:Scene;
+            	ex:hasLocation ?location.
+            ?scene rdfs:label ?sceneName 
+    } 
+    """
+    )
+    sparql.setReturnFormat(JSON)
+    results = sparql.query().convert()
+    locationList, lonList, latList, sceneList, dataList = [], [], [], [], []
+    for result in results["results"]["bindings"]:
+        locationList.append(result["location"]["value"])
+        lonList.append(result["lon"]["value"])
+        latList.append(result["lat"]["value"])
+        sceneList.append(result["sceneName"]["value"])
+    i = 0
+    while i < len(lonList):
+        tempList = [latList[i], lonList[i], sceneList[i]] #, locationList[i]
+        dataList.append(
+            tempList
+        )  ## datalist contains all info like coordinates, name of scene, name of location etc etc.
+        i += 1
+    return dataList  ##
+
 
 ##if user selects to enter a scene, loads all scene from the selected movie
 def findScene(show):
@@ -145,6 +196,8 @@ def findShowActor(Actor):  ## finds all movies with a specific actor in it
         showActorList.append(result["title"]["value"])
     return showActorList
 
+    
+
 
 def findCoordinatesLocation(location): ## This is currently not being used
     sparql = SPARQLWrapper("https://query.wikidata.org/bigdata/namespace/wdq/sparql")
@@ -272,17 +325,29 @@ with col1:
             "Type your location name here", key="textinput1"
         )
         radiusInput = st.number_input(
-            "Radius around the location, in meters",format='%i', min_value=0, value=0, key="numberinput1"
+            "Radius around the location, in kilometers",format='%f', min_value=0.5, value=1.0, key="numberinput1"
         )
-        if locationInput != "" and radiusInput != "":
+        if locationInput != "" and radiusInput > 0.5:
             with col3:
                 coordinatesList = []
                 coordinateOutput = geolocator.geocode(locationInput)
                 coordinatesList.extend([coordinateOutput.latitude , coordinateOutput.longitude])
+                allLocations = findAllLocations()
                 if coordinatesList != []:
-                    m2 = folium.Map(location=coordinatesList, zoom_start=12)
+                    m2 = folium.Map(location=coordinatesList, zoom_start=14)
                     folium.Circle(
-                        coordinatesList, radius=radiusInput, fill=True, fill_color="#3186cc"
+                        coordinatesList, radius=radiusInput*1000, fill=True, fill_color="#3186cc"
                     ).add_to(m2)
+                    for lat, lon, scene in allLocations:
+                        a = haversine(coordinatesList[1], coordinatesList[0], float(lon), float(lat))
+                        if a < (radiusInput):
+                            folium.Marker((lat,lon),tooltip=scene).add_to(m2)
+                            print(lon,lat, 'zit in de radius van', coordinatesList, 'op basis van radius', radiusInput)
                     folium_static(m2)
                     ## todo : actually search for scene locations within the radius
+
+## todo : set input radius
+## radius <700, zoom 15
+## radius 1000, zoom 14
+## radius 2000, zoom 13
+## radius 4000, zoom 12
