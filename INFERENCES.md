@@ -15,8 +15,6 @@
 
 ## Properties
 
-**All object properties** in our ontology can be marked as both **asymmetric** and **irreflexive**.
-
 ### hasActor
 
 ```
@@ -47,7 +45,7 @@ So every title will be an inidivual of one of the following classes:
     - TvMovie
   - Series
     - TvSeries
-    - TvMiniSeries
+      - TvMiniSeries
   - TvEpisode
   - TvSpecial
   - Video
