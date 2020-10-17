@@ -1,0 +1,1 @@
+{"Collections":[{"sheetName":"Sheet1","startColumn":"A","endColumn":"D","startRow":"2","endRow":"+","comment":"","rule":"Individual: @A*\nTypes: Person\nFacts: hasFullName @B*,\nbornIn @C*(xsd:integer),\ndiedIn @D*(xsd:integer)","active":true}]}

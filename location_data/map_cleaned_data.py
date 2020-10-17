@@ -18,7 +18,7 @@ def RemoveIllegalChars(input):
 merged = pd.read_csv(os.getcwd() + "/location_data/allmerged.csv")
 
 # Drop index columns
-# merged.drop(merged.columns[[0]], axis=1, inplace=True)
+#merged.drop(merged.columns[[0]], axis=1, inplace=True)
 
 # SCENE MAP
 # Get all rows with scenes
