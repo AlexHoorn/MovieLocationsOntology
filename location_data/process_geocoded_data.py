@@ -9,6 +9,17 @@ def GetKeyByValue(myDict, myValue):
             return key
     return ""
 
+def RemoveIllegalChars(input):
+    return (
+        str(input)
+        .replace('"', "")
+        .replace("'", "")
+        .replace("{", "")
+        .replace("}", "")
+        .replace("[", "")
+        .replace("]", "")
+        .replace(".", "")
+    )
 
 def RemoveSpace(input):
     return str(input).strip().replace("\n", "")
@@ -146,6 +157,8 @@ merged = merged[
     ]
 ]
 
+merged["sLabel"] = merged["sLabel"].apply(RemoveIllegalChars)
+
 print(merged.shape)
 
 #Create a identifier that we can use to match duplicate scenes
@@ -157,5 +170,5 @@ merged = merged.drop_duplicates(subset='rowconst', keep="first")
 print(merged.shape)
 
 # Save
-merged.to_csv(os.getcwd() + "/location_data/allmerged.csv")
-merged.to_excel(os.getcwd() + "/location_data/allmerged.xlsx")
+merged.to_csv(os.getcwd() + "/location_data/allmerged.csv", index=False)
+merged.to_excel(os.getcwd() + "/location_data/allmerged.xlsx", index=False)
