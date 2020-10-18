@@ -243,8 +243,8 @@ ml:Video rdf:type owl:Class ;
          rdfs:subClassOf ml:Show .
 
 
-###  http://example.com/movieLocations/Videogame
-ml:Videogame rdf:type owl:Class ;
+###  http://example.com/movieLocations/VideoGame
+ml:VideoGame rdf:type owl:Class ;
              rdfs:subClassOf ml:Show .
 
 
