@@ -1,8 +1,9 @@
-.ipynb_checkpoints
-.mypy_cache
-.vscode
-raw_data/*.tsv
-.pre-commit-config-yaml
-cellfie.log
+__pycache__
 .DS_Store
+.ipynb_checkpoints
 .log
+.mypy_cache
+.pre-commit-config-yaml
+.vscode
+cellfie.log
+raw_data/*.tsv
