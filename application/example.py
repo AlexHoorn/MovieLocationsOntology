@@ -10,7 +10,7 @@ with st.spinner("Loading ontology, this could take some time the first run"):
     g = load_ontology("../ontology/PopulatedOntology.owl")
 
 default_query = (
-    "SELECT * WHERE {?actor rdf:type ml:Actor; ml:hasFullName ?name} LIMIT 100"
+    "SELECT * WHERE {?actor a ml:Actor; rdfs:label ?name} LIMIT 100"
 )
 query = st.text_area("Query", default_query)
 

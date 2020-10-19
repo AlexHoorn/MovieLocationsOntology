@@ -1,5 +1,6 @@
 import streamlit as st
 import streamlit.components.v1 as comp
+from components import load_ontology, query_to_pandas
 from streamlit_folium import folium_static
 import folium
 from SPARQLWrapper import SPARQLWrapper, JSON
@@ -14,6 +15,10 @@ geolocator = Nominatim(user_agent=userName)
 geocode = RateLimiter(
     geolocator.geocode, min_delay_seconds=1.05, swallow_exceptions=True
 )
+
+with st.spinner("Loading ontology, this could take some time the first run"):
+    # Loads the ontology, the output of this gets cached, returns a Graph
+    g = load_ontology("../ontology/PopulatedOntology.owl")
 
 
 def haversine(
@@ -34,30 +39,30 @@ def haversine(
     r = 6371  # Radius of earth in kilometers. Use 3956 for miles
     return c * r
 
-
+@st.cache
 def findAllLocations():
-    sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/projectTest")
-    sparql.setQuery(
+    #sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/projectTest")
+    query = (
         """
-        PREFIX ex: <http://example.com/projectkand/>
         select ?location ?lon ?lat ?sceneName where { 
-            ?location a ex:Location;
-                ex:hasLatitude ?lat;
-                ex:hasLongitude ?lon.
-            ?scene a ex:Scene;
-            	ex:hasLocation ?location.
-            ?scene rdfs:label ?sceneName 
+            ?any_scene rdfs:subClassOf* ml:Scene . 
+            ?scene rdf:type ?any_scene; 
+            	ml:hasLocation ?location.    
+            ?scene rdfs:label ?sceneName.
+            ?location ml:hasLatitude ?lat;
+                      ml:hasLongitude ?lon.
+            
     } 
     """
     )
-    sparql.setReturnFormat(JSON)
-    results = sparql.query().convert()
+    #sparql.setReturnFormat(JSON)
+    #results = sparql.query().convert()
     locationList, lonList, latList, sceneList, dataList = [], [], [], [], []
-    for result in results["results"]["bindings"]:
-        locationList.append(result["location"]["value"])
-        lonList.append(result["lon"]["value"])
-        latList.append(result["lat"]["value"])
-        sceneList.append(result["sceneName"]["value"])
+    for result in g.query(query):
+        locationList.append(result[0])
+        lonList.append(result[1])
+        latList.append(result[2])
+        sceneList.append(result[3])
     i = 0
     while i < len(lonList):
         tempList = [latList[i], lonList[i], sceneList[i]]  # , locationList[i]
@@ -85,33 +90,35 @@ def findScene(show):
         filterstr = filterstr[:-3]  ## remove last 3 characters of str, which are "|| "
         filterstr = filterstr + ")"
 
-    sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/projectTest")
-    sparql.setQuery(
+    #sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/projectTest")
+    #sparql.setQuery
+    query = (
         """
-        PREFIX ex: <http://example.com/projectkand/>
         PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         select DISTINCT ?sceneName ?lon ?lat ?label where { 
-        ?show a ex:Show.
-        ?show ex:hasPrimaryTitle ?title.
-        ?show ex:hasScene ?scene.
+        ?any_show rdfs:subClassOf* ml:Show . 
+        ?show rdf:type ?any_show.    
+        ?show rdfs:label ?title.
+        ?show ml:hasScene ?scene.
         ?scene rdfs:label ?sceneName.
-    	?scene ex:hasLocation ?location.
-    	    ?location ex:hasLongitude ?lon;
-            ex:hasLatitude ?lat;
+    	?scene ml:hasLocation ?location.
+    	    ?location ml:hasLongitude ?lon;
+            ml:hasLatitude ?lat;
             rdfs:label ?label   
         %s 
     } 
     """
         % (filterstr)
-    )  ## paste the show far into the string with %
-    sparql.setReturnFormat(JSON)
-    results = sparql.query().convert()
+    )
+      ## paste the show far into the string with %
+    #sparql.setReturnFormat(JSON)
+    #results = sparql.query().convert()
     sceneList, lonList, latList, dataList, labelList = [], [], [], [], []
-    for result in results["results"]["bindings"]:
-        sceneList.append(result["sceneName"]["value"])
-        lonList.append(result["lon"]["value"])
-        latList.append(result["lat"]["value"])
-        labelList.append(result["label"]["value"])
+    for result in g.query(query):
+        sceneList.append(result[0])
+        lonList.append(result[1])
+        latList.append(result[2])
+        labelList.append(result[3])
     i = 0
     while i < len(lonList):
         tempList = [latList[i], lonList[i], labelList[i]]
@@ -123,48 +130,54 @@ def findScene(show):
     mappingCoordinates = dict(
         zip(sceneList, dataList)
     )  ## lat = value[0], lon = value[1], location = value[2]
+    #print('dit is de sceneList', sceneList)
+    #print('dit is de mappingCoordinates', mappingCoordinates)
     return sceneList, mappingCoordinates  ##
 
-
+@st.cache
 def findShow():
-    sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/projectTest")
-    sparql.setQuery(
-        """
-        PREFIX ex: <http://example.com/projectkand/>
+    ##    PREFIX ml: <http://example.com/movieLocations/>
+    ##    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    #sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/projectTest")
+    #sparql.setQuery
+    query = """  
+        PREFIX ml: <http://example.com/movieLocations/>
+        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         select DISTINCT ?title where { 
-            ?show a ex:Show;
-                ex:hasPrimaryTitle ?title;
-                  
-            
-    } 
+            ?any_show rdfs:subClassOf* ml:Show . 
+            ?show rdf:type ?any_show;
+                    rdfs:label ?title     } 
     """
-    )
-    sparql.setReturnFormat(JSON)
-    results = sparql.query().convert()
+
+    #results = g.query(query)
     showList = []
-    for result in results["results"]["bindings"]:
-        showList.append(result["title"]["value"])
+    #print(results)
+    #print('hoi')
+
+    for result in g.query(query):
+        showList.append(result[0])
     return showList
 
-
+@st.cache
 def findActor():
-    sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/projectTest")
-    sparql.setQuery(
+    #sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/projectTest")
+    #sparql.setQuery
+    query = (
         """
         PREFIX ex: <http://example.com/projectkand/>
         select DISTINCT ?name ?actor where { 
-            ?character ex:playedBy ?actor.
-            ?actor ex:hasFullName ?name
+            ?character ml:playedBy ?actor.
+            ?actor rdfs:label ?name
     }
     """
     )
-    sparql.setReturnFormat(JSON)
-    results = sparql.query().convert()
+    #sparql.setReturnFormat(JSON)
+    #results = sparql.query().convert()
     actorNameList = []
     actorList = []  ## contains the actor code for our ontology
-    for result in results["results"]["bindings"]:
-        actorNameList.append(result["name"]["value"])
-        actorList.append(result["actor"]["value"])
+    for result in g.query(query):
+        actorNameList.append(result[0])
+        actorList.append(result[1])
     actorNameList2 = []
     for (
         actor
@@ -177,26 +190,27 @@ def findActor():
 
 
 def findShowActor(Actor):  ## finds all movies with a specific actor in it
-    sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/projectTest")
-    sparql.setQuery(
+    #sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/projectTest")
+    #sparql.setQuery
+    query = ( 
         """
-        PREFIX ex: <http://example.com/projectkand/>
         select DISTINCT ?title where { 
-            ?actor ex:hasFullName '%s'.
-            ?show a ex:Show.
-            ?show ex:hasCharacter ?character.
-            ?character ex:playedBy ?actor.
-            ?show ex:hasPrimaryTitle ?title;
-                    ex:hasScene ?scene  
+            ?any_show rdfs:subClassOf* ml:Show . 
+            ?show rdf:type ?any_show.
+            ?show ml:hasCharacter ?character.
+            ?character ml:playedBy ?actor.
+            ?actor rdfs:label '%s'.
+            ?show rdfs:label ?title;
+                    ml:hasScene ?scene  
     } 
     """
         % (Actor)
-    )  ## when i say "movie ex:hasCharacter" it doesn't work. It infers actors in protege, but not in graphdb...
-    sparql.setReturnFormat(JSON)
-    results = sparql.query().convert()
+    )  
+    #sparql.setReturnFormat(JSON)
+    #results = sparql.query().convert()
     showActorList = []
-    for result in results["results"]["bindings"]:
-        showActorList.append(result["title"]["value"])
+    for result in g.query(query):
+        showActorList.append(result[0])
     return showActorList
 
 
@@ -219,7 +233,7 @@ def findCoordinatesLocation(location):  ## This is currently not being used
     )
     sparql.setReturnFormat(JSON)
     results = sparql.query().convert()
-    print(results)
+    #print(results)
     coordinates = ""
     for result in results["results"]["bindings"]:
         coordinates = result["coordinates"]["value"]  ## get the coordinate value
