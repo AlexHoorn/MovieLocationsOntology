@@ -1,6 +1,6 @@
 import streamlit as st
 import streamlit.components.v1 as comp
-from components import load_ontology, query_to_pandas
+#from components import load_ontology, query_to_pandas
 from streamlit_folium import folium_static
 import folium
 from SPARQLWrapper import SPARQLWrapper, JSON
@@ -16,9 +16,11 @@ geocode = RateLimiter(
     geolocator.geocode, min_delay_seconds=1.05, swallow_exceptions=True
 )
 
-with st.spinner("Loading ontology, this could take some time the first run"):
-    # Loads the ontology, the output of this gets cached, returns a Graph
-    g = load_ontology("../ontology/PopulatedOntology.owl")
+sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/test2")
+
+#with st.spinner("Loading ontology, this could take some time the first run"):
+#    # Loads the ontology, the output of this gets cached, returns a Graph
+#    g = load_ontology("../ontology/PopulatedOntology.owl")
 
 
 def haversine(
@@ -39,30 +41,31 @@ def haversine(
     r = 6371  # Radius of earth in kilometers. Use 3956 for miles
     return c * r
 
-@st.cache
+
 def findAllLocations():
-    #sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/projectTest")
-    query = (
+    #sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/test3")
+    sparql.setQuery(
         """
+        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+        PREFIX ml: <http://example.com/movieLocations/>
+        PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
         select ?location ?lon ?lat ?sceneName where { 
-            ?any_scene rdfs:subClassOf* ml:Scene . 
-            ?scene rdf:type ?any_scene; 
-            	ml:hasLocation ?location.    
-            ?scene rdfs:label ?sceneName.
+            ?scene a ml:Scene;
+                ml:hasLocation ?location;    
+                rdfs:label ?sceneName.
             ?location ml:hasLatitude ?lat;
-                      ml:hasLongitude ?lon.
-            
-    } 
+                    ml:hasLongitude ?lon. 
+        }
     """
     )
-    #sparql.setReturnFormat(JSON)
-    #results = sparql.query().convert()
+    sparql.setReturnFormat(JSON)
+    results = sparql.query().convert()
     locationList, lonList, latList, sceneList, dataList = [], [], [], [], []
-    for result in g.query(query):
-        locationList.append(result[0])
-        lonList.append(result[1])
-        latList.append(result[2])
-        sceneList.append(result[3])
+    for result in results["results"]["bindings"]:
+        locationList.append(result['location']['value'])
+        lonList.append(result['lon']['value'])
+        latList.append(result['lat']['value'])
+        sceneList.append(result['sceneName']['value'])
     i = 0
     while i < len(lonList):
         tempList = [latList[i], lonList[i], sceneList[i]]  # , locationList[i]
@@ -74,6 +77,7 @@ def findAllLocations():
 
 
 ##if user selects to enter a scene, loads all scene from the selected movie
+
 def findScene(show):
     filterstr = ""  ## string that gets inserted into the query, contains the filter
     if len(show) == 1:
@@ -90,35 +94,33 @@ def findScene(show):
         filterstr = filterstr[:-3]  ## remove last 3 characters of str, which are "|| "
         filterstr = filterstr + ")"
 
-    #sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/projectTest")
-    #sparql.setQuery
-    query = (
+    #sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/test3")
+    sparql.setQuery(
         """
+        PREFIX ml: <http://example.com/movieLocations/>
         PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         select DISTINCT ?sceneName ?lon ?lat ?label where { 
-        ?any_show rdfs:subClassOf* ml:Show . 
-        ?show rdf:type ?any_show.    
-        ?show rdfs:label ?title.
-        ?show ml:hasScene ?scene.
-        ?scene rdfs:label ?sceneName.
-    	?scene ml:hasLocation ?location.
-    	    ?location ml:hasLongitude ?lon;
-            ml:hasLatitude ?lat;
-            rdfs:label ?label   
-        %s 
+            ?show ml:hasScene ?scene.
+            ?show rdfs:label ?title.
+            ?scene rdfs:label ?sceneName.
+            ?scene ml:hasLocation ?location.
+            ?location ml:hasLongitude ?lon;
+                ml:hasLatitude ?lat;
+                rdfs:label ?label   
+            %s 
     } 
     """
         % (filterstr)
     )
       ## paste the show far into the string with %
-    #sparql.setReturnFormat(JSON)
-    #results = sparql.query().convert()
+    sparql.setReturnFormat(JSON)
+    results = sparql.query().convert()
     sceneList, lonList, latList, dataList, labelList = [], [], [], [], []
-    for result in g.query(query):
-        sceneList.append(result[0])
-        lonList.append(result[1])
-        latList.append(result[2])
-        labelList.append(result[3])
+    for result in results["results"]["bindings"]:
+        sceneList.append(result['sceneName']['value'])
+        lonList.append(result['lon']['value'])
+        latList.append(result['lat']['value'])
+        labelList.append(result['label']['value'])
     i = 0
     while i < len(lonList):
         tempList = [latList[i], lonList[i], labelList[i]]
@@ -134,50 +136,46 @@ def findScene(show):
     #print('dit is de mappingCoordinates', mappingCoordinates)
     return sceneList, mappingCoordinates  ##
 
-@st.cache
+
 def findShow():
-    ##    PREFIX ml: <http://example.com/movieLocations/>
-    ##    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-    #sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/projectTest")
-    #sparql.setQuery
-    query = """  
+    #sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/test3")
+    sparql.setQuery(
+        """  
         PREFIX ml: <http://example.com/movieLocations/>
         PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         select DISTINCT ?title where { 
-            ?any_show rdfs:subClassOf* ml:Show . 
-            ?show rdf:type ?any_show;
-                    rdfs:label ?title     } 
+                ?show a ml:Show;
+                    rdfs:label ?title     
+                    } 
     """
-
-    #results = g.query(query)
+    )
+    sparql.setReturnFormat(JSON)
+    results = sparql.query().convert()
     showList = []
-    #print(results)
-    #print('hoi')
-
-    for result in g.query(query):
-        showList.append(result[0])
+    for result in results["results"]["bindings"]:
+        showList.append(result["title"]["value"])
     return showList
 
-@st.cache
+
 def findActor():
-    #sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/projectTest")
-    #sparql.setQuery
-    query = (
+    #sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/test3")
+    sparql.setQuery(
         """
-        PREFIX ex: <http://example.com/projectkand/>
+        PREFIX ml: <http://example.com/movieLocations/>
         select DISTINCT ?name ?actor where { 
-            ?character ml:playedBy ?actor.
-            ?actor rdfs:label ?name
+            ?actor a ml:Actor;
+                 rdfs:label ?name.
+            ?
     }
     """
     )
-    #sparql.setReturnFormat(JSON)
-    #results = sparql.query().convert()
+    sparql.setReturnFormat(JSON)
+    results = sparql.query().convert()
     actorNameList = []
     actorList = []  ## contains the actor code for our ontology
-    for result in g.query(query):
-        actorNameList.append(result[0])
-        actorList.append(result[1])
+    for result in results["results"]["bindings"]:
+        actorNameList.append(result['name']['value'])
+        actorList.append(result['actor']['value'])
     actorNameList2 = []
     for (
         actor
@@ -188,15 +186,12 @@ def findActor():
         actorNameList2.append(actor)
     return actorNameList2
 
-
 def findShowActor(Actor):  ## finds all movies with a specific actor in it
-    #sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/projectTest")
-    #sparql.setQuery
-    query = ( 
+    #sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/test3")
+    sparql.setQuery( 
         """
+        PREFIX ml: <http://example.com/movieLocations/>
         select DISTINCT ?title where { 
-            ?any_show rdfs:subClassOf* ml:Show . 
-            ?show rdf:type ?any_show.
             ?show ml:hasCharacter ?character.
             ?character ml:playedBy ?actor.
             ?actor rdfs:label '%s'.
@@ -206,11 +201,11 @@ def findShowActor(Actor):  ## finds all movies with a specific actor in it
     """
         % (Actor)
     )  
-    #sparql.setReturnFormat(JSON)
-    #results = sparql.query().convert()
+    sparql.setReturnFormat(JSON)
+    results = sparql.query().convert()
     showActorList = []
-    for result in g.query(query):
-        showActorList.append(result[0])
+    for result in results["results"]["bindings"]:
+        showActorList.append(result['title']['value'])
     return showActorList
 
 
