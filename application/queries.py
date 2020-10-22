@@ -1,7 +1,6 @@
 from SPARQLWrapper import SPARQLWrapper, JSON
 
-
-sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/test2")
+sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/test3")
 
 def findAllLocations():
     #sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/test3")
@@ -10,7 +9,9 @@ def findAllLocations():
         PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         PREFIX ml: <http://example.com/movieLocations/>
         PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-        select ?location ?lon ?lat ?sceneName where { 
+        select ?location ?lon ?lat ?sceneName ?movieName where { 
+            ?movie ml:hasScene ?scene;
+                    rdfs:label ?movieName.
             ?scene a ml:Scene;
                 ml:hasLocation ?location;    
                 rdfs:label ?sceneName.
@@ -21,15 +22,16 @@ def findAllLocations():
     )
     sparql.setReturnFormat(JSON)
     results = sparql.query().convert()
-    locationList, lonList, latList, sceneList, dataList = [], [], [], [], []
+    locationList, lonList, latList, sceneList, movieList, dataList = [], [], [], [], [], []
     for result in results["results"]["bindings"]:
         locationList.append(result['location']['value'])
         lonList.append(result['lon']['value'])
         latList.append(result['lat']['value'])
         sceneList.append(result['sceneName']['value'])
+        movieList.append(result['movieName']['value'])
     i = 0
     while i < len(lonList):
-        tempList = [latList[i], lonList[i], sceneList[i]]  # , locationList[i]
+        tempList = [latList[i], lonList[i], sceneList[i], movieList[i]]  # , locationList[i]
         dataList.append(
             tempList
         )  ## datalist contains all info like coordinates, name of scene, name of location etc etc.
@@ -132,10 +134,10 @@ def findActor():
     sparql.setReturnFormat(JSON)
     results = sparql.query().convert()
     actorNameList = []
-    actorList = []  ## contains the actor code for our ontology
+    #actorList = []  ## contains the actor code for our ontology
     for result in results["results"]["bindings"]:
         actorNameList.append(result['name']['value'])
-        actorList.append(result['actor']['value'])
+        #actorList.append(result['actor']['value'])
     actorNameList2 = []
     for (
         actor

@@ -153,7 +153,7 @@ with col1:
                         fill=True,
                         fill_color="#3186cc",
                     ).add_to(m2)
-                    for lat, lon, scene in allLocations:
+                    for lat, lon, scene, movie in allLocations:
                         a = haversine(
                             coordinatesList[1],
                             coordinatesList[0],
@@ -161,7 +161,7 @@ with col1:
                             float(lat),
                         )
                         if a < (radiusInput):
-                            folium.Marker((lat, lon), tooltip=scene).add_to(m2)
+                            folium.Marker((lat, lon), tooltip=scene, popup=movie).add_to(m2)
                             print(
                                 lon,
                                 lat,
