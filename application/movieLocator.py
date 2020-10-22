@@ -138,39 +138,54 @@ with col1:
             key="numberinput1",
         )
         if locationInput != "" and radiusInput > 0.5:
-            with col3:
-                coordinatesList = []
-                coordinateOutput = geolocator.geocode(locationInput)
-                coordinatesList.extend(
-                    [coordinateOutput.latitude, coordinateOutput.longitude]
-                )
-                allLocations = Q.findAllLocations()
-                if coordinatesList != []:
-                    m2 = folium.Map(location=coordinatesList, zoom_start=14)
-                    folium.Circle(
-                        coordinatesList,
-                        radius=radiusInput * 1000,
-                        fill=True,
-                        fill_color="#3186cc",
-                    ).add_to(m2)
-                    for lat, lon, scene, movie in allLocations:
-                        a = haversine(
-                            coordinatesList[1],
-                            coordinatesList[0],
-                            float(lon),
-                            float(lat),
-                        )
-                        if a < (radiusInput):
-                            folium.Marker((lat, lon), tooltip=scene, popup=movie).add_to(m2)
-                            print(
-                                lon,
-                                lat,
-                                "zit in de radius van",
-                                coordinatesList,
-                                "op basis van radius",
-                                radiusInput,
-                            )
-                    folium_static(m2)
+            coordinatesList = []
+            coordinateOutput = geolocator.geocode(locationInput)
+            coordinatesList.extend(
+                [coordinateOutput.latitude, coordinateOutput.longitude]
+            )
+            allLocations = Q.findAllLocations()
+            if coordinatesList != []:
+                m2 = folium.Map(location=coordinatesList, zoom_start=14)
+                folium.Circle(
+                    coordinatesList,
+                    radius=radiusInput * 1000,
+                    fill=True,
+                    fill_color="#3186cc",
+                ).add_to(m2)
+                dictSceneMovie = {}
+                tempSceneList, tempMovieList = [], []
+                finalList = []
+                for lat, lon, scene, movie in allLocations:
+                    a = haversine( ## does a radius check, comparing every scene in the ontology to the user input location
+                        coordinatesList[1],
+                        coordinatesList[0],
+                        float(lon),
+                        float(lat),
+                    )
+                    if a < (radiusInput): ## if the scene is in the radius, create the marker
+                        tempMovieList.append(movie)
+                        tempvar = [lat,lon,scene,movie]
+                        finalList.append(tempvar)
+
+                movieList = ['Select all movies'] 
+                for movie in tempMovieList:
+                    if movie not in movieList: ## creates a list, without duplicates, of all movies within the radius, including the "select all movies"
+                        movieList.append(movie)
+
+                movieLocationInput = st.multiselect('Select your movies!', movieList, key=123123)
+
+                if movieLocationInput != []:
+                    if st.button('render map!'):
+                        print('dit is de locationInput::::', movieLocationInput)
+                        if 'Select all movies' in movieLocationInput:
+                            for lat, lon, scene, movie in finalList:
+                                folium.Marker((lat, lon), tooltip=scene, popup=movie).add_to(m2)
+                        else:
+                            for lat, lon, scene, movie in finalList:
+                                if movie in movieLocationInput:
+                                    folium.Marker((lat, lon), tooltip=scene, popup=movie).add_to(m2)
+                        with col3:
+                            folium_static(m2)
 
 ## todo : set input radius
 ## radius <700, zoom 15
