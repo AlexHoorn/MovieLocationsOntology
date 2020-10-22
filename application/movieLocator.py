@@ -1,13 +1,15 @@
 import streamlit as st
 import streamlit.components.v1 as comp
 import queries as Q
-#from components import load_ontology, query_to_pandas
+
+# from components import load_ontology, query_to_pandas
 from streamlit_folium import folium_static
 import folium
 from SPARQLWrapper import SPARQLWrapper, JSON
 from geopy.geocoders import Nominatim
 from geopy.extra.rate_limiter import RateLimiter
 from math import radians, cos, sin, asin, sqrt
+import random
 
 
 st.beta_set_page_config(layout="wide")  ## comment this out to disable widescreen
@@ -20,7 +22,7 @@ geocode = RateLimiter(
 
 sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/test2")
 
-#with st.spinner("Loading ontology, this could take some time the first run"):
+# with st.spinner("Loading ontology, this could take some time the first run"):
 #    # Loads the ontology, the output of this gets cached, returns a Graph
 #    g = load_ontology("../ontology/PopulatedOntology.owl")
 
@@ -77,17 +79,19 @@ with col1:
                 for x in coordinates:
                     folium.Marker(x, popup=locations[i], tooltip=scenes[i]).add_to(m2)
                     i += 1
-                if st.button("test!", key="showButton"):
+                if st.button("Show map!", key="showButton"):
                     with col3:
                         folium_static(m2)
-                        if st.button(
+                        if st.button(  ## buttons to re-render the map with the next/previous scene in the list as the starting point.
                             "Next scene", key="nextButton"
-                        ):  ## These buttons do not work, I am having some issues with folium
-                            tracker += 1
+                        ):  ## A button inside of another button doesn't work, I think because if you click it it reloads and goes out of the previous if-statement
+                            tracker += 1  ## solution could be to not have the "show map" button but instead already have 2 buttons similar to next/previous scene
                             m2.location = coordinates[tracker]
+                            folium_static(m2)
                         if st.button("Previous scene"):
-                            tracker -= 1
+                            tracker -= 1  ## Tracker also resets everytime, not sure if you can easily save variables like this during reloads
                             m2.location = coordinates[tracker]
+                            folium_static(m2)
 
 with col1:
     with st.beta_expander("Actors"):
@@ -146,7 +150,7 @@ with col1:
             allLocations = Q.findAllLocations()
             if coordinatesList != []:
                 m2 = folium.Map(location=coordinatesList, zoom_start=14)
-                folium.Circle(
+                folium.Circle(  ## create radius circle
                     coordinatesList,
                     radius=radiusInput * 1000,
                     fill=True,
@@ -156,34 +160,52 @@ with col1:
                 tempSceneList, tempMovieList = [], []
                 finalList = []
                 for lat, lon, scene, movie in allLocations:
-                    a = haversine( ## does a radius check, comparing every scene in the ontology to the user input location
+                    a = haversine(  ## does a radius check, comparing every scene in the ontology to the user input location
                         coordinatesList[1],
                         coordinatesList[0],
                         float(lon),
                         float(lat),
                     )
-                    if a < (radiusInput): ## if the scene is in the radius, create the marker
+                    if a < (
+                        radiusInput
+                    ):  ## all the movies of which there are scenes get added to a list
                         tempMovieList.append(movie)
-                        tempvar = [lat,lon,scene,movie]
+                        tempvar = [
+                            lat,
+                            lon,
+                            scene,
+                            movie,
+                        ]  ## all the scenes in the radius also get added in a different list, with their movie and coordinates
                         finalList.append(tempvar)
 
-                movieList = ['Select all movies'] 
+                movieList = ["Select all movies"]
                 for movie in tempMovieList:
-                    if movie not in movieList: ## creates a list, without duplicates, of all movies within the radius, including the "select all movies"
+                    if (
+                        movie not in movieList
+                    ):  ## creates a list, without duplicates, of all movies within the radius, including the "select all movies"
                         movieList.append(movie)
 
-                movieLocationInput = st.multiselect('Select your movies!', movieList, key=123123)
+                movieLocationInput = st.multiselect(
+                    "Select your movies!", movieList, key=123123
+                )
 
                 if movieLocationInput != []:
-                    if st.button('render map!'):
-                        print('dit is de locationInput::::', movieLocationInput)
-                        if 'Select all movies' in movieLocationInput:
+                    if st.button("Render map!"):
+                        if (
+                            "Select all movies" in movieLocationInput
+                        ):  ## if "Select all movies" is chosen, render all the scenes in the radius
                             for lat, lon, scene, movie in finalList:
-                                folium.Marker((lat, lon), tooltip=scene, popup=movie).add_to(m2)
+                                folium.Marker(
+                                    (lat, lon), tooltip=scene, popup=movie
+                                ).add_to(m2)
                         else:
                             for lat, lon, scene, movie in finalList:
-                                if movie in movieLocationInput:
-                                    folium.Marker((lat, lon), tooltip=scene, popup=movie).add_to(m2)
+                                if (
+                                    movie in movieLocationInput
+                                ):  ## otherwise, render the scenes in the radius of the selected movies only.
+                                    folium.Marker(
+                                        (lat, lon), tooltip=scene, popup=movie
+                                    ).add_to(m2)
                         with col3:
                             folium_static(m2)
 
