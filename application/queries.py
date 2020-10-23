@@ -1,5 +1,36 @@
 from SPARQLWrapper import SPARQLWrapper, JSON
 
+
+def wikidataActor(actorNumber):
+    sparql = SPARQLWrapper("https://query.wikidata.org/bigdata/namespace/wdq/sparql")
+    sparql.setQuery(
+        """
+        PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+        PREFIX wd: <http://www.wikidata.org/entity/>
+        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+        PREFIX wikibase: <http://wikiba.se/ontology#>
+        PREFIX bd: <http://www.bigdata.com/rdf#>
+        SELECT ?actor  ?image ?actorDescription  WHERE {   
+            ?actor wdt:P345 '%s'.
+            OPTIONAL{?actor wdt:P18 ?image.}
+            SERVICE wikibase:label {bd:serviceParam wikibase:language "en".
+            }
+                       
+        }
+    """
+    #SERVICE wikibase:label { bd:serviceParam wikibase:language "en" . ?countryWD rdfs:label ?countryWDlabel . ?coordinates rdfs:label ?
+    %actorNumber
+    )
+    sparql.setReturnFormat(JSON)
+    results = sparql.query().convert()
+    imageList, description = [], ''
+    for result in results["results"]["bindings"]:
+        if "image" in result:
+            imageList.append(result["image"]["value"])
+        description = result["actorDescription"]["value"]
+    return imageList, description
+
+
 def findAllLocations(sparql):
     #sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/test3")
     sparql.setQuery(

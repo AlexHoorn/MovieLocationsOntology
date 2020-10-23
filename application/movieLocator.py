@@ -4,9 +4,16 @@ import folium
 import streamlit as st
 from SPARQLWrapper import SPARQLWrapper
 from streamlit_folium import folium_static
+from geopy.extra.rate_limiter import RateLimiter
+from geopy.geocoders import Nominatim
 
 import queries as Q
 from components import get_config, overwrite_config, verify_endpoint
+
+from PIL import Image
+import requests
+from io import BytesIO
+
 
 st.beta_set_page_config(layout="wide")  ## comment this out to disable widescreen
 
@@ -37,6 +44,15 @@ if endpoint == "":
 
 sparql = SPARQLWrapper(endpoint)
 
+
+#### Setting up the geolocator which is neccesary for the location func, pls don't delete #####
+userName = "sceneLocator"
+geolocator = Nominatim(user_agent=userName)
+geocode = RateLimiter(
+    geolocator.geocode, min_delay_seconds=1.05, swallow_exceptions=True
+)
+##################################################################################################
+
 # with st.spinner("Loading ontology, this could take some time the first run"):
 #    # Loads the ontology, the output of this gets cached, returns a Graph
 #    g = load_ontology("../ontology/PopulatedOntology.owl")
@@ -61,7 +77,7 @@ def haversine(
     return c * r
 
 
-col0, col1, col2, col3 = st.beta_columns([1, 3, 1, 5])
+col0, col1, col2, col3, col4, col5, col6 = st.beta_columns([0.5, 2, 0.5, 3, 0.5, 1.3, 0.2]) ## the small columns (0.5) are used for padding purposes
 with col1:
     st.title("Movie location finder")
     st.text("So that you can fall into the same vulcano as Gollum")
@@ -111,7 +127,7 @@ with col1:
 with col1:
     with st.beta_expander("Actors"):
         
-        actorList, adctorDict = Q.findActor(sparql)
+        actorList, actorDict = Q.findActor(sparql)
         st.write("Total number of actors in list = " + str(len(actorList)))
         inputActor = st.selectbox("Select your favorite Actor", actorList, key="3")
         actorNumber = ''
@@ -121,9 +137,18 @@ with col1:
                     actorNumber = value
                     break
             print('dit is het actornumber', actorNumber)
-            showActorList = Q.findShowActor(inputActor, sparql)
+            wikiImage, wikiDescription = Q.wikidataActor(actorNumber)
+            showActorList = Q.findShowActor(sparql, inputActor)
             inputShow2 = st.multiselect("select a show", showActorList, key="4")
             st.write("Total number of movies in list = " + str(len(showActorList)))
+            if wikiImage != []:
+                with col5:
+                    response = requests.get(wikiImage[0])
+                    img = Image.open(BytesIO(response.content))
+                    st.image(img,  use_column_width=True, caption=inputActor)
+            if wikiDescription != '' :
+                with col5:
+                    st.write(wikiDescription)
             if inputShow2 != []:
                 sceneList, mappingCoordinates = Q.findScene(sparql, inputShow2)
                 inputScene = st.multiselect("Select your scene", sceneList, key="5")
