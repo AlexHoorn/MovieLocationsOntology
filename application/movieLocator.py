@@ -2,9 +2,7 @@ from math import asin, cos, radians, sin, sqrt
 
 import folium
 import streamlit as st
-from geopy.extra.rate_limiter import RateLimiter
-from geopy.geocoders import Nominatim
-from SPARQLWrapper import JSON, SPARQLWrapper
+from SPARQLWrapper import SPARQLWrapper
 from streamlit_folium import folium_static
 
 import queries as Q

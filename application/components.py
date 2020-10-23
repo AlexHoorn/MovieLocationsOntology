@@ -8,7 +8,23 @@ from SPARQLWrapper import CSV, SPARQLWrapper
 
 
 class WrongOntologyError(Exception):
-    pass
+    def __init__(
+        self,
+        msg="The wrong ontology file seems to be loaded, please load `PopulatedOntology_Reasoned.owl`.",
+        *args,
+        **kwargs,
+    ):
+        super().__init__(msg, *args, **kwargs)
+
+
+class WrongRulesetError(Exception):
+    def __init__(
+        self,
+        msg="The wrong ruleset seems to be enabled, please set this to `No inference`.",
+        *args,
+        **kwargs,
+    ):
+        super().__init__(msg, *args, **kwargs)
 
 
 def get_config_path():
@@ -59,9 +75,13 @@ def verify_endpoint(endpoint: str):
             sparql, "SELECT * WHERE {?actor rdf:type ml:Actor} LIMIT 5"
         )
         if not len(actors) > 0:
-            raise WrongOntologyError(
-                "The wrong ontology file seems to be loaded, please load `PopulatedOntology_Reasoned.owl`"
-            )
+            raise WrongOntologyError()
+
+        shows = query_to_pandas(
+            sparql, "SELECT * WHERE {?show rdf:type ml:Show} LIMIT 5"
+        )
+        if not len(shows) == 0:
+            raise WrongRulesetError()
 
     except Exception as e:
         raise e
