@@ -105,8 +105,9 @@ def findShow(sparql):
         PREFIX ml: <http://example.com/movieLocations/>
         PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         select DISTINCT ?title where { 
-                ?show a ml:Show;
-                    rdfs:label ?title     
+                ?show rdf:type ?any_show;
+                    rdfs:label ?title.
+                ?any_show rdfs:subClassOf* ml:Show.
                     } 
     """
     )
