@@ -1,14 +1,42 @@
-import streamlit as st
-import streamlit.components.v1 as comp
-#from components import load_ontology, query_to_pandas
-from streamlit_folium import folium_static
+from math import asin, cos, radians, sin, sqrt
+
 import folium
-from SPARQLWrapper import SPARQLWrapper, JSON
-from geopy.geocoders import Nominatim
+import streamlit as st
 from geopy.extra.rate_limiter import RateLimiter
-from math import radians, cos, sin, asin, sqrt
+from geopy.geocoders import Nominatim
+from SPARQLWrapper import JSON, SPARQLWrapper
+from streamlit_folium import folium_static
+
+from components import get_config, overwrite_config, verify_endpoint
 
 st.beta_set_page_config(layout="wide")  ## comment this out to disable widescreen
+
+# Fetches configuration
+config = get_config()
+endpoint = config["Configuration"]["Endpoint"]
+
+# Display an option to set the endpoint if not configured
+if endpoint == "":
+    endpoint_input = st.text_input("Set a SPARQL endpoint")
+
+    if endpoint_input != "":
+        config["Configuration"]["Endpoint"] = endpoint_input
+
+        # Verify endpoint
+        try:
+            verify_endpoint(endpoint_input)
+        except Exception as e:
+            st.error(f"`{endpoint_input}` doesn't seem to be a valid endpoint")
+            raise e
+
+        # Saves the verified endpoint to the configfile
+        overwrite_config(config)
+        st.experimental_rerun()
+
+    else:
+        st.stop()
+
+sparql = SPARQLWrapper(endpoint)
 
 userName = "sceneLocator"
 geolocator = Nominatim(user_agent=userName)
@@ -16,7 +44,6 @@ geocode = RateLimiter(
     geolocator.geocode, min_delay_seconds=1.05, swallow_exceptions=True
 )
 
-sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/test2")
 
 #with st.spinner("Loading ontology, this could take some time the first run"):
 #    # Loads the ontology, the output of this gets cached, returns a Graph
@@ -165,7 +192,6 @@ def findActor():
         select DISTINCT ?name ?actor where { 
             ?actor a ml:Actor;
                  rdfs:label ?name.
-            ?
     }
     """
     )
