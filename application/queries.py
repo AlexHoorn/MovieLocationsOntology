@@ -18,21 +18,21 @@ def wikidataActor(actorNumber):
                        
         }
     """
-    #SERVICE wikibase:label { bd:serviceParam wikibase:language "en" . ?countryWD rdfs:label ?countryWDlabel . ?coordinates rdfs:label ?
-    %actorNumber
+        # SERVICE wikibase:label { bd:serviceParam wikibase:language "en" . ?countryWD rdfs:label ?countryWDlabel . ?coordinates rdfs:label ?
+        % actorNumber
     )
     sparql.setReturnFormat(JSON)
     results = sparql.query().convert()
-    imageList, description = [], ''
+    image, description = "", ""
     for result in results["results"]["bindings"]:
         if "image" in result:
-            imageList.append(result["image"]["value"])
+            image = result["image"]["value"]
         description = result["actorDescription"]["value"]
-    return imageList, description
+    return image, description
 
 
 def findAllLocations(sparql):
-    #sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/test3")
+    # sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/test3")
     sparql.setQuery(
         """
         PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -51,16 +51,28 @@ def findAllLocations(sparql):
     )
     sparql.setReturnFormat(JSON)
     results = sparql.query().convert()
-    locationList, lonList, latList, sceneList, movieList, dataList = [], [], [], [], [], []
+    locationList, lonList, latList, sceneList, movieList, dataList = (
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+    )
     for result in results["results"]["bindings"]:
-        locationList.append(result['location']['value'])
-        lonList.append(result['lon']['value'])
-        latList.append(result['lat']['value'])
-        sceneList.append(result['sceneName']['value'])
-        movieList.append(result['movieName']['value'])
+        locationList.append(result["location"]["value"])
+        lonList.append(result["lon"]["value"])
+        latList.append(result["lat"]["value"])
+        sceneList.append(result["sceneName"]["value"])
+        movieList.append(result["movieName"]["value"])
     i = 0
     while i < len(lonList):
-        tempList = [latList[i], lonList[i], sceneList[i], movieList[i]]  # , locationList[i]
+        tempList = [
+            latList[i],
+            lonList[i],
+            sceneList[i],
+            movieList[i],
+        ]  # , locationList[i]
         dataList.append(
             tempList
         )  ## datalist contains all info like coordinates, name of scene, name of location etc etc.
@@ -69,6 +81,7 @@ def findAllLocations(sparql):
 
 
 ##if user selects to enter a scene, loads all scene from the selected movie
+
 
 def findScene(sparql, show):
     filterstr = ""  ## string that gets inserted into the query, contains the filter
@@ -86,7 +99,7 @@ def findScene(sparql, show):
         filterstr = filterstr[:-3]  ## remove last 3 characters of str, which are "|| "
         filterstr = filterstr + ")"
 
-    #sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/test3")
+    # sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/test3")
     sparql.setQuery(
         """
         PREFIX ml: <http://example.com/movieLocations/>
@@ -104,15 +117,15 @@ def findScene(sparql, show):
     """
         % (filterstr)
     )
-      ## paste the show far into the string with %
+    ## paste the show far into the string with %
     sparql.setReturnFormat(JSON)
     results = sparql.query().convert()
     sceneList, lonList, latList, dataList, labelList = [], [], [], [], []
     for result in results["results"]["bindings"]:
-        sceneList.append(result['sceneName']['value'])
-        lonList.append(result['lon']['value'])
-        latList.append(result['lat']['value'])
-        labelList.append(result['label']['value'])
+        sceneList.append(result["sceneName"]["value"])
+        lonList.append(result["lon"]["value"])
+        latList.append(result["lat"]["value"])
+        labelList.append(result["label"]["value"])
     i = 0
     while i < len(lonList):
         tempList = [latList[i], lonList[i], labelList[i]]
@@ -124,13 +137,13 @@ def findScene(sparql, show):
     mappingCoordinates = dict(
         zip(sceneList, dataList)
     )  ## lat = value[0], lon = value[1], location = value[2]
-    #print('dit is de sceneList', sceneList)
-    #print('dit is de mappingCoordinates', mappingCoordinates)
+    # print('dit is de sceneList', sceneList)
+    # print('dit is de mappingCoordinates', mappingCoordinates)
     return sceneList, mappingCoordinates  ##
 
 
 def findShow(sparql):
-    #sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/test3")
+    # sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/test3")
     sparql.setQuery(
         """  
         PREFIX ml: <http://example.com/movieLocations/>
@@ -151,7 +164,7 @@ def findShow(sparql):
 
 
 def findActor(sparql):
-    #sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/test3")
+    # sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/test3")
     sparql.setQuery(
         """
         PREFIX ml: <http://example.com/movieLocations/>
@@ -166,9 +179,12 @@ def findActor(sparql):
     actorNameList = []
     actorNumberList = []  ## contains the actor code from our ontology
     for result in results["results"]["bindings"]:
-        actorNameList.append(result['name']['value'])
-        actorNumberList.append(result['actor']['value'])
-    actorNumberList2 = [str(i).replace( 'http://example.com/movieLocations/', '') for i in actorNumberList] ## removes the ontology prefix       
+        actorNameList.append(result["name"]["value"])
+        actorNumberList.append(result["actor"]["value"])
+    actorNumberList2 = [
+        str(i).replace("http://example.com/movieLocations/", "")
+        for i in actorNumberList
+    ]  ## removes the ontology prefix
     actorNameList2 = []
     for (
         actor
@@ -178,12 +194,15 @@ def findActor(sparql):
         actor = actor.replace("'", "")
         actorNameList2.append(actor)
 
-    actorDict = dict(zip(actorNameList2, actorNumberList2)) ## Make a dict of each actor with their
+    actorDict = dict(
+        zip(actorNameList2, actorNumberList2)
+    )  ## Make a dict of each actor with their
     return actorNameList2, actorDict
 
+
 def findShowActor(sparql, Actor):  ## finds all movies with a specific actor in it
-    #sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/test3")
-    sparql.setQuery( 
+    # sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/test3")
+    sparql.setQuery(
         """
         PREFIX ml: <http://example.com/movieLocations/>
         select DISTINCT ?title where { 
@@ -195,12 +214,12 @@ def findShowActor(sparql, Actor):  ## finds all movies with a specific actor in 
     } 
     """
         % (Actor)
-    )  
+    )
     sparql.setReturnFormat(JSON)
     results = sparql.query().convert()
     showActorList = []
     for result in results["results"]["bindings"]:
-        showActorList.append(result['title']['value'])
+        showActorList.append(result["title"]["value"])
     return showActorList
 
 
@@ -223,7 +242,7 @@ def findCoordinatesLocation(sparql, location):  ## This is currently not being u
     )
     sparql.setReturnFormat(JSON)
     results = sparql.query().convert()
-    #print(results)
+    # print(results)
     coordinates = ""
     for result in results["results"]["bindings"]:
         coordinates = result["coordinates"]["value"]  ## get the coordinate value
@@ -236,5 +255,5 @@ def findCoordinatesLocation(sparql, location):  ## This is currently not being u
             coordinateList[1],
             coordinateList[0],
         )  ## change lon and lat indexes because wikidata is weird.
-        #print("dit is de coordinateList =    ", coordinateList)
+        # print("dit is de coordinateList =    ", coordinateList)
     return coordinateList
