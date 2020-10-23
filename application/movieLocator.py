@@ -136,7 +136,6 @@ with col1:
                 if inputActor in key:
                     actorNumber = value
                     break
-            print('dit is het actornumber', actorNumber)
             wikiImage, wikiDescription = Q.wikidataActor(actorNumber)
             showActorList = Q.findShowActor(sparql, inputActor)
             inputShow2 = st.multiselect("select a show", showActorList, key="4")
