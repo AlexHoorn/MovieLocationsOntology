@@ -152,9 +152,11 @@ def findShow(sparql):
                 ?show rdf:type ?any_show;
                     rdfs:label ?title.
                 ?any_show rdfs:subClassOf* ml:Show.
+                ?show ml:hasScene ?scene
                     } 
     """
-    )
+    ) ## ?show ml:hasScene ?scene  <-- filters shows that have no scene. Drastically reduces the number of shows, from ~10600 to ~5000
+      ## Alternative query -> select DISTINCT ?title where { ?show ml:hasScene ?scene; rdfs:label ?title. } 
     sparql.setReturnFormat(JSON)
     results = sparql.query().convert()
     showList = []
@@ -197,12 +199,14 @@ def findActor(sparql):
     actorDict = dict(
         zip(actorNameList2, actorNumberList2)
     )  ## Make a dict of each actor with their
-    return actorNameList2, actorDict
+    actorNameList2.insert(0, "Select an actor!") ## This was done to prevent the query from auto-loading. you can not give st.select an empty value.
+    return actorNameList2, actorDict             ## Therefore, we add a value which is not an actor and only run the query when the user input is not equal to this value.
+
 
 
 def findShowActor(sparql, Actor):  ## finds all movies with a specific actor in it
     # sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/test3")
-    sparql.setQuery(
+    sparql.setQuery(  
         """
         PREFIX ml: <http://example.com/movieLocations/>
         select DISTINCT ?title where { 
@@ -211,9 +215,9 @@ def findShowActor(sparql, Actor):  ## finds all movies with a specific actor in 
             ?actor rdfs:label '%s'.
             ?show rdfs:label ?title;
                     ml:hasScene ?scene  
-    } 
+    }  
     """
-        % (Actor)
+        % (Actor) ## Doesn't return movies if they have no scenes.
     )
     sparql.setReturnFormat(JSON)
     results = sparql.query().convert()

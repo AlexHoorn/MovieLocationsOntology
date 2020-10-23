@@ -44,7 +44,6 @@ if endpoint == "":
 
 sparql = SPARQLWrapper(endpoint)
 
-
 #### Setting up the geolocator which is neccesary for the location func, pls don't delete #####
 userName = "sceneLocator"
 geolocator = Nominatim(user_agent=userName)
@@ -128,12 +127,11 @@ with col1:
 
 with col1:
     with st.beta_expander("Actors"):
-
         actorList, actorDict = Q.findActor(sparql)
         st.write("Total number of actors in list = " + str(len(actorList)))
         inputActor = st.selectbox("Select your favorite Actor", actorList, key="3")
         actorNumber = ""
-        if inputActor != "":
+        if inputActor != "Select an actor!":
             for key, value in actorDict.items():
                 if inputActor in key:
                     actorNumber = value
