@@ -121,7 +121,7 @@ with col1:
                     actorNumber = value
                     break
             print('dit is het actornumber', actorNumber)
-            showActorList = Q.findShowActor(inputActor, sparql)
+            showActorList = Q.findShowActor(sparql, inputActor)
             inputShow2 = st.multiselect("select a show", showActorList, key="4")
             st.write("Total number of movies in list = " + str(len(showActorList)))
             if inputShow2 != []:
