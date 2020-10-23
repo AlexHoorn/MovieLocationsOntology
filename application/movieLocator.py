@@ -77,7 +77,9 @@ def haversine(
     return c * r
 
 
-col0, col1, col2, col3, col4, col5, col6 = st.beta_columns([0.5, 2, 0.5, 3, 0.5, 1.3, 0.2]) ## the small columns (0.5) are used for padding purposes
+col0, col1, col2, col3, col4, col5, col6 = st.beta_columns(
+    [0.5, 2, 0.5, 3, 0.5, 1.3, 0.2]
+)  ## the small columns (0.5) are used for padding purposes
 with col1:
     st.title("Movie location finder")
     st.text("So that you can fall into the same vulcano as Gollum")
@@ -126,11 +128,11 @@ with col1:
 
 with col1:
     with st.beta_expander("Actors"):
-        
+
         actorList, actorDict = Q.findActor(sparql)
         st.write("Total number of actors in list = " + str(len(actorList)))
         inputActor = st.selectbox("Select your favorite Actor", actorList, key="3")
-        actorNumber = ''
+        actorNumber = ""
         if inputActor != "":
             for key, value in actorDict.items():
                 if inputActor in key:
@@ -140,12 +142,12 @@ with col1:
             showActorList = Q.findShowActor(sparql, inputActor)
             inputShow2 = st.multiselect("select a show", showActorList, key="4")
             st.write("Total number of movies in list = " + str(len(showActorList)))
-            if wikiImage != []:
+            if wikiImage != "":
                 with col5:
-                    response = requests.get(wikiImage[0])
+                    response = requests.get(wikiImage)
                     img = Image.open(BytesIO(response.content))
-                    st.image(img,  use_column_width=True, caption=inputActor)
-            if wikiDescription != '' :
+                    st.image(img, use_column_width=True, caption=inputActor)
+            if wikiDescription != "":
                 with col5:
                     st.write(wikiDescription)
             if inputShow2 != []:
