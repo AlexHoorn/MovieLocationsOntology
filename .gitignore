@@ -6,5 +6,6 @@ __pycache__
 .pre-commit-config-yaml
 .vscode
 *.sqlite3*
+application/config.ini
 cellfie.log
 raw_data/*.tsv

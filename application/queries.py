@@ -1,8 +1,6 @@
 from SPARQLWrapper import SPARQLWrapper, JSON
 
-sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/test3")
-
-def findAllLocations():
+def findAllLocations(sparql):
     #sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/test3")
     sparql.setQuery(
         """
@@ -41,7 +39,7 @@ def findAllLocations():
 
 ##if user selects to enter a scene, loads all scene from the selected movie
 
-def findScene(show):
+def findScene(sparql, show):
     filterstr = ""  ## string that gets inserted into the query, contains the filter
     if len(show) == 1:
         filterstr = (
@@ -100,15 +98,16 @@ def findScene(show):
     return sceneList, mappingCoordinates  ##
 
 
-def findShow():
+def findShow(sparql):
     #sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/test3")
     sparql.setQuery(
         """  
         PREFIX ml: <http://example.com/movieLocations/>
         PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         select DISTINCT ?title where { 
-                ?show a ml:Show;
-                    rdfs:label ?title     
+                ?show rdf:type ?any_show;
+                    rdfs:label ?title.
+                ?any_show rdfs:subClassOf* ml:Show.
                     } 
     """
     )
@@ -120,7 +119,7 @@ def findShow():
     return showList
 
 
-def findActor():
+def findActor(sparql):
     #sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/test3")
     sparql.setQuery(
         """
@@ -151,7 +150,7 @@ def findActor():
     actorDict = dict(zip(actorNameList2, actorNumberList2)) ## Make a dict of each actor with their
     return actorNameList2, actorDict
 
-def findShowActor(Actor):  ## finds all movies with a specific actor in it
+def findShowActor(sparql, Actor):  ## finds all movies with a specific actor in it
     #sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/test3")
     sparql.setQuery( 
         """
@@ -174,7 +173,7 @@ def findShowActor(Actor):  ## finds all movies with a specific actor in it
     return showActorList
 
 
-def findCoordinatesLocation(location):  ## This is currently not being used
+def findCoordinatesLocation(sparql, location):  ## This is currently not being used
     sparql = SPARQLWrapper("https://query.wikidata.org/bigdata/namespace/wdq/sparql")
     sparql.setQuery(
         """

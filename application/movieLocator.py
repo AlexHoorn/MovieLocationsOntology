@@ -1,26 +1,41 @@
-import streamlit as st
-import streamlit.components.v1 as comp
-import queries as Q
+from math import asin, cos, radians, sin, sqrt
 
-# from components import load_ontology, query_to_pandas
-from streamlit_folium import folium_static
 import folium
-from SPARQLWrapper import SPARQLWrapper, JSON
-from geopy.geocoders import Nominatim
-from geopy.extra.rate_limiter import RateLimiter
-from math import radians, cos, sin, asin, sqrt
-import random
+import streamlit as st
+from SPARQLWrapper import SPARQLWrapper
+from streamlit_folium import folium_static
 
+import queries as Q
+from components import get_config, overwrite_config, verify_endpoint
 
 st.beta_set_page_config(layout="wide")  ## comment this out to disable widescreen
 
-userName = "sceneLocator"
-geolocator = Nominatim(user_agent=userName)
-geocode = RateLimiter(
-    geolocator.geocode, min_delay_seconds=1.05, swallow_exceptions=True
-)
+# Fetches configuration
+config = get_config()
+endpoint = config["Configuration"]["Endpoint"]
 
-sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/test2")
+# Display an option to set the endpoint if not configured
+if endpoint == "":
+    endpoint_input = st.text_input("Set a SPARQL endpoint")
+
+    if endpoint_input != "":
+        config["Configuration"]["Endpoint"] = endpoint_input
+
+        # Verify endpoint
+        try:
+            verify_endpoint(endpoint_input)
+        except Exception as e:
+            st.error(f"`{endpoint_input}` doesn't seem to be a valid endpoint")
+            raise e
+
+        # Saves the verified endpoint to the configfile
+        overwrite_config(config)
+        st.experimental_rerun()
+
+    else:
+        st.stop()
+
+sparql = SPARQLWrapper(endpoint)
 
 # with st.spinner("Loading ontology, this could take some time the first run"):
 #    # Loads the ontology, the output of this gets cached, returns a Graph
@@ -54,11 +69,11 @@ with col1:
 ## User selects his favorite movie/actor/whatever
 with col1:
     with st.beta_expander("Shows"):
-        showList = Q.findShow()
+        showList = Q.findShow(sparql)
         inputShow = st.multiselect("Select your favorite show", showList, key="1")
         st.write("Total number of movies in list = " + str(len(showList)))
         if inputShow != []:  ## If movie is selected, render the scene selectbox
-            sceneList, mappingCoordinates = Q.findScene(inputShow)
+            sceneList, mappingCoordinates = Q.findScene(sparql, inputShow)
             inputScene = st.multiselect("Select your scene", sceneList, key="2")
             if (
                 inputScene != []
@@ -95,7 +110,8 @@ with col1:
 
 with col1:
     with st.beta_expander("Actors"):
-        actorList, actorDict = Q.findActor()
+        
+        actorList, adctorDict = Q.findActor(sparql)
         st.write("Total number of actors in list = " + str(len(actorList)))
         inputActor = st.selectbox("Select your favorite Actor", actorList, key="3")
         actorNumber = ''
@@ -105,11 +121,11 @@ with col1:
                     actorNumber = value
                     break
             print('dit is het actornumber', actorNumber)
-            showActorList = Q.findShowActor(inputActor)
+            showActorList = Q.findShowActor(inputActor, sparql)
             inputShow2 = st.multiselect("select a show", showActorList, key="4")
             st.write("Total number of movies in list = " + str(len(showActorList)))
             if inputShow2 != []:
-                sceneList, mappingCoordinates = Q.findScene(inputShow2)
+                sceneList, mappingCoordinates = Q.findScene(sparql, inputShow2)
                 inputScene = st.multiselect("Select your scene", sceneList, key="5")
                 if (
                     inputScene != []
@@ -153,7 +169,7 @@ with col1:
             coordinatesList.extend(
                 [coordinateOutput.latitude, coordinateOutput.longitude]
             )
-            allLocations = Q.findAllLocations()
+            allLocations = Q.findAllLocations(sparql)
             if coordinatesList != []:
                 m2 = folium.Map(location=coordinatesList, zoom_start=14)
                 folium.Circle(  ## create radius circle

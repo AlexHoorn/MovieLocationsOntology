@@ -1,53 +1,87 @@
-from _thread import RLock
+from configparser import ConfigParser
 from io import StringIO
-from sqlite3 import Connection
-from weakref import KeyedRef
+from os import getcwd
+from os.path import isfile
 
 import pandas as pd
-import streamlit as st
-from owlready2 import Ontology, World, sync_reasoner
-from rdflib import Graph, Namespace
+from SPARQLWrapper import CSV, SPARQLWrapper
 
 
-@st.cache(
-    hash_funcs={
-        Ontology: lambda _: None,
-        KeyedRef: lambda _: None,
-        Connection: lambda _: None,
-        RLock: lambda _: None,
-    }
-)
-def load_ontology(filepath: str) -> Graph:
-    """Loads the ontology and runs the reasoner.
-
-    Args:
-        filepath (str): filepath to the ontology
-
-    Returns:
-        Graph: rdflib.Graph object
-    """
-    ontology_world = World(filename=f"{filepath}.sqlite3")
-    ontology = ontology_world.get_ontology(filepath).load(reload_if_newer=True)
-    sync_reasoner(ontology_world)
-
-    g = ontology_world.as_rdflib_graph()
-    g.bind("ml", Namespace("http://example.com/movieLocations/"))
-
-    return g
+class WrongOntologyError(Exception):
+    def __init__(
+        self,
+        msg="The wrong ontology file seems to be loaded, please load `PopulatedOntology_Reasoned.owl`.",
+        *args,
+        **kwargs,
+    ):
+        super().__init__(msg, *args, **kwargs)
 
 
-def query_to_pandas(g: Graph, query: str) -> pd.DataFrame:
-    """Queries a graph object
+class WrongRulesetError(Exception):
+    def __init__(
+        self,
+        msg="The wrong ruleset seems to be enabled, please set this to `No inference`.",
+        *args,
+        **kwargs,
+    ):
+        super().__init__(msg, *args, **kwargs)
 
-    Args:
-        g (Graph): rdflib.Graph object
-        query (str): Query in SparQL
 
-    Returns:
-        pd.DataFrame: A pandas DataFrame with results
-    """
-    res = g.query(query)
-    csv = StringIO(res.serialize(format="csv").decode())
+def get_config_path():
+    return getcwd() + "/config.ini"
+
+
+def overwrite_config(config: ConfigParser):
+    config_path = get_config_path()
+
+    with open(config_path, "w+") as configfile:
+        config.write(configfile)
+
+
+def get_config() -> ConfigParser:
+    config_path = get_config_path()
+    config = ConfigParser()
+
+    if not isfile(config_path):
+        config["Configuration"] = {"Endpoint": ""}
+        overwrite_config(config)
+
+    config.read(config_path)
+
+    return config
+
+
+def query_to_pandas(sparql: SPARQLWrapper, query: str) -> pd.DataFrame:
+    prefixes = {"ml": "http://example.com/movieLocations/"}
+    for prefix, value in prefixes.items():
+        query = f"PREFIX {prefix}: <{value}> {query}"
+
+    sparql.setReturnFormat(CSV)
+    sparql.setQuery(query)
+
+    result = sparql.query().convert()
+    csv = StringIO(result.decode())
     df = pd.read_csv(csv)
 
     return df
+
+
+def verify_endpoint(endpoint: str):
+    sparql = SPARQLWrapper(endpoint)
+    sparql.setTimeout(5)
+
+    try:
+        actors = query_to_pandas(
+            sparql, "SELECT * WHERE {?actor rdf:type ml:Actor} LIMIT 5"
+        )
+        if not len(actors) > 0:
+            raise WrongOntologyError()
+
+        shows = query_to_pandas(
+            sparql, "SELECT * WHERE {?show rdf:type ml:Show} LIMIT 5"
+        )
+        if not len(shows) == 0:
+            raise WrongRulesetError()
+
+    except Exception as e:
+        raise e
