@@ -23,5 +23,4 @@ print(f"Changed {count} statements")
 
 print("Saving graph")
 g.serialize("PopulatedOntology.ttl", format="ttl")
-g.serialize("PopulatedOntology.owl")
 print("Completed")

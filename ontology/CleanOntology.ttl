@@ -15,9 +15,15 @@
 #    Object Properties
 #################################################################
 
+###  http://example.com/movieLocations/directs
+ml:directs rdf:type owl:ObjectProperty ;
+           owl:inverseOf ml:hasDirector .
+
+
 ###  http://example.com/movieLocations/hasActor
 ml:hasActor rdf:type owl:ObjectProperty ;
             owl:equivalentProperty schema:actor ;
+            owl:inverseOf ml:playsIn ;
             owl:propertyChainAxiom ( ml:hasCharacter
                                      ml:playedBy
                                    ) .
@@ -25,7 +31,8 @@ ml:hasActor rdf:type owl:ObjectProperty ;
 
 ###  http://example.com/movieLocations/hasCharacter
 ml:hasCharacter rdf:type owl:ObjectProperty ;
-                owl:equivalentProperty schema:character .
+                owl:equivalentProperty schema:character ;
+                owl:inverseOf ml:isCharacterIn .
 
 
 ###  http://example.com/movieLocations/hasDirector
@@ -35,21 +42,44 @@ ml:hasDirector rdf:type owl:ObjectProperty ;
 
 ###  http://example.com/movieLocations/hasLocation
 ml:hasLocation rdf:type owl:ObjectProperty ;
+               owl:inverseOf ml:isLocationOf ;
                owl:propertyChainAxiom ( ml:hasScene
                                         ml:hasLocation
                                       ) .
 
 
 ###  http://example.com/movieLocations/hasScene
-ml:hasScene rdf:type owl:ObjectProperty .
+ml:hasScene rdf:type owl:ObjectProperty ;
+            owl:inverseOf ml:isSceneOf .
+
+
+###  http://example.com/movieLocations/isCharacterIn
+ml:isCharacterIn rdf:type owl:ObjectProperty .
 
 
 ###  http://example.com/movieLocations/isGenre
-ml:isGenre rdf:type owl:ObjectProperty .
+ml:isGenre rdf:type owl:ObjectProperty ;
+           owl:inverseOf ml:isGenreOf .
+
+
+###  http://example.com/movieLocations/isGenreOf
+ml:isGenreOf rdf:type owl:ObjectProperty .
+
+
+###  http://example.com/movieLocations/isLocationOf
+ml:isLocationOf rdf:type owl:ObjectProperty .
+
+
+###  http://example.com/movieLocations/isSceneOf
+ml:isSceneOf rdf:type owl:ObjectProperty .
 
 
 ###  http://example.com/movieLocations/playedBy
 ml:playedBy rdf:type owl:ObjectProperty .
+
+
+###  http://example.com/movieLocations/playsIn
+ml:playsIn rdf:type owl:ObjectProperty .
 
 
 ###  http://schema.org/actor
@@ -123,8 +153,7 @@ ml:isAdult rdf:type owl:DatatypeProperty .
 ###  http://example.com/movieLocations/Actor
 ml:Actor rdf:type owl:Class ;
          owl:equivalentClass [ rdf:type owl:Restriction ;
-                               owl:onProperty [ owl:inverseOf ml:hasActor
-                                              ] ;
+                               owl:onProperty ml:playsIn ;
                                owl:someValuesFrom ml:Show
                              ] ;
          rdfs:subClassOf ml:NaturalPerson .
@@ -133,8 +162,7 @@ ml:Actor rdf:type owl:Class ;
 ###  http://example.com/movieLocations/Character
 ml:Character rdf:type owl:Class ;
              owl:equivalentClass [ rdf:type owl:Restriction ;
-                                   owl:onProperty [ owl:inverseOf ml:hasCharacter
-                                                  ] ;
+                                   owl:onProperty ml:isCharacterIn ;
                                    owl:someValuesFrom ml:Show
                                  ] ;
              rdfs:subClassOf ml:Person .
@@ -143,8 +171,7 @@ ml:Character rdf:type owl:Class ;
 ###  http://example.com/movieLocations/Director
 ml:Director rdf:type owl:Class ;
             owl:equivalentClass [ rdf:type owl:Restriction ;
-                                  owl:onProperty [ owl:inverseOf ml:hasDirector
-                                                 ] ;
+                                  owl:onProperty ml:directs ;
                                   owl:someValuesFrom ml:Show
                                 ] ;
             rdfs:subClassOf ml:NaturalPerson .
@@ -153,8 +180,7 @@ ml:Director rdf:type owl:Class ;
 ###  http://example.com/movieLocations/Genre
 ml:Genre rdf:type owl:Class ;
          owl:equivalentClass [ rdf:type owl:Restriction ;
-                               owl:onProperty [ owl:inverseOf ml:isGenre
-                                              ] ;
+                               owl:onProperty ml:isGenreOf ;
                                owl:someValuesFrom ml:Show
                              ] .
 
@@ -162,8 +188,7 @@ ml:Genre rdf:type owl:Class ;
 ###  http://example.com/movieLocations/Location
 ml:Location rdf:type owl:Class ;
             owl:equivalentClass [ rdf:type owl:Restriction ;
-                                  owl:onProperty [ owl:inverseOf ml:hasLocation
-                                                 ] ;
+                                  owl:onProperty ml:isLocationOf ;
                                   owl:someValuesFrom ml:Show
                                 ] .
 
@@ -187,8 +212,7 @@ ml:Person rdf:type owl:Class ;
 ###  http://example.com/movieLocations/Scene
 ml:Scene rdf:type owl:Class ;
          owl:equivalentClass [ rdf:type owl:Restriction ;
-                               owl:onProperty [ owl:inverseOf ml:hasScene
-                                              ] ;
+                               owl:onProperty ml:isSceneOf ;
                                owl:someValuesFrom ml:Show
                              ] .
 

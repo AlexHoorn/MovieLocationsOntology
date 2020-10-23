@@ -6,7 +6,7 @@ Markdown documentation created by [pyLODE](http://github.com/rdflib/pyLODE) 2.8.
 * **URI**
   * `http://example.com/movieLocations/`
 * **Ontology RDF**
-  * RDF ([.\CleanTaxonomy.ttl](turtle))
+  * RDF ([.\CleanOntology.ttl](turtle))
 
 ## Table of Contents
 1. [Classes](#classes)
@@ -15,6 +15,10 @@ Markdown documentation created by [pyLODE](http://github.com/rdflib/pyLODE) 2.8.
 1. [Namespaces](#namespaces)
 1. [Legend](#legend)
 
+
+## Overview
+
+**Figure 1:** Ontology overview
 ## Classes
 [Actor](#Actor),
 [Character](#Character),
@@ -38,7 +42,7 @@ Markdown documentation created by [pyLODE](http://github.com/rdflib/pyLODE) 2.8.
 [TvShort](#TvShort),
 [TvSpecial](#TvSpecial),
 [Video](#Video),
-[Videogame](#Videogame),
+[VideoGame](#VideoGame),
 ### Actor
 Property | Value
 --- | ---
@@ -78,7 +82,7 @@ Sub-classes |[ml:Director](http://example.com/movieLocations/Director) (c)<br />
 Property | Value
 --- | ---
 URI | `http://example.com/movieLocations/Person`
-Sub-classes |[ml:NaturalPerson](http://example.com/movieLocations/NaturalPerson) (c)<br />[ml:Character](http://example.com/movieLocations/Character) (c)<br />
+Sub-classes |[ml:Character](http://example.com/movieLocations/Character) (c)<br />[ml:NaturalPerson](http://example.com/movieLocations/NaturalPerson) (c)<br />
 ### Scene
 Property | Value
 --- | ---
@@ -99,7 +103,7 @@ Sub-classes |[ml:TvShort](http://example.com/movieLocations/TvShort) (c)<br />
 Property | Value
 --- | ---
 URI | `http://example.com/movieLocations/Show`
-Sub-classes |[ml:TvSpecial](http://example.com/movieLocations/TvSpecial) (c)<br />[ml:Series](http://example.com/movieLocations/Series) (c)<br />[ml:Short](http://example.com/movieLocations/Short) (c)<br />[ml:Movie](http://example.com/movieLocations/Movie) (c)<br />[ml:Video](http://example.com/movieLocations/Video) (c)<br />[ml:Videogame](http://example.com/movieLocations/Videogame) (c)<br />[ml:TvEpisode](http://example.com/movieLocations/TvEpisode) (c)<br />
+Sub-classes |[ml:Short](http://example.com/movieLocations/Short) (c)<br />[ml:TvSpecial](http://example.com/movieLocations/TvSpecial) (c)<br />[ml:Video](http://example.com/movieLocations/Video) (c)<br />[ml:Movie](http://example.com/movieLocations/Movie) (c)<br />[ml:VideoGame](http://example.com/movieLocations/VideoGame) (c)<br />[ml:Series](http://example.com/movieLocations/Series) (c)<br />[ml:TvEpisode](http://example.com/movieLocations/TvEpisode) (c)<br />
 ### TvEpisode
 Property | Value
 --- | ---
@@ -136,10 +140,10 @@ Property | Value
 --- | ---
 URI | `http://example.com/movieLocations/Video`
 Super-classes |[ml:Show](http://example.com/movieLocations/Show) (c)<br />
-### Videogame
+### VideoGame
 Property | Value
 --- | ---
-URI | `http://example.com/movieLocations/Videogame`
+URI | `http://example.com/movieLocations/VideoGame`
 Super-classes |[ml:Show](http://example.com/movieLocations/Show) (c)<br />
 ### Movie
 Property | Value
@@ -155,16 +159,27 @@ Property | Value
 URI | `http://xmlns.com/foaf/0.1/Person`
 
 ## Object Properties
+[directs](#directs),
 [hasActor](#hasActor),
 [hasCharacter](#hasCharacter),
 [hasDirector](#hasDirector),
 [hasLocation](#hasLocation),
 [hasScene](#hasScene),
+[isCharacterIn](#isCharacterIn),
 [isGenre](#isGenre),
+[isGenreOf](#isGenreOf),
+[isLocationOf](#isLocationOf),
+[isSceneOf](#isSceneOf),
 [playedBy](#playedBy),
+[playsIn](#playsIn),
 [actor](#actor),
 [character](#character),
 [director](#director),
+[](directs)
+### directs
+Property | Value
+--- | ---
+URI | `http://example.com/movieLocations/directs`
 [](hasActor)
 ### hasActor
 Property | Value
@@ -190,16 +205,41 @@ URI | `http://example.com/movieLocations/hasLocation`
 Property | Value
 --- | ---
 URI | `http://example.com/movieLocations/hasScene`
+[](isCharacterIn)
+### isCharacterIn
+Property | Value
+--- | ---
+URI | `http://example.com/movieLocations/isCharacterIn`
 [](isGenre)
 ### isGenre
 Property | Value
 --- | ---
 URI | `http://example.com/movieLocations/isGenre`
+[](isGenreOf)
+### isGenreOf
+Property | Value
+--- | ---
+URI | `http://example.com/movieLocations/isGenreOf`
+[](isLocationOf)
+### isLocationOf
+Property | Value
+--- | ---
+URI | `http://example.com/movieLocations/isLocationOf`
+[](isSceneOf)
+### isSceneOf
+Property | Value
+--- | ---
+URI | `http://example.com/movieLocations/isSceneOf`
 [](playedBy)
 ### playedBy
 Property | Value
 --- | ---
 URI | `http://example.com/movieLocations/playedBy`
+[](playsIn)
+### playsIn
+Property | Value
+--- | ---
+URI | `http://example.com/movieLocations/playsIn`
 [](actor)
 ### actor
 Property | Value
