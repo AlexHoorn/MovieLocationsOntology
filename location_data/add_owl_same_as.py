@@ -24,7 +24,7 @@ def save_obj(obj, name ):
         pickle.dump(obj, f, pickle.HIGHEST_PROTOCOL)
 
 def load_obj(name ):
-    with open(name + '.pkl', 'rb') as f:
+    with open(name, 'rb') as f:
         return pickle.load(f)
 
 #Construct query for sectioon
@@ -52,17 +52,24 @@ df = pd.read_csv(readDir)
 
 tconsts = df["tconst"].drop_duplicates()
 
-currentDict = {}
+
 
 
 
 def TryGetOwlPages(rangeNrs, sleep, currentDict):
-    if not os.path.isfile(readDir.replace("allmerged.csv", "progress_dict.pkl")):
+    if not os.path.isfile(dictDir+"dict" + str(rangeNrs)+ ".pkl"):
         #Select a series of 80 items from the show titles
         section = tconsts[rangeNrs:rangeNrs + 80]
 
+        print(rangeNrs,rangeNrs + 80)
+
+        print(tconsts.shape)
+
+
         #Create a query from this selection
         query = GetQuery(section)
+
+        print(section)
 
         succeed = True
         #Try to query the query to wikidata's sparql endpoint
@@ -77,10 +84,7 @@ def TryGetOwlPages(rangeNrs, sleep, currentDict):
             time.sleep(sleep)
             #Increment the sleep time and try again
             succeed=False
-            #After 5 fails save progress and stop
-            if time > 120:
-                print("progress keeps failing, saving dict and stopping")
-                save_obj(currentDict, readDir.replace("allmerged.csv", "progress_dict"))
+
 
             TryGetOwlPages(rangeNrs, sleep + 20)
 
@@ -95,21 +99,30 @@ def TryGetOwlPages(rangeNrs, sleep, currentDict):
             #Print the dictionary to check if its right
             print(currentDict)
             save_obj(currentDict, dictDir+"dict" + str(rangeNrs))
+        return True
+    else:
+        return False
 
 
-#Later we will map these dictionaries
-# #Map this dict to the original dat
-# df['Owl:SameAs'] = df['tconst'].map(currentDict)
-#
-# print("Sum of missing values: ",df['Owl:SameAs'].isna().sum())
-#
-# #save the progress
-# df.to_csv(readDir.replace("allmerged.csv", "zenodo_data.csv"))
+
 
 
 #Select a section from the data and query it
-for rangeNrs in tqdm(range(0, len(df), 80)):
-    TryGetOwlPages(rangeNrs, 20, currentDict)
-    time.sleep(8)
+for rangeNrs in tqdm(range(0, len(tconsts), 80)):
+    if TryGetOwlPages(rangeNrs, 20, {}):
+        time.sleep(2)
 
 
+#Later we will map these dictionaries
+#Map this dict to the original dat
+superDict = {}
+for file in os.listdir(dictDir):
+    subdict = load_obj(dictDir+file)
+    superDict.update(subdict)
+
+df['Owl:SameAs'] = df['tconst'].map(superDict)
+
+print("Sum of missing values: ",df['Owl:SameAs'].isna().sum())
+
+#save the progress
+df.to_csv(readDir.replace("allmerged.csv", "zenodo_data.csv"))
