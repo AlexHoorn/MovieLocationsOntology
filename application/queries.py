@@ -134,10 +134,11 @@ def findActor():
     sparql.setReturnFormat(JSON)
     results = sparql.query().convert()
     actorNameList = []
-    #actorList = []  ## contains the actor code for our ontology
+    actorNumberList = []  ## contains the actor code from our ontology
     for result in results["results"]["bindings"]:
         actorNameList.append(result['name']['value'])
-        #actorList.append(result['actor']['value'])
+        actorNumberList.append(result['actor']['value'])
+    actorNumberList2 = [str(i).replace( 'http://example.com/movieLocations/', '') for i in actorNumberList] ## removes the ontology prefix       
     actorNameList2 = []
     for (
         actor
@@ -146,7 +147,9 @@ def findActor():
     ):  ## remove strings out of names. Dwayne 'The Rock" Johnson ==> Dwayne The Rock Johnson
         actor = actor.replace("'", "")
         actorNameList2.append(actor)
-    return actorNameList2
+
+    actorDict = dict(zip(actorNameList2, actorNumberList2)) ## Make a dict of each actor with their
+    return actorNameList2, actorDict
 
 def findShowActor(Actor):  ## finds all movies with a specific actor in it
     #sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/test3")
@@ -203,5 +206,5 @@ def findCoordinatesLocation(location):  ## This is currently not being used
             coordinateList[1],
             coordinateList[0],
         )  ## change lon and lat indexes because wikidata is weird.
-        print("dit is de coordinateList =    ", coordinateList)
+        #print("dit is de coordinateList =    ", coordinateList)
     return coordinateList

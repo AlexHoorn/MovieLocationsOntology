@@ -95,10 +95,16 @@ with col1:
 
 with col1:
     with st.beta_expander("Actors"):
-        actorList = Q.findActor()
+        actorList, actorDict = Q.findActor()
         st.write("Total number of actors in list = " + str(len(actorList)))
         inputActor = st.selectbox("Select your favorite Actor", actorList, key="3")
+        actorNumber = ''
         if inputActor != "":
+            for key, value in actorDict.items():
+                if inputActor in key:
+                    actorNumber = value
+                    break
+            print('dit is het actornumber', actorNumber)
             showActorList = Q.findShowActor(inputActor)
             inputShow2 = st.multiselect("select a show", showActorList, key="4")
             st.write("Total number of movies in list = " + str(len(showActorList)))
