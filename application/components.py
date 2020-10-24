@@ -7,30 +7,8 @@ import pandas as pd
 from SPARQLWrapper import CSV, SPARQLWrapper
 
 
-class WrongOntologyError(Exception):
-    def __init__(
-        self,
-        *args,
-        **kwargs,
-    ):
-        super().__init__(
-            msg="The wrong ontology file seems to be loaded, please load `PopulatedOntology_Reasoned.owl`.",
-            *args,
-            **kwargs,
-        )
-
-
 class WrongRulesetError(Exception):
-    def __init__(
-        self,
-        *args,
-        **kwargs,
-    ):
-        super().__init__(
-            msg="The wrong ruleset seems to be enabled, please use `OWL2-RL`.",
-            *args,
-            **kwargs,
-        )
+    pass
 
 
 def get_config_path():
@@ -80,14 +58,14 @@ def verify_endpoint(endpoint: str):
         actors = query_to_pandas(
             sparql, "SELECT * WHERE {?actor rdf:type ml:Actor} LIMIT 5"
         )
-        if not len(actors) > 0:
-            raise WrongOntologyError()
-
         plays_in = query_to_pandas(
             sparql, "SELECT * WHERE {?actor ml:playsIn ?show} LIMIT 5"
         )
-        if not len(plays_in) > 0:
-            raise WrongRulesetError()
+
+        if not len(plays_in) > 0 or not len(actors) > 0:
+            raise WrongRulesetError(
+                "The wrong ruleset seems to be enabled, please use `OWL2-RL`."
+            )
 
     except Exception as e:
         raise e

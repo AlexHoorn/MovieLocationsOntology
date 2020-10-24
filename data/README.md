@@ -30,7 +30,7 @@
 
 The folder of IMDB data stores the relevant files that were necessary for processing the raw data from IMDB to a tabular data structure that could directly be loaded into a linked data structure. The raw data from IMDB is not stored in this repository as it is deemed to large and already readily available from its [original source](https://www.imdb.com/interfaces/).
 
-The script [`convert_data.py`](imdb_data/raw_data/convert_data.py) processes the raw data to a desired structure that can be imported into the ontology. Its full output and samples can be review in the [converted data folder](imdb_data/converted_data/)
+The script [`convert_data.py`](imdb_data/raw_data/convert_data.py) processes the raw data to a desired structure that can be imported into the ontology. Its full output and samples can be reviewed in the [converted data folder](imdb_data/converted_data/)
 
 ## Explanation of converted data files
 
@@ -51,7 +51,7 @@ This table maps actors to a show. A show can have **multiple** actors. This tabl
 
 [Sample](imdb_data/converted_data/samples/character_sample.csv)
 
-This table adds characters and their actors to a show. A show can have **multiple** characters. It's important to note that **these actors are not to be added directly to the show**. This should be through inference instead. Further information of each specific actor is added to the ontology through the [person](#person) table.
+This table adds characters and their actors to a show. A show can have **multiple** characters. It is important to note that **these actors are not to be added directly to the show**. This should be through inference instead. Further information of each specific actor is added to the ontology through the [person](#person) table.
 
 | Column      | Meaning                        |
 | :---------- | :----------------------------- |
