@@ -35,17 +35,21 @@ def wikidataActor(actorNumber):
 def findAllLocations(sparql):
     sparql.setQuery(
         """
-        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         PREFIX ml: <http://example.com/movieLocations/>
-        PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-        select ?location ?lon ?lat ?sceneName ?movieName where { 
-            ?movie ml:hasScene ?scene;
-                    rdfs:label ?movieName.
-            ?scene a ml:Scene;
-                ml:hasLocation ?location;    
-                rdfs:label ?sceneName.
+        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+        select DISTINCT ?lon ?lat ?sceneName ?showName ?locationInfo where { 
+            ?show a ml:Show;
+                ml:hasLocation ?location;
+                rdfs:label ?showName.
             ?location ml:hasLatitude ?lat;
-                    ml:hasLongitude ?lon. 
+                    ml:hasLongitude ?lon;
+                    rdfs:label ?locationInfo 
+            OPTIONAL{
+                ?scene a ml:Scene.
+                ?show ml:hasScene ?scene.
+                ?scene ml:hasLocation ?location;
+                    rdfs:label ?sceneName. 
+            }
         }
     """
     )
@@ -60,11 +64,14 @@ def findAllLocations(sparql):
         [],
     )
     for result in results["results"]["bindings"]:
-        locationList.append(result["location"]["value"])
+        locationList.append(result["locationInfo"]["value"])
         lonList.append(result["lon"]["value"])
         latList.append(result["lat"]["value"])
-        sceneList.append(result["sceneName"]["value"])
-        movieList.append(result["movieName"]["value"])
+        if 'sceneName' in result:
+            sceneList.append(result["sceneName"]["value"])
+        else:
+            sceneList.append('Filming location')
+        movieList.append(result["showName"]["value"])
     i = 0
     while i < len(lonList):
         tempList = [
@@ -72,6 +79,7 @@ def findAllLocations(sparql):
             lonList[i],
             sceneList[i],
             movieList[i],
+            locationList[i]
         ]  # , locationList[i]
         dataList.append(
             tempList
@@ -133,12 +141,10 @@ def findScene(sparql, show):
     mappingCoordinates = dict(
         zip(sceneList, dataList)
     )  ## lat = value[0], lon = value[1], location = value[2]
-    # print('dit is de sceneList', sceneList)
-    # print('dit is de mappingCoordinates', mappingCoordinates)
     return sceneList, mappingCoordinates  ##
 
 @st.cache
-def findActor(sparql, radioButton): ## this query can work for both actors and directors
+def findPerson(sparql, radioButton): ## this query can work for both actors and directors
     filter2 = ''
     if radioButton == 'Actor':
         filter2 = '?person a ml:Actor;'
@@ -177,7 +183,7 @@ def findActor(sparql, radioButton): ## this query can work for both actors and d
     actorDict = dict(
         zip(actorNameList2, actorNumberList2)
     )  ## Make a dict of each actor with their
-    actorNameList2.insert(0, "Select an actor!") ## This was done to prevent the query from auto-loading. you can not give st.select an empty value.
+    actorNameList2.insert(0, "Select a person!") ## This was done to prevent the query from auto-loading. you can not give st.select an empty value.
     return actorNameList2, actorDict             ## Therefore, we add a value which is not an actor and only run the query when the user input is not equal to this value.
 
 
@@ -193,19 +199,20 @@ def findShowActor(sparql, Person, radioButton):  ## finds all movies with a spec
     sparql.setQuery(  
         """
         PREFIX ml: <http://example.com/movieLocations/>
-        select DISTINCT ?title ?sceneName ?lon ?lat where { 
+        select DISTINCT ?title ?sceneName ?lon ?lat ?locationName where { 
             %s
             ?show rdfs:label ?title;
                   ml:hasLocation ?location.
             ?location ml:hasLongitude ?lon;
-            ml:hasLatitude ?lat
+                      ml:hasLatitude ?lat;
+                      rdfs:label ?locationName
             OPTIONAL{
                 ?scene a ml:Scene.
                 ?show ml:hasScene ?scene.
                 ?scene ml:hasLocation ?location;
                     rdfs:label ?sceneName. 
             }        
-    }  LIMIT 50
+    } 
     """
         % (filter1) ## Doesn't return movies if they have no scenes.
     )
@@ -213,25 +220,22 @@ def findShowActor(sparql, Person, radioButton):  ## finds all movies with a spec
     results = sparql.query().convert()
     showTitleList = []
     locationList = []
-    sceneNameList = []
     if radioButton == 'Actor' or radioButton == 'Director':
         for result in results["results"]["bindings"]:
             showTitleList.append(result["title"]["value"])
             lonLat = [result['lon']['value'],result['lat']['value']]
             if 'sceneName' in result:
-                sceneNameList.append(result["sceneName"]["value"])
-                tempvar = [result['title']['value'], lonLat, result["sceneName"]["value"]]
+                tempvar = [result['title']['value'], lonLat, result["sceneName"]["value"], result['locationName']['value']]
             else:
-                tempvar = [result['title']['value'], lonLat, 'Filming location']
-                sceneNameList.append('Filming location')
+                tempvar = [result['title']['value'], lonLat, 'Filming location', result['locationName']['value']]
             locationList.append(tempvar)
         tempDict = {}
-        for movie, location, sceneName in locationList:
+        for movie, location, sceneName, locationName in locationList:
             if movie in tempDict:
-                tempvar = [location, sceneName]
+                tempvar = [location, sceneName, locationName]
                 tempDict[movie].append(tempvar)
             else:
-                tempDict[movie] = [[location, sceneName]]
+                tempDict[movie] = [[location, sceneName, locationName]]
         showTitleList = list(dict.fromkeys(showTitleList))
     else:
         pass
@@ -243,8 +247,8 @@ def findShow(sparql, radioButton):
     selectFilter = '?title'
     secondFilter = '?show ml:hasScene ?scene'
     if radioButton == 'Movies':
-        selectFilter = '?title ?lon ?lat'
-        secondFilter = '?show ml:hasLocation ?location. ?location ml:hasLongitude ?lon; ml:hasLatitude ?lat'
+        selectFilter = '?title ?lon ?lat ?locationInfo'
+        secondFilter = '?show ml:hasLocation ?location. ?location ml:hasLongitude ?lon; ml:hasLatitude ?lat; rdfs:label ?locationInfo.'
     sparql.setQuery(
         """  
         PREFIX ml: <http://example.com/movieLocations/>
@@ -261,18 +265,20 @@ def findShow(sparql, radioButton):
     results = sparql.query().convert()
     showList = []
     movieLocationList = []
+
     movieLocationDict = {}
     if radioButton == 'Movies':
         for result in results["results"]["bindings"]:
             showList.append(result['title']['value'])
             lonLat = [result['lon']['value'],result['lat']['value']]
-            tempvar = [result['title']['value'], lonLat] ##create 2 dimensional list containing a movie + coordinates per index
+            tempvar = [result['title']['value'], lonLat, result['locationInfo']['value']] ##create 2 dimensional list containing a movie + coordinates per index
             movieLocationList.append(tempvar)
-        for movie, coordinates in movieLocationList: 
+        for movie, coordinates, locationInfo in movieLocationList: 
             if movie in movieLocationDict: ## create dictionary with movies as key, containing 1 or more set of coordinates per key
-                movieLocationDict[movie].append(coordinates)
+                tempvar = [coordinates, locationInfo]
+                movieLocationDict[movie].append(tempvar)
             else:
-                movieLocationDict[movie] = [coordinates]
+                movieLocationDict[movie] = [[coordinates, locationInfo]]
         showList = list(dict.fromkeys(showList)) ## remove dupes from showlist, gets used for multiselectbox
     else:
         for result in results["results"]["bindings"]:
