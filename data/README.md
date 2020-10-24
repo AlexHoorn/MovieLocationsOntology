@@ -52,7 +52,16 @@ The fourth step was **creating several excel datasets** that could be loaded int
 
 ### Loading data into the ontology
 
-The final step was loading the data of our several processed datasets into protege using the cellfie plugin. The rules that were used for loading the data into protege can be found in [the import rules for the ontology](../ontology/import_rules/actor_map.json).
+The final step was loading the data of our several processed datasets into protege using the cellfie plugin. This was one of the most time-consuming steps since every single one of our 10 datasets was too heavy to handle for protege often resulting in "axiom generating" times of 30 minutes. The rules that were used for loading the data into protege can be found in [the import rules for the ontology](../ontology/import_rules/actor_map.json).
+The following images illustrate some of the import rules (non-exhaustive) found in this folder. With these import rules both IMDB data and Location data were loaded into the protege ontology.
+![ruleset_img](../ontology/import_rules/images/actor.png)
+![ruleset_img](../ontology/import_rules/images/actor_map.png)
+![ruleset_img](../ontology/import_rules/images/character.png)
+![ruleset_img](../ontology/import_rules/images/location.png)
+![ruleset_img](../ontology/import_rules/images/location_map.png)
+![ruleset_img](../ontology/import_rules/images/scene.png)
+![ruleset_img](../ontology/import_rules/images/scene_map.png)
+![ruleset_img](../ontology/import_rules/images/show.png)
 
 ### Adding alignment with Wikidata resource URI's
 
