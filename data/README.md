@@ -1,6 +1,7 @@
 - [IMDB Data](#imdb-data)
 - [Location Data](#location-data)
-  - [Explanation of location data gathering process](#explanation-of-location-data-gathering-process)
+  - [Location data folder contents](#location-data-folder-contents)
+  - [Explanation of location data creation process](#explanation-of-location-data-creation-process)
     - [Scraping](#scraping)
     - [Geocoding](#geocoding)
     - [Proces and clean data](#proces-and-clean-data)
@@ -19,7 +20,13 @@
 
 # Location Data
 
-## Explanation of location data gathering process
+## Location data folder contents
+
+The location data folder has several subfolder used in the process of creating these datasets. The process of creating this data is described in the [explanation of the data creation](#Explanation-of-location-data-creation-process). The resulting individual datafiles are explained under the [explanation of converted data files](#explanation-of-converted-data-files).
+
+The [converted_data](location_data/scripts/) folder contains the endproduct of the dataset creatin process: data ready for import into protege. The [images](location_data/images/) folder contains several illustrations used in the readme. The [raw_data](location_data/raw_data/) folder contains the raw data before it was processed towards an end product. This data forms the basis for the converted_data. It contains the raw data in several stages. The first stage was the scraped stage and the second stage was the geocoded stage. After cleaning and processing the geocoded data this data was saved in the converted data folder. The raw_data folder has an additional subfolder with wikidata_mappings. These were dictionaries used to map our shows to equivalent wikidata resources. The [scripts](location_data/scripts/) folder contains all scripts written for the dataset creation process.
+
+## Explanation of location data creation process
 
 The process of gathering the locations for the shows consisted of several steps. The steps are: Scraping, Geocoding, Processing & cleaning, Creating maps and finally loading the data into protege.
 
