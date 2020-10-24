@@ -38,6 +38,7 @@ row_index = 0
 def GiveRowIdentifier(input, tconst, lconst):
     return str(input) + tconst + lconst
 
+index = 0
 def GetIdentifier(input, char, unique=True):
     if unique:
         return char + str(input)
