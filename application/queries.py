@@ -138,47 +138,6 @@ def findScene(sparql, show):
     return sceneList, mappingCoordinates  ##
 
 @st.cache
-def findShow(sparql, radioButton):
-    selectFilter = '?title'
-    secondFilter = '?show ml:hasScene ?scene'
-    if radioButton == 'Movies':
-        selectFilter = '?title ?lon ?lat'
-        secondFilter = '?show ml:hasLocation ?location. ?location ml:hasLongitude ?lon; ml:hasLatitude ?lat'
-    sparql.setQuery(
-        """  
-        PREFIX ml: <http://example.com/movieLocations/>
-        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-        select DISTINCT %s where { 
-            ?show rdf:type ml:Show;
-                rdfs:label ?title.
-            %s
-                    } LIMIT 100
-    """
-    % (selectFilter, secondFilter)
-    )
-    sparql.setReturnFormat(JSON)
-    results = sparql.query().convert()
-    showList = []
-    movieLocationList = []
-    movieLocationDict = {}
-    if radioButton == 'Movies':
-        for result in results["results"]["bindings"]:
-            showList.append(result['title']['value'])
-            lonLat = [result['lon']['value'],result['lat']['value']]
-            tempvar = [result['title']['value'], lonLat] ##create 2 dimensional list containing a movie + coordinates per index
-            movieLocationList.append(tempvar)
-        for movie, coordinates in movieLocationList: 
-            if movie in movieLocationDict: ## create dictionary with movies as key, containing 1 or more set of coordinates per key
-                movieLocationDict[movie].append(coordinates)
-            else:
-                movieLocationDict[movie] = [coordinates]
-        showList = list(dict.fromkeys(showList)) ## remove dupes from showlist, gets used for multiselectbox
-    else:
-        for result in results["results"]["bindings"]:
-            showList.append(result["title"]["value"])
-    return showList, movieLocationDict
-
-@st.cache
 def findActor(sparql, radioButton): ## this query can work for both actors and directors
     filter2 = ''
     if radioButton == 'Actor':
@@ -227,14 +186,14 @@ def findShowActor(sparql, Person, radioButton):  ## finds all movies with a spec
     filter1 = ''
     
     if radioButton == 'Actor':
-        filter1 = ("?show ml:hasCharacter ?character. ?character ml:playedBy ?actor. ?actor rdfs:label '%s'." % (Person))
+        filter1 = ("?show ml:hasActor ?actor. ?actor rdfs:label '%s'." % (Person))
     else:
         filter1 = ("?show ml:hasDirector ?director. ?director rdfs:label '%s'." % (Person))
 
     sparql.setQuery(  
         """
         PREFIX ml: <http://example.com/movieLocations/>
-        select DISTINCT ?title where { 
+        select DISTINCT ?title ?sceneName ?lon ?lat where { 
             %s
             ?show rdfs:label ?title;
                   ml:hasLocation ?location.
@@ -246,13 +205,76 @@ def findShowActor(sparql, Person, radioButton):  ## finds all movies with a spec
                 ?scene ml:hasLocation ?location;
                     rdfs:label ?sceneName. 
             }        
-    }  
+    }  LIMIT 50
     """
         % (filter1) ## Doesn't return movies if they have no scenes.
     )
     sparql.setReturnFormat(JSON)
     results = sparql.query().convert()
-    showActorList = []
-    for result in results["results"]["bindings"]:
-        showActorList.append(result["title"]["value"])
-    return showActorList
+    showTitleList = []
+    locationList = []
+    sceneNameList = []
+    if radioButton == 'Actor' or radioButton == 'Director':
+        for result in results["results"]["bindings"]:
+            showTitleList.append(result["title"]["value"])
+            lonLat = [result['lon']['value'],result['lat']['value']]
+            if 'sceneName' in result:
+                sceneNameList.append(result["sceneName"]["value"])
+                tempvar = [result['title']['value'], lonLat, result["sceneName"]["value"]]
+            else:
+                tempvar = [result['title']['value'], lonLat, 'Filming location']
+                sceneNameList.append('Filming location')
+            locationList.append(tempvar)
+        tempDict = {}
+        for movie, location, sceneName in locationList:
+            if movie in tempDict:
+                tempvar = [location, sceneName]
+                tempDict[movie].append(tempvar)
+            else:
+                tempDict[movie] = [[location, sceneName]]
+        showTitleList = list(dict.fromkeys(showTitleList))
+    else:
+        pass
+
+    return showTitleList, tempDict
+
+@st.cache
+def findShow(sparql, radioButton):
+    selectFilter = '?title'
+    secondFilter = '?show ml:hasScene ?scene'
+    if radioButton == 'Movies':
+        selectFilter = '?title ?lon ?lat'
+        secondFilter = '?show ml:hasLocation ?location. ?location ml:hasLongitude ?lon; ml:hasLatitude ?lat'
+    sparql.setQuery(
+        """  
+        PREFIX ml: <http://example.com/movieLocations/>
+        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+        select DISTINCT %s where { 
+            ?show rdf:type ml:Show;
+                rdfs:label ?title.
+            %s
+                    } LIMIT 100
+    """
+    % (selectFilter, secondFilter)
+    )
+    sparql.setReturnFormat(JSON)
+    results = sparql.query().convert()
+    showList = []
+    movieLocationList = []
+    movieLocationDict = {}
+    if radioButton == 'Movies':
+        for result in results["results"]["bindings"]:
+            showList.append(result['title']['value'])
+            lonLat = [result['lon']['value'],result['lat']['value']]
+            tempvar = [result['title']['value'], lonLat] ##create 2 dimensional list containing a movie + coordinates per index
+            movieLocationList.append(tempvar)
+        for movie, coordinates in movieLocationList: 
+            if movie in movieLocationDict: ## create dictionary with movies as key, containing 1 or more set of coordinates per key
+                movieLocationDict[movie].append(coordinates)
+            else:
+                movieLocationDict[movie] = [coordinates]
+        showList = list(dict.fromkeys(showList)) ## remove dupes from showlist, gets used for multiselectbox
+    else:
+        for result in results["results"]["bindings"]:
+            showList.append(result["title"]["value"])
+    return showList, movieLocationDict    

@@ -93,9 +93,7 @@ with col1:
         st.write(radioInput)
 
         if radioInput == 'Movies':
-            
             inputShow3 = st.multiselect('Select your favorite show', showList, key='randomkey12344')
-
             if inputShow3 != []:
                 mapInitialized = False
                 for key, value in movieLocationDict.items():
@@ -113,9 +111,6 @@ with col1:
                 if st.button("Show map!", key="showButton"):
                     with col3:
                         folium_static(m2)
-                
-
-
         if radioInput == 'Movie scenes':
             inputShow = st.multiselect("Select your favorite show", showList, key="1")
             st.write("Total number of movies in list = " + str(len(showList)))
@@ -157,8 +152,12 @@ with col1:
 
 with col1:
     with st.beta_expander("Actors"):
-        actorList, actorDict = Q.findActor(sparql, 'Actor')
+        mapInitialized2 = False
+        radioOptions2 = ['Actor', 'Director']
+        radioInput2 = st.radio('Look for all scenes of a movie, or individual scenes of a movie', radioOptions2, key='radio1')
+        actorList, actorDict = Q.findActor(sparql, radioInput2)
         st.write("Total number of actors in list = " + str(len(actorList)))
+        #string = "Select your favorite Director"
         inputActor = st.selectbox("Select your favorite Actor", actorList, key="3")
         actorNumber = ""
         if inputActor != "Select an actor!":
@@ -167,7 +166,7 @@ with col1:
                     actorNumber = value
                     break
             wikiImage, wikiDescription = Q.wikidataActor(actorNumber)
-            showActorList = Q.findShowActor(sparql, inputActor, 'Actor')
+            showActorList, locationDict = Q.findShowActor(sparql, inputActor, radioInput2)
             inputShow2 = st.multiselect("select a show", showActorList, key="4")
             st.write("Total number of movies in list = " + str(len(showActorList)))
             if wikiImage != "":
@@ -181,32 +180,50 @@ with col1:
 
 
             if inputShow2 != []:
-                sceneList, mappingCoordinates = Q.findScene(sparql, inputShow2)
-                inputScene = st.multiselect("Select your scene", sceneList, key="5")
-                if (
-                    inputScene != []
-                ):  ##if scene is selected, render the button to call the folium map
-                    coordinates, locations, scenes = [], [], []
-                    for key, value in mappingCoordinates.items():
-                        if key in inputScene:
-                            coordinates.append([value[0], value[1]])
-                            locations.append(
-                                value[2]
-                            )  ## contains the locationName, used as popup
-                            scenes.append(
-                                key
-                            )  ## contains the sceneName, will be used as a tooltip
-                    m2 = folium.Map(location=coordinates[0], zoom_start=16)
-                    i = 0
-                    for x in coordinates:
-                        folium.Marker(x, popup=locations[i], tooltip=scenes[i]).add_to(
-                            m2
-                        )
-                        i += 1
-                    if st.button("test!", key="showButton2"):
-                        with col3:
-                            folium_static(m2)
+                for key, value in locationDict.items():
+                    for show in inputShow2:
+                        if show in key:
+                            for value2 in value:                                    
+                                lon = value2[0][0] ## <-- longitude
+                                lat = value2[0][1]
+                                if mapInitialized2 == False:
+                                    m2 = folium.Map(location=[lat, lon], zoom_start=16)
+                                    mapInitialized2 = True
+                                sceneName = value2[1]
+                                folium.Marker([lat, lon], popup=sceneName, tooltip=show).add_to(m2)
+                if st.button('render map!', key=13213232133):
+                    with col3:
+                        folium_static(m2)
 
+
+                
+                
+                 #   sceneList, mappingCoordinates = Q.findScene(sparql, inputShow2)
+                 #   inputScene = st.multiselect("Select your scene", sceneList, key="5")
+                 #   if (
+                 #       inputScene != []
+                 #   ):  ##if scene is selected, render the button to call the folium map
+                 #       coordinates, locations, scenes = [], [], []
+                 #       for key, value in mappingCoordinates.items():
+                 #          if key in inputScene:
+                 #               coordinates.append([value[0], value[1]])
+                 #               locations.append(
+                 #                   value[2]
+                 #               )  ## contains the locationName, used as popup
+                 #               scenes.append(
+                 #                   key
+                 #               )  ## contains the sceneName, will be used as a tooltip
+                 #       m2 = folium.Map(location=coordinates[0], zoom_start=16)
+                 #       i = 0
+                 #       for x in coordinates:
+                 #           folium.Marker(x, popup=locations[i], tooltip=scenes[i]).add_to(
+                 #               m2
+                 #           )
+                 #           i += 1
+                 #       if st.button("test!", key="showButton2"):
+                 #           with col3:
+                 #               folium_static(m2)
+                    
 
 ## use Nominatim to gather coordinate information
 with col1:
