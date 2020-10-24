@@ -65,7 +65,7 @@ The following images illustrate some of the import rules (non-exhaustive) found 
 
 ### Adding alignment with Wikidata resource URI's
 
-An additional step was further postprocessing the data to include a column indicating a wikidata resource. With this column our data was aligned to external RF data on the web. This also allowed for great reuse of our data for future users. This mapping was done via the add_owl_same_as.py script. In this script we queried wikidata for sections of 80 shows and saved the resources that were returned. For more information on this dataset see [zenodo_data](##zenodo_data).
+An additional step was further postprocessing the data to include a column indicating a wikidata resource. With this column our data was aligned to external RF data on the web. This also allowed for great reuse of our data for future users. This mapping was done via the add_owl_same_as.py script. In this script we queried wikidata for sections of 80 shows and saved the resources that were returned. For more information on this dataset see [zenodo_data](##zenodo_data). Finally with the data created from the add_owl_same_as.py script we integrated the alignment to wikidata resources into the ontology with the map_wiki_resources.py script. The resulting ontology was uploaded to [zenodo.org](https://zenodo.org/record/4126948).
 
 ## Explanation of converted data files
 
@@ -119,7 +119,7 @@ This table contains the location identifier and it's attributes. A location has 
 
 ### zenodo_data
 
-This file contains the data of all the previously mentioned datasets combined. It also has an additional column for **wikidata_entry** which maps each of our items to a wikidata resource. This greatly improves reusability for our dataset since it aligns the data to resources on the web. This dataset was created by the additional step of aligning with Wikidata resource URI's. This dataset was merged into our ontology in the final step. This ontology was uploaded to zenodo.org.
+This file contains the data of all the previously mentioned datasets combined. It also has an additional column for **wikidata_entry** which maps each of our items to a wikidata resource. This greatly improves reusability for our dataset since it aligns the data to resources on the web. This dataset was created by the additional step of aligning with Wikidata resource URI's. This dataset was merged into our ontology in the final step with the map_wiki_resources.py script. This ontology was uploaded to [zenodo.org](https://zenodo.org/record/4126948)
 
 | Column         | Meaning                                                               |
 | :------------- | :-------------------------------------------------------------------- |
