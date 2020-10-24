@@ -10,15 +10,16 @@ Markdown documentation created by [pyLODE](http://github.com/rdflib/pyLODE) 2.8.
 
 ## Table of Contents
 1. [Classes](#classes)
-1. [Object Properties](#objectproperties)
-1. [Datatype Properties](#datatypeproperties)
+1. [Object Properties](#object-properties)
+1. [Datatype Properties](#datatype-properties)
 1. [Namespaces](#namespaces)
 1. [Legend](#legend)
 
 
 ## Overview
-
+![Overview](images/inferences/overview.png)
 **Figure 1:** Ontology overview
+
 ## Classes
 [Actor](#Actor),
 [Character](#Character),
