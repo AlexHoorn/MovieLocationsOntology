@@ -6,7 +6,7 @@
     - [Proces and clean data](#proces-and-clean-data)
     - [Create maps for ontology](#create-maps-for-ontology)
     - [Loading data into the ontology](#loading-data-into-the-ontology)
-    - [Aligning data for Zenodo dataset](#aligning-data-for-zenodo-dataset)
+    - [Adding alignment with Wikidata resource URI's](#adding-alignment-with-wikidata-resource-uris)
   - [Explanation of converted data files](#explanation-of-converted-data-files)
     - [scene_map](#scene_map)
     - [location_map](#location_map)
@@ -45,9 +45,9 @@ The fourth step was **creating several excel datasets** that could be loaded int
 
 ### Loading data into the ontology
 
-The final step was loading the data of our several processed datasets into protege using the cellfie plugin.
+The final step was loading the data of our several processed datasets into protege using the cellfie plugin. The rules that were used for loading the data into protege can be found in [the import rules for the ontology](../ontology/import_rules/actor_map.json).
 
-### Aligning data for Zenodo dataset
+### Adding alignment with Wikidata resource URI's
 
 An additional step was further postprocessing the data to include a column indicating a wikidata resource. With this column our data was aligned to external RF data on the web. This also allowed for great reuse of our data for future users. This mapping was done via the add_owl_same_as.py script. In this script we queried wikidata for sections of 80 shows and saved the resources that were returned. For more information on this dataset see [zenodo_data](##zenodo_data).
 
@@ -103,7 +103,7 @@ This table contains the location identifier and it's attributes. A location has 
 
 ### zenodo_data
 
-This file contains the data of all the previously mentioned datasets combined. It also has an additional column for **"wikidata_entry" ** which maps each of our items to a wikidata resource. This greatly improves reusability for our dataset since it aligns the data to resources on the web. This dataset is uploaded to Zenodo.org.
+This file contains the data of all the previously mentioned datasets combined. It also has an additional column for **wikidata_entry** which maps each of our items to a wikidata resource. This greatly improves reusability for our dataset since it aligns the data to resources on the web. This dataset was created by the additional step of aligning with Wikidata resource URI's. This dataset was merged into our ontology in the final step. This ontology was
 
 | Column         | Meaning                                                               |
 | :------------- | :-------------------------------------------------------------------- |
@@ -120,4 +120,4 @@ This file contains the data of all the previously mentioned datasets combined. I
 
 ### Overview
 
-![Overview](../converted_data/images/overview.png)
+![Overview](imdb_data/converted_data/images/overview.png)
