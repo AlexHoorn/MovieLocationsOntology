@@ -3,7 +3,7 @@ import streamlit as st
 
 @st.cache
 def wikidataActor(actorNumber):
-    sparql = SPARQLWrapper("https://query.wikidata.org/bigdata/namespace/wdq/sparql")
+    sparql = SPARQLWrapper("https://query.wikidata.org/bigdata/namespace/wdq/sparql", agent='kick ass movielocator project')
     sparql.setQuery(
         """
         PREFIX wdt: <http://www.wikidata.org/prop/direct/>
@@ -247,8 +247,12 @@ def findShow(sparql, radioButton):
     selectFilter = '?title'
     secondFilter = '?show ml:hasScene ?scene'
     if radioButton == 'Movies':
-        selectFilter = '?title ?lon ?lat ?locationInfo'
-        secondFilter = '?show ml:hasLocation ?location. ?location ml:hasLongitude ?lon; ml:hasLatitude ?lat; rdfs:label ?locationInfo.'
+        selectFilter = '?title ?lon ?lat ?locationInfo ?sceneName'
+        secondFilter = """?show ml:hasLocation ?location. ?location ml:hasLongitude ?lon; ml:hasLatitude ?lat; rdfs:label ?locationInfo. 
+                            OPTIONAL{?scene a ml:Scene.
+                                    ?show ml:hasScene ?scene.
+                                    ?scene ml:hasLocation ?location;
+                                            rdfs:label ?sceneName}"""
     sparql.setQuery(
         """  
         PREFIX ml: <http://example.com/movieLocations/>
@@ -257,7 +261,7 @@ def findShow(sparql, radioButton):
             ?show rdf:type ml:Show;
                 rdfs:label ?title.
             %s
-                    } LIMIT 100
+                    } 
     """
     % (selectFilter, secondFilter)
     )
@@ -271,14 +275,17 @@ def findShow(sparql, radioButton):
         for result in results["results"]["bindings"]:
             showList.append(result['title']['value'])
             lonLat = [result['lon']['value'],result['lat']['value']]
-            tempvar = [result['title']['value'], lonLat, result['locationInfo']['value']] ##create 2 dimensional list containing a movie + coordinates per index
+            if 'sceneName' in result:
+                tempvar = [result['title']['value'], lonLat, result['locationInfo']['value'], result['sceneName']['value']]
+            else:
+                tempvar = [result['title']['value'], lonLat, result['locationInfo']['value'], 'Filming location'] ##create 2 dimensional list containing a movie + coordinates per index
             movieLocationList.append(tempvar)
-        for movie, coordinates, locationInfo in movieLocationList: 
+        for movie, coordinates, locationInfo, sceneName in movieLocationList: 
             if movie in movieLocationDict: ## create dictionary with movies as key, containing 1 or more set of coordinates per key
-                tempvar = [coordinates, locationInfo]
+                tempvar = [coordinates, locationInfo, sceneName]
                 movieLocationDict[movie].append(tempvar)
             else:
-                movieLocationDict[movie] = [[coordinates, locationInfo]]
+                movieLocationDict[movie] = [[coordinates, locationInfo, sceneName]]
         showList = list(dict.fromkeys(showList)) ## remove dupes from showlist, gets used for multiselectbox
     else:
         for result in results["results"]["bindings"]:

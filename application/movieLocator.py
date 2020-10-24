@@ -103,10 +103,17 @@ with col1:
                             movieLocationList.append(tempValue)
                 for movie in movieLocationList:
                     for x in range(len(movie[1])):
+                        lon = movie[1][x][0][1]
+                        lat = movie[1][x][0][0]
+                        scene = movie[1][x][2]
+                        location = movie[1][x][1]
                         if mapInitialized == False:
-                            m2 = folium.Map(location=[movie[1][x][0][1], movie[1][x][0][0]], zoom_start=16)
+                            m2 = folium.Map(location=[lon, lat], zoom_start=16)
                             mapInitialized = True
-                        folium.Marker([movie[1][x][0][1], movie[1][x][0][0]],popup='location: '+movie[1][x][1]   ,tooltip=movie[0]).add_to(m2)
+                        if 'Filming location' in scene:
+                            folium.Marker([lon, lat],popup='location:'+location   ,tooltip=movie[0]).add_to(m2)
+                        else:
+                            folium.Marker([lon, lat],popup='Scene: '+scene+'\nlocation: '+location   ,tooltip=movie[0]).add_to(m2)
                     
                 if st.button("Show map!", key="showButton"):
                     with col3:
@@ -151,7 +158,7 @@ with col1:
                                 folium_static(m2)
 
 with col1:
-    with st.beta_expander("Actors"):
+    with st.beta_expander("Actors and directors"):
         mapInitialized2 = False
         radioOptions2 = ['Actor', 'Director']
         radioInput2 = st.radio('Look for all scenes of a movie, or individual scenes of a movie', radioOptions2, key='radio1')
@@ -196,7 +203,7 @@ with col1:
                                 if 'Filming location' in sceneName:
                                     folium.Marker([lat, lon], popup='location:  '+locationName, tooltip=show).add_to(m2)
                                 else:
-                                    folium.Marker([lat, lon], popup='scene= '+sceneName+'\nlocation: '+locationName, tooltip=show).add_to(m2)
+                                    folium.Marker([lat, lon], popup='scene: '+sceneName+'\nlocation: '+locationName, tooltip=show).add_to(m2)
                 if st.button('render map!', key=13213232133):
                     with col3:
                         folium_static(m2)
