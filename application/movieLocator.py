@@ -157,7 +157,7 @@ with col1:
 
 with col1:
     with st.beta_expander("Actors"):
-        actorList, actorDict = Q.findActor(sparql)
+        actorList, actorDict = Q.findActor(sparql, 'Actor')
         st.write("Total number of actors in list = " + str(len(actorList)))
         inputActor = st.selectbox("Select your favorite Actor", actorList, key="3")
         actorNumber = ""
@@ -167,7 +167,7 @@ with col1:
                     actorNumber = value
                     break
             wikiImage, wikiDescription = Q.wikidataActor(actorNumber)
-            showActorList = Q.findShowActor(sparql, inputActor)
+            showActorList = Q.findShowActor(sparql, inputActor, 'Actor')
             inputShow2 = st.multiselect("select a show", showActorList, key="4")
             st.write("Total number of movies in list = " + str(len(showActorList)))
             if wikiImage != "":
@@ -178,6 +178,8 @@ with col1:
             if wikiDescription != "":
                 with col5:
                     st.write(wikiDescription)
+
+
             if inputShow2 != []:
                 sceneList, mappingCoordinates = Q.findScene(sparql, inputShow2)
                 inputScene = st.multiselect("Select your scene", sceneList, key="5")

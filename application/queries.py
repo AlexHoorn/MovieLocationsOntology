@@ -33,7 +33,6 @@ def wikidataActor(actorNumber):
 
 @st.cache
 def findAllLocations(sparql):
-    # sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/test3")
     sparql.setQuery(
         """
         PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -81,8 +80,6 @@ def findAllLocations(sparql):
     return dataList  ##
 
 
-##if user selects to enter a scene, loads all scene from the selected movie
-
 @st.cache
 def findScene(sparql, show):
     filterstr = ""  ## string that gets inserted into the query, contains the filter
@@ -99,8 +96,6 @@ def findScene(sparql, show):
             filterstr = filterstr + tempvar
         filterstr = filterstr[:-3]  ## remove last 3 characters of str, which are "|| "
         filterstr = filterstr + ")"
-
-    # sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/test3")
     sparql.setQuery(
         """
         PREFIX ml: <http://example.com/movieLocations/>
@@ -184,16 +179,21 @@ def findShow(sparql, radioButton):
     return showList, movieLocationDict
 
 @st.cache
-def findActor(sparql):
-    # sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/test3")
+def findActor(sparql, radioButton): ## this query can work for both actors and directors
+    filter2 = ''
+    if radioButton == 'Actor':
+        filter2 = '?person a ml:Actor;'
+    else:
+        filter2 = '?person a ml:Director;'
     sparql.setQuery(
         """
         PREFIX ml: <http://example.com/movieLocations/>
-        select DISTINCT ?name ?actor where { 
-            ?actor a ml:Actor;
+        select DISTINCT ?name ?person where { 
+            %s
                  rdfs:label ?name.
     }
     """
+    % (filter2)
     )
     sparql.setReturnFormat(JSON)
     results = sparql.query().convert()
@@ -201,7 +201,7 @@ def findActor(sparql):
     actorNumberList = []  ## contains the actor code from our ontology
     for result in results["results"]["bindings"]:
         actorNameList.append(result["name"]["value"])
-        actorNumberList.append(result["actor"]["value"])
+        actorNumberList.append(result["person"]["value"])
     actorNumberList2 = [
         str(i).replace("http://example.com/movieLocations/", "")
         for i in actorNumberList
@@ -223,21 +223,32 @@ def findActor(sparql):
 
 
 @st.cache
-def findShowActor(sparql, Actor):  ## finds all movies with a specific actor in it
-    # sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/test3")
+def findShowActor(sparql, Person, radioButton):  ## finds all movies with a specific actor in it
+    filter1 = ''
+    
+    if radioButton == 'Actor':
+        filter1 = ("?show ml:hasCharacter ?character. ?character ml:playedBy ?actor. ?actor rdfs:label '%s'." % (Person))
+    else:
+        filter1 = ("?show ml:hasDirector ?director. ?director rdfs:label '%s'." % (Person))
 
     sparql.setQuery(  
         """
         PREFIX ml: <http://example.com/movieLocations/>
         select DISTINCT ?title where { 
-            ?show ml:hasCharacter ?character.
-            ?character ml:playedBy ?actor.
-            ?actor rdfs:label '%s'.
+            %s
             ?show rdfs:label ?title;
-                    ml:hasScene ?scene  
+                  ml:hasLocation ?location.
+            ?location ml:hasLongitude ?lon;
+            ml:hasLatitude ?lat
+            OPTIONAL{
+                ?scene a ml:Scene.
+                ?show ml:hasScene ?scene.
+                ?scene ml:hasLocation ?location;
+                    rdfs:label ?sceneName. 
+            }        
     }  
     """
-        % (Actor) ## Doesn't return movies if they have no scenes.
+        % (filter1) ## Doesn't return movies if they have no scenes.
     )
     sparql.setReturnFormat(JSON)
     results = sparql.query().convert()
