@@ -8,4 +8,4 @@ __pycache__
 *.sqlite3*
 application/config.ini
 cellfie.log
-data/raw_data/*.tsv/
+data/imdb_data/raw_data/*.tsv/
