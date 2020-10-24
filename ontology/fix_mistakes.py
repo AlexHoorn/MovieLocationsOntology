@@ -19,6 +19,9 @@ for Pred in [ML.hasSceneName, ML.hasFullName, ML.hasPrimaryTitle]:
         g.add((sub, RDFS.label, obj))
         g.remove((sub, Pred, obj))
         count += 1
+
+    g.remove((Pred, None, None))
+    print(f"Removed {Pred.toPython()}")
 print(f"Changed {count} statements")
 
 print("Saving graph")
