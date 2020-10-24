@@ -77,8 +77,8 @@ def WriteLocationData(locationElement, writer, tconst, df):
 
 
 # Construct directory paths for your part
-readDir = os.getcwd() + "/location_data/raw_data/"
-writeDir = os.getcwd() + "/location_data/raw_data/"
+readDir = os.getcwd() + "/data/location_data/raw_data/scraped_data"
+writeDir = os.getcwd() + "/data/location_data/raw_data/scraped_data"
 print("read:", readDir)
 
 # Track file-indices

@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup as bs
 import requests
 import csv
 import time
+import os
 
 # Some variables
 ########################################################################
@@ -18,7 +19,7 @@ startUrlPart2 = ""
 def GetSaveName(count):
     # Get a save name based on the genre and 500movies
     return (
-        currentGENRE + "MovieLocations" + str(count) + "-" + str(count + 500) + ".csv"
+       os.getcwd() +"/data/location_data/raw_data/scraped_data/"+ currentGENRE + "MovieLocations" + str(count) + "-" + str(count + 500) + ".csv"
     )
 
 

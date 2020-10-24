@@ -15,7 +15,7 @@ def RemoveIllegalChars(input):
     )
 
 
-merged = pd.read_csv(os.getcwd() + "/location_data/allmerged.csv")
+merged = pd.read_csv(os.getcwd() + "data/location_data/converted_data/allmerged.csv")
 
 # Drop index columns
 #merged.drop(merged.columns[[0]], axis=1, inplace=True)
@@ -28,11 +28,11 @@ only_scenes_df = merged[merged["sLabel"].notnull()]
 scene_map = only_scenes_df[["tconst", "sconst"]]
 
 # Save scene map
-scene_map.to_excel("location_data/converted_data/scene_map.xlsx", index=False)
+scene_map.to_excel("data/location_data/converted_data/scene_map.xlsx", index=False)
 
 # Save sample
 scene_map.head(10).to_csv(
-    "location_data/converted_data/samples/scene_map_sample.csv", index=False
+    "data/location_data/converted_data/samples/scene_map_sample.csv", index=False
 )
 
 
@@ -44,11 +44,11 @@ no_scenes_df = merged[~merged["sLabel"].notnull()]
 location_map = no_scenes_df[["tconst", "lconst"]]
 
 # Save scene map
-location_map.to_excel("location_data/converted_data/location_map.xlsx", index=False)
+location_map.to_excel("data/location_data/converted_data/location_map.xlsx", index=False)
 
 # Save sample
 location_map.head(10).to_csv(
-    "location_data/converted_data/samples/location_map_sample.csv", index=False
+    "data/location_data/converted_data/samples/location_map_sample.csv", index=False
 )
 
 
@@ -63,11 +63,11 @@ scene_info = only_scenes_df[["sconst", "sLabel", "lconst"]]
 scene_info["sLabel"] = scene_info["sLabel"].apply(RemoveIllegalChars)
 
 # Save scene info
-scene_info.to_excel("location_data/converted_data/scene_info.xlsx", index=False)
+scene_info.to_excel("data/location_data/converted_data/scene_info.xlsx", index=False)
 
 # Save sample
 scene_info.head(10).to_csv(
-    "location_data/converted_data/samples/scene_info_sample.csv", index=False
+    "data/location_data/converted_data/samples/scene_info_sample.csv", index=False
 )
 
 
@@ -76,9 +76,9 @@ scene_info.head(10).to_csv(
 location_info = merged[["lconst", "lLabel", "lAltLabel", "lat", "long"]]
 
 # Save location info
-location_info.to_excel("location_data/converted_data/location_info.xlsx", index=False)
+location_info.to_excel("data/location_data/converted_data/location_info.xlsx", index=False)
 
 # Save sample
 location_info.head(10).to_csv(
-    "location_data/converted_data/samples/location_info_sample.csv", index=False
+    "data/location_data/converted_data/samples/location_info_sample.csv", index=False
 )
