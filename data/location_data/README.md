@@ -13,7 +13,7 @@
   - [zenodo_data](#zenodo_data)
   - [Overview](#overview)
 - [Other](#other)
-    - [Old notes](#old-notes)
+  - [Old notes](#old-notes)
 
 # Explanation of location data gathering process
 
