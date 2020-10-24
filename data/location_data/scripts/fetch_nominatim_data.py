@@ -21,10 +21,10 @@ yourPartNr = input(
 numHTTPErrors = 0
 
 # Construct directory paths for your part
-readDir = os.getcwd() + "/location_data/raw_data/raw_data_part_" + str(yourPartNr) + "/"
+readDir = os.getcwd() + "data/location_data/raw_data/raw_data_part_" + str(yourPartNr) + "/"
 writeDir = (
     os.getcwd()
-    + "/location_data/raw_data_geocoded/geocoded_data_part_"
+    + "data/location_data/raw_data/geocoded_data/geocoded_data_part_"
     + str(yourPartNr)
     + "/"
 )

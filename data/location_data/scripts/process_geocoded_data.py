@@ -38,7 +38,6 @@ row_index = 0
 def GiveRowIdentifier(input, tconst, lconst):
     return str(input) + tconst + lconst
 
-#TODO make scenes same if they have same label for same location in same movie
 def GetIdentifier(input, char, unique=True):
     if unique:
         return char + str(input)
@@ -59,7 +58,7 @@ def RemoveBrackets(input):
 frames = []
 fileIndex = 0
 index = 0
-dir = os.getcwd() + "/location_data/raw_data_geocoded/"
+dir = os.getcwd() + "/data/location_data/raw_data/geocoded_data/"
 
 # PROGRAM
 ##########################################
@@ -170,5 +169,4 @@ merged = merged.drop_duplicates(subset='rowconst', keep="first")
 print(merged.shape)
 
 # Save
-merged.to_csv(os.getcwd() + "/location_data/allmerged.csv", index=False)
-merged.to_excel(os.getcwd() + "/location_data/allmerged.xlsx", index=False)
+merged.to_csv(os.getcwd() + "data/location_data/converted_data/allmerged.csv", index=False)

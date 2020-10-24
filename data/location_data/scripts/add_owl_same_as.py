@@ -7,8 +7,8 @@ import pickle
 
 ########################################################################
 # VARIABLES
-dictDir = os.getcwd() + "/owl_dicts/"
-readDir = os.getcwd() + "/allmerged.csv"
+dictDir = os.getcwd() + "data/location_data/raw_data/owl_dicts/"
+readDir = os.getcwd() + "data/location_data/converted_data/allmerged.csv"
 
 df = pd.read_csv(readDir)
 
