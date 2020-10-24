@@ -103,7 +103,7 @@ This table contains the location identifier and it's attributes. A location has 
 
 ### zenodo_data
 
-This file contains the data of all the previously mentioned datasets combined. It also has an additional column for **wikidata_entry** which maps each of our items to a wikidata resource. This greatly improves reusability for our dataset since it aligns the data to resources on the web. This dataset was created by the additional step of aligning with Wikidata resource URI's. This dataset was merged into our ontology in the final step. This ontology was
+This file contains the data of all the previously mentioned datasets combined. It also has an additional column for **wikidata_entry** which maps each of our items to a wikidata resource. This greatly improves reusability for our dataset since it aligns the data to resources on the web. This dataset was created by the additional step of aligning with Wikidata resource URI's. This dataset was merged into our ontology in the final step. This ontology was uploaded to zenodo.org.
 
 | Column         | Meaning                                                               |
 | :------------- | :-------------------------------------------------------------------- |
