@@ -23,7 +23,7 @@ title_filter = (
     pd.read_csv(
         os.path.normpath(
             os.getcwd()
-            + (sep + pardir) * 2
+            + (os.sep + os.pardir) * 2
             + "\\location_data\\converted_data\\zenodo_data.csv"
         ),
         usecols=["tconst"],

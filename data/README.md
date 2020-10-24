@@ -1,4 +1,12 @@
 - [IMDB Data](#imdb-data)
+  - [Folder contens](#folder-contens)
+  - [Explanation of converted data files](#explanation-of-converted-data-files)
+    - [actor_map](#actor_map)
+    - [character](#character)
+    - [director_map](#director_map)
+    - [genre_map](#genre_map)
+    - [person](#person)
+    - [show](#show)
 - [Location Data](#location-data)
   - [Location data folder contents](#location-data-folder-contents)
   - [Explanation of location data creation process](#explanation-of-location-data-creation-process)
@@ -8,15 +16,111 @@
     - [Create maps for ontology](#create-maps-for-ontology)
     - [Loading data into the ontology](#loading-data-into-the-ontology)
     - [Adding alignment with Wikidata resource URI's](#adding-alignment-with-wikidata-resource-uris)
-  - [Explanation of converted data files](#explanation-of-converted-data-files)
+  - [Explanation of converted data files](#explanation-of-converted-data-files-1)
     - [scene_map](#scene_map)
     - [location_map](#location_map)
     - [scene_info](#scene_info)
     - [location_info](#location_info)
     - [zenodo_data](#zenodo_data)
-    - [Overview](#overview)
+- [Overview](#overview)
 
 # IMDB Data
+
+## Folder contens
+
+The folder of IMDB data stores the relevant files that were necessary for processing the raw data from IMDB to a tabular data structure that could directly be loaded into a linked data structure. The raw data from IMDB is not stored in this repository as it is deemed to large and already readily available from its [original source]([link imdb](https://www.imdb.com/interfaces/).
+
+The script [`convert_data.py`](imdb_data/raw_data/convert_data.py) processes the raw data to a desired structure that can be imported into the ontology. Its full output and samples can be review in the [converted data folder](imdb_data/converted_data/)
+
+## Explanation of converted data files
+
+### actor_map
+
+[Sample](imdb_data/converted_data/samples/actor_map_sample.csv)
+
+This table maps actors to a show. A show can have **multiple** actors. This table appears limited because **only the actors for who their character in the show is unknown appear in this table.** Further information of each specific actor is added to the ontology through the [person](#person) table.
+
+| Column | Meaning                        |
+| :----- | :----------------------------- |
+| tconst | Identifier of a show           |
+| nconst | Identifier of an actor/actress |
+
+![actor_map](imdb_data/converted_data/images/actor_map.png)
+
+### character
+
+[Sample](imdb_data/converted_data/samples/character_sample.csv)
+
+This table adds characters and their actors to a show. A show can have **multiple** characters. It's important to note that **these actors are not to be added directly to the show**. This should be through inference instead. Further information of each specific actor is added to the ontology through the [person](#person) table.
+
+| Column      | Meaning                        |
+| :---------- | :----------------------------- |
+| tconst      | Identifier of a show           |
+| nconst      | Identifier of an actor/actress |
+| character   | Character name                 |
+| characterId | Identifier of a character      |
+
+![character](imdb_data/converted_data/images/character.png)
+
+### director_map
+
+[Sample](imdb_data/converted_data/samples/director_map_sample.csv)
+
+This table maps directors to a show. A show can have **multiple** directors. Further information of each specific director is added to the ontology through the [person](#person) table.
+
+| Column | Meaning                  |
+| :----- | :----------------------- |
+| tconst | Identifier of a show     |
+| nconst | Identifier of a director |
+
+![director_map](imdb_data/converted_data/images/director_map.png)
+
+### genre_map
+
+[Sample](imdb_data/converted_data/samples/genre_map_sample.csv)
+
+This table maps genres to a show. A show can have **multiple** genres.
+
+| Column | Meaning               |
+| :----- | :-------------------- |
+| tconst | Identifier of a show  |
+| genre  | Identifier of a genre |
+
+![genre_map](imdb_data/converted_data/images/genre_map.png)
+
+### person
+
+[Sample](imdb_data/converted_data/samples/person_sample.csv)
+
+This table adds information to every person.
+
+| Column      | Meaning                |
+| :---------- | :--------------------- |
+| nconst      | Identifier of a person |
+| primaryName | Name of a person       |
+| birthYear   | Year person was born   |
+| deathYear   | Year person has died   |
+
+![person](imdb_data/converted_data/images/person.png)
+
+### show
+
+[Sample](imdb_data/converted_data/samples/show_sample.csv)
+
+This table adds information to every show.
+
+| Column        | Meaning                                           |
+| :------------ | :------------------------------------------------ |
+| tconst        | Identifier of a show                              |
+| titleType     | Identifier of the showtype                        |
+| primaryTitle  | Name of a show                                    |
+| isAdult       | Whether the show is for adults only               |
+| startYear     | The release year for movies/start year for series |
+| endYear       | The end year of series                            |
+| runimeMinutes | Length of show in minutes                         |
+| averageRating | Average rating of a show *(0-10)*                 |
+
+![show](imdb_data/converted_data/images/show.png)
 
 # Location Data
 
@@ -134,6 +238,8 @@ This file contains the data of all the previously mentioned datasets combined. I
 | rowconst       | Identifier for every unique combination of title, scene and location  |
 | wikidata_entry | Url to a wikidata entity which is the same as the tconst (owl:sameAs) |
 
-### Overview
+# Overview
+
+The figure below provides an overview of all data combined into the desired linked data structure.
 
 ![Overview](imdb_data/converted_data/images/overview.png)
