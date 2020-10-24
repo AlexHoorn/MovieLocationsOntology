@@ -6,7 +6,7 @@ Markdown documentation created by [pyLODE](http://github.com/rdflib/pyLODE) 2.8.
 * **URI**
   * `http://example.com/movieLocations/`
 * **Ontology RDF**
-  * RDF ([.\CleanOntology.ttl](turtle))
+  * RDF ([turtle](.\CleanOntology.ttl))
 
 ## Table of Contents
 1. [Classes](#classes)
@@ -17,7 +17,7 @@ Markdown documentation created by [pyLODE](http://github.com/rdflib/pyLODE) 2.8.
 
 
 ## Overview
-![Overview](images/inferences/overview.png)
+![Overview](images/overview.png)
 **Figure 1:** Ontology overview
 
 ## Classes
