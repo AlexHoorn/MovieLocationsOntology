@@ -86,44 +86,74 @@ with col1:
 ## User selects his favorite movie/actor/whatever
 with col1:
     with st.beta_expander("Shows"):
-        showList = Q.findShow(sparql)
-        inputShow = st.multiselect("Select your favorite show", showList, key="1")
-        st.write("Total number of movies in list = " + str(len(showList)))
-        if inputShow != []:  ## If movie is selected, render the scene selectbox
-            sceneList, mappingCoordinates = Q.findScene(sparql, inputShow)
-            inputScene = st.multiselect("Select your scene", sceneList, key="2")
-            if (
-                inputScene != []
-            ):  ##if scene is selected, render the button to call the folium map
-                coordinates, locations, scenes = [], [], []
-                for key, value in mappingCoordinates.items():
-                    if key in inputScene:
-                        coordinates.append([value[0], value[1]])
-                        locations.append(
-                            value[2]
-                        )  ## contains the locationName, used as popup
-                        scenes.append(
-                            key
-                        )  ## contains the sceneName, will be used as a tooltip
-                m2 = folium.Map(location=coordinates[0], zoom_start=16)
-                i = 0
-                tracker = 0  ## tracks which location the folium map currently has. if tracker = 0, location is the first scene.
-                for x in coordinates:
-                    folium.Marker(x, popup=locations[i], tooltip=scenes[i]).add_to(m2)
-                    i += 1
+        movieLocationList = []
+        radioOptions = ['Movie scenes', 'Movies']
+        radioInput = st.radio('Look for all scenes of a movie, or individual scenes of a movie', radioOptions, key='radio1')
+        showList, movieLocationDict = Q.findShow(sparql, radioInput)
+        st.write(radioInput)
+
+        if radioInput == 'Movies':
+            
+            inputShow3 = st.multiselect('Select your favorite show', showList, key='randomkey12344')
+
+            if inputShow3 != []:
+                mapInitialized = False
+                for key, value in movieLocationDict.items():
+                    for show in inputShow3:
+                        if show in key:
+                            tempValue = [show, value]
+                            movieLocationList.append(tempValue)
+
+                for movie in movieLocationList:
+                    for x in range(len(movie[1])):
+                        if mapInitialized == False:
+                            m2 = folium.Map(location=[movie[1][x][1], movie[1][x][0]], zoom_start=16)
+                            mapInitialized = True
+                        folium.Marker([movie[1][x][1], movie[1][x][0]], tooltip=movie[0]).add_to(m2)
                 if st.button("Show map!", key="showButton"):
                     with col3:
                         folium_static(m2)
-                        if st.button(  ## buttons to re-render the map with the next/previous scene in the list as the starting point.
-                            "Next scene", key="nextButton"
-                        ):  ## A button inside of another button doesn't work, I think because if you click it it reloads and goes out of the previous if-statement
-                            tracker += 1  ## solution could be to not have the "show map" button but instead already have 2 buttons similar to next/previous scene
-                            m2.location = coordinates[tracker]
+                
+
+
+        if radioInput == 'Movie scenes':
+            inputShow = st.multiselect("Select your favorite show", showList, key="1")
+            st.write("Total number of movies in list = " + str(len(showList)))
+            if inputShow != []:  ## If movie is selected, render the scene selectbox
+                sceneList, mappingCoordinates = Q.findScene(sparql, inputShow)
+                inputScene = st.multiselect("Select your scene", sceneList, key="2")
+                if (
+                    inputScene != []
+                ):  ##if scene is selected, render the button to call the folium map
+                    coordinates, locations, scenes = [], [], []
+                    for key, value in mappingCoordinates.items():
+                        if key in inputScene:
+                            coordinates.append([value[0], value[1]])
+                            locations.append(
+                                value[2]
+                            )  ## contains the locationName, used as popup
+                            scenes.append(
+                                key
+                            )  ## contains the sceneName, will be used as a tooltip
+                    m2 = folium.Map(location=coordinates[0], zoom_start=16)
+                    i = 0
+                    tracker = 0  ## tracks which location the folium map currently has. if tracker = 0, location is the first scene.
+                    for x in coordinates:
+                        folium.Marker(x, popup=locations[i], tooltip=scenes[i]).add_to(m2)
+                        i += 1
+                    if st.button("Show map!", key="showButton"):
+                        with col3:
                             folium_static(m2)
-                        if st.button("Previous scene"):
-                            tracker -= 1  ## Tracker also resets everytime, not sure if you can easily save variables like this during reloads
-                            m2.location = coordinates[tracker]
-                            folium_static(m2)
+                            if st.button(  ## buttons to re-render the map with the next/previous scene in the list as the starting point.
+                                "Next scene", key="nextButton"
+                            ):  ## A button inside of another button doesn't work, I think because if you click it it reloads and goes out of the previous if-statement
+                                tracker += 1  ## solution could be to not have the "show map" button but instead already have 2 buttons similar to next/previous scene
+                                m2.location = coordinates[tracker]
+                                folium_static(m2)
+                            if st.button("Previous scene"):
+                                tracker -= 1  ## Tracker also resets everytime, not sure if you can easily save variables like this during reloads
+                                m2.location = coordinates[tracker]
+                                folium_static(m2)
 
 with col1:
     with st.beta_expander("Actors"):

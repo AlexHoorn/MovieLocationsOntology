@@ -1,6 +1,7 @@
 from SPARQLWrapper import SPARQLWrapper, JSON
+import streamlit as st
 
-
+@st.cache
 def wikidataActor(actorNumber):
     sparql = SPARQLWrapper("https://query.wikidata.org/bigdata/namespace/wdq/sparql")
     sparql.setQuery(
@@ -30,7 +31,7 @@ def wikidataActor(actorNumber):
         description = result["actorDescription"]["value"]
     return image, description
 
-
+@st.cache
 def findAllLocations(sparql):
     # sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/test3")
     sparql.setQuery(
@@ -82,7 +83,7 @@ def findAllLocations(sparql):
 
 ##if user selects to enter a scene, loads all scene from the selected movie
 
-
+@st.cache
 def findScene(sparql, show):
     filterstr = ""  ## string that gets inserted into the query, contains the filter
     if len(show) == 1:
@@ -141,30 +142,48 @@ def findScene(sparql, show):
     # print('dit is de mappingCoordinates', mappingCoordinates)
     return sceneList, mappingCoordinates  ##
 
-
-def findShow(sparql):
-    # sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/test3")
+@st.cache
+def findShow(sparql, radioButton):
+    selectFilter = '?title'
+    secondFilter = '?show ml:hasScene ?scene'
+    if radioButton == 'Movies':
+        selectFilter = '?title ?lon ?lat'
+        secondFilter = '?show ml:hasLocation ?location. ?location ml:hasLongitude ?lon; ml:hasLatitude ?lat'
     sparql.setQuery(
         """  
         PREFIX ml: <http://example.com/movieLocations/>
         PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-        select DISTINCT ?title where { 
-                ?show rdf:type ?any_show;
-                    rdfs:label ?title.
-                ?any_show rdfs:subClassOf* ml:Show.
-                ?show ml:hasScene ?scene
-                    } 
+        select DISTINCT %s where { 
+            ?show rdf:type ml:Show;
+                rdfs:label ?title.
+            %s
+                    } LIMIT 100
     """
-    ) ## ?show ml:hasScene ?scene  <-- filters shows that have no scene. Drastically reduces the number of shows, from ~10600 to ~5000
-      ## Alternative query -> select DISTINCT ?title where { ?show ml:hasScene ?scene; rdfs:label ?title. } 
+    % (selectFilter, secondFilter)
+    )
     sparql.setReturnFormat(JSON)
     results = sparql.query().convert()
     showList = []
-    for result in results["results"]["bindings"]:
-        showList.append(result["title"]["value"])
-    return showList
+    movieLocationList = []
+    movieLocationDict = {}
+    if radioButton == 'Movies':
+        for result in results["results"]["bindings"]:
+            showList.append(result['title']['value'])
+            lonLat = [result['lon']['value'],result['lat']['value']]
+            tempvar = [result['title']['value'], lonLat] ##create 2 dimensional list containing a movie + coordinates per index
+            movieLocationList.append(tempvar)
+        for movie, coordinates in movieLocationList: 
+            if movie in movieLocationDict: ## create dictionary with movies as key, containing 1 or more set of coordinates per key
+                movieLocationDict[movie].append(coordinates)
+            else:
+                movieLocationDict[movie] = [coordinates]
+        showList = list(dict.fromkeys(showList)) ## remove dupes from showlist, gets used for multiselectbox
+    else:
+        for result in results["results"]["bindings"]:
+            showList.append(result["title"]["value"])
+    return showList, movieLocationDict
 
-
+@st.cache
 def findActor(sparql):
     # sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/test3")
     sparql.setQuery(
@@ -203,9 +222,10 @@ def findActor(sparql):
     return actorNameList2, actorDict             ## Therefore, we add a value which is not an actor and only run the query when the user input is not equal to this value.
 
 
-
+@st.cache
 def findShowActor(sparql, Actor):  ## finds all movies with a specific actor in it
     # sparql = SPARQLWrapper("http://192.168.0.160:7200/repositories/test3")
+
     sparql.setQuery(  
         """
         PREFIX ml: <http://example.com/movieLocations/>
@@ -225,39 +245,3 @@ def findShowActor(sparql, Actor):  ## finds all movies with a specific actor in 
     for result in results["results"]["bindings"]:
         showActorList.append(result["title"]["value"])
     return showActorList
-
-
-def findCoordinatesLocation(sparql, location):  ## This is currently not being used
-    sparql = SPARQLWrapper("https://query.wikidata.org/bigdata/namespace/wdq/sparql")
-    sparql.setQuery(
-        """
-            PREFIX wdt: <http://www.wikidata.org/prop/direct/>
-            PREFIX wd: <http://www.wikidata.org/entity/>
-            PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-            SELECT ?city ?cityLabel ?coordinates WHERE {   
-                ?city wdt:P31 wd:Q515;
-                        rdfs:label ?cityLabel.
-                filter(LANG(?cityLabel) = 'en').
-                filter(?cityLabel = '%s'@en).
-                ?city wdt:P625 ?coordinates
-            }
-            """
-        % (location)
-    )
-    sparql.setReturnFormat(JSON)
-    results = sparql.query().convert()
-    # print(results)
-    coordinates = ""
-    for result in results["results"]["bindings"]:
-        coordinates = result["coordinates"]["value"]  ## get the coordinate value
-        coordinates = coordinates.replace("Point(", "")
-        coordinates = coordinates.replace(")", "")  ## remove unneccesary characters
-        coordinates = coordinates.replace(" ", ", ")
-        stringList = coordinates.split(",")  ## put lon and lat into a list
-        coordinateList = [float(x) for x in stringList]  ##convert str to float numbers
-        coordinateList[0], coordinateList[1] = (
-            coordinateList[1],
-            coordinateList[0],
-        )  ## change lon and lat indexes because wikidata is weird.
-        # print("dit is de coordinateList =    ", coordinateList)
-    return coordinateList
