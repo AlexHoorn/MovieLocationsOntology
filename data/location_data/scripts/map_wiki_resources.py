@@ -1,9 +1,13 @@
-from rdflib import RDF, RDFS, Graph, Namespace
+from rdflib import RDF, RDFS, Graph, Namespace, URIRef
 import pandas as pd
 
 print("Loading Wikidata mappings")
 #Load our wikidat mappings
 df = pd.read_csv("data/location_data/converted_data/zenodo_data.csv")
+
+#Drop items without wikidata mapping
+df = df[df['wikidata_entity'].notna()]
+
 
 #Only keep necesaary columns and turn these into a dictionary
 resource_map = dict(zip(df.tconst, df.wikidata_entity))
@@ -26,10 +30,10 @@ for sub in g.subjects(ML.isAdult, None):
     if sub.replace("http://example.com/movieLocations/", "") in resource_map:
         print(sub, OWL.sameAs, resource_map[sub.replace("http://example.com/movieLocations/","")])
         #Then add a new triple stating that this is owl_samAs
-        g.add((sub, OWL.sameAs, resource_map[sub]))
+        g.add((sub, OWL.sameAs, URIRef(resource_map[sub.replace("http://example.com/movieLocations/","")])))
 
 
     
-# print("Saving graph")
-# g.serialize("PopulatedOntology.ttl", format="ttl")
-# print("Completed")
+print("Saving graph")
+g.serialize("ontology/PopulatedOntology.ttl", format="ttl")
+print("Completed")
