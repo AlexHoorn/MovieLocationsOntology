@@ -1,8 +1,10 @@
 # %% Setup
+import os
 from ast import literal_eval
 
 import numpy as np
 import pandas as pd
+
 
 # Universal function to load IMDB tsv
 def load_dataset(filepath, **kwargs):
@@ -18,7 +20,14 @@ def save_df(name, **kwargs):
 
 # Load all codes of shows for which locations are in the dataset
 title_filter = (
-    pd.read_csv("location_data/allmerged.csv", usecols=["tconst"])
+    pd.read_csv(
+        os.path.normpath(
+            os.getcwd()
+            + (sep + pardir) * 2
+            + "\\location_data\\converted_data\\zenodo_data.csv"
+        ),
+        usecols=["tconst"],
+    )
     .drop_duplicates()["tconst"]
     .values
 )
