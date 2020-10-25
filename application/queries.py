@@ -57,6 +57,7 @@ def findAllLocations(sparql):
                     rdfs:label ?sceneName. 
             }
         }
+        ORDER BY ?showName
         """
     )
     sparql.setReturnFormat(JSON)
@@ -111,6 +112,7 @@ def findScene(sparql, show):
                 rdfs:label ?label   
             %s 
         }
+        ORDER BY ?sceneName
         """
         % (filterstr)
     )
@@ -148,6 +150,7 @@ def findPerson(
             ?person a ml:%s;
                  rdfs:label ?name.
         }
+        ORDER BY ?name
         """
         % (radioButton)
     )
@@ -175,7 +178,7 @@ def findPerson(
         zip(actorNameList2, actorNumberList2)
     )  ## Make a dict of each actor with their
     actorNameList2.insert(
-        0, "Select a person!"
+        0, "Select a person"
     )  ## This was done to prevent the query from auto-loading. you can not give st.select an empty value.
     return (
         actorNameList2,
@@ -204,8 +207,9 @@ def findShowActor(
                 ?scene ml:hasLocation ?location;
                     rdfs:label ?sceneName. 
             }        
-    } 
-    """
+        }
+        ORDER BY ?sceneName
+        """
         % (filter1)  ## Doesn't return movies if they have no scenes.
     )
     sparql.setReturnFormat(JSON)
@@ -264,8 +268,9 @@ def findShow(sparql, radioButton):
             ?show rdf:type ml:Show;
                 rdfs:label ?title.
             %s
-                    } 
-    """
+        }
+        ORDER BY ?title
+        """
         % (selectFilter, secondFilter)
     )
     sparql.setReturnFormat(JSON)
