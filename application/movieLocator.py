@@ -1,5 +1,3 @@
-from math import asin, cos, radians, sin, sqrt
-
 import folium
 import streamlit as st
 from SPARQLWrapper import SPARQLWrapper
@@ -8,7 +6,7 @@ from geopy.extra.rate_limiter import RateLimiter
 from geopy.geocoders import Nominatim
 
 import queries as Q
-from components import get_config, overwrite_config, verify_endpoint
+from components import get_config, overwrite_config, verify_endpoint, haversine
 
 from PIL import Image
 import requests
@@ -56,25 +54,6 @@ geocode = RateLimiter(
 )
 ##################################################################################################
 
-def haversine(
-    lon1, lat1, lon2, lat2
-):  ## calculates wether a geolocation is within the radius of another specified location
-    """
-    Calculate the great circle distance between two points
-    on the earth (specified in decimal degrees)
-    """
-    # convert decimal degrees to radians
-    lon1, lat1, lon2, lat2 = map(radians, [lon1, lat1, lon2, lat2])
-
-    # haversine formula
-    dlon = lon2 - lon1
-    dlat = lat2 - lat1
-    a = sin(dlat / 2) ** 2 + cos(lat1) * cos(lat2) * sin(dlon / 2) ** 2
-    c = 2 * asin(sqrt(a))
-    r = 6371  # Radius of earth in kilometers. Use 3956 for miles
-    return c * r
-
-
 col0, col1, col2, col3, col4, col5, col6 = st.beta_columns(
     [0.5, 2, 0.5, 3, 0.5, 1.3, 0.2]
 )  ## the small columns (0.5) are used for padding purposes
@@ -102,7 +81,7 @@ with col1:
             if inputShow3 != []:
                 movieLocationDict = Q.findShowLocations(sparql, inputShow3)
                 mapInitialized = False
-                for key, value in movieLocationDict.items():
+                for key, value in movieLocationDict.items(): ## dictionary contains every show as a key, and all the scenes/locations etc as a value list
                     for show in inputShow3:
                         if show in key:
                             tempValue = [show, value]
@@ -114,7 +93,7 @@ with col1:
                         scene = movie[1][x][2]
                         location = movie[1][x][1]
                         if mapInitialized == False:
-                            m2 = folium.Map(location=[lon, lat], zoom_start=16)
+                            m2 = folium.Map(location=[lon, lat], zoom_start=12)
                             mapInitialized = True
                         if "Filming location" in scene:
                             folium.Marker(
@@ -150,7 +129,7 @@ with col1:
                             scenes.append(
                                 key
                             )  ## contains the sceneName, will be used as a tooltip
-                    m2 = folium.Map(location=coordinates[0], zoom_start=16)
+                    m2 = folium.Map(location=coordinates[0], zoom_start=12)
                     i = 0
                     tracker = 0  ## tracks which location the folium map currently has. if tracker = 0, location is the first scene.
                     for x in coordinates:
@@ -201,18 +180,18 @@ with col1:
                     img = Image.open(BytesIO(response.content))
                     st.image(img, use_column_width=True, caption=inputActor)
             if wikiDescription != "":
-                with col5:
+                with col5: ## write the description from wikidata on the page
                     st.write(wikiDescription)
 
             if inputShow2 != []:
                 for key, value in locationDict.items():
                     for show in inputShow2:
-                        if show in key:
+                        if show in key: ## if chosen show is in the dictionary of shows, create the markers
                             for value2 in value:
                                 lon = value2[0][0]
                                 lat = value2[0][1]
                                 if mapInitialized2 == False:
-                                    m2 = folium.Map(location=[lat, lon], zoom_start=16)
+                                    m2 = folium.Map(location=[lat, lon], zoom_start=12)
                                     mapInitialized2 = True
                                 sceneName = value2[1]
                                 locationName = value2[2]
@@ -330,9 +309,3 @@ with col1:
                                         ).add_to(m2)
                         with col3:
                             folium_static(m2)
-
-## todo : set input radius
-## radius <700, zoom 15
-## radius 1000, zoom 14
-## radius 2000, zoom 13
-## radius 4000, zoom 12

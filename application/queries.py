@@ -87,7 +87,7 @@ def findAllLocations(sparql):
             sceneList[i],
             movieList[i],
             locationList[i],
-        ]  # , locationList[i]
+        ]  
         dataList.append(
             tempList
         )  ## datalist contains all info like coordinates, name of scene, name of location etc etc.
@@ -215,35 +215,32 @@ def findShowActor(
     results = sparql.query().convert()
     showTitleList = []
     locationList = []
-    if radioButton == "Actor" or radioButton == "Director":
-        for result in results["results"]["bindings"]:
-            showTitleList.append(result["title"]["value"])
-            lonLat = [result["lon"]["value"], result["lat"]["value"]]
-            if "sceneName" in result:
-                tempvar = [
-                    result["title"]["value"],
-                    lonLat,
-                    result["sceneName"]["value"],
-                    result["locationName"]["value"],
-                ]
-            else:
-                tempvar = [
-                    result["title"]["value"],
-                    lonLat,
-                    "Filming location",
-                    result["locationName"]["value"],
-                ]
-            locationList.append(tempvar)
-        tempDict = {}
-        for movie, location, sceneName, locationName in locationList:
-            if movie in tempDict:
-                tempvar = [location, sceneName, locationName]
-                tempDict[movie].append(tempvar)
-            else:
-                tempDict[movie] = [[location, sceneName, locationName]]
-        showTitleList = list(dict.fromkeys(showTitleList))
-    else:
-        pass
+    for result in results["results"]["bindings"]:
+        showTitleList.append(result["title"]["value"])
+        lonLat = [result["lon"]["value"], result["lat"]["value"]]
+        if "sceneName" in result:
+            tempvar = [
+                result["title"]["value"],
+                lonLat,
+                result["sceneName"]["value"],
+                result["locationName"]["value"],
+            ]
+        else:
+            tempvar = [
+                result["title"]["value"],
+                lonLat,
+                "Filming location",
+                result["locationName"]["value"],
+            ]
+        locationList.append(tempvar)
+    tempDict = {}
+    for movie, location, sceneName, locationName in locationList:
+        if movie in tempDict:
+            tempvar = [location, sceneName, locationName]
+            tempDict[movie].append(tempvar)
+        else:
+            tempDict[movie] = [[location, sceneName, locationName]]
+    showTitleList = list(dict.fromkeys(showTitleList))
 
     return showTitleList, tempDict
 
@@ -276,7 +273,7 @@ def findShow(sparql, radioButton):
 
 @st.cache
 def findShowLocations(sparql, show):
-    filterstr = generate_filter_string("title", show2)
+    filterstr = generate_filter_string("title", show)
     sparql.setQuery(
         """
         PREFIX ml: <http://example.com/movieLocations/>
@@ -297,7 +294,6 @@ def findShowLocations(sparql, show):
     """
         % (filterstr)
     )
-    ## paste the show far into the string with %
     sparql.setReturnFormat(JSON)
     results = sparql.query().convert()
     movieLocationDict = {}
@@ -315,5 +311,4 @@ def findShowLocations(sparql, show):
                 movieLocationDict[movie].append(tempvar)
             else:
                 movieLocationDict[movie] = [[coordinates, locationInfo, sceneName]]
-
     return movieLocationDict  ##
