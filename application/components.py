@@ -25,7 +25,7 @@ def overwrite_config(config: ConfigParser):
 
     Args:
         config (ConfigParser): ConfigParser config object to write
-    """    
+    """
     config_path = get_config_path()
 
     with open(config_path, "w+") as configfile:
@@ -37,7 +37,7 @@ def get_config() -> ConfigParser:
 
     Returns:
         ConfigParser: ConfigParser config object
-    """    
+    """
     config_path = get_config_path()
     config = ConfigParser()
 
@@ -59,7 +59,7 @@ def query_to_pandas(sparql: SPARQLWrapper, query: str) -> pd.DataFrame:
 
     Returns:
         pd.DataFrame: A Pandas DataFrame of the results
-    """    
+    """
     prefixes = {"ml": "http://example.com/movieLocations/"}
     for prefix, value in prefixes.items():
         query = f"PREFIX {prefix}: <{value}> {query}"
@@ -83,7 +83,7 @@ def verify_endpoint(endpoint: str):
     Raises:
         WrongRulesetError: Gets raised when the wrong inference ruleset is selected
         e: Any other exception that might occur
-    """    
+    """
     sparql = SPARQLWrapper(endpoint)
     sparql.setTimeout(5)
 
@@ -113,8 +113,8 @@ def generate_filter_string(filter_on: str, filter_vars: list) -> str:
 
     Returns:
         str: SPARQL FILTER() string
-    """    
-    vars_prefixed = [f"?{filter_on} = '{x}'" for x in filter_vars]
+    """
+    vars_prefixed = [f'?{filter_on} = "{x}"' for x in filter_vars]
     vars_joined = " || ".join(vars_prefixed)
     filter_string = f"FILTER({vars_joined})"
 
