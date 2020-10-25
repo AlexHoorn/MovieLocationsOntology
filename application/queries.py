@@ -250,6 +250,9 @@ def findShowActor(
 
 @st.cache
 def findShow(sparql, radioButton):
+    filterStr = ''
+    if radioButton == 'Movie scenes':
+        filterStr = '?show ml:hasScene ?scene'
     sparql.setQuery(
         """  
         PREFIX ml: <http://example.com/movieLocations/>
@@ -257,9 +260,10 @@ def findShow(sparql, radioButton):
         select DISTINCT ?title where { 
             ?show rdf:type ml:Show;
                 rdfs:label ?title.
-            ?show ml:hasScene ?scene
+            %s
                     } 
     """
+    % (filterStr)
     )
     sparql.setReturnFormat(JSON)
     results = sparql.query().convert()

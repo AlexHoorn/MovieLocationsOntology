@@ -44,9 +44,8 @@ if endpoint == "":
 
 sparql = SPARQLWrapper(endpoint)
 
-with st.spinner("Hold up, we're pre-caching some things."):
+with st.spinner("Hold up, we're pre-caching some things."): ## <<<<---- everytime you change queries.py you need to reload the entire application. Turned off while developing.
     _ = Q.findAllLocations(sparql)
-    _ = Q.findShow(sparql, "Movies")
     del _
 
 #### Setting up the geolocator which is neccesary for the location func, pls don't delete #####
