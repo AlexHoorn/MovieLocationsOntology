@@ -44,7 +44,7 @@ if endpoint == "":
 
 sparql = SPARQLWrapper(endpoint)
 
-#with st.spinner("Hold up, we're pre-caching some things."): ## <<<<---- everytime you change queries.py you need to reload the entire application. Turned off while developing.
+# with st.spinner("Hold up, we're pre-caching some things."): ## <<<<---- everytime you change queries.py you need to reload the entire application. Turned off while developing.
 #    _ = Q.findAllLocations(sparql)
 #    del _
 
@@ -55,6 +55,7 @@ geocode = RateLimiter(
     geolocator.geocode, min_delay_seconds=1.05, swallow_exceptions=True
 )
 ##################################################################################################
+
 
 def haversine(
     lon1, lat1, lon2, lat2
@@ -90,7 +91,10 @@ with col1:
             "Look for all scenes of a movie, or individual scenes of a movie",
             radioOptions,
             key="radio1",
-            format_func=lambda x: {"Movie scenes": "Select specific scenes", "Movies": "Select all scenes"}[x]
+            format_func=lambda x: {
+                "Movie scenes": "Select specific scenes",
+                "Movies": "Select all scenes",
+            }[x],
         )
         showList = Q.findShow(sparql, radioInput)
         st.write(f"{len(showList)} shows available.")
@@ -170,7 +174,9 @@ with col1:
             radioOptions2,
             key="radio1",
         )
-        labelString = f"Select a{'n' if radioInput2 == 'Actor' else ''} {radioInput2.lower()}"
+        labelString = (
+            f"Select a{'n' if radioInput2 == 'Actor' else ''} {radioInput2.lower()}"
+        )
         actorList, actorDict = Q.findPerson(sparql, radioInput2)
         st.write(f"{len(actorList)} {radioInput2.lower()}s available.")
         inputActor = st.selectbox(labelString, actorList, key="3")
@@ -191,7 +197,9 @@ with col1:
             showActorList, locationDict = Q.findShowActor(
                 sparql, inputActor, radioInput2
             )
-            st.write(f"{len(showActorList)} show{'s' if len(showActorList) > 1 else ''} available.")
+            st.write(
+                f"{len(showActorList)} show{'s' if len(showActorList) > 1 else ''} available."
+            )
             inputShow2 = st.multiselect("Select show(s)", showActorList, key="4")
             if wikiImage != "":
                 with col5:
@@ -234,7 +242,6 @@ with col1:
                 if st.button("Render map", key=13213232133):
                     with col3:
                         folium_static(m2)
-
 
     ## use Nominatim to gather coordinate information
     with st.beta_expander("Locations"):

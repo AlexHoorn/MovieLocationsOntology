@@ -209,7 +209,7 @@ def findShowActor(
             }        
     } 
     """
-        % (filter1) 
+        % (filter1)
     )
     sparql.setReturnFormat(JSON)
     results = sparql.query().convert()
@@ -250,9 +250,9 @@ def findShowActor(
 
 @st.cache
 def findShow(sparql, radioButton):
-    filterStr = ''
-    if radioButton == 'Movie scenes':
-        filterStr = '?show ml:hasScene ?scene'
+    filterStr = ""
+    if radioButton == "Movie scenes":
+        filterStr = "?show ml:hasScene ?scene"
     sparql.setQuery(
         """  
         PREFIX ml: <http://example.com/movieLocations/>
@@ -264,7 +264,7 @@ def findShow(sparql, radioButton):
                     } 
                     ORDER BY ?title
     """
-    % (filterStr)
+        % (filterStr)
     )
     sparql.setReturnFormat(JSON)
     results = sparql.query().convert()
@@ -303,14 +303,26 @@ def findShowLocations(sparql, show):
     movieLocationDict = {}
     movieLocationList = []
     for result in results["results"]["bindings"]:
-        lonLat = [result['lon']['value'],result['lat']['value']]
-        if 'sceneList' in result:
-            tempvar = [result['title']['value'],lonLat, result['locationInfo']['value'],result['sceneName']['value']]
+        lonLat = [result["lon"]["value"], result["lat"]["value"]]
+        if "sceneList" in result:
+            tempvar = [
+                result["title"]["value"],
+                lonLat,
+                result["locationInfo"]["value"],
+                result["sceneName"]["value"],
+            ]
         else:
-            tempvar = [result['title']['value'],lonLat, result['locationInfo']['value'],"Filming location"]
+            tempvar = [
+                result["title"]["value"],
+                lonLat,
+                result["locationInfo"]["value"],
+                "Filming location",
+            ]
         movieLocationList.append(tempvar)
-        for movie, coordinates, locationInfo, sceneName in movieLocationList: 
-            if movie in movieLocationDict: ## create dictionary with movies as key, containing 1 or more set of coordinates per key
+        for movie, coordinates, locationInfo, sceneName in movieLocationList:
+            if (
+                movie in movieLocationDict
+            ):  ## create dictionary with movies as key, containing 1 or more set of coordinates per key
                 tempvar = [coordinates, locationInfo, sceneName]
                 movieLocationDict[movie].append(tempvar)
             else:
