@@ -24,8 +24,7 @@ def wikidataActor(actorNumber):
             }
                        
         }
-    """
-        # SERVICE wikibase:label { bd:serviceParam wikibase:language "en" . ?countryWD rdfs:label ?countryWDlabel . ?coordinates rdfs:label ?
+        """
         % actorNumber
     )
     sparql.setReturnFormat(JSON)
@@ -58,7 +57,7 @@ def findAllLocations(sparql):
                     rdfs:label ?sceneName. 
             }
         }
-    """
+        """
     )
     sparql.setReturnFormat(JSON)
     results = sparql.query().convert()
@@ -111,8 +110,8 @@ def findScene(sparql, show):
                 ml:hasLatitude ?lat;
                 rdfs:label ?label   
             %s 
-    } 
-    """
+        }
+        """
         % (filterstr)
     )
     ## paste the show far into the string with %
@@ -142,20 +141,15 @@ def findScene(sparql, show):
 def findPerson(
     sparql, radioButton
 ):  ## this query can work for both actors and directors
-    filter2 = ""
-    if radioButton == "Actor":
-        filter2 = "?person a ml:Actor;"
-    else:
-        filter2 = "?person a ml:Director;"
     sparql.setQuery(
         """
         PREFIX ml: <http://example.com/movieLocations/>
         select DISTINCT ?name ?person where { 
-            %s
+            ?person a ml:%s;
                  rdfs:label ?name.
-    }
-    """
-        % (filter2)
+        }
+        """
+        % (radioButton)
     )
     sparql.setReturnFormat(JSON)
     results = sparql.query().convert()

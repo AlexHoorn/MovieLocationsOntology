@@ -52,11 +52,6 @@ geocode = RateLimiter(
 )
 ##################################################################################################
 
-# with st.spinner("Loading ontology, this could take some time the first run"):
-#    # Loads the ontology, the output of this gets cached, returns a Graph
-#    g = load_ontology("../ontology/PopulatedOntology.owl")
-
-
 def haversine(
     lon1, lat1, lon2, lat2
 ):  ## calculates wether a geolocation is within the radius of another specified location
@@ -83,8 +78,7 @@ with col1:
     st.title("Movie location finder")
     st.write("So that you can fall into the same vulcano as Gollum.")
 
-## User selects his favorite movie/actor/whatever
-with col1:
+    ## User selects his favorite movie/actor/whatever
     with st.beta_expander("Shows"):
         movieLocationList = []
         radioOptions = ["Movie scenes", "Movies"]
@@ -173,7 +167,6 @@ with col1:
                                 m2.location = coordinates[tracker]
                                 folium_static(m2)
 
-with col1:
     with st.beta_expander("Actors and directors"):
         mapInitialized2 = False
         radioOptions2 = ["Actor", "Director"]
@@ -250,8 +243,7 @@ with col1:
                         folium_static(m2)
 
 
-## use Nominatim to gather coordinate information
-with col1:
+    ## use Nominatim to gather coordinate information
     with st.beta_expander("Locations"):
         locationInput = st.text_input("Type your location name here", key="textinput1")
         radiusInput = st.number_input(
