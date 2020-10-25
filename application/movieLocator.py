@@ -44,6 +44,11 @@ if endpoint == "":
 
 sparql = SPARQLWrapper(endpoint)
 
+with st.spinner("Hold up, we're pre-caching some things."):
+    _ = Q.findAllLocations(sparql)
+    _ = Q.findShow(sparql, "Movies")
+    del _
+
 #### Setting up the geolocator which is neccesary for the location func, pls don't delete #####
 userName = "sceneLocator"
 geolocator = Nominatim(user_agent=userName)
@@ -86,13 +91,14 @@ with col1:
             "Look for all scenes of a movie, or individual scenes of a movie",
             radioOptions,
             key="radio1",
+            format_func=lambda x: {"Movie scenes": "Select specific scenes", "Movies": "Select all scenes"}[x]
         )
         showList, movieLocationDict = Q.findShow(sparql, radioInput)
-        st.write(radioInput)
+        st.write(f"{len(showList)} shows available.")
 
         if radioInput == "Movies":
             inputShow3 = st.multiselect(
-                "Select your favorite show", showList, key="randomkey12344"
+                "Select show(s)", showList, key="randomkey12344"
             )
             if inputShow3 != []:
                 mapInitialized = False
@@ -123,15 +129,14 @@ with col1:
                                 tooltip=movie[0],
                             ).add_to(m2)
 
-                if st.button("Show map!", key="showButton"):
+                if st.button("Render map", key="showButton"):
                     with col3:
                         folium_static(m2)
         if radioInput == "Movie scenes":
-            inputShow = st.multiselect("Select your favorite show", showList, key="1")
-            st.write("Total number of movies in list = " + str(len(showList)))
+            inputShow = st.multiselect("Select show(s)", showList, key="1")
             if inputShow != []:  ## If movie is selected, render the scene selectbox
                 sceneList, mappingCoordinates = Q.findScene(sparql, inputShow)
-                inputScene = st.multiselect("Select your scene", sceneList, key="2")
+                inputScene = st.multiselect("Select scene(s)", sceneList, key="2")
                 if (
                     inputScene != []
                 ):  ##if scene is selected, render the button to call the folium map
@@ -153,7 +158,7 @@ with col1:
                             x, popup="Location: " + locations[i], tooltip=scenes[i]
                         ).add_to(m2)
                         i += 1
-                    if st.button("Show map!", key="showButton"):
+                    if st.button("Render map", key="showButton"):
                         with col3:
                             folium_static(m2)
                             if st.button(  ## buttons to re-render the map with the next/previous scene in the list as the starting point.
@@ -171,18 +176,16 @@ with col1:
         mapInitialized2 = False
         radioOptions2 = ["Actor", "Director"]
         radioInput2 = st.radio(
-            "Look for all scenes of a movie, or individual scenes of a movie",
+            "Look for an actor or a director",
             radioOptions2,
             key="radio1",
         )
-        labelString = "Select your favorite Director"
-        if radioInput2 == "Actor":
-            labelString = "Select your favorite Actor"
+        labelString = f"Select a{'n' if radioInput2 == 'Actor' else ''} {radioInput2.lower()}"
         actorList, actorDict = Q.findPerson(sparql, radioInput2)
-        st.write("Total number of actors in list = " + str(len(actorList)))
+        st.write(f"{len(actorList)} {radioInput2.lower()}s available.")
         inputActor = st.selectbox(labelString, actorList, key="3")
         actorNumber = ""
-        if inputActor != "Select a person!":
+        if inputActor != "Select a person":
             for (
                 key,
                 value,
@@ -198,8 +201,8 @@ with col1:
             showActorList, locationDict = Q.findShowActor(
                 sparql, inputActor, radioInput2
             )
-            inputShow2 = st.multiselect("select a show", showActorList, key="4")
-            st.write("Total number of movies in list = " + str(len(showActorList)))
+            st.write(f"{len(showActorList)} show{'s' if len(showActorList) > 1 else ''} available.")
+            inputShow2 = st.multiselect("Select show(s)", showActorList, key="4")
             if wikiImage != "":
                 with col5:
                     response = requests.get(
@@ -238,16 +241,16 @@ with col1:
                                         + locationName,
                                         tooltip=show,
                                     ).add_to(m2)
-                if st.button("render map!", key=13213232133):
+                if st.button("Render map", key=13213232133):
                     with col3:
                         folium_static(m2)
 
 
     ## use Nominatim to gather coordinate information
     with st.beta_expander("Locations"):
-        locationInput = st.text_input("Type your location name here", key="textinput1")
+        locationInput = st.text_input("Type a location", key="textinput1")
         radiusInput = st.number_input(
-            "Radius around the location, in kilometers",
+            "Radius around the location (km)",
             format="%f",
             min_value=0.5,
             value=1.0,
@@ -299,11 +302,11 @@ with col1:
                         movieList.append(movie)
 
                 movieLocationInput = st.multiselect(
-                    "Select your movies!", movieList, key=123123
+                    "Select movie(s)", movieList, key=123123
                 )
 
                 if movieLocationInput != []:
-                    if st.button("Render map!"):
+                    if st.button("Render map"):
                         if (
                             "Select all movies" in movieLocationInput
                         ):  ## if "Select all movies" is chosen, render all the scenes in the radius
