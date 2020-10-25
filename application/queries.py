@@ -97,7 +97,22 @@ def findAllLocations(sparql):
 
 @st.cache
 def findScene(sparql, show):
-    filterstr = generate_filter_string("title", show)
+    filterstr = ""  ## string that gets inserted into the query, contains the filter
+    if len(show) == 1:
+        filterstr = (
+            'FILTER(?title = "' + show[0] + '")'
+        )  ## This could probably be inserted in a better way
+    else:  ## but I did it like this to ensure double quotes for filtering purposes
+        filterstr = "FILTER("
+        for x in show:
+            tempvar = (
+                '?title = "' + x + '" || '
+            )  ## basically adds multiple arguments to the filter condition
+            filterstr = filterstr + tempvar
+        filterstr = filterstr[:-3]  ## remove last 3 characters of str, which are "|| "
+        filterstr = filterstr + ")"
+
+    #filterstr = generate_filter_string("title", show)
     sparql.setQuery(
         """
         PREFIX ml: <http://example.com/movieLocations/>
@@ -262,6 +277,7 @@ def findShow(sparql, radioButton):
                 rdfs:label ?title.
             %s
                     } 
+                    ORDER BY ?title
     """
     % (filterStr)
     )
@@ -288,7 +304,10 @@ def findShowLocations(sparql, show):
             )  ## basically adds multiple arguments to the filter condition
             filterstr = filterstr + tempvar
         filterstr = filterstr[:-3]  ## remove last 3 characters of str, which are "|| "
-        filterstr = filterstr + ")"
+        filterstr = filterstr + ")"    
+
+
+    #filterstr = generate_filter_string("title", show2)
     sparql.setQuery(
         """
         PREFIX ml: <http://example.com/movieLocations/>
