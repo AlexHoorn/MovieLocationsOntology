@@ -19,7 +19,14 @@ startUrlPart2 = ""
 def GetSaveName(count):
     # Get a save name based on the genre and 500movies
     return (
-       os.getcwd() +"/data/location_data/raw_data/scraped_data/"+ currentGENRE + "MovieLocations" + str(count) + "-" + str(count + 500) + ".csv"
+        os.getcwd()
+        + "/data/location_data/raw_data/scraped_data/"
+        + currentGENRE
+        + "MovieLocations"
+        + str(count)
+        + "-"
+        + str(count + 500)
+        + ".csv"
     )
 
 

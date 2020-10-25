@@ -9,6 +9,7 @@ def GetKeyByValue(myDict, myValue):
             return key
     return ""
 
+
 def RemoveIllegalChars(input):
     return (
         str(input)
@@ -20,6 +21,7 @@ def RemoveIllegalChars(input):
         .replace("]", "")
         .replace(".", "")
     )
+
 
 def RemoveSpace(input):
     return str(input).strip().replace("\n", "")
@@ -34,11 +36,17 @@ def MakeNANsEmpty(input):
         return ""
     return input
 
+
 row_index = 0
+
+
 def GiveRowIdentifier(input, tconst, lconst):
     return str(input) + tconst + lconst
 
+
 index = 0
+
+
 def GetIdentifier(input, char, unique=True):
     if unique:
         return char + str(input)
@@ -161,13 +169,15 @@ merged["sLabel"] = merged["sLabel"].apply(RemoveIllegalChars)
 
 print(merged.shape)
 
-#Create a identifier that we can use to match duplicate scenes
-merged['rowconst'] = merged['tconst'] + merged["sLabel"] + merged["lconst"]
+# Create a identifier that we can use to match duplicate scenes
+merged["rowconst"] = merged["tconst"] + merged["sLabel"] + merged["lconst"]
 
-#Drop duplicate scenes (e.g. same scene name, same location and same movie)
-merged = merged.drop_duplicates(subset='rowconst', keep="first")
+# Drop duplicate scenes (e.g. same scene name, same location and same movie)
+merged = merged.drop_duplicates(subset="rowconst", keep="first")
 
 print(merged.shape)
 
 # Save
-merged.to_csv(os.getcwd() + "data/location_data/converted_data/allmerged.csv", index=False)
+merged.to_csv(
+    os.getcwd() + "data/location_data/converted_data/allmerged.csv", index=False
+)

@@ -21,7 +21,9 @@ yourPartNr = input(
 numHTTPErrors = 0
 
 # Construct directory paths for your part
-readDir = os.getcwd() + "data/location_data/raw_data/raw_data_part_" + str(yourPartNr) + "/"
+readDir = (
+    os.getcwd() + "data/location_data/raw_data/raw_data_part_" + str(yourPartNr) + "/"
+)
 writeDir = (
     os.getcwd()
     + "data/location_data/raw_data/geocoded_data/geocoded_data_part_"
@@ -119,10 +121,10 @@ for file in os.listdir(readDir):
         print("Processing file:", file)
         df = pd.read_csv(readDir + file)
 
-        #NOTE: DUE TO A BUG IN THE SCRAPE_MISSING_DATA.PY THE CONTENTS OF THE COLUMNS MIGHT BE SHIFTED LEFT RESPECTIVE TO THEIR COLUMN HEADERS, THE BUG IS NOW FIXED.
-        #Shift columns back correctly for faulty raw data:
+        # NOTE: DUE TO A BUG IN THE SCRAPE_MISSING_DATA.PY THE CONTENTS OF THE COLUMNS MIGHT BE SHIFTED LEFT RESPECTIVE TO THEIR COLUMN HEADERS, THE BUG IS NOW FIXED.
+        # Shift columns back correctly for faulty raw data:
         if df["Location"].isnull().values.any():
-            #This column is incorrectly shifted, shift columns back
+            # This column is incorrectly shifted, shift columns back
             df["Scene"] = df["Location"]
             df["Location"] = df["Show Name"]
             df["Show Name"].values[:] = ""
@@ -136,10 +138,8 @@ for file in os.listdir(readDir):
             lambda loc: loc.point[1] if loc else None
         )
 
-        
-
         # Save CSV as geocoded raw data
         df.to_csv(writeFilePath)
 
-#Change
-print('ready')
+# Change
+print("ready")

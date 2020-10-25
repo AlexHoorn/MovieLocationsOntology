@@ -87,13 +87,19 @@ with col1:
 with col1:
     with st.beta_expander("Shows"):
         movieLocationList = []
-        radioOptions = ['Movie scenes', 'Movies']
-        radioInput = st.radio('Look for all scenes of a movie, or individual scenes of a movie', radioOptions, key='radio1')
+        radioOptions = ["Movie scenes", "Movies"]
+        radioInput = st.radio(
+            "Look for all scenes of a movie, or individual scenes of a movie",
+            radioOptions,
+            key="radio1",
+        )
         showList, movieLocationDict = Q.findShow(sparql, radioInput)
         st.write(radioInput)
 
-        if radioInput == 'Movies':
-            inputShow3 = st.multiselect('Select your favorite show', showList, key='randomkey12344')
+        if radioInput == "Movies":
+            inputShow3 = st.multiselect(
+                "Select your favorite show", showList, key="randomkey12344"
+            )
             if inputShow3 != []:
                 mapInitialized = False
                 for key, value in movieLocationDict.items():
@@ -110,15 +116,23 @@ with col1:
                         if mapInitialized == False:
                             m2 = folium.Map(location=[lon, lat], zoom_start=16)
                             mapInitialized = True
-                        if 'Filming location' in scene:
-                            folium.Marker([lon, lat],popup='location:'+location   ,tooltip=movie[0]).add_to(m2)
+                        if "Filming location" in scene:
+                            folium.Marker(
+                                [lon, lat],
+                                popup="location:" + location,
+                                tooltip=movie[0],
+                            ).add_to(m2)
                         else:
-                            folium.Marker([lon, lat],popup='Scene: '+scene+'\nlocation: '+location   ,tooltip=movie[0]).add_to(m2)
-                    
+                            folium.Marker(
+                                [lon, lat],
+                                popup="Scene: " + scene + "\nlocation: " + location,
+                                tooltip=movie[0],
+                            ).add_to(m2)
+
                 if st.button("Show map!", key="showButton"):
                     with col3:
                         folium_static(m2)
-        if radioInput == 'Movie scenes':
+        if radioInput == "Movie scenes":
             inputShow = st.multiselect("Select your favorite show", showList, key="1")
             st.write("Total number of movies in list = " + str(len(showList)))
             if inputShow != []:  ## If movie is selected, render the scene selectbox
@@ -141,7 +155,9 @@ with col1:
                     i = 0
                     tracker = 0  ## tracks which location the folium map currently has. if tracker = 0, location is the first scene.
                     for x in coordinates:
-                        folium.Marker(x, popup='Location: '+locations[i], tooltip=scenes[i]).add_to(m2)
+                        folium.Marker(
+                            x, popup="Location: " + locations[i], tooltip=scenes[i]
+                        ).add_to(m2)
                         i += 1
                     if st.button("Show map!", key="showButton"):
                         with col3:
@@ -160,51 +176,76 @@ with col1:
 with col1:
     with st.beta_expander("Actors and directors"):
         mapInitialized2 = False
-        radioOptions2 = ['Actor', 'Director']
-        radioInput2 = st.radio('Look for all scenes of a movie, or individual scenes of a movie', radioOptions2, key='radio1')
+        radioOptions2 = ["Actor", "Director"]
+        radioInput2 = st.radio(
+            "Look for all scenes of a movie, or individual scenes of a movie",
+            radioOptions2,
+            key="radio1",
+        )
         labelString = "Select your favorite Director"
-        if radioInput2 == 'Actor':
+        if radioInput2 == "Actor":
             labelString = "Select your favorite Actor"
         actorList, actorDict = Q.findPerson(sparql, radioInput2)
         st.write("Total number of actors in list = " + str(len(actorList)))
         inputActor = st.selectbox(labelString, actorList, key="3")
         actorNumber = ""
         if inputActor != "Select a person!":
-            for key, value in actorDict.items(): ## find the selected actor/director in the result list
+            for (
+                key,
+                value,
+            ) in (
+                actorDict.items()
+            ):  ## find the selected actor/director in the result list
                 if inputActor in key:
                     actorNumber = value
                     break
-            wikiImage, wikiDescription = Q.wikidataActor(actorNumber) ## gather wikidata info (image, description)
-            showActorList, locationDict = Q.findShowActor(sparql, inputActor, radioInput2)
+            wikiImage, wikiDescription = Q.wikidataActor(
+                actorNumber
+            )  ## gather wikidata info (image, description)
+            showActorList, locationDict = Q.findShowActor(
+                sparql, inputActor, radioInput2
+            )
             inputShow2 = st.multiselect("select a show", showActorList, key="4")
             st.write("Total number of movies in list = " + str(len(showActorList)))
             if wikiImage != "":
                 with col5:
-                    response = requests.get(wikiImage) ## Open the image from the imagelink, then display it
-                    img = Image.open(BytesIO(response.content)) 
+                    response = requests.get(
+                        wikiImage
+                    )  ## Open the image from the imagelink, then display it
+                    img = Image.open(BytesIO(response.content))
                     st.image(img, use_column_width=True, caption=inputActor)
             if wikiDescription != "":
                 with col5:
                     st.write(wikiDescription)
 
-
             if inputShow2 != []:
                 for key, value in locationDict.items():
                     for show in inputShow2:
                         if show in key:
-                            for value2 in value:                                    
+                            for value2 in value:
                                 lon = value2[0][0]
-                                lat = value2[0][1] 
+                                lat = value2[0][1]
                                 if mapInitialized2 == False:
                                     m2 = folium.Map(location=[lat, lon], zoom_start=16)
                                     mapInitialized2 = True
                                 sceneName = value2[1]
                                 locationName = value2[2]
-                                if 'Filming location' in sceneName:
-                                    folium.Marker([lat, lon], popup='location:  '+locationName, tooltip=show).add_to(m2)
+                                if "Filming location" in sceneName:
+                                    folium.Marker(
+                                        [lat, lon],
+                                        popup="location:  " + locationName,
+                                        tooltip=show,
+                                    ).add_to(m2)
                                 else:
-                                    folium.Marker([lat, lon], popup='scene: '+sceneName+'\nlocation: '+locationName, tooltip=show).add_to(m2)
-                if st.button('render map!', key=13213232133):
+                                    folium.Marker(
+                                        [lat, lon],
+                                        popup="scene: "
+                                        + sceneName
+                                        + "\nlocation: "
+                                        + locationName,
+                                        tooltip=show,
+                                    ).add_to(m2)
+                if st.button("render map!", key=13213232133):
                     with col3:
                         folium_static(m2)
 
@@ -254,7 +295,7 @@ with col1:
                             lon,
                             scene,
                             movie,
-                            location
+                            location,
                         ]  ## all the scenes in the radius also get added in a different list, with their movie and coordinates
                         finalList.append(tempvar)
 
@@ -276,20 +317,31 @@ with col1:
                         ):  ## if "Select all movies" is chosen, render all the scenes in the radius
                             for lat, lon, scene, movie, location in finalList:
                                 folium.Marker(
-                                    (lat, lon), tooltip=movie, popup='Scene:'+scene+'\n'+'Location:'+location
+                                    (lat, lon),
+                                    tooltip=movie,
+                                    popup="Scene:"
+                                    + scene
+                                    + "\n"
+                                    + "Location:"
+                                    + location,
                                 ).add_to(m2)
                         else:
                             for lat, lon, scene, movie, location in finalList:
                                 if (
                                     movie in movieLocationInput
                                 ):  ## otherwise, render the scenes in the radius of the selected movies only.
-                                    if 'Filming location' in scene:
+                                    if "Filming location" in scene:
                                         folium.Marker(
-                                        (lat, lon), tooltip=movie, popup='Location:\n'+location
-                                    ).add_to(m2)
+                                            (lat, lon),
+                                            tooltip=movie,
+                                            popup="Location:\n" + location,
+                                        ).add_to(m2)
                                     else:
                                         folium.Marker(
-                                            (lat, lon), tooltip=movie, popup='Scene: '+scene+'\n''Location: '+location
+                                            (lat, lon),
+                                            tooltip=movie,
+                                            popup="Scene: " + scene + "\n"
+                                            "Location: " + location,
                                         ).add_to(m2)
                         with col3:
                             folium_static(m2)
