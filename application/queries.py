@@ -1,12 +1,14 @@
-from SPARQLWrapper import SPARQLWrapper, JSON
 import streamlit as st
+from SPARQLWrapper import JSON, SPARQLWrapper
+
+from components import generate_filter_string
 
 
 @st.cache
 def wikidataActor(actorNumber):
     sparql = SPARQLWrapper(
         "https://query.wikidata.org/bigdata/namespace/wdq/sparql",
-        agent="kick ass movielocator project",
+        agent="KDD MovieLocator Project",
     )
     sparql.setQuery(
         """
@@ -95,20 +97,7 @@ def findAllLocations(sparql):
 
 @st.cache
 def findScene(sparql, show):
-    filterstr = ""  ## string that gets inserted into the query, contains the filter
-    if len(show) == 1:
-        filterstr = (
-            'FILTER(?title = "' + show[0] + '")'
-        )  ## This could probably be inserted in a better way
-    else:  ## but I did it like this to ensure double quotes for filtering purposes
-        filterstr = "FILTER("
-        for x in show:
-            tempvar = (
-                '?title = "' + x + '" || '
-            )  ## basically adds multiple arguments to the filter condition
-            filterstr = filterstr + tempvar
-        filterstr = filterstr[:-3]  ## remove last 3 characters of str, which are "|| "
-        filterstr = filterstr + ")"
+    filterstr = generate_filter_string("title", show)
     sparql.setQuery(
         """
         PREFIX ml: <http://example.com/movieLocations/>
@@ -204,15 +193,7 @@ def findPerson(
 def findShowActor(
     sparql, Person, radioButton
 ):  ## finds all movies with a specific actor in it
-    filter1 = ""
-
-    if radioButton == "Actor":
-        filter1 = "?show ml:hasActor ?actor. ?actor rdfs:label '%s'." % (Person)
-    else:
-        filter1 = "?show ml:hasDirector ?director. ?director rdfs:label '%s'." % (
-            Person
-        )
-
+    filter1 = f"?show ml:has{radioButton} ?{radioButton.lower()}. ?{radioButton.lower()} rdfs:label '{Person}'."
     sparql.setQuery(
         """
         PREFIX ml: <http://example.com/movieLocations/>

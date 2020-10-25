@@ -81,7 +81,7 @@ col0, col1, col2, col3, col4, col5, col6 = st.beta_columns(
 )  ## the small columns (0.5) are used for padding purposes
 with col1:
     st.title("Movie location finder")
-    st.text("So that you can fall into the same vulcano as Gollum")
+    st.write("So that you can fall into the same vulcano as Gollum.")
 
 ## User selects his favorite movie/actor/whatever
 with col1:

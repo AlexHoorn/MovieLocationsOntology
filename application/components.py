@@ -69,3 +69,11 @@ def verify_endpoint(endpoint: str):
 
     except Exception as e:
         raise e
+
+
+def generate_filter_string(filter_on: str, filter_vars: list) -> str:
+    vars_prefixed = [f"?{filter_on} = '{x}'" for x in filter_vars]
+    vars_joined = " || ".join(vars_prefixed)
+    filter_string = f"FILTER({vars_joined})"
+
+    return filter_string
