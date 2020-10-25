@@ -1,9 +1,10 @@
 import os
-import pandas as pd
-from SPARQLWrapper import SPARQLWrapper, JSON
-import time
-from tqdm import tqdm
 import pickle
+import time
+
+import pandas as pd
+from SPARQLWrapper import JSON, SPARQLWrapper
+from tqdm import tqdm
 
 ########################################################################
 # VARIABLES

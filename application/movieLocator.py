@@ -1,17 +1,16 @@
-import folium
-import streamlit as st
-from SPARQLWrapper import SPARQLWrapper
-from streamlit_folium import folium_static
-from geopy.extra.rate_limiter import RateLimiter
-from geopy.geocoders import Nominatim
-
-import queries as Q
-from components import get_config, overwrite_config, verify_endpoint, haversine
-
-from PIL import Image
-import requests
 from io import BytesIO
 
+import folium
+import requests
+import streamlit as st
+from geopy.extra.rate_limiter import RateLimiter
+from geopy.geocoders import Nominatim
+from PIL import Image
+from SPARQLWrapper import SPARQLWrapper
+from streamlit_folium import folium_static
+
+import queries as Q
+from components import get_config, haversine, overwrite_config, verify_endpoint
 
 st.beta_set_page_config(layout="wide")  ## comment this out to disable widescreen
 
@@ -84,7 +83,12 @@ with col1:
             if inputShow3 != []:
                 movieLocationDict = Q.findShowLocations(sparql, inputShow3)
                 mapInitialized = False
-                for key, value in movieLocationDict.items(): ## dictionary contains every show as a key, and all the scenes/locations etc as a value list
+                for (
+                    key,
+                    value,
+                ) in (
+                    movieLocationDict.items()
+                ):  ## dictionary contains every show as a key, and all the scenes/locations etc as a value list
                     for show in inputShow3:
                         if show in key:
                             tempValue = [show, value]
@@ -187,13 +191,15 @@ with col1:
                     img = Image.open(BytesIO(response.content))
                     st.image(img, use_column_width=True, caption=inputActor)
             if wikiDescription != "":
-                with col5: ## write the description from wikidata on the page
+                with col5:  ## write the description from wikidata on the page
                     st.write(wikiDescription)
 
             if inputShow2 != []:
                 for key, value in locationDict.items():
                     for show in inputShow2:
-                        if show in key: ## if chosen show is in the dictionary of shows, create the markers
+                        if (
+                            show in key
+                        ):  ## if chosen show is in the dictionary of shows, create the markers
                             for value2 in value:
                                 lon = value2[0][0]
                                 lat = value2[0][1]

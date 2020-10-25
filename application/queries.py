@@ -87,7 +87,7 @@ def findAllLocations(sparql):
             sceneList[i],
             movieList[i],
             locationList[i],
-        ]  
+        ]
         dataList.append(
             tempList
         )  ## datalist contains all info like coordinates, name of scene, name of location etc etc.

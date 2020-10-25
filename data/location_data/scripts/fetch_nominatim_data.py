@@ -1,11 +1,12 @@
-from geopy.extra.rate_limiter import RateLimiter
-from geopy.geocoders import Nominatim
-import pandas as pd
 import os
 import random
 import string
-import time
 import sys
+import time
+
+import pandas as pd
+from geopy.extra.rate_limiter import RateLimiter
+from geopy.geocoders import Nominatim
 from tqdm import tqdm
 
 # I assigned a number to everybody

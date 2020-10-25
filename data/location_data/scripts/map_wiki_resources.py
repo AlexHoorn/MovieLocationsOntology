@@ -1,5 +1,5 @@
-from rdflib import RDF, RDFS, Graph, Namespace, URIRef
 import pandas as pd
+from rdflib import RDF, RDFS, Graph, Namespace, URIRef
 
 print("Loading Wikidata mappings")
 # Load our wikidat mappings

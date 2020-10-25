@@ -1,9 +1,10 @@
-from bs4 import BeautifulSoup as bs
-import requests
 import csv
-import time
 import os
+import time
+
 import pandas as pd
+import requests
+from bs4 import BeautifulSoup as bs
 from tqdm import tqdm
 
 # /Users/sethvanderbijl/Coding Projects/group51-kdd/location_data/raw_data/RomanceMovieLocations1000-1500_appendix.csv

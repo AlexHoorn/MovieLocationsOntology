@@ -1,8 +1,8 @@
 from configparser import ConfigParser
 from io import StringIO
+from math import asin, cos, radians, sin, sqrt
 from os import getcwd
 from os.path import isfile
-from math import asin, cos, radians, sin, sqrt
 
 import pandas as pd
 from SPARQLWrapper import CSV, SPARQLWrapper
@@ -120,6 +120,7 @@ def generate_filter_string(filter_on: str, filter_vars: list) -> str:
     filter_string = f"FILTER({vars_joined})"
 
     return filter_string
+
 
 def haversine(
     lon1, lat1, lon2, lat2

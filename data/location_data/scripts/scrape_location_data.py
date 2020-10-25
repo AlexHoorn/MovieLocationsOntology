@@ -1,8 +1,9 @@
-from bs4 import BeautifulSoup as bs
-import requests
 import csv
-import time
 import os
+import time
+
+import requests
+from bs4 import BeautifulSoup as bs
 
 # Some variables
 ########################################################################
