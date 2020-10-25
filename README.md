@@ -2,6 +2,8 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4126948.svg)](https://doi.org/10.5281/zenodo.4126948)
 
+A linked data ontology about movies and their filming locations with an accompanying application. Built as a project for the course Knowledge and Data @ Vrije Universiteit Amsterdam.
+
 ## Ontology
 
 The populated ontology (linked data) can be found at [`ontology/PopulatedOntology.ttl`](ontology/PopulatedOntology.ttl). Its unpopulated or *clean* version is at [`ontology/CleanOntology.ttl`](ontology/CleanOntology.ttl). For any further explanation about the ontology itself it is best to refer to its relevant general [documentation](ontology/README.md) or [inferences](ontology/INFERENCES.md) documentation.
@@ -20,11 +22,11 @@ In GraphDB this is done by:
 1. Setup > Repositories > Create new repository.
 2. Give the repository a recognizable ID.
 3. Set the ruleset to either `OWL2-RL` or `OWL2-RL (Optimized)`.
-4. Click `Create` to create the repository
-5. Open Import > RDF
-6. Upload the `PopulatedOntology.ttl` and import this
-7. Let the import finish
-8. Copy the repository URL to your clipboard, this will later be used
+4. Click `Create` to create the repository.
+5. Open Import > RDF.
+6. Upload the `PopulatedOntology.ttl` and import this.
+7. Let the import finish.
+8. Copy the repository URL to your clipboard, this will later be used.
 
 The resulting repository should contain about 650 thousand explicit statements and 1,4 million inferred statements.
 

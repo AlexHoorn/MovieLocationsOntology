@@ -18,7 +18,7 @@ def RemoveIllegalChars(input):
 merged = pd.read_csv(os.getcwd() + "data/location_data/converted_data/allmerged.csv")
 
 # Drop index columns
-#merged.drop(merged.columns[[0]], axis=1, inplace=True)
+# merged.drop(merged.columns[[0]], axis=1, inplace=True)
 
 # SCENE MAP
 # Get all rows with scenes
@@ -44,7 +44,9 @@ no_scenes_df = merged[~merged["sLabel"].notnull()]
 location_map = no_scenes_df[["tconst", "lconst"]]
 
 # Save scene map
-location_map.to_excel("data/location_data/converted_data/location_map.xlsx", index=False)
+location_map.to_excel(
+    "data/location_data/converted_data/location_map.xlsx", index=False
+)
 
 # Save sample
 location_map.head(10).to_csv(
@@ -76,7 +78,9 @@ scene_info.head(10).to_csv(
 location_info = merged[["lconst", "lLabel", "lAltLabel", "lat", "long"]]
 
 # Save location info
-location_info.to_excel("data/location_data/converted_data/location_info.xlsx", index=False)
+location_info.to_excel(
+    "data/location_data/converted_data/location_info.xlsx", index=False
+)
 
 # Save sample
 location_info.head(10).to_csv(
