@@ -105,13 +105,13 @@ with col1:
                         if "Filming location" in scene:
                             folium.Marker(
                                 [lon, lat],
-                                popup="location:" + location,
+                                popup="<b>Location:</b>" + location,
                                 tooltip=movie[0],
                             ).add_to(m2)
                         else:
                             folium.Marker(
                                 [lon, lat],
-                                popup="Scene: " + scene + "\nlocation: " + location,
+                                popup="<b>Scene:</b> " + scene + "\n<b>Location:</b> " + location,
                                 tooltip=movie[0],
                             ).add_to(m2)
 
@@ -141,7 +141,7 @@ with col1:
                     tracker = 0  ## tracks which location the folium map currently has. if tracker = 0, location is the first scene.
                     for x in coordinates:
                         folium.Marker(
-                            x, popup="Location: " + locations[i], tooltip=scenes[i]
+                            x, popup="<b>Location:</b> " + locations[i], tooltip=scenes[i]
                         ).add_to(m2)
                         i += 1
                     if st.button("Render map", key="showButton"):
@@ -211,15 +211,15 @@ with col1:
                                 if "Filming location" in sceneName:
                                     folium.Marker(
                                         [lat, lon],
-                                        popup="location:  " + locationName,
+                                        popup="<b>Location:</b>  " + locationName,
                                         tooltip=show,
                                     ).add_to(m2)
                                 else:
                                     folium.Marker(
                                         [lat, lon],
-                                        popup="scene: "
+                                        popup="<b>Scene:</b> "
                                         + sceneName
-                                        + "\nlocation: "
+                                        + "\n<b>Location:</b> "
                                         + locationName,
                                         tooltip=show,
                                     ).add_to(m2)
@@ -292,15 +292,19 @@ with col1:
                             "Select all movies" in movieLocationInput
                         ):  ## if "Select all movies" is chosen, render all the scenes in the radius
                             for lat, lon, scene, movie, location in finalList:
-                                folium.Marker(
-                                    (lat, lon),
-                                    tooltip=movie,
-                                    popup="Scene:"
-                                    + scene
-                                    + "\n"
-                                    + "Location:"
-                                    + location,
-                                ).add_to(m2)
+                                if "Filming location" in scene:
+                                    folium.Marker(
+                                        (lat, lon),
+                                        tooltip=movie,
+                                        popup="<b>Location:</b>\n" + location,
+                                    ).add_to(m2)
+                                else:
+                                    folium.Marker(
+                                        (lat, lon),
+                                        tooltip=movie,
+                                        popup="<b>Scene:</b> " + scene + "\n"
+                                        "<b>Location:</b> " + location,
+                                    ).add_to(m2)
                         else:
                             for lat, lon, scene, movie, location in finalList:
                                 if (
@@ -310,14 +314,14 @@ with col1:
                                         folium.Marker(
                                             (lat, lon),
                                             tooltip=movie,
-                                            popup="Location:\n" + location,
+                                            popup="<b>Location:</b>\n" + location,
                                         ).add_to(m2)
                                     else:
                                         folium.Marker(
                                             (lat, lon),
                                             tooltip=movie,
-                                            popup="Scene: " + scene + "\n"
-                                            "Location: " + location,
+                                            popup="<b>Scene:</b> " + scene + "\n"
+                                            "<b>Location:</b> " + location,
                                         ).add_to(m2)
                         with col3:
                             folium_static(m2)

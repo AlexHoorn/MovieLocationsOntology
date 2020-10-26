@@ -301,7 +301,7 @@ def findShowLocations(sparql, show):
     movieLocationList = []
     for result in results["results"]["bindings"]:
         lonLat = [result["lon"]["value"], result["lat"]["value"]]
-        if "sceneList" in result:
+        if "sceneName" in result:
             tempvar = [
                 result["title"]["value"],
                 lonLat,
