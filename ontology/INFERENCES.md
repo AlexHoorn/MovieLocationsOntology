@@ -10,7 +10,7 @@
     - [isGenre](#isgenre)
     - [isGenreOf](#isgenreof)
     - [isLocationOf](#islocationof)
-- [isSceneOf](#issceneof)
+    - [isSceneOf](#issceneof)
     - [playsIn](#playsin)
   - [Classes](#classes)
     - [Actor](#actor)
@@ -111,7 +111,7 @@ ObjectProperty: ml:isLocationOf
         ml:hasLocation
 ```
 
-# isSceneOf
+### isSceneOf
 
 ```    
 ObjectProperty: ml:isSceneOf
