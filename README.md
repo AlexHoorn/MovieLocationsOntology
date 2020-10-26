@@ -4,9 +4,11 @@
 
 A linked data ontology about movies and their filming locations with an accompanying application. Built as a project for the course Knowledge and Data @ Vrije Universiteit Amsterdam.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XgPICa1kZtM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Ontology
 
-The populated ontology (linked data) can be found at [`ontology/PopulatedOntology.ttl`](ontology/PopulatedOntology.ttl). Its unpopulated or *clean* version is at [`ontology/CleanOntology.ttl`](ontology/CleanOntology.ttl). For any further explanation about the ontology itself it is best to refer to its relevant [general documentation](ontology/README.md) or [inferences documentation](ontology/INFERENCES.md).
+The populated ontology (linked data) can be found at [`ontology/PopulatedOntology.ttl`](ontology/PopulatedOntology.ttl). Its unpopulated or _clean_ version is at [`ontology/CleanOntology.ttl`](ontology/CleanOntology.ttl). For any further explanation about the ontology itself it is best to refer to its relevant [general documentation](ontology/README.md) or [inferences documentation](ontology/INFERENCES.md).
 
 In short this project uses IMDB data to populate the ontology alongside latitudes and longitudes of locations and specific scenes. The image below provides an overview of the data and its links.
 
@@ -19,6 +21,7 @@ In short this project uses IMDB data to populate the ontology alongside latitude
 Any triple store that exposes a SPARQL endpoint and supports `OWL2 RL` inferencing can be used, e.g. [GraphDB](https://graphdb.ontotext.com/). Load [`PopulatedOntology.ttl`](ontology/PopulatedOntology.ttl) into a new repository and let the reasoner run.
 
 In GraphDB this is done by:
+
 1. Setup > Repositories > Create new repository.
 2. Give the repository a recognizable ID.
 3. Set the ruleset to either `OWL2-RL` or `OWL2-RL (Optimized)`.
