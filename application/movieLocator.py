@@ -174,26 +174,42 @@ with col1:
                 if inputActor in key:
                     actorNumber = value
                     break
-            wikiImage, wikiDescription = Q.wikidataActor(
-                actorNumber
-            )  ## gather wikidata info (image, description)
-            showActorList, locationDict = Q.findShowActor(
-                sparql, inputActor, radioInput2
-            )
-            st.write(
-                f"{len(showActorList)} show{'s' if len(showActorList) > 1 else ''} available."
-            )
-            inputShow2 = st.multiselect("Select show(s)", showActorList, key="4")
-            if wikiImage != "":
-                with col5:
-                    response = requests.get(
-                        wikiImage
-                    )  ## Open the image from the imagelink, then display it
-                    img = Image.open(BytesIO(response.content))
-                    st.image(img, use_column_width=True, caption=inputActor)
-            if wikiDescription != "":
-                with col5:  ## write the description from wikidata on the page
-                    st.write(wikiDescription)
+                
+            #I've been doubting on what level exactly to put the try catch
+            #I've put it here at top level. If I do it only for the actual querying it will give more errors in the UI
+            #Doing it at the top level catches all exceptions in one catches
+            #So at this level the try except should catch the whole dependent functionality
+
+            #Try to query and render the wikidata information
+            try:
+                wikiImage, wikiDescription = Q.wikidataActor(
+                    actorNumber
+                )  ## gather wikidata info (image, description)
+                showActorList, locationDict = Q.findShowActor(
+                    sparql, inputActor, radioInput2
+                )
+                st.write(
+                    f"{len(showActorList)} show{'s' if len(showActorList) > 1 else ''} available."
+                )
+                inputShow2 = st.multiselect("Select show(s)", showActorList, key="4")
+                if wikiImage != "":
+                    with col5:
+                        response = requests.get(
+                            wikiImage
+                        )  ## Open the image from the imagelink, then display it
+                        img = Image.open(BytesIO(response.content))
+                        st.image(img, use_column_width=True, caption=inputActor)
+                if wikiDescription != "":
+                    with col5:  ## write the description from wikidata on the page
+                        st.write(wikiDescription)
+            
+            #If this does not work (99% of time this will be the mac certifiacrs issue)
+            except Exception as e:
+                #Then inform the mac user what to do
+                st.write("Mac users running this application might need to install SSL certificates for Python. Hence the exception displayed below. This is very easily done by running the Install Certificates.command file in the directory of the python version they are using to run this app. This question handels SSL certificate problems Mac users of Python might experience: https://stackoverflow.com/questions/50236117/scraping-ssl-certificate-verify-failed-error-for-http-en-wikipedia-org")
+                
+                #And print the exception
+                st.write(e)
 
             if inputShow2 != []:
                 for key, value in locationDict.items():
