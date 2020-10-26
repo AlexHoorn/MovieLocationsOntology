@@ -6,7 +6,7 @@ A linked data ontology about movies and their filming locations with an accompan
 
 ## Ontology
 
-The populated ontology (linked data) can be found at [`ontology/PopulatedOntology.ttl`](ontology/PopulatedOntology.ttl). Its unpopulated or *clean* version is at [`ontology/CleanOntology.ttl`](ontology/CleanOntology.ttl). For any further explanation about the ontology itself it is best to refer to its relevant general [documentation](ontology/README.md) or [inferences](ontology/INFERENCES.md) documentation.
+The populated ontology (linked data) can be found at [`ontology/PopulatedOntology.ttl`](ontology/PopulatedOntology.ttl). Its unpopulated or *clean* version is at [`ontology/CleanOntology.ttl`](ontology/CleanOntology.ttl). For any further explanation about the ontology itself it is best to refer to its relevant [general documentation](ontology/README.md) or [inferences documentation](ontology/INFERENCES.md).
 
 In short this project uses IMDB data to populate the ontology alongside latitudes and longitudes of locations and specific scenes. The image below provides an overview of the data and its links.
 
