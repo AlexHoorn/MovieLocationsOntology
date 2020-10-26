@@ -208,7 +208,7 @@ with col1:
                 # Then inform the mac user what to do and print the exception
 
                 st.error(
-                    "Mac users running this application might need to install SSL certificates for Python. Hence the exception displayed below. This is very easily done by running the Install Certificates.command file in the directory of the python version they are using to run this app. This question handels SSL certificate problems Mac users of Python might experience: https://stackoverflow.com/questions/50236117/scraping-ssl-certificate-verify-failed-error-for-http-en-wikipedia-org \n \n"+str(e)
+                    "Mac users running this application might need to install SSL certificates for Python. Hence the exception displayed below. This is very easily done by running the Install Certificates.command file in the directory of the python version they are using to run this app. This question handles SSL certificate problems Mac users of Python might experience: https://stackoverflow.com/questions/50236117/scraping-ssl-certificate-verify-failed-error-for-http-en-wikipedia-org \n \n"+str(e)
                 )
 
 
