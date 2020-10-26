@@ -4,8 +4,6 @@
 
 A linked data ontology about movies and their filming locations with an accompanying application. Built as a project for the course Knowledge and Data @ Vrije Universiteit Amsterdam.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XgPICa1kZtM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 ## Ontology
 
 The populated ontology (linked data) can be found at [`ontology/PopulatedOntology.ttl`](ontology/PopulatedOntology.ttl). Its unpopulated or _clean_ version is at [`ontology/CleanOntology.ttl`](ontology/CleanOntology.ttl). For any further explanation about the ontology itself it is best to refer to its relevant [general documentation](ontology/README.md) or [inferences documentation](ontology/INFERENCES.md).
