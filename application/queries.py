@@ -207,8 +207,9 @@ def findShowActor(
                 ?scene ml:hasLocation ?location;
                     rdfs:label ?sceneName. 
             }        
-    } 
-    """
+        } 
+        ORDER BY ?title
+        """
         % (filter1)
     )
     sparql.setReturnFormat(JSON)
