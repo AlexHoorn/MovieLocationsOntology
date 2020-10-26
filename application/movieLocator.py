@@ -41,10 +41,6 @@ if endpoint == "":
 
 sparql = SPARQLWrapper(endpoint)
 
-# with st.spinner("Hold up, we're pre-caching some things."): ## <<<<---- everytime you change queries.py you need to reload the entire application. Turned off while developing.
-#    _ = Q.findAllLocations(sparql)
-#    del _
-
 #### Setting up the geolocator which is neccesary for the location func, pls don't delete #####
 userName = "sceneLocator"
 geolocator = Nominatim(user_agent=userName)
@@ -243,7 +239,8 @@ with col1:
             coordinatesList.extend(
                 [coordinateOutput.latitude, coordinateOutput.longitude]
             )
-            allLocations = Q.findAllLocations(sparql)
+            with st.spinner("This might take a couple of minutes the first time."):
+                allLocations = Q.findAllLocations(sparql)
             if coordinatesList != []:
                 m2 = folium.Map(location=coordinatesList, zoom_start=14)
                 folium.Circle(  ## create radius circle

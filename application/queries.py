@@ -17,15 +17,14 @@ def wikidataActor(actorNumber):
         PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         PREFIX wikibase: <http://wikiba.se/ontology#>
         PREFIX bd: <http://www.bigdata.com/rdf#>
-        SELECT ?actor  ?image ?actorDescription  WHERE {   
+        SELECT ?actor  ?image ?actorDescription
+        WHERE {   
             ?actor wdt:P345 '%s'.
             OPTIONAL{?actor wdt:P18 ?image.}
-            SERVICE wikibase:label {bd:serviceParam wikibase:language "en".
-            }
-                       
+            SERVICE wikibase:label {bd:serviceParam wikibase:language "en".}
         }
-    """
-        % actorNumber
+        """
+        % (actorNumber)
     )
     sparql.setReturnFormat(JSON)
     results = sparql.query().convert()
@@ -43,7 +42,8 @@ def findAllLocations(sparql):
         """
         PREFIX ml: <http://example.com/movieLocations/>
         PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-        select ?lon ?lat ?sceneName ?showName ?locationInfo where { 
+        SELECT ?lon ?lat ?sceneName ?showName ?locationInfo
+        WHERE { 
             ?show a ml:Show;
                 ml:hasLocation ?location;
                 rdfs:label ?showName.
@@ -51,9 +51,9 @@ def findAllLocations(sparql):
                     ml:hasLongitude ?lon;
                     rdfs:label ?locationInfo 
             OPTIONAL{
-                ?scene a ml:Scene.
                 ?show ml:hasScene ?scene.
-                ?scene ml:hasLocation ?location;
+                ?scene a ml:Scene;
+                    ml:hasLocation ?location;
                     rdfs:label ?sceneName. 
             }
         }
@@ -97,16 +97,16 @@ def findAllLocations(sparql):
 
 @st.cache
 def findScene(sparql, show):
-    filterstr = generate_filter_string("title", show)
     sparql.setQuery(
         """
         PREFIX ml: <http://example.com/movieLocations/>
         PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-        select DISTINCT ?sceneName ?lon ?lat ?label where { 
-            ?show ml:hasScene ?scene.
-            ?show rdfs:label ?title.
-            ?scene rdfs:label ?sceneName.
-            ?scene ml:hasLocation ?location.
+        SELECT DISTINCT ?sceneName ?lon ?lat ?label
+        WHERE { 
+            ?show ml:hasScene ?scene;
+                rdfs:label ?title.
+            ?scene rdfs:label ?sceneName;
+                ml:hasLocation ?location.
             ?location ml:hasLongitude ?lon;
                 ml:hasLatitude ?lat;
                 rdfs:label ?label   
@@ -114,7 +114,7 @@ def findScene(sparql, show):
         }
         ORDER BY ?sceneName
         """
-        % (filterstr)
+        % (generate_filter_string("title", show))
     )
     ## paste the show far into the string with %
     sparql.setReturnFormat(JSON)
@@ -146,7 +146,8 @@ def findPerson(
     sparql.setQuery(
         """
         PREFIX ml: <http://example.com/movieLocations/>
-        select DISTINCT ?name ?person where { 
+        SELECT DISTINCT ?name ?person
+        WHERE { 
             ?person a ml:%s;
                  rdfs:label ?name.
         }
@@ -190,11 +191,11 @@ def findPerson(
 def findShowActor(
     sparql, Person, radioButton
 ):  ## finds all movies with a specific actor in it
-    filter1 = f"?show ml:has{radioButton} ?{radioButton.lower()}. ?{radioButton.lower()} rdfs:label '{Person}'."
     sparql.setQuery(
         """
         PREFIX ml: <http://example.com/movieLocations/>
-        select DISTINCT ?title ?sceneName ?lon ?lat ?locationName where { 
+        SELECT DISTINCT ?title ?sceneName ?lon ?lat ?locationName
+        WHERE { 
             %s
             ?show rdfs:label ?title;
                   ml:hasLocation ?location.
@@ -202,15 +203,20 @@ def findShowActor(
                       ml:hasLatitude ?lat;
                       rdfs:label ?locationName
             OPTIONAL{
-                ?scene a ml:Scene.
-                ?show ml:hasScene ?scene.
-                ?scene ml:hasLocation ?location;
+                ?scene a ml:Scene;
+                    ml:hasLocation ?location;
                     rdfs:label ?sceneName. 
-            }        
-        } 
+                ?show ml:hasScene ?scene.
+            }
+        }
         ORDER BY ?title
         """
-        % (filter1)
+        % (
+            f"""
+            ?show ml:has{radioButton} ?{radioButton.lower()}.
+            ?{radioButton.lower()} rdfs:label '{Person}'.
+            """
+        )
     )
     sparql.setReturnFormat(JSON)
     results = sparql.query().convert()
@@ -248,21 +254,19 @@ def findShowActor(
 
 @st.cache
 def findShow(sparql, radioButton):
-    filterStr = ""
-    if radioButton == "Movie scenes":
-        filterStr = "?show ml:hasScene ?scene"
     sparql.setQuery(
         """  
         PREFIX ml: <http://example.com/movieLocations/>
         PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-        select DISTINCT ?title where { 
+        SELECT DISTINCT ?title
+        WHERE { 
             ?show rdf:type ml:Show;
                 rdfs:label ?title.
             %s
-                    } 
-                    ORDER BY ?title
-    """
-        % (filterStr)
+        } 
+        ORDER BY ?title
+        """
+        % ("?show ml:hasScene ?scene" if radioButton == "Movie scenes" else "")
     )
     sparql.setReturnFormat(JSON)
     results = sparql.query().convert()
@@ -274,26 +278,27 @@ def findShow(sparql, radioButton):
 
 @st.cache
 def findShowLocations(sparql, show):
-    filterstr = generate_filter_string("title", show)
     sparql.setQuery(
         """
         PREFIX ml: <http://example.com/movieLocations/>
         PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-        select DISTINCT ?title ?sceneName ?lon ?lat ?locationInfo where { 
-            ?show rdfs:label ?title.
-            ?show ml:hasLocation ?location.
+        SELECT DISTINCT ?title ?sceneName ?lon ?lat ?locationInfo
+        WHERE { 
+            ?show rdfs:label ?title;
+                ml:hasLocation ?location.
             ?location ml:hasLongitude ?lon;
                 ml:hasLatitude ?lat;
                 rdfs:label ?locationInfo.
-            OPTIONAL{?scene a ml:Scene. 
-                    ?show ml:hasScene ?scene.
-                    ?scene ml:hasLocation ?location;
-                            rdfs:label ?sceneName}   
+            OPTIONAL{
+                ?scene a ml:Scene;
+                    ml:hasLocation ?location;
+                    rdfs:label ?sceneName.
+                ?show ml:hasScene ?scene.
+            }
             %s 
-            
-    } 
-    """
-        % (filterstr)
+        } 
+        """
+        % (generate_filter_string("title", show))
     )
     sparql.setReturnFormat(JSON)
     results = sparql.query().convert()
