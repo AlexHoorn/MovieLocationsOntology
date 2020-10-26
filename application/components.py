@@ -3,6 +3,7 @@ from io import StringIO
 from math import asin, cos, radians, sin, sqrt
 from os import getcwd
 from os.path import isfile
+from typing import Tuple
 
 import pandas as pd
 from SPARQLWrapper import CSV, SPARQLWrapper
@@ -139,3 +140,28 @@ def haversine(
     c = 2 * asin(sqrt(a))
     r = 6371  # Radius of earth in kilometers. Use 3956 for miles
     return c * r
+
+
+def get_minmax_coords(
+    lat: int, lon: int, radius_km: int
+) -> Tuple[float, float, float, float]:
+    """Gets a rough bounding box around coordinates by a radius in km
+
+    Args:
+        lat (int): Latitude
+        lon (int): Longitude
+        radius_km (int): Radius in kilometer
+
+    Returns:
+        Tuple[float, float, float, float]: (lat min, lat max, lon min, lon max)
+    """
+    radius_km += 2
+    lat_r = 1 / 111
+    lon_r = 1 / 73
+
+    lat_min = lat - (lat_r * radius_km)
+    lat_max = lat + (lat_r * radius_km)
+    lon_min = lon - (lon_r * radius_km)
+    lon_max = lon + (lon_r * radius_km)
+
+    return lat_min, lat_max, lon_min, lon_max

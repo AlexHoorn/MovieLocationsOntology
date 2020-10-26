@@ -10,7 +10,13 @@ from SPARQLWrapper import SPARQLWrapper
 from streamlit_folium import folium_static
 
 import queries as Q
-from components import get_config, haversine, overwrite_config, verify_endpoint
+from components import (
+    get_config,
+    get_minmax_coords,
+    haversine,
+    overwrite_config,
+    verify_endpoint,
+)
 
 st.beta_set_page_config(layout="wide")  ## comment this out to disable widescreen
 
@@ -208,10 +214,9 @@ with col1:
                 # Then inform the mac user what to do and print the exception
 
                 st.error(
-                    "Mac users running this application might need to install SSL certificates for Python. Hence the exception displayed below. This is very easily done by running the Install Certificates.command file in the directory of the python version they are using to run this app. This question handles SSL certificate problems Mac users of Python might experience: https://stackoverflow.com/questions/50236117/scraping-ssl-certificate-verify-failed-error-for-http-en-wikipedia-org \n \n"+str(e)
+                    "Mac users running this application might need to install SSL certificates for Python. Hence the exception displayed below. This is very easily done by running the Install Certificates.command file in the directory of the python version they are using to run this app. This question handles SSL certificate problems Mac users of Python might experience: https://stackoverflow.com/questions/50236117/scraping-ssl-certificate-verify-failed-error-for-http-en-wikipedia-org \n \n"
+                    + str(e)
                 )
-
-
 
             if inputShow2 != []:
                 for key, value in locationDict.items():
@@ -252,9 +257,10 @@ with col1:
         radiusInput = st.number_input(
             "Radius around the location (km)",
             format="%f",
-            min_value=0.5,
-            value=1.0,
+            min_value=1,
+            value=1,
             key="numberinput1",
+            step=1,
         )
         if locationInput != "" and radiusInput > 0.5:
             coordinatesList = []
@@ -262,8 +268,15 @@ with col1:
             coordinatesList.extend(
                 [coordinateOutput.latitude, coordinateOutput.longitude]
             )
-            with st.spinner("This might take a couple of minutes the first time."):
-                allLocations = Q.findAllLocations(sparql)
+
+            # Gets a rough bounding box around the radius to filter locations on for querying
+            lat_min, lat_max, lon_min, lon_max = get_minmax_coords(
+                coordinateOutput.latitude, coordinateOutput.longitude, radiusInput
+            )
+
+            allLocations = Q.findAllLocations(
+                sparql, lat_min, lat_max, lon_min, lon_max
+            )
             if coordinatesList != []:
                 m2 = folium.Map(location=coordinatesList, zoom_start=14)
                 folium.Circle(  ## create radius circle

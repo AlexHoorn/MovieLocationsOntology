@@ -37,7 +37,7 @@ def wikidataActor(actorNumber):
 
 
 @st.cache
-def findAllLocations(sparql):
+def findAllLocations(sparql, lat_min, lat_max, lon_min, lon_max):
     sparql.setQuery(
         """
         PREFIX ml: <http://example.com/movieLocations/>
@@ -56,9 +56,12 @@ def findAllLocations(sparql):
                     ml:hasLocation ?location;
                     rdfs:label ?sceneName. 
             }
+            FILTER(?lat > %f && ?lat < %f)
+            FILTER(?lon > %f && ?lon < %f)
         }
         ORDER BY ?showName
         """
+        % (lat_min, lat_max, lon_min, lon_max)
     )
     sparql.setReturnFormat(JSON)
     results = sparql.query().convert()
