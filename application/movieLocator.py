@@ -107,7 +107,10 @@ with col1:
                         else:
                             folium.Marker(
                                 [lon, lat],
-                                popup="<b>Scene:</b> " + scene + "\n<b>Location:</b> " + location,
+                                popup="<b>Scene:</b> "
+                                + scene
+                                + "\n<b>Location:</b> "
+                                + location,
                                 tooltip=movie[0],
                             ).add_to(m2)
 
@@ -137,7 +140,9 @@ with col1:
                     tracker = 0  ## tracks which location the folium map currently has. if tracker = 0, location is the first scene.
                     for x in coordinates:
                         folium.Marker(
-                            x, popup="<b>Location:</b> " + locations[i], tooltip=scenes[i]
+                            x,
+                            popup="<b>Location:</b> " + locations[i],
+                            tooltip=scenes[i],
                         ).add_to(m2)
                         i += 1
                     if st.button("Render map", key="showButton"):
