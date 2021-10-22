@@ -7,5 +7,5 @@ Pillow==8.0.1
 rdflib==5.0.0
 SPARQLWrapper==1.8.5
 streamlit_folium==0.1.0
-streamlit==0.69.2
+streamlit==1.1.0
 tqdm==4.51.0
