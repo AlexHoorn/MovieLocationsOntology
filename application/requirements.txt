@@ -1,6 +1,6 @@
 requests==2.24.0
 streamlit_folium==0.1.0
-pandas==1.1.4
+pandas==1.4.1
 folium==0.11.0
 streamlit==0.69.2
 geopy==2.0.0
